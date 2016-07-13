@@ -5,21 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
-\bibitem{ImagensHSLHSVRGB}
-\abntrefinfo{Horvath}{HORVATH}{}
-{HORVATH, M.}
-
-\bibitem{Mendes:2008}
-\abntrefinfo{Mendes e Medeiros}{MENDES; MEDEIROS}{2008}
-{MENDES, E.~P.; MEDEIROS, A. A.~D. Sistema de localização visual da equipe de
-  futebol de robôs {POTI-UFRN} (versao 2008) na categoria very small size. In:
-   \emph{Team Description Paper: Competição Brasileira de Robótica}.
-  Salvador, Brasil: [s.n.], 2008.}
-
-\bibitem{Spiegel:1974}
-\abntrefinfo{Spiegel}{SPIEGEL}{1974}
-{SPIEGEL, M.~R. \emph{Estatística}. [S.l.]: McGraw-Hill do Brasil, 1974.}
-
 \bibitem{Penharbel:2004}
 \abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{2004}
 {PENHARBEL, E.~A. et al. Filtro de imagem baseado em matriz rgb de
@@ -38,6 +23,21 @@ Disserta\c{c}\~{a}o (Mestrado) --- FACULDADE DEE DUCAÇÃO TECNOLÓGICA DO
 \abntrefinfo{SIRLab}{SIRLAB}{}
 {SIRLAB. In:  . [S.l.: s.n.].}
 
+\bibitem{ImagensHSLHSVRGB}
+\abntrefinfo{Horvath}{HORVATH}{}
+{HORVATH, M.}
+
+\bibitem{Mendes:2008}
+\abntrefinfo{Mendes e Medeiros}{MENDES; MEDEIROS}{2008}
+{MENDES, E.~P.; MEDEIROS, A. A.~D. Sistema de localização visual da equipe de
+  futebol de robôs {POTI-UFRN} (versao 2008) na categoria very small size. In:
+   \emph{Team Description Paper: Competição Brasileira de Robótica}.
+  Salvador, Brasil: [s.n.], 2008.}
+
+\bibitem{Spiegel:1974}
+\abntrefinfo{Spiegel}{SPIEGEL}{1974}
+{SPIEGEL, M.~R. \emph{Estatística}. [S.l.]: McGraw-Hill do Brasil, 1974.}
+
 \bibitem{Albuquerque:2001}
 \abntrefinfo{Albuquerque e Albuquerque}{ALBUQUERQUE; ALBUQUERQUE}{2001}
 {ALBUQUERQUE, M.; ALBUQUERQUE, M. Processamento de imagens: métodos e
@@ -53,6 +53,11 @@ Centro Brasileiro de Pesquisas Fısicas MCT.}
   Hall, 2008.
 ISBN 9780131687288. Dispon{\'\i}vel em:
   \url{https://books.google.com.br/books?id=8uGOnjRGEzoC}.}
+
+\bibitem{PenharbelTime}
+\abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{}
+{PENHARBEL, E.~A. et al. Time de futebol de rob{\^o}s y04 do centro
+  universit{\'a}rio da fei.}
 
 \bibitem{Viola:2001}
 \abntrefinfo{Viola e Jones}{VIOLA; JONES}{2001}
@@ -112,6 +117,12 @@ ISSN 0162-8828.}
   GIBSON, R.~G. (Ed.). \emph{Simpósio Brasileiro de Geomática}. [S.l.: s.n.],
   2002. p. 292--303.}
 
+\bibitem{Azevedo:2003}
+\abntrefinfo{Azevedo e A.}{AZEVEDO; A.}{2003}
+{AZEVEDO, E.; A., C. \emph{Computação Gráfica: Geração de Imagens}.
+  [S.l.]: Elsevier, 2003.
+ISBN 9878535212525.}
+
 \bibitem{Souto:2003}
 \abntrefinfo{Souto}{SOUTO}{2003}
 {SOUTO, R.~P.
@@ -140,18 +151,6 @@ Dispon{\'\i}vel em:
   \emph{Team Description Paper. Competi{\c{c}}ao Brasileira de Rob{\'o}tica,
   Florianópolis, Brasil}. [S.l.: s.n.], 2007.}
 
-\bibitem{Culjak:2012}
-\abntrefinfo{Culjak et al.}{CULJAK et al.}{2012}
-{CULJAK, I. et al. A brief introduction to opencv. In:  \emph{MIPRO, 2012
-  Proceedings of the 35th International Convention}. [S.l.: s.n.], 2012. p.
-  1725--1730.}
-
-\bibitem{Stroustrup:1996}
-\abntrefinfo{Stroustrup}{STROUSTRUP}{1996}
-{STROUSTRUP, B. A history of c++: 1979--1991. In:  BERGIN, T.~J.; GIBSON, R.~G.
-  (Ed.). \emph{History of programming languages --- II}. [S.l.]:
-  Addison-Wesley, 1996.}
-
 \bibitem{TabelaUFF}
 \abntrefinfo{Fluminense}{FLUMINENSE}{}
 {FLUMINENSE, U.~F. \emph{Tabela T: Distribuição de t-Student segundo os graus
@@ -177,10 +176,17 @@ Dispon{\'\i}vel em: \url{http://www.estatistica.ccet.ufrn.br/historia.php}.}
 {KITANO, H. et al. Robocup: A challenge problem for ai.
 \emph{AI magazine}, v.~18, n.~1, p.~73, 1997.}
 
-\bibitem{PenharbelTime}
-\abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{}
-{PENHARBEL, E.~A. et al. Time de futebol de rob{\^o}s y04 do centro
-  universit{\'a}rio da fei.}
+\bibitem{Culjak:2012}
+\abntrefinfo{Culjak et al.}{CULJAK et al.}{2012}
+{CULJAK, I. et al. A brief introduction to opencv. In:  \emph{MIPRO, 2012
+  Proceedings of the 35th International Convention}. [S.l.: s.n.], 2012. p.
+  1725--1730.}
+
+\bibitem{Stroustrup:1996}
+\abntrefinfo{Stroustrup}{STROUSTRUP}{1996}
+{STROUSTRUP, B. A history of c++: 1979--1991. In:  BERGIN, T.~J.; GIBSON, R.~G.
+  (Ed.). \emph{History of programming languages --- II}. [S.l.]:
+  Addison-Wesley, 1996.}
 
 \bibitem{QCustomPlot}
 \abntrefinfo{Eichhammer}{EICHHAMMER}{}

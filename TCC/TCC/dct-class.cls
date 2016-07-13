@@ -141,7 +141,12 @@
 		{Orienta\c{c}\~ao: #1}
 	\end{center}
 }
-
+\newcommand{\coorientacao}[1]
+{
+	\begin{center}
+		{Coorienta\c{c}\~ao: #1}
+	\end{center}
+}
 \newcommand{\docarea}[1]
 {
 	\vskip 0.2cm\noindent

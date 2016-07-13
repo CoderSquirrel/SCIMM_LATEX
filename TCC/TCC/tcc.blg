@@ -4,7 +4,7 @@ The top-level auxiliary file: tcc.aux
 A level-1 auxiliary file: cabecalho.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: fundamentacao.aux
-A level-1 auxiliary file: metodologia.aux
+A level-1 auxiliary file: desenvolvimento.aux
 The style file: abntex2-num.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -17,49 +17,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib.bib
-You're missing a field name---line 36 of file bibliografia.bib.bib
+You're missing a field name---line 44 of file bibliografia.bib.bib
  :    
  :    ,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "ImagensHSLHSVRGB" isn't style-file defined
---line 163 of file bibliografia.bib.bib
-I was expecting a `,' or a `}'---line 165 of file bibliografia.bib.bib
+--line 171 of file bibliografia.bib.bib
+I was expecting a `,' or a `}'---line 173 of file bibliografia.bib.bib
  :  
  :  Title = {Imagens HSV, HSL e RGB},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 190 of file bibliografia.bib.bib
+I was expecting a `,' or a `}'---line 198 of file bibliografia.bib.bib
  :   
  :   year={2014}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "UFRN" isn't style-file defined
---line 203 of file bibliografia.bib.bib
+--line 211 of file bibliografia.bib.bib
 Warning--entry type for "TabelaUFF" isn't style-file defined
---line 221 of file bibliografia.bib.bib
-You're missing a field name---line 267 of file bibliografia.bib.bib
+--line 229 of file bibliografia.bib.bib
+You're missing a field name---line 275 of file bibliografia.bib.bib
  :     
  :     ,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 275 of file bibliografia.bib.bib
+I was expecting a `,' or a `}'---line 283 of file bibliografia.bib.bib
  :    
  :    Title = {Imagens HSV, HSL e RGB},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "QCustomPlot" isn't style-file defined
---line 282 of file bibliografia.bib.bib
+--line 290 of file bibliografia.bib.bib
 Warning--entry type for "OpenCV" isn't style-file defined
---line 293 of file bibliografia.bib.bib
+--line 301 of file bibliografia.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio ou faltando em ImagensHSLHSVRGB
 Warning--campo year vazio em Rosa:2015
 Warning--campo title vazio em VSSVision
 Warning--campo year vazio ou faltando em VSSVision
+Warning--campo year vazio ou faltando em ImagensHSLHSVRGB
 Warning--campo year vazio em Nascimento:2007
 Warning--campo year vazio ou faltando em TabelaUFF
 Warning--campo year vazio ou faltando em UFRN
@@ -70,45 +70,45 @@ Warning--campo year vazio ou faltando em OpenCV
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 30 entries,
+You've used 31 entries,
             6706 wiz_defined-function locations,
-            1400 strings with 15050 characters,
-and the built_in function-call counts, 28671 in all, are:
-= -- 2875
-> -- 652
+            1406 strings with 15166 characters,
+and the built_in function-call counts, 29412 in all, are:
+= -- 2935
+> -- 678
 < -- 429
-+ -- 695
-- -- 198
-* -- 1853
-:= -- 3643
-add.period$ -- 116
-call.type$ -- 30
-change.case$ -- 288
-chr.to.int$ -- 54
-cite$ -- 38
-duplicate$ -- 2247
-empty$ -- 1689
-format.name$ -- 1044
-if$ -- 6265
++ -- 705
+- -- 206
+* -- 1903
+:= -- 3739
+add.period$ -- 120
+call.type$ -- 31
+change.case$ -- 298
+chr.to.int$ -- 55
+cite$ -- 39
+duplicate$ -- 2287
+empty$ -- 1750
+format.name$ -- 1085
+if$ -- 6445
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 510
-newline$ -- 153
-num.names$ -- 120
-pop$ -- 721
+missing$ -- 530
+newline$ -- 158
+num.names$ -- 124
+pop$ -- 749
 preamble$ -- 1
-purify$ -- 111
+purify$ -- 115
 quote$ -- 0
-skip$ -- 2367
+skip$ -- 2405
 stack$ -- 1
-substring$ -- 1077
-swap$ -- 870
+substring$ -- 1094
+swap$ -- 888
 text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 20
 warning$ -- 9
-while$ -- 170
+while$ -- 175
 width$ -- 0
-write$ -- 397
+write$ -- 410
 (There were 5 error messages)

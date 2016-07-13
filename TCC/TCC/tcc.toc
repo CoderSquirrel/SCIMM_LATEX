@@ -5,43 +5,48 @@
 \contentsline {section}{\numberline {1.2}Objetivos}{7}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{7}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\IeC {\'\i }ficos}{7}{subsection.1.2.2}
-\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}Processamento de Imagens}{8}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Detec\IeC {\c c}\IeC {\~a}o de Objetos}{8}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Detec\IeC {\c c}\IeC {\~a}o de Bordas}{9}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Cores}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Espa\IeC {\c c}os de Cores}{10}{subsection.2.2.1}
-\contentsline {subsubsection}{RGB}{11}{section*.5}
-\contentsline {subsubsection}{CMY}{11}{section*.6}
-\contentsline {subsection}{\numberline {2.2.2}Modelo de Cores}{11}{subsection.2.2.2}
-\contentsline {subsubsection}{RGB}{12}{section*.8}
-\contentsline {subsubsection}{HSL, HSB/HSV}{12}{section*.10}
-\contentsline {subsubsection}{HPG}{12}{section*.12}
-\contentsline {section}{\numberline {2.3}Linguagem de Programa\IeC {\c c}\IeC {\~a}o e Bibliotecas}{14}{section.2.3}
-\contentsline {section}{\numberline {2.4}Probabilidade e Estat\IeC {\'\i }stica}{14}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}T de Student}{14}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Graus de Liberdade}{15}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Intervalos de Confian\IeC {\c c}a}{15}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Futebol de Rob\IeC {\^o}s}{16}{section.2.5}
-\contentsline {section}{\numberline {2.6}Trabalhos Relacionados}{16}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Calibra}{16}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}VSS-Vision}{18}{subsection.2.6.2}
-\contentsline {chapter}{\numberline {3}Metodologia e Desenvolvimento}{20}{chapter.3}
-\contentsline {section}{\numberline {3.1}Projeto}{20}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Organiza\IeC {\c c}\IeC {\~a}o do Projeto}{20}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Classes}{22}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}O Sistema}{22}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Calibra\IeC {\c c}\IeC {\~a}o Automatica}{23}{subsection.3.2.1}
-\contentsline {subsubsection}{1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{24}{section*.24}
-\contentsline {subsubsection}{2\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{25}{section*.25}
-\contentsline {subsubsection}{3\IeC {\textordfeminine } Etapa - Calculo de valores HSV}{26}{section*.26}
-\contentsline {subsubsection}{4\IeC {\textordfeminine } Etapa - Assimila\IeC {\c c}\IeC {\~a}o de Objeto \IeC {\`a} Cor}{27}{section*.29}
-\contentsline {subsubsection}{5\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{28}{section*.30}
-\contentsline {subsection}{\numberline {3.2.2}Calibra\IeC {\c c}\IeC {\~a}o Manual}{28}{subsection.3.2.2}
-\contentsline {subsubsection}{1\IeC {\textordfeminine } Etapa - Sele\IeC {\c c}\IeC {\~a}o de Objeto}{28}{section*.32}
-\contentsline {subsubsection}{2\IeC {\textordfeminine } Etapa - Plotagem de Valores HSV}{29}{section*.33}
-\contentsline {subsubsection}{3\IeC {\textordfeminine } Etapa - Sele\IeC {\c c}\IeC {\~a}o de Cor a ser Calibrada}{29}{section*.34}
-\contentsline {subsubsection}{4\IeC {\textordfeminine } Etapa - Sele\IeC {\c c}\IeC {\~a}o de Minimos e Maximos}{29}{section*.35}
-\contentsline {subsubsection}{5\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{29}{section*.36}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{30}{section*.37}
-\contentsline {chapter}{Ap\^endices}{32}{Item.29}
+\contentsline {section}{\numberline {1.3}Trabalhos Corelatos}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Calibra}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}VSS-Vision}{8}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o da Trabalho}{10}{section.1.4}
+\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Processamento de Imagens}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Detec\IeC {\c c}\IeC {\~a}o de Objetos}{11}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Detec\IeC {\c c}\IeC {\~a}o de Bordas}{12}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Cores}{13}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Espa\IeC {\c c}os de Cores}{13}{subsection.2.2.1}
+\contentsline {subsubsection}{RGB}{14}{section*.10}
+\contentsline {subsubsection}{CMY}{14}{section*.11}
+\contentsline {subsection}{\numberline {2.2.2}Modelo de Cores}{14}{subsection.2.2.2}
+\contentsline {subsubsection}{RGB}{15}{section*.13}
+\contentsline {subsubsection}{HSL, HSB/HSV}{15}{section*.15}
+\contentsline {subsubsection}{HPG}{15}{section*.17}
+\contentsline {section}{\numberline {2.3}Probabilidade e Estat\IeC {\'\i }stica}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}T de Student}{17}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Graus de Liberdade}{18}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Intervalos de Confian\IeC {\c c}a}{18}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Futebol de Rob\IeC {\^o}s}{18}{section.2.4}
+\contentsline {chapter}{\numberline {3}Desenvolvimento}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tecnologias Usadas}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}Projeto}{21}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Organiza\IeC {\c c}\IeC {\~a}o do Projeto}{21}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Classes}{23}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}O Sistema}{23}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Calibra\IeC {\c c}\IeC {\~a}o Automatica}{24}{subsection.3.3.1}
+\contentsline {subsubsection}{1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{25}{section*.24}
+\contentsline {subsubsection}{2\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{26}{section*.25}
+\contentsline {subsubsection}{3\IeC {\textordfeminine } Etapa - Calculo de valores HSV}{27}{section*.26}
+\contentsline {subsubsection}{4\IeC {\textordfeminine } Etapa - Assimila\IeC {\c c}\IeC {\~a}o de Objeto \IeC {\`a} Cor}{28}{section*.29}
+\contentsline {subsubsection}{5\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{29}{section*.30}
+\contentsline {subsection}{\numberline {3.3.2}Calibra\IeC {\c c}\IeC {\~a}o Manual}{29}{subsection.3.3.2}
+\contentsline {subsubsection}{1\IeC {\textordfeminine } Etapa - Sele\IeC {\c c}\IeC {\~a}o de Objeto}{29}{section*.32}
+\contentsline {subsubsection}{2\IeC {\textordfeminine } Etapa - Plotagem de Valores HSV}{30}{section*.33}
+\contentsline {subsubsection}{3\IeC {\textordfeminine } Etapa - Sele\IeC {\c c}\IeC {\~a}o de Cor a ser Calibrada}{30}{section*.34}
+\contentsline {subsubsection}{4\IeC {\textordfeminine } Etapa - Sele\IeC {\c c}\IeC {\~a}o de Minimos e Maximos}{30}{section*.35}
+\contentsline {subsubsection}{5\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{30}{section*.36}
+\contentsline {chapter}{\numberline {6}Resultados}{33}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o}{34}{chapter.7}
+\contentsline {chapter}{\numberline {6}Resultados}{33}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o}{34}{chapter.7}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{35}{section*.37}
+\contentsline {chapter}{Ap\^endices}{37}{Item.30}
