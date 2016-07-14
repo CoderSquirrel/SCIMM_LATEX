@@ -64,10 +64,10 @@ mostrou-se bastante flexível, independente da origem da imagem utilizada\cite{V
 
 
 
-\section{Espaço e Modelo de Cores} \label{Sec:Cores}
+\section{Cores} \label{Sec:Cores}
 
 
-O olho humano é capaz de identificar cores mesmo com as mais diferentes interferências, luminosidade, tonalidade, intensidade, entre outras ações de agentes externos, pois nosso cérebro assimila a cor a sua aparência, já para uma máquina cores são números, códigos, cada cor contém um código especifico e cada uma de suas variâncias e alterações também. Para o nosso cérebro é muito fácil entender, exemplo, que o verde, verde lima, verde escuro são a mesma cor, apenas com tonalidades diferentes, já para o computador estas são: (0,255,0),(50,205,50),(0,128,0), no padrão de cor RGB que considera uma luz visível. Mas se for aplicado luminosidade nessas cores, por exemplo, elas ainda se tornam outras diferentes cores, um código diferente para cada luminosidade possível. Para conseguir cobrir todas essas alterações nas cores foram definidos em 1921 começaram então pela Comissão Internacional de Iluminação (CEI) a serem definidos espaços e modelos de cores\cite{Souto:2003}.
+O olho humano é capaz de identificar cores mesmo com as mais diferentes interferências, luminosidade, tonalidade, intensidade, entre outras ações de agentes externos graças aos \textbf{cones} e \textbf{bastonetes}. Os bastonetes são os responsaveis por distinguirem tons de cinza e pela visão periferica e tem como caracteristica serem sensiveis a baixo nivel de luminosidade\cite{Azevedo:2003}, os cones, por sua vez, são sensiveis ao alto nivel de iluminação e responsaveis pela percepçao de cores\cite{Azevedo:2003}. A informação obtida por ambos é assimilada pelo nosso  cérebro, ligando a cor a sua aparência, já para uma máquina cores são números, códigos, cada cor contém um código especifico e cada uma de suas variâncias e alterações também. Para o nosso cérebro é muito fácil entender, exemplo, que o verde, verde lima, verde escuro são a mesma cor, apenas com tonalidades diferentes, já para o computador estas são: (0,255,0),(50,205,50),(0,128,0), no padrão de cor RGB que considera uma luz visível. Mas se for aplicado luminosidade nessas cores, por exemplo, elas ainda se tornam outras diferentes cores, um código diferente para cada luminosidade possível. Para conseguir cobrir todas essas alterações nas cores foram definidos em 1921 começaram então pela Comissão Internacional de Iluminação (CEI) a serem definidos espaços e modelos de cores\cite{Souto:2003}.
 
 \subsection{Espaços de Cores}
 Segundo Foley et. al citado por Souto\cite{Souto:2003} espaço de cores é um sistema tridimensional de
@@ -122,19 +122,6 @@ O modelo de cores HPG se baseia nos valores obtidos de cada pixel no modelo RGB 
 	\label{ModeloHPG}
 \end{figure} 
 \newpage
-\section{Linguagem de Programação e Bibliotecas}
-
-
-Para realização deste trabalho, irei utilizar a biblioteca de processamentos de imagens conhecida como OpenCV: Open Source Computer Vision Library. O trabalho será elaborado na linguagem C++, com uso do framework Qt para sua interface gráfica.
-Os passos detalhados do projeto e seu desenvolvimento estará presente no Capítulo de Metodologia.
-\begin{description}
-	\item[OpenCV] Lançado em 1999 pela Intel\cite{Culjak:2012}, com objetivo de ser otimizada, portável e com um grande número de funções, o Open Source Computer Vision Library,OpenCV, se tornou se tornou uma ferramenta que possui mais de 2500 algoritmos e 40 mil pessoas em seu grupo de usuários\cite{Culjak:2012}. Já possui interface para as linguagens C++, C, Python e Java além de suporte para as principais plataformas com Windows, Linux, Mac OS, iOS e Android. A biblioteca lida tanto com imagens em tempo real, como vídeos e imagens estáticas.
-	
-	\item[Qt] Qt é um framework de desenvolvimento de aplicações multiplataforma. Entre suas funcionalidades está a possibilidade de criar interfaces gráficas diretamente em C ++ usando seu módulo Widgets.
-	
-	\item [C++] A linguagem de programação C++ foi projetado por Bjarne Stroustrup para fornecer eficiência e flexibilidade da linguagem C para programação de sistemas. A linguagem evoluiu a partir de uma versão anterior chamado C com Classes, o projeto C com Classes durou entre 1979 e 1983 e determinou os moldes para o C++. A linguagem foi oficialmente lancada em 1986.\cite{Stroustrup:1996} 
-\end{description}
-
 
 \section{Probabilidade e Estatística}
 
@@ -196,6 +183,7 @@ onde os valores, dos limites iniciai e final, \textit{t$_c$} são denominados \t
      \item A cada inicio de partida ou gol feito a bola deve ser posicionada no centro do campo e os
      robôs devem ser posicionados de acordo com a posse de bola.
  \end{itemize}
+<<<<<<< HEAD
 \section{Trabalhos Relacionados}
 Para o tema especifico deste trabalho, calibração de intervalo de cores para times de futebol de robos da categoria very small size, não foram encontrados trabalhos relacionados, porém foram encotrados Team Discription Papers e descrições de sistemas usados pelos times, onde consta sobre o processo de calibração e os metodos usados.
 
@@ -253,3 +241,5 @@ O metodo de calibração de cores tambem foi modificado, segundo a equipe\cite{V
 	\caption{Calibração atual do time da SIRLab \cite{VSSVision}}
 	\label{SIRLabNovaCalibracao}
 \end{figure}
+=======
+>>>>>>> b9794f085b42de0b96ba9a53d1f0ca16c0beccee
