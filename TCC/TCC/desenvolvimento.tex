@@ -191,9 +191,11 @@ Apos a conversão é necessario, então, ser feita uma analise dos objetos encon
 		        \begin{algorithmic}
 		     	
 		     	\ForAll{objeto encontrado} 
-		   		 \State ValoresH[objeto.valorh]++ 
-		    	 \State	ValoresS[objeto.valors]++ 
-		     	 \State	ValoresV[objeto.valorv]++
+		     		\ForAll{pixel do objeto} 
+		   				 \State OcorrenciasDeH[pixel.h]++ 
+		    			 \State	OcorrenciasDeS[pixel.s]++ 
+		     	  		 \State	OcorrenciasDeV[pixel.v]++
+		     	   \EndFor
 		     	\EndFor
 		     		
 		        \end{algorithmic}
