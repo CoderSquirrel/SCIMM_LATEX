@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Classes}{26}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}O Sistema}{27}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Calibra\IeC {\c c}\IeC {\~a}o Automatica}{27}{subsection.3.3.1}
-\contentsline {subsubsection}{1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{27}{section*.29}
+\contentsline {subsubsection}{1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{28}{section*.29}
 \contentsline {subsubsection}{2\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{30}{section*.30}
 \contentsline {subsubsection}{3\IeC {\textordfeminine } Etapa - Calculo de valores HSV}{31}{section*.31}
 \contentsline {subsubsection}{4\IeC {\textordfeminine } Etapa - Assimila\IeC {\c c}\IeC {\~a}o de Objeto \IeC {\`a} Cor}{32}{section*.34}

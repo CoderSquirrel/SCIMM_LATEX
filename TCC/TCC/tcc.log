@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.7)  14 JUL 2016 11:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.7)  14 JUL 2016 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1206,89 +1206,76 @@ Package babel Info: Redefining portuges shorthand "|
  [25 <./figuras/diagramadeclasse.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 87.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 112.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 130.
 
-<figuras/fluxoprincipal.pdf, id=616, 376.35919pt x 432.06036pt>
+[26]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 137.
+ <figuras/fluxoprincipal.pdf, id=621, 376.35919pt x 432.06036pt>
 File: figuras/fluxoprincipal.pdf Graphic file (type pdf)
 
 <use figuras/fluxoprincipal.pdf>
-Package pdftex.def Info: figuras/fluxoprincipal.pdf used on input line 127.
+Package pdftex.def Info: figuras/fluxoprincipal.pdf used on input line 141.
 (pdftex.def)             Requested size: 211.26028pt x 242.5323pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
-[26]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
- <figuras/fluxoautomatico.pdf, id=621, 257.2812pt x 595.50484pt>
+(babel)             in language  on input line 149.
+
+<figuras/fluxoautomatico.pdf, id=622, 257.2812pt x 595.50484pt>
 File: figuras/fluxoautomatico.pdf Graphic file (type pdf)
 
 <use figuras/fluxoautomatico.pdf>
-Package pdftex.def Info: figuras/fluxoautomatico.pdf used on input line 138.
+Package pdftex.def Info: figuras/fluxoautomatico.pdf used on input line 152.
 (pdftex.def)             Requested size: 211.26028pt x 489.00772pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 151.
+(babel)             in language  on input line 162.
 [27 <./figuras/fluxoprincipal.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 170.
  [28 <./figuras/fluxoautomatico.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 181.
 
 [29]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 188.
+(babel)             in language  on input line 202.
  [30]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 204.
-
-Overfull \hbox (48.08989pt too wide) in paragraph at lines 217--219
-[] \OT1/cmr/bx/n/12 fim para\OT1/cmr/m/n/12 >>>>>>> b9794f085b42de0b96ba9a53d1f
-0ca16c0beccee:TCC/TCC/desenvolvimento.tex 
- []
-
-<figuras/graficototal.png, id=670, 620.3175pt x 288.3272pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 236.
+ [31] <figuras/graficototal.png, id=678, 620.3175pt x 288.3272pt>
 File: figuras/graficototal.png Graphic file (type png)
 
 <use figuras/graficototal.png>
-Package pdftex.def Info: figuras/graficototal.png used on input line 231.
+Package pdftex.def Info: figuras/graficototal.png used on input line 239.
 (pdftex.def)             Requested size: 234.73524pt x 109.10352pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figuras/graficominmax.png, id=671, 627.84563pt x 287.57437pt>
+<figuras/graficominmax.png, id=679, 627.84563pt x 287.57437pt>
 File: figuras/graficominmax.png Graphic file (type png)
 
 <use figuras/graficominmax.png>
-Package pdftex.def Info: figuras/graficominmax.png used on input line 239.
+Package pdftex.def Info: figuras/graficominmax.png used on input line 247.
 (pdftex.def)             Requested size: 234.73524pt x 107.51541pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 243.
- [31]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 249.
+(babel)             in language  on input line 259.
  [32 <./figuras/graficototal.png (PNG copy)> <./figuras/graficominmax.png (PNG 
 copy)>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 261.
 
-<figuras/fluxomanual.pdf, id=684, 446.62859pt x 725.5908pt>
+<figuras/fluxomanual.pdf, id=685, 446.62859pt x 725.5908pt>
 File: figuras/fluxomanual.pdf Graphic file (type pdf)
 
 <use figuras/fluxomanual.pdf>
-Package pdftex.def Info: figuras/fluxomanual.pdf used on input line 257.
+Package pdftex.def Info: figuras/fluxomanual.pdf used on input line 265.
 (pdftex.def)             Requested size: 211.26028pt x 343.20883pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 277.
  [33 <./figuras/fluxomanual.pdf>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 104.
@@ -1385,9 +1372,9 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
  12024 strings out of 493304
- 176605 string characters out of 6139872
- 292301 words of memory out of 5000000
- 15027 multiletter control sequences out of 15000+600000
+ 176600 string characters out of 6139872
+ 291295 words of memory out of 5000000
+ 15026 multiletter control sequences out of 15000+600000
  12367 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  40i,12n,60p,1736b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1405,10 +1392,10 @@ r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on tcc.pdf (41 pages, 4313634 bytes).
+Output written on tcc.pdf (41 pages, 4314415 bytes).
 PDF statistics:
- 879 PDF objects out of 1000 (max. 8388607)
- 748 compressed objects within 8 object streams
- 182 named destinations out of 1000 (max. 500000)
+ 880 PDF objects out of 1000 (max. 8388607)
+ 749 compressed objects within 8 object streams
+ 183 named destinations out of 1000 (max. 500000)
  403 words of extra memory for PDF output out of 10000 (max. 10000000)
 

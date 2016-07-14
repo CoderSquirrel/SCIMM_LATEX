@@ -91,21 +91,35 @@ Para melhor entendimento da interação entre as classes a figura 3.2 trás o di
 	
 	\item [janelaprincipal]: É uma classe-objeto que utiliza da implementação de objetos QWidget e suas subclasses disponiveis pelo framework Qt, para a criação de uma interface grafica que faz a interação com o usuario e que seleciona o tipo de calibração a ser iniciada. Todos os metodos presentes nessa clase são para utilização grafica, ex. comportamento de botões, slider, abas, menus de seleção, gráficos, bem como a comunicação com as classes de calibração.	
 		
-	\item [calibracao] classe base que contem a definição dos metodos e variaveis que virão a ser usadas por ambas as classes \textbf{manual} e \textbf{automatica}. Seus principai metodos são:
+	\item [calibracao] classe base que contem a definição dos metodos e variaveis que virão a ser usadas por ambas as classes \textbf{manual} e \textbf{automatica}. Seus metodos são:
 	\begin{description}
 	\item \textit{Iniciar}: Método que inicia ambos os proceessos de calibração, invocando os metodos necessarios antes de se fazer a calibração em si.
 	\item \textit{Calcular}: Método onde cada pixel é analizado e calculadas as ocorrências de valores HSV.
 	\item \textit{Fechar}: Método que finaliza o processo de calibração, fechando todas as janelas.
 	\item \textit{SalvarArquivo}: Método onde é criado o arquivo com intervalo de valores, através da lista de minimos e maximos.
-	\item \textit{DeclararMatrizes} 
+	\item \textit{DeclararMatrizes}: Método que é invocado quando tem a necessidade de ultilizar novamente as matrizes, estas então precisar ser zeradas.
 	\end{description}
 	
-	\item [manual] classe que contem os metodos e variaveis oriundos da classe base \textbf{calibracao} 
+	\item [manual] classe que contem os metodos e variaveis oriundos da classe base \textbf{calibracao} e os implementa de acordo com a necessidade da calibração manual, são eles:
 		\begin{description}
-		\item \textit{Iniciar}: Método que inicia ambos os proceessos de calibração, invocando os metodos necessarios antes de se fazer a calibração em si.
-		\item \textit{Calcular}: Método onde cada pixel é analizado e calculadas as ocorrências de valores HSV.
-		\item \textit{Fechar}: Método que finaliza o processo de calibração, fechando todas as janelas.
-		\item \textit{SalvarArquivo}: Método onde é criado o arquivo com intervalo de valores, através da lista de minimos e maximos.
+		\item \textit{Iniciar}: Método onde a camera é inciada e caso esteja disponivel a rotina de calibraçao é iniciada. Ao ser iniciada a rotina entre em uma sequencia que se repete até que a calibração seja finalizada. Durante a sequencia o sistema recebe a seleção dos objetos e invoca o metodo \textbf{Calcular}. Utilizando a interface grafica o usuario informa ao sistema quando a selecao dos objetos foi finalizada. O passo a seguir é passar para a interface gráfica os valores encontrados e para plotagem do grafico  
+		
+		
+		\item \textit{Calcular}: Método onde se analiza o objeto pixel à pixel. Cada pixel é separa em três valores: H, S e V. 
+		
+ 
+	        \begin{algorithm}
+	       		 \caption{Contagem dos Valores HSV - Classe manual}
+		        \begin{algorithmic}
+		     		\ForAll{pixel do objeto} 
+		   				 \State OcorrenciasDeH[pixel.h]++ 
+		    			 \State	OcorrenciasDeS[pixel.s]++ 
+		     	  		 \State	OcorrenciasDeV[pixel.v]++
+		     	   \EndFor
+		     
+	         \end{algorithmic}
+	        \end{algorithm}
+	        
 		\end{description}
 	
 	
@@ -205,17 +219,11 @@ Apos a conversão é necessario, então, ser feita uma analise dos objetos encon
 		        \begin{algorithmic}
 		     	
 		     	\ForAll{objeto encontrado} 
-<<<<<<< HEAD:TCC/TCC/metodologia.tex
-		   		 \State ValoresH[objeto.valorh]++ 
-		    	 \State	ValoresS[objeto.valors]++ 
-		     	 \State	ValoresV[objeto.valorv]++
-=======
 		     		\ForAll{pixel do objeto} 
 		   				 \State OcorrenciasDeH[pixel.h]++ 
 		    			 \State	OcorrenciasDeS[pixel.s]++ 
 		     	  		 \State	OcorrenciasDeV[pixel.v]++
 		     	   \EndFor
->>>>>>> b9794f085b42de0b96ba9a53d1f0ca16c0beccee:TCC/TCC/desenvolvimento.tex
 		     	\EndFor
 		     		
 		        \end{algorithmic}
@@ -265,7 +273,9 @@ Após serem encontrados os valores mínimo e máximos para H, S e V de cada obje
 %   	O usuario então seleciona os valores que considera satisfatorios(5). Enquanto houverem objetos a serem calibrados(6) o sistema repete esta mesma rotina, quando todos os objetos já tiverem sido calibrados, um arquivo com os valores é gerado(7) e o usuario finaliza o sistema.
 	
   	\subsubsection{1ª Etapa - Seleção de Objeto}	
-  	O primeiro passo para ser feita a calibração manual é a seleção de Objeto. Com o auxilio da função setMouseCallback, disponivel na biblioteca \textbf{OpenCV} e já explanada na sessão 3.2.1, é possivel obter os pontos de uma seleção feita na imagem, seu uso é necessario, já que obtenção de um ou mais objetos com a \textbf{mesma cor} a serem analisados é feita somente com a interação do usuario. Neste seleção existe a possibilidade de escolher somente um objeto ou mais de um objeto da mesma cor em diferentes pontos do campo, a seleção é feita somente um objeto por vez e cada objeto é analisado e seu valor e ocorrencia calculado utilizando o mesmo metodo encontrado na sessão 3.2.1 subsessão \textbf{Calculo de valores HSV}, estes valores são armazenados em memoria de execução e somente mostrados ao usuario quando requisitados. 
+  	O primeiro passo para ser feita a calibração manual é a seleção de Objeto. Com o auxilio da função setMouseCallback, disponivel na biblioteca \textbf{OpenCV} e já explanada na subsessão 3.2.1, é possivel obter os pontos de uma seleção feita na imagem, seu uso é necessario, já que obtenção de um ou mais objetos com a \textbf{mesma cor} a serem analisados é feita somente com a interação do usuario. Neste seleção existe a possibilidade de escolher somente um objeto ou mais de um objeto da mesma cor em diferentes pontos do campo, a seleção é feita somente um objeto por vez e cada objeto é analisado e seu valor e ocorrencia calculado 
+  	
+  	utilizando o mesmo metodo encontrado na sessão 3.2.1 subsessão \textbf{Calculo de valores HSV}, estes valores são armazenados em memoria de execução e somente mostrados ao usuario quando requisitados. 
   	
   	\subsubsection{2ª Etapa - Plotagem de Valores HSV}	
   	Uma vez que o usuario já selecionou todos os objetos e os mesmos já foram analisados, o processo de calibração encaminha à interface grafica os valores encontrados e está plota três gráficos, um para cada um dos valores HSV.
