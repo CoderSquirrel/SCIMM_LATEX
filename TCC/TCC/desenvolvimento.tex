@@ -85,28 +85,31 @@ Para melhor entendimento da interação entre as classes a figura 3.2 trás o di
 
 
 \subsection{Classes}
-	\begin{description}
+\subsubsection{main}
+ Esta é o que se chama de \textit{ponto de entrada} em programação.\textit{Ponto de entrada} é onde o sistema operacional ira iniciar a execução do sistema desenvolvido. Esta classe possui somente o metodo \textbf{main} e este invoca a classe \textbf{JanelaPrincipal} que apresenta a interfaçe grafica para interação com o usuario, e de acordo com esta interação iniciar o processo de calibração.
+ 
+\subsubsection{JanelaPrincipal}
+É uma classe-objeto que utiliza da implementação de objetos QWidget e suas subclasses disponiveis pelo framework Qt, para a criação de uma interface grafica que faz a interação com o usuario e que seleciona o tipo de calibração a ser iniciada. Todos os metodos presentes nessa clase são para utilização grafica, ex. comportamento de botões, slider, abas, menus de seleção, gráficos, bem como a comunicação com as classes de calibração.	
 
-	\item [main]: Esta é o que se chama de \textit{ponto de entrada} em programação.\textit{Ponto de entrada} é onde o sistema operacional ira iniciar a execução do sistema desenvolvido. Esta classe possui somente o metodo \textbf{main} e este invoca a classe \textbf{janelaprincipal} que apresenta a interfaçe grafica para interação com o usuario, e de acordo com esta interação iniciar o processo de calibração.
-	
-	\item [janelaprincipal]: É uma classe-objeto que utiliza da implementação de objetos QWidget e suas subclasses disponiveis pelo framework Qt, para a criação de uma interface grafica que faz a interação com o usuario e que seleciona o tipo de calibração a ser iniciada. Todos os metodos presentes nessa clase são para utilização grafica, ex. comportamento de botões, slider, abas, menus de seleção, gráficos, bem como a comunicação com as classes de calibração.	
-		
-	\item [calibracao] classe base que contem a definição dos metodos e variaveis que virão a ser usadas por ambas as classes \textbf{manual} e \textbf{automatica}. Seus metodos são:
+\subsubsection{Calibracao}
+É classe base que contem a definição dos metodos e variaveis que virão a ser usadas por ambas as classes \textbf{Manual} e \textbf{Automatica}. Seus metodos são:
 	\begin{description}
-	\item \textit{Iniciar}: Método que inicia ambos os proceessos de calibração, invocando os metodos necessarios antes de se fazer a calibração em si.
-	\item \textit{Calcular}: Método onde cada pixel é analizado e calculadas as ocorrências de valores HSV.
-	\item \textit{Fechar}: Método que finaliza o processo de calibração, fechando todas as janelas.
-	\item \textit{SalvarArquivo}: Método onde é criado o arquivo com intervalo de valores, através da lista de minimos e maximos.
-	\item \textit{DeclararMatrizes}: Método que é invocado quando tem a necessidade de ultilizar novamente as matrizes, estas então precisar ser zeradas.
+	\item Iniciar: Método que inicia ambos os proceessos de calibração, invocando os metodos necessarios antes de se fazer a calibração em si.
+	\item Calcular: Método onde cada pixel é analizado e calculadas as ocorrências de valores HSV.
+	\item Fechar: Método que finaliza o processo de calibração, fechando todas as janelas.
+	\item SalvarArquivo: Método onde é criado o arquivo com intervalo de valores, através da lista de minimos e maximos.
+	\item DeclararMatrizes: Método que é invocado quando tem a necessidade de ultilizar novamente as matrizes, estas então precisar ser zeradas.
 	\end{description}
-	
-	\item [manual] classe que contem os metodos e variaveis oriundos da classe base \textbf{calibracao} e os implementa de acordo com a necessidade da calibração manual, são eles:
+
+
+\subsubsection{Manual}
+ É classe que contem os metodos e variaveis oriundos da classe base \textbf{Calibracao} e os implementa de acordo com a necessidade da calibração manual, são eles:
 		\begin{description}
-		\item \textit{Iniciar}: Método onde a camera é inciada e caso esteja disponivel a rotina de calibraçao é iniciada. Ao ser iniciada a rotina entre em uma sequencia que se repete até que a calibração seja finalizada. Durante a sequencia o sistema recebe a seleção dos objetos e invoca o metodo \textbf{Calcular}. Utilizando a interface grafica o usuario informa ao sistema quando a selecao dos objetos foi finalizada. O passo a seguir é passar para a interface gráfica os valores encontrados e para plotagem do grafico  
+		\item Iniciar: Método onde a camera é inciada e caso esteja disponivel a rotina de calibraçao é iniciada. Ao ser iniciada a rotina entre em uma sequencia que se repete até que a calibração seja finalizada. Durante a sequencia o sistema recebe a seleção dos objetos e invoca o metodo \textbf{Calcular}. Utilizando a interface grafica o usuario informa ao sistema quando a selecao dos objetos foi finalizada. O passo a seguir é passar para a interface gráfica os valores encontrados e para plotagem do grafico  
 		
 		
-		\item \textit{Calcular}: Método onde se analiza o objeto pixel à pixel. Cada pixel é separa em três valores: H, S e V. 
-		
+		\item Calcular: Método onde cada pixel pertencente à um objeto é analisado e seus valores HSV adicionados a lista de ocorrencia. 
+		O algoritmo de contagem de ocorrencia em cada pixel é dado da seguinte maneira:
  
 	        \begin{algorithm}
 	       		 \caption{Contagem dos Valores HSV - Classe manual}
@@ -119,20 +122,95 @@ Para melhor entendimento da interação entre as classes a figura 3.2 trás o di
 		     
 	         \end{algorithmic}
 	        \end{algorithm}
-	        
+	     	\item DeclararMatrizes: Método que é invocado ao final da calibração de cada cor onde as listas de valores HSV seram zeradas para que os valores de uma calibração não influenciem na calibraçã seguinte.
 		\end{description}
-	
-	
-	\item [automatica] classe que contem os metodos, cálculo e variaveis necessarias para a calibração automatica
-			
-	\item [corcalibrada] classe que salva o indice da cor já calibrada e seu intervalo de valores
-	
-	\item [tdestudent] esta é a classe que faz o cálculo probabilistico conhecido com TdeStudent
-	
 
+%	\begin{description}
+%
+%	\item [main]: Esta é o que se chama de \textit{ponto de entrada} em programação.\textit{Ponto de entrada} é onde o sistema operacional ira iniciar a execução do sistema desenvolvido. Esta classe possui somente o metodo \textbf{main} e este invoca a classe \textbf{janelaprincipal} que apresenta a interfaçe grafica para interação com o usuario, e de acordo com esta interação iniciar o processo de calibração.
+%	
+%	\item [janelaprincipal]: É uma classe-objeto que utiliza da implementação de objetos QWidget e suas subclasses disponiveis pelo framework Qt, para a criação de uma interface grafica que faz a interação com o usuario e que seleciona o tipo de calibração a ser iniciada. Todos os metodos presentes nessa clase são para utilização grafica, ex. comportamento de botões, slider, abas, menus de seleção, gráficos, bem como a comunicação com as classes de calibração.	
+%		
+%	\item [calibracao] classe base que contem a definição dos metodos e variaveis que virão a ser usadas por ambas as classes \textbf{manual} e \textbf{automatica}. Seus metodos são:
+%	\begin{description}
+%	\item \textit{Iniciar}: Método que inicia ambos os proceessos de calibração, invocando os metodos necessarios antes de se fazer a calibração em si.
+%	\item \textit{Calcular}: Método onde cada pixel é analizado e calculadas as ocorrências de valores HSV.
+%	\item \textit{Fechar}: Método que finaliza o processo de calibração, fechando todas as janelas.
+%	\item \textit{SalvarArquivo}: Método onde é criado o arquivo com intervalo de valores, através da lista de minimos e maximos.
+%	\item \textit{DeclararMatrizes}: Método que é invocado quando tem a necessidade de ultilizar novamente as matrizes, estas então precisar ser zeradas.
+%	\end{description}
+%	
+%	\item [manual] classe que contem os metodos e variaveis oriundos da classe base \textbf{calibracao} e os implementa de acordo com a necessidade da calibração manual, são eles:
+%		\begin{description}
+%		\item \textit{Iniciar}: Método onde a camera é inciada e caso esteja disponivel a rotina de calibraçao é iniciada. Ao ser iniciada a rotina entre em uma sequencia que se repete até que a calibração seja finalizada. Durante a sequencia o sistema recebe a seleção dos objetos e invoca o metodo \textbf{Calcular}. Utilizando a interface grafica o usuario informa ao sistema quando a selecao dos objetos foi finalizada. O passo a seguir é passar para a interface gráfica os valores encontrados e para plotagem do grafico  
+%		
+%		
+%		\item \textit{Calcular}: Método onde se analiza o objeto pixel à pixel. Cada pixel é separa em três valores: H, S e V. 
+%		
+% 
+%	        \begin{algorithm}
+%	       		 \caption{Contagem dos Valores HSV - Classe manual}
+%		        \begin{algorithmic}
+%		     		\ForAll{pixel do objeto} 
+%		   				 \State OcorrenciasDeH[pixel.h]++ 
+%		    			 \State	OcorrenciasDeS[pixel.s]++ 
+%		     	  		 \State	OcorrenciasDeV[pixel.v]++
+%		     	   \EndFor
+%		     
+%	         \end{algorithmic}
+%	        \end{algorithm}
+%	        
+%		\end{description}
+%	
+%	
+%	
+%			
+%	\item [corcalibrada] classe que salva o indice da cor já calibrada e seu intervalo de valores
+%	
+%	\item [tdestudent] esta é a classe que faz o cálculo probabilistico conhecido com TdeStudent
+%	
+%
+%	\end{description}
+\subsubsection{Automatica}
+ É classe que contem os metodos e variaveis proprios além dos oriundos da classe base \textbf{Calibracao} e os implementa de acordo com a necessidade da calibração manual:
+ 
+Os métodos da propria classe são:
+	\begin{description}
+	\item EliminarExcessos: É o metodo que usa a classe \textbf{TdeStudant} para, a partir da lista de todos os objetos encontrados, obter os limites de tamanho minimo e maximo de um objetos e diminuir a quantidade de objetos a serem alanisados por exclusão de tamanho dos objetos que não estão nos limites.
+	\item AplicarThresh: Método onde serão aplicados filtros de diminuição de ruido, dectadas as bordas existentes na imagem, detectados os objetos a partis das bordas contidas na imagem, aumento da precisão dos objetos e diminuiçã do tamanho do objeto de acordo com a porcentagem de borda a ser eliminada. 
+	\item ObterPorcentagem: Método simples para devolver a porcentagem de um valor, ao ser informado o valor  e a porcentagem escolhida.
+	\item ConfigurarCamera: Método onde a imagem de exibição é ajustando utilizando configurações de brilho, contraste e tamanho de tela. 
+	\item Calibrar: Método onde é exibido a imagem da camera e quando estiver de acordo com a exigencia do usuario o mesmo inicial a calibração. So apos ser iniciada a calibração o método \textbf{AplicarThresh} é invocado, apos os objetos de cores serem identificados, é retornada à tela do usuario a lista do objetos.
 	\end{description}
 
-	
+
+
+Os métodos oriundos da classe base são: 
+ 
+		\begin{description}
+		\item Iniciar: Método onde é o ID da camera é fixado dentro da classe, também é o método que faz a gerencia dos metodos inciais. Incovando primeiro o metodo de configuração de imagem, durante o método \textbf{ConfigurarCamera} para se configurar a imagem, que sera analizada durante a calibração, onde é feita a tentativa de acesso a camera. Caso esta esteja disponivel a configuração finaliza e somente após a mesma finalizada se inicia a rotina de calibração, caso a camera esteja indiponivel a calibração fica impedida de iniciar.
+		
+		
+		\item Calcular: Método onde cada pixel pertencente à cada um dos objetos encontrados é analisado e seus valores HSV adicionados a lista de ocorrencia. 
+		O algoritmo de contagem de ocorrencia em cada pixel é dado da seguinte maneira:
+ 
+	        
+	        \begin{algorithm}
+	       		 \caption{Contagem dos Valores HSV}
+		        \begin{algorithmic}
+		     	
+		     	\ForAll{objeto encontrado} 
+		     		\ForAll{pixel do objeto} 
+		   				 \State OcorrenciasDeH[pixel.h]++ 
+		    			 \State	OcorrenciasDeS[pixel.s]++ 
+		     	  		 \State	OcorrenciasDeV[pixel.v]++
+		     	   \EndFor
+		     	\EndFor
+		     		
+		        \end{algorithmic}
+	        
+	        \end{algorithm}
+		\end{description}	
 
 	\section{O Sistema}
 
@@ -212,23 +290,24 @@ Uma vez obtidos os contornos é necessarios que se faça a eliminação de verti
 \centering \textit{cvtColor(frame, HSV, CV\_RGB2HSV);}
 \end{center}
 
-Apos a conversão é necessario, então, ser feita uma analise dos objetos encontrados. Para cada objeto serão somadas as ocorrencias de cada um dos valores, HSV, e salvos separadamente em um vetor para cada, H, S e V com 256 posiçoes, uma vez que se sabe que os valores de um pixel varial de 0 a 255. As ocorrençias são salvas se baseando no valor HSV do pixel. Para isso o pixel é separado em valores H, S e V este então tera seu valor correspondente a posição no vetor apropiado, por exemplo, se o valor de H em um determinado pixel for de 87, a posição de numero 87 no vetor ganhara uma ocorrencia a mais. No codigo, fica da seguinte maneira:
-	        
-	        \begin{algorithm}
-	       		 \caption{Contagem dos Valores HSV}
-		        \begin{algorithmic}
-		     	
-		     	\ForAll{objeto encontrado} 
-		     		\ForAll{pixel do objeto} 
-		   				 \State OcorrenciasDeH[pixel.h]++ 
-		    			 \State	OcorrenciasDeS[pixel.s]++ 
-		     	  		 \State	OcorrenciasDeV[pixel.v]++
-		     	   \EndFor
-		     	\EndFor
-		     		
-		        \end{algorithmic}
-	        
-	        \end{algorithm}
+Apos a conversão é necessario, então, ser feita uma analise dos objetos encontrados. Para cada objeto serão somadas as ocorrencias de cada um dos valores, HSV, e salvos separadamente em um vetor para cada, H, S e V com 256 posiçoes, uma vez que se sabe que os valores de um pixel varial de 0 a 255. As ocorrençias são salvas se baseando no valor HSV do pixel. Para isso o pixel é separado em valores H, S e V este então tera seu valor correspondente a posição no vetor apropiado, por exemplo, se o valor de H em um determinado pixel for de 87, a posição de numero 87 no vetor ganhara uma ocorrencia a mais.\\
+% No codigo, fica da seguinte maneira:
+%	        
+%	        \begin{algorithm}
+%	       		 \caption{Contagem dos Valores HSV}
+%		        \begin{algorithmic}
+%		     	
+%		     	\ForAll{objeto encontrado} 
+%		     		\ForAll{pixel do objeto} 
+%		   				 \State OcorrenciasDeH[pixel.h]++ 
+%		    			 \State	OcorrenciasDeS[pixel.s]++ 
+%		     	  		 \State	OcorrenciasDeV[pixel.v]++
+%		     	   \EndFor
+%		     	\EndFor
+%		     		
+%		        \end{algorithmic}
+%	        
+%	        \end{algorithm}
 	        
         
 Uma vez terminada a analise dos pixeis do objeto o sistema procupa o valor mínimo e máximo, ou seja a primeira e ultima ocorrencia. Esses valores são encontrados procurando o primeiro valor de pixel que não esta zerado e o ultimo valor que não esta zerado. Isto é feito para eliminar que durante a analise o numero de valores a serem comparados ao valor real do pixel, da imagem final, seja menor. Para exemplificar a Figura 3.6 tras o gráfico dos valores de H da calibração de um certo objeto antes de ser feia a eliminação dos valores. Se fosse analisado esses valores, não eliminando os valores zerados, o sistema buscaria no valor de H do pixel desde o valor 1 ao 126 sem a necessidade, pois se não houve ocorrencia desses valores no objeto de referencia, o que foi analisado, então esses valores não fazem parte da cor desejada.
