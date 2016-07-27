@@ -67,29 +67,31 @@ mostrou-se bastante flexível, independente da origem da imagem utilizada\cite{V
 \section{Cores} \label{Sec:Cores}
 
 
-O olho humano é capaz de identificar cores mesmo com as mais diferentes interferências, luminosidade, tonalidade, intensidade, entre outras ações de agentes externos graças aos \textbf{cones} e \textbf{bastonetes}. Os bastonetes são os responsaveis por distinguirem tons de cinza e pela visão periferica e tem como caracteristica serem sensiveis a baixo nivel de luminosidade\cite{Azevedo:2003}, os cones, por sua vez, são sensiveis ao alto nivel de iluminação e responsaveis pela percepçao de cores\cite{Azevedo:2003}. A informação obtida por ambos é assimilada pelo nosso  cérebro, ligando a cor a sua aparência, já para uma máquina cores são números, códigos, cada cor contém um código especifico e cada uma de suas variâncias e alterações também. Para o nosso cérebro é muito fácil entender, exemplo, que o verde, verde lima, verde escuro são a mesma cor, apenas com tonalidades diferentes, já para o computador estas são: (0,255,0),(50,205,50),(0,128,0), no padrão de cor RGB que considera uma luz visível. Mas se for aplicado luminosidade nessas cores, por exemplo, elas ainda se tornam outras diferentes cores, um código diferente para cada luminosidade possível. Para conseguir cobrir todas essas alterações nas cores foram definidos em 1921 começaram então pela Comissão Internacional de Iluminação (CEI) a serem definidos espaços e modelos de cores\cite{Souto:2003}.
+O olho humano é capaz de identificar cores mesmo com as mais diferentes interferências, luminosidade, tonalidade, intensidade, entre outras ações de agentes externos graças aos \textbf{cones} e \textbf{bastonetes}. Os bastonetes são os responsaveis por distinguirem tons de cinza e pela visão periferica e tem como caracteristica serem sensiveis a baixo nivel de luminosidade\cite{Azevedo:2003}, os cones, por sua vez, são sensiveis ao alto nivel de iluminação e responsaveis pela percepçao de cores\cite{Azevedo:2003}. Segundo a teoria tricomática de Thomas Young e mais tarde estudada por Hermann von Helmholtz\cite{Azevedo:2003}, a retina humana é formada por três tipos de fotopigmentos que seriam os três receptores de cor, ou seja respondiam ao comprimento de onda de apensa três cores: Vermelho, Verde e Azul. A informação obtida atraves do sistema visual humano é assimilada pelo nosso cérebro e ligando a cor a sua aparência levando em consideração o aprendizado que obtivemos sobre a mesma, já para uma máquina cores são números, códigos, cada cor contém um código especifico e cada uma de suas variâncias também. Para o nosso cérebro é muito fácil entender, exemplo, que o verde, verde lima, verde escuro são todos verde, apenas com tonalidades diferentes, já para o computador estas são: (0,255,0),(50,205,50),(0,128,0), no padrão de cor RGB. Mas se for aplicado luminosidade nessas cores, por exemplo, elas ainda se tornam outras diferentes cores, um código diferente para cada luminosidade possível.
 
-\subsection{Espaços de Cores}
-Segundo Foley et. al citado por Souto\cite{Souto:2003} espaço de cores é um sistema tridimensional de
-coordenadas, onde cada eixo refere-se a uma cor primária. A quantidade de cor primária
+
+
+
+Para poder explicar as propriedades e comportamentos das cores em determinadas circunstâncias, surgiram os sistemas de cores. Devido a complexidade existente em explicar todos os aspectos relacionados às cores são utilizados diversos sistemas para descrever as mais diferentes caracteristicas das cores e sua percepção pelo ser humano\cite{Azevedo:2003}.  Dentro os sistemas mais conhecidos, estão o RGB, HSV E HSL, sistemas quais falaremos neste trabalho.
+
+Segundo Azevedo\cite{Azevedo:2003} o universo de cores que podem ser reproduzidas por um sistem é chamado de \textbf{Espaço de Cores}. De acordo com Foley et. al citado por Souto\cite{Souto:2003} espaço de cores é um sistema tridimensional de coordenadas, onde cada eixo refere-se a uma cor primária. A quantidade de cor primária
 necessária para reproduzir uma determinada cor, é atribuída a um valor sobre o eixo
 correspondente. O espaço de cores pode ser entendido como a quantidade de detalhamento, tonalidades de uma cor, dentro do espectro de cores de um determinado modelo de cor. 
-Quando fez sua primeira experiência com a decomposição da luz em um prisma para obter cores Newton percebeu que não havia a cor branca. Ele tentou então misturar as sete cores que obteve para gerar a branca, sem sucesso. Parar gerar a cor branca é necessário a soma das três cores primarias azul, verde e vermelho. Apos anos de estudo entendeu-se que existe duas formas de se obter cores: através da emissão ou reflexão de luz, espaços RGB e CMY respectivamente, \figurename{ 2.2}. 
-
-\subsubsection{RGB}
-O espaço de cores que emitem luz é conhecido como RGB que é baseado na teoria das cores primarias vermelho, verde e azul, em inglês Red, Green, Blue, para simular a tricromática visão humana, onde toda cor é composta pela soma das três cores.
-\subsubsection{CMY}
-O espaço de cores que refletem luz é conhecido como CMY que são as cores ciano, magenta e amarelo, em inglês Cyan, Magenta e Yellow. Neste espaço a cor é obtida pela subtração das cores. Existe uma variação ao CMY chamada de CMYK onde é acrescentada a cor preta e foi criado 	como uma opção mais barata, pois não necessita de pigmentos puros\cite{Rocha:2010}.
-\newline
-\begin{figure}[!h]
+Quando fez sua primeira experiência com a decomposição da luz em um prisma para obter cores Newton percebeu que não havia a cor branca. Ele tentou então misturar as sete cores que obteve para gerar a branca, sem sucesso. 
+ Para conseguir cobrir todas as alterações e caracteristicas as cores em 1921 a Comissão Internacional de Iluminação (CEI)\cite{Souto:2003} definiu três primarias(X, Y e Z) que podem ser combinadas para formarem todas as cores e entendeu-se que existe duas formas de se obter cores: através da emissão ou reflexão de luz, espaços RGB e CMY respectivamente, \figurename{ 2.2}. Assim entendeu-se então porque em seu experimento Newton não obteve sucesso para gerar a cor branca, pois parar gerar a cor branca é necessário a soma das três cores primarias azul, verde e vermelho, uma vez que seu experimento utilizava a reflexão e não emissão de cores.
+ 
+ \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{espacos.pdf}
 	\caption{Exemplo dos espaços de cores RGB E CMY.}
-	\label{Espaco de Cores}
+	\label{EspacodeCores}
 \end{figure}
-\subsection{Modelo de Cores}
+
+Para utilização pratica de sistemas e espaços de cores e descreverem as cores foram criados modelos de cores, neste trabalho falaremos sobre o RGB e HSV, pois são os modelos usados durante o desenvolvimento.
 Modelo de cores são modelos matemáticos utilizados para classificação das cores de acordo com sua tonalidade, saturação, luminosidade ou crominância na tentativa de conseguir cobrir o maior número de cores possíveis e assim simulando a visão. A representação da cor é definida por um único ponto em um modelo tridimensional. 
-\subsubsection{RGB}
+Os modelo de cores tem função definir as cores nos programas gráficos de computadores de forma que combine com a 
+percepção das cores pelo sistema visual humano e utiliza três eixos similares para definirem a cor\cite{Leao:2005}.
+
 O modelo de cores RGB pode ser considerado mais básico dos modelos de cores. Seu nome possui a mesma definição do espaço de cores RGB. Ele não utiliza de nenhum atributo como luminosidade ou tonalidade, por exemplo, para a definição da cor apenas a adição das cores primarias, azul, verde e vermelho. É este também o padrão mais usado e conhecido. Os valores de R,G e B variam de 0 à 255.
 \begin{figure}[!h]
 	\centering
@@ -98,30 +100,16 @@ O modelo de cores RGB pode ser considerado mais básico dos modelos de cores. Se
 	\caption{Exemplo do Modelo de Cor RGB.	 Horvath\cite{ImagensHSLHSVRGB}  }
 	\label{ModeloRGB}
 \end{figure}
-\subsubsection{HSL, HSB/HSV}
-Os modelo de cores tem função definir as cores nos programas gráficos de computadores de forma que combine com a 
-percepção das cores pelo sistema visual humano e utiliza três eixos similares para definirem a cor\cite{Leao:2005}.
-O modelo HSL define tonalidade (hue) que é a cor em si, variando de 0 a 360º, saturação (saturnation) que define o grau de pureza da cor, obtido pela mistura da tonalidade com a cor cinza,variando de 0 a 1, e luminosidade (lightness) é o brilho de um determinado objeto tendo o branco absoluto com referência. A luminosidade varia de escuro a claro tendo como limites definidos o preto e o branco\cite{Leao:2005}, variando também de 0 a 1.
-O modelo HSV/HSB define tonalidade (hue) que é a cor em si, variando de 0 a 360º, saturação(saturnation) que define o grau de pureza da cor, variando de 0 a 1, obtido pela mistura da tonalidade com a cor branca e brilho (value/brightness) que tenta fazer referência à percepção humana\cite{Leao:2005} que é a intensidade da cor, variando também de 0 a 1.
+
+O modelo HSV define tonalidade (hue) que é a cor em si, variando de 0 a 360º, a saturação(saturnation) que define o grau de pureza da cor, variando de 0 a 1, obtido pela mistura da tonalidade com a cor branca e brilho (value) que tenta fazer referência à percepção humana\cite{Leao:2005} que é a intensidade da cor, escala de tons de cinza\cite{Azevedo:2003}, variando também de 0 a 1.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.48\textwidth]{hsv.pdf}
-	\includegraphics[width=0.48\textwidth]{HSL.pdf} \\
-	(a) \hspace{10cm} (b)
-	\caption{Exemplo do Modelo de Cor HSV(a) e HSL(b). Horvath\cite{ImagensHSLHSVRGB}}
+	
+	\caption{Exemplo do Modelo de Cor HSV, Horvath\cite{ImagensHSLHSVRGB}}
 	\label{ModeloHSV}
 \end{figure} 
-\subsubsection{HPG} 
-
-O modelo de cores HPG foi proposto em 2007 pela Universidade Federal do Rio Grande do Norte estes partiram do princípio de que as cores podem ser definidas com uma mistura de cor pura e tom de cinza\cite{Martins:2007} e este é apropriado para aplicações onde seja necessário distinguir entre regiões de cor e regiões de cinza\cite{Mendes:2008}. O modelo define tonalidade (hue), pureza (purity) e cinzeamento (grayness). Neste modelo um pixel e definido como sendo composto por uma componente de cor pura e por uma componente de tom de cinza puro, ponderados por um fator de pureza\cite{Mendes:2008}.
-O modelo de cores HPG se baseia nos valores obtidos de cada pixel no modelo RGB e então é feito um cálculo de conversão.
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.48\textwidth]{hpg.pdf}
-	\caption{Exemplo do Modelo de Cor HPG.  Mendes \cite{Mendes:2008}}
-	\label{ModeloHPG}
-\end{figure} 
-\newpage
+O sistema HSV ultiliza definiçoes de cor mais intuitivas que o conjunto de cores primarias, por isso são mais adequados quando se necessita obter varias tonalidades.
 
 \section{Probabilidade e Estatística}
 
