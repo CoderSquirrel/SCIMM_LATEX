@@ -77,20 +77,30 @@ O olho humano é capaz de identificar cores mesmo com as mais diferentes interfe
 
 
 
-Para poder explicar as propriedades e comportamentos das cores em determinadas circunstâncias, surgiram os sistemas de cores. Devido a complexidade existente em explicar todos os aspectos relacionados às cores são utilizados diversos sistemas para descrever as mais diferentes caracteristicas das cores e sua percepção pelo ser humano\cite{Azevedo:2003}.  Dentro os sistemas mais conhecidos, estão o RGB, HSV E HSL, sistemas quais falaremos neste trabalho.
+Para poder explicar as propriedades e comportamentos das cores em determinadas circunstâncias, surgiram os \textbf{Sistemas de cores}. Devido a complexidade existente em explicar todos os aspectos relacionados às cores são utilizados diversos sistemas para descrever as mais diferentes caracteristicas das cores e sua percepção pelo ser humano\cite{Azevedo:2003}.  Dentro os sistemas mais conhecidos, estão o RGB, HSV E HSL, sistemas quais falaremos neste trabalho.
 
 Segundo Azevedo\cite{Azevedo:2003} o universo de cores que podem ser reproduzidas por um sistem é chamado de \textbf{Espaço de Cores}. De acordo com Foley et. al citado por Souto\cite{Souto:2003} espaço de cores é um sistema tridimensional de coordenadas, onde cada eixo refere-se a uma cor primária. A quantidade de cor primária
 necessária para reproduzir uma determinada cor, é atribuída a um valor sobre o eixo
-correspondente. O espaço de cores pode ser entendido como a quantidade de detalhamento, tonalidades de uma cor, dentro do espectro de cores de um determinado modelo de cor. 
-Quando fez sua primeira experiência com a decomposição da luz em um prisma para obter cores Newton percebeu que não havia a cor branca. Ele tentou então misturar as sete cores que obteve para gerar a branca, sem sucesso. 
- Para conseguir cobrir todas as alterações e caracteristicas as cores em 1921 a Comissão Internacional de Iluminação (CEI)\cite{Souto:2003} definiu três primarias(X, Y e Z) que podem ser combinadas para formarem todas as cores e entendeu-se que existe duas formas de se obter cores: através da emissão ou reflexão de luz, espaços RGB e CMY respectivamente, \figurename{ 2.2}. Assim entendeu-se então porque em seu experimento Newton não obteve sucesso para gerar a cor branca, pois parar gerar a cor branca é necessário a soma das três cores primarias azul, verde e vermelho, uma vez que seu experimento utilizava a reflexão e não emissão de cores.
- 
+correspondente. O espaço de cores pode ser entendido como a quantidade de detalhamento, tonalidades de uma cor, dentro do espectro de cores de um determinado modelo de cor.
+
  \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{espacos.pdf}
+	\includegraphics[width=0.25\textwidth]{graficocie.pdf}
+	\caption{Universo de cores estabelecido pelo CIE.}
+	\label{EspacodeCores}
+\end{figure}
+
+
+Quando fez sua primeira experiência com a decomposição da luz em um prisma para obter cores Newton percebeu que não havia a cor branca. Ele tentou então misturar as sete cores que obteve para gerar a branca, sem sucesso. 
+ Para conseguir cobrir todas as alterações e caracteristicas as cores em 1921 a Comissão Internacional de Iluminação (CEI)\cite{Souto:2003} definiu três primarias(X, Y e Z) que podem ser combinadas para formarem todas as cores e entendeu-se que existe duas formas de se obter cores: através da emissão ou reflexão de luz, espaços RGB e CMY respectivamente, \figurename{ 2.2}. Assim entendeu-se então porque em seu experimento Newton não obteve sucesso para gerar a cor branca, pois parar gerar a cor branca é necessário a soma das três cores primarias azul, verde e vermelho, uma vez que seu experimento utilizava a reflexão e não emissão de cores.
+ \begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{espacos.pdf}
 	\caption{Exemplo dos espaços de cores RGB E CMY.}
 	\label{EspacodeCores}
 \end{figure}
+
+
 
 Para utilização pratica de sistemas e espaços de cores e descreverem as cores foram criados modelos de cores, neste trabalho falaremos sobre o RGB e HSV, pois são os modelos usados durante o desenvolvimento.
 Modelo de cores são modelos matemáticos utilizados para classificação das cores de acordo com sua tonalidade, saturação, luminosidade ou crominância na tentativa de conseguir cobrir o maior número de cores possíveis e assim simulando a visão. A representação da cor é definida por um único ponto em um modelo tridimensional. 
@@ -98,22 +108,30 @@ Os modelo de cores tem função definir as cores nos programas gráficos de comp
 percepção das cores pelo sistema visual humano e utiliza três eixos similares para definirem a cor\cite{Leao:2005}.
 
 O modelo de cores RGB pode ser considerado mais básico dos modelos de cores. Seu nome possui a mesma definição do espaço de cores RGB. Ele não utiliza de nenhum atributo como luminosidade ou tonalidade, por exemplo, para a definição da cor apenas a adição das cores primarias, azul, verde e vermelho. É este também o padrão mais usado e conhecido. Os valores de R,G e B variam de 0 à 255.
+
+
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{rgb.pdf}
+	\includegraphics[width=0.4\textwidth]{rgb.pdf}
 	
-	\caption{Exemplo do Modelo de Cor RGB.	 Horvath\cite{ImagensHSLHSVRGB}  }
+\caption{Exemplo do Modelo de Cor RGB.	 Horvath\cite{ImagensHSLHSVRGB}  }
 	\label{ModeloRGB}
 \end{figure}
 
+
+
 O modelo HSV define tonalidade (hue) que é a cor em si, variando de 0 a 360º, a saturação(saturnation) que define o grau de pureza da cor, variando de 0 a 1, obtido pela mistura da tonalidade com a cor branca e brilho (value) que tenta fazer referência à percepção humana\cite{Leao:2005} que é a intensidade da cor, escala de tons de cinza\cite{Azevedo:2003}, variando também de 0 a 1.
+
+
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.48\textwidth]{hsv.pdf}
+	\includegraphics[width=0.4\textwidth]{hsv.pdf}
 	
 	\caption{Exemplo do Modelo de Cor HSV, Horvath\cite{ImagensHSLHSVRGB}}
 	\label{ModeloHSV}
 \end{figure} 
+
+
 O sistema HSV ultiliza definiçoes de cor mais intuitivas que o conjunto de cores primarias, por isso são mais adequados quando se necessita obter varias tonalidades.
 
 \section{Probabilidade e Estatística}
