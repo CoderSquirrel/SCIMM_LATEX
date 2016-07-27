@@ -7,16 +7,6 @@ A level-1 auxiliary file: fundamentacao.aux
 A level-1 auxiliary file: desenvolvimento.aux
 A level-1 auxiliary file: resultados.aux
 A level-1 auxiliary file: conclusao.aux
-Already encountered file resultados.aux
----line 46 of file tcc.aux
- : \@input{resultados.aux
- :                       }
-I'm skipping whatever remains of this command
-Already encountered file conclusao.aux
----line 47 of file tcc.aux
- : \@input{conclusao.aux
- :                      }
-I'm skipping whatever remains of this command
 The style file: abntex2-num.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -29,50 +19,22 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib.bib
-You're missing a field name---line 44 of file bibliografia.bib.bib
- :    
- :    ,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--entry type for "ImagensHSLHSVRGB" isn't style-file defined
---line 171 of file bibliografia.bib.bib
-I was expecting a `,' or a `}'---line 173 of file bibliografia.bib.bib
- :  
- :  Title = {Imagens HSV, HSL e RGB},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 198 of file bibliografia.bib.bib
- :   
- :   year={2014}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+--line 169 of file bibliografia.bib.bib
 Warning--entry type for "UFRN" isn't style-file defined
---line 211 of file bibliografia.bib.bib
+--line 209 of file bibliografia.bib.bib
 Warning--entry type for "TabelaUFF" isn't style-file defined
---line 229 of file bibliografia.bib.bib
-You're missing a field name---line 275 of file bibliografia.bib.bib
- :     
- :     ,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 283 of file bibliografia.bib.bib
- :    
- :    Title = {Imagens HSV, HSL e RGB},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+--line 227 of file bibliografia.bib.bib
 Warning--entry type for "QCustomPlot" isn't style-file defined
---line 290 of file bibliografia.bib.bib
+--line 286 of file bibliografia.bib.bib
 Warning--entry type for "OpenCV" isn't style-file defined
---line 301 of file bibliografia.bib.bib
+--line 297 of file bibliografia.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio em Rosa:2015
-Warning--campo title vazio em VSSVision
 Warning--campo year vazio ou faltando em VSSVision
 Warning--campo year vazio ou faltando em ImagensHSLHSVRGB
-Warning--campo year vazio em Nascimento:2007
 Warning--campo year vazio ou faltando em TabelaUFF
 Warning--campo year vazio ou faltando em UFRN
 Warning--campo year vazio ou faltando em QCustomPlot
@@ -82,45 +44,45 @@ Warning--campo year vazio ou faltando em OpenCV
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 31 entries,
+You've used 27 entries,
             6706 wiz_defined-function locations,
-            1408 strings with 15193 characters,
-and the built_in function-call counts, 29412 in all, are:
-= -- 2935
-> -- 678
-< -- 429
-+ -- 705
-- -- 206
-* -- 1903
-:= -- 3739
-add.period$ -- 120
-call.type$ -- 31
-change.case$ -- 298
-chr.to.int$ -- 55
-cite$ -- 39
-duplicate$ -- 2287
-empty$ -- 1750
-format.name$ -- 1085
-if$ -- 6445
+            1386 strings with 14546 characters,
+and the built_in function-call counts, 29032 in all, are:
+= -- 3125
+> -- 593
+< -- 550
++ -- 800
+- -- 180
+* -- 1836
+:= -- 3652
+add.period$ -- 107
+call.type$ -- 27
+change.case$ -- 260
+chr.to.int$ -- 45
+cite$ -- 32
+duplicate$ -- 2507
+empty$ -- 1507
+format.name$ -- 948
+if$ -- 6147
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 530
-newline$ -- 158
-num.names$ -- 124
-pop$ -- 749
+missing$ -- 461
+newline$ -- 141
+num.names$ -- 108
+pop$ -- 659
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 100
 quote$ -- 0
-skip$ -- 2405
+skip$ -- 2613
 stack$ -- 1
-substring$ -- 1094
-swap$ -- 888
-text.length$ -- 28
+substring$ -- 1138
+swap$ -- 935
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 9
-while$ -- 175
+type$ -- 15
+warning$ -- 6
+while$ -- 155
 width$ -- 0
-write$ -- 410
-(There were 7 error messages)
+write$ -- 357
+(There were 11 warnings)

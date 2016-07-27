@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  26 JUL 2016 22:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  26 JUL 2016 23:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,7 +940,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 62.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
- <figuras/calibra.pdf, id=268, 792.9625pt x 489.83pt>
+ <figuras/calibra.pdf, id=272, 792.9625pt x 489.83pt>
 File: figuras/calibra.pdf Graphic file (type pdf)
 
 <use figuras/calibra.pdf>
@@ -949,7 +949,7 @@ Package pdftex.def Info: figuras/calibra.pdf used on input line 69.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 74.
 
-<figuras/vssvision.pdf, id=272, 457.71pt x 363.3575pt>
+<figuras/vssvision.pdf, id=276, 457.71pt x 363.3575pt>
 File: figuras/vssvision.pdf Graphic file (type pdf)
 
 <use figuras/vssvision.pdf>
@@ -962,14 +962,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
 [7 <./figuras/calibra.pdf>]
-<figuras/calibration.pdf, id=292, 1590.94376pt x 498.86375pt>
+<figuras/calibration.pdf, id=296, 1590.94376pt x 498.86375pt>
 File: figuras/calibration.pdf Graphic file (type pdf)
 
 <use figuras/calibration.pdf>
 Package pdftex.def Info: figuras/calibration.pdf used on input line 92.
 (pdftex.def)             Requested size: 375.57782pt x 117.76584pt.
 
-<figuras/vsssnovonormal.png, id=298, 1123.19624pt x 758.835pt>
+<figuras/vsssnovonormal.png, id=302, 1123.19624pt x 758.835pt>
 File: figuras/vsssnovonormal.png Graphic file (type png)
 
 <use figuras/vsssnovonormal.png>
@@ -979,7 +979,7 @@ Package pdftex.def Info: figuras/vsssnovonormal.png used on input line 101.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/vsssnovo.png, id=303, 1122.1925pt x 756.8275pt>
+<figuras/vsssnovo.png, id=307, 1122.1925pt x 756.8275pt>
 File: figuras/vsssnovo.png Graphic file (type png)
 
 <use figuras/vsssnovo.png>
@@ -1014,98 +1014,112 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 22.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 43.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
 [10
 
 
 
-]
+] <figuras/canny.pdf, id=362, 569.12625pt x 262.9825pt>
+File: figuras/canny.pdf Graphic file (type pdf)
+
+<use figuras/canny.pdf>
+Package pdftex.def Info: figuras/canny.pdf used on input line 61.
+(pdftex.def)             Requested size: 375.57782pt x 173.55292pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 43.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
- [11]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 76.
- [12] <figuras/espacos.pdf, id=385, 2131.5207pt x 1059.67023pt>
+ [11 <./figuras/canny.pdf>]
+<figuras/espacos.pdf, id=390, 2131.5207pt x 1059.67023pt>
 File: figuras/espacos.pdf Graphic file (type pdf)
 
 <use figuras/espacos.pdf>
-Package pdftex.def Info: figuras/espacos.pdf used on input line 85.
+Package pdftex.def Info: figuras/espacos.pdf used on input line 90.
 (pdftex.def)             Requested size: 375.57782pt x 186.70627pt.
- <figuras/rgb.pdf, id=387, 803.0pt x 602.25pt>
-File: figuras/rgb.pdf Graphic file (type pdf)
 
-<use figuras/rgb.pdf>
-Package pdftex.def Info: figuras/rgb.pdf used on input line 98.
-(pdftex.def)             Requested size: 234.73524pt x 176.05403pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 103.
- [13 <./figuras/espacos.pdf>]
-<figuras/hsv.pdf, id=408, 1606.0pt x 1204.5pt>
+(babel)             in language  on input line 99.
+[12] <figuras/rgb.pdf, id=398, 803.0pt x 602.25pt>
+File: figuras/rgb.pdf Graphic file (type pdf)
+ <use figuras/rgb.pdf>
+Package pdftex.def Info: figuras/rgb.pdf used on input line 103.
+(pdftex.def)             Requested size: 234.73524pt x 176.05403pt.
+
+<figuras/hsv.pdf, id=403, 1606.0pt x 1204.5pt>
 File: figuras/hsv.pdf Graphic file (type pdf)
  <use figuras/hsv.pdf>
-Package pdftex.def Info: figuras/hsv.pdf used on input line 107.
+Package pdftex.def Info: figuras/hsv.pdf used on input line 112.
 (pdftex.def)             Requested size: 225.34383pt x 168.99643pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 114.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
- [14 <./figuras/rgb.pdf> <./figuras/hsv.pdf
 
-pdfTeX warning: pdflatex (file ./figuras/hsv.pdf): PDF inclusion: multiple pdfs
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 123.
+[13 <./figuras/espacos.pdf> <./figuras/rgb.pdf
+
+pdfTeX warning: pdflatex (file ./figuras/rgb.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
->] <figuras/distt.pdf, id=434, 177.0615pt x 101.17801pt>
+>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 123.
+ <figuras/distt.pdf, id=432, 177.0615pt x 101.17801pt>
 File: figuras/distt.pdf Graphic file (type pdf)
 
 <use figuras/distt.pdf>
-Package pdftex.def Info: figuras/distt.pdf used on input line 130.
+Package pdftex.def Info: figuras/distt.pdf used on input line 135.
 (pdftex.def)             Requested size: 177.06104pt x 101.17775pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
- [15 <./figuras/distt.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 140.
+ [14 <./figuras/hsv.pdf> <./figuras/distt.pdf
+
+pdfTeX warning: pdflatex (file ./figuras/distt.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 161.
- [16]
+(babel)             in language  on input line 160.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 166.
+ [15]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 178.
+(babel)             in language  on input line 180.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 183.
 File: figuras/calibra.pdf Graphic file (type pdf)
-
-<use figuras/calibra.pdf>
-Package pdftex.def Info: figuras/calibra.pdf used on input line 183.
+ <use figuras/calibra.pdf>
+Package pdftex.def Info: figuras/calibra.pdf used on input line 188.
 (pdftex.def)             Requested size: 281.68515pt x 174.00671pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 188.
+(babel)             in language  on input line 193.
 File: figuras/vssvision.pdf Graphic file (type pdf)
 <use figuras/vssvision.pdf>
-Package pdftex.def Info: figuras/vssvision.pdf used on input line 194.
+Package pdftex.def Info: figuras/vssvision.pdf used on input line 199.
 (pdftex.def)             Requested size: 187.78532pt x 149.07178pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 203.
-[17]
+(babel)             in language  on input line 208.
+[16]
 File: figuras/calibration.pdf Graphic file (type pdf)
  <use figuras/calibration.pdf>
-Package pdftex.def Info: figuras/calibration.pdf used on input line 206.
+Package pdftex.def Info: figuras/calibration.pdf used on input line 211.
 (pdftex.def)             Requested size: 375.57782pt x 117.76584pt.
 
 
@@ -1113,23 +1127,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: figuras/vsssnovonormal.png Graphic file (type png)
 <use figuras/vsssnovonormal.png>
-Package pdftex.def Info: figuras/vsssnovonormal.png used on input line 215.
+Package pdftex.def Info: figuras/vsssnovonormal.png used on input line 220.
 (pdftex.def)             Requested size: 234.73524pt x 158.58426pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 221.
-[18]
+(babel)             in language  on input line 226.
+[17]
 File: figuras/vsssnovo.png Graphic file (type png)
  <use figuras/vsssnovo.png>
-Package pdftex.def Info: figuras/vsssnovo.png used on input line 224.
+Package pdftex.def Info: figuras/vsssnovo.png used on input line 229.
 (pdftex.def)             Requested size: 234.73524pt x 158.30331pt.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 103.
- [19]
+ [18]
 \openout2 = `desenvolvimento.aux'.
 
  (./desenvolvimento.tex
@@ -1145,7 +1159,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
-[20
+[19
 
 
 
@@ -1154,14 +1168,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 66.
- <figuras/organizacaoProjeto.pdf, id=513, 280.04625pt x 416.55624pt>
+ <figuras/organizacaoProjeto.pdf, id=518, 280.04625pt x 416.55624pt>
 File: figuras/organizacaoProjeto.pdf Graphic file (type pdf)
 
 <use figuras/organizacaoProjeto.pdf>
 Package pdftex.def Info: figuras/organizacaoProjeto.pdf used on input line 71.
 (pdftex.def)             Requested size: 93.89265pt x 139.6632pt.
 
-<figuras/diagramadeclasse.pdf, id=515, 769.27818pt x 596.153pt>
+<figuras/diagramadeclasse.pdf, id=520, 769.27818pt x 596.153pt>
 File: figuras/diagramadeclasse.pdf Graphic file (type pdf)
 
 <use figuras/diagramadeclasse.pdf>
@@ -1173,24 +1187,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 84.
-[21 <./figuras/organizacaoProjeto.pdf>]
+[20 <./figuras/organizacaoProjeto.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 84.
- [22 <./figuras/diagramadeclasse.pdf>]
+ [21 <./figuras/diagramadeclasse.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 87.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
 
-[23]
+[22]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 115.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 192.
- [24]
+ [23]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 215.
- <figuras/fluxoprincipal.pdf, id=554, 376.35919pt x 432.06036pt>
+ <figuras/fluxoprincipal.pdf, id=559, 376.35919pt x 432.06036pt>
 File: figuras/fluxoprincipal.pdf Graphic file (type pdf)
 
 <use figuras/fluxoprincipal.pdf>
@@ -1199,7 +1213,7 @@ Package pdftex.def Info: figuras/fluxoprincipal.pdf used on input line 219.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 227.
 
-<figuras/fluxoautomatico.pdf, id=555, 257.2812pt x 595.50484pt>
+<figuras/fluxoautomatico.pdf, id=560, 257.2812pt x 595.50484pt>
 File: figuras/fluxoautomatico.pdf Graphic file (type pdf)
 
 <use figuras/fluxoautomatico.pdf>
@@ -1207,21 +1221,21 @@ Package pdftex.def Info: figuras/fluxoautomatico.pdf used on input line 230.
 (pdftex.def)             Requested size: 211.26028pt x 489.00772pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 233.
- [25 <./figuras/fluxoprincipal.pdf>]
+ [24 <./figuras/fluxoprincipal.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 243.
- [26 <./figuras/fluxoautomatico.pdf>]
+ [25 <./figuras/fluxoautomatico.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 259.
- [27]
+ [26]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 280.
- [28]
+ [27]
 Underfull \hbox (badness 10000) in paragraph at lines 293--311
 
  []
 
-<figuras/graficototal.png, id=607, 620.3175pt x 288.3272pt>
+<figuras/graficototal.png, id=612, 620.3175pt x 288.3272pt>
 File: figuras/graficototal.png Graphic file (type png)
 
 <use figuras/graficototal.png>
@@ -1231,7 +1245,7 @@ Package pdftex.def Info: figuras/graficototal.png used on input line 318.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/graficominmax.png, id=608, 627.84563pt x 287.57437pt>
+<figuras/graficominmax.png, id=613, 627.84563pt x 287.57437pt>
 File: figuras/graficominmax.png Graphic file (type png)
 
 <use figuras/graficominmax.png>
@@ -1239,11 +1253,11 @@ Package pdftex.def Info: figuras/graficominmax.png used on input line 326.
 (pdftex.def)             Requested size: 234.73524pt x 107.51541pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 330.
- [29]
+ [28]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 340.
 
-<figuras/fluxomanual.pdf, id=614, 446.62859pt x 725.5908pt>
+<figuras/fluxomanual.pdf, id=619, 446.62859pt x 725.5908pt>
 File: figuras/fluxomanual.pdf Graphic file (type pdf)
 
 <use figuras/fluxomanual.pdf>
@@ -1255,14 +1269,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 353.
-[30 <./figuras/graficototal.png (PNG copy)> <./figuras/graficominmax.png (PNG c
+[29 <./figuras/graficototal.png (PNG copy)> <./figuras/graficominmax.png (PNG c
 opy)>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 362.
- [31 <./figuras/fluxomanual.pdf>])
+ [30 <./figuras/fluxomanual.pdf>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 104.
- [32]
+ [31]
 \openout2 = `resultados.aux'.
 
  (./resultados.tex
@@ -1272,7 +1286,7 @@ Package babel Info: Redefining portuges shorthand "|
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 105.
- [33
+ [32
 
 
 
@@ -1286,7 +1300,7 @@ Package babel Info: Redefining portuges shorthand "|
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 106.
- [34
+ [33
 
 
 
@@ -1294,30 +1308,31 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 112.
  (./tcc.bbl
+Overfull \hbox (39.85764pt too wide) in paragraph at lines 16--23
+\OT1/cmr/m/n/12 11866286-[]Construcao-[]de-[]um-[]time-[]de-[]futebol-[]de-[]ro
+bos-[]para-[]a-[]categoria-[]ieee-[]very-[]small-[]size-[]soccer . 
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 97.
- [35
+(babel)             in language  on input line 94.
+[34
 
 
 
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 190.
- [36])
+])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 124.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 128.
- [37]
+ [35]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
- (./tcc.aux (./cabecalho.aux)
-(./introducao.aux) (./fundamentacao.aux) (./desenvolvimento.aux)
-(./resultados.aux) (./conclusao.aux))
+ (./tcc.aux (./cabecalho.aux) (./introducao.aux) (./fundamentacao.aux) (./desen
+volvimento.aux) (./resultados.aux) (./conclusao.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: 614FDC4362B43F66EA71D3788ADEC5C8;2128.
+(rerunfilecheck)             Checksum: B9A284DF0F74F8DD4C30039E5AEC3A13;2128.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1325,13 +1340,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 11981 strings out of 493304
- 175960 string characters out of 6139871
- 291046 words of memory out of 5000000
- 15008 multiletter control sequences out of 15000+600000
+ 11958 strings out of 493304
+ 175570 string characters out of 6139871
+ 290489 words of memory out of 5000000
+ 14993 multiletter control sequences out of 15000+600000
  12367 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 40i,12n,60p,1736b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,12n,60p,1874b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texl
@@ -1346,10 +1361,10 @@ r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on tcc.pdf (37 pages, 3512693 bytes).
+Output written on tcc.pdf (35 pages, 3534516 bytes).
 PDF statistics:
- 807 PDF objects out of 1000 (max. 8388607)
- 687 compressed objects within 7 object streams
- 172 named destinations out of 1000 (max. 500000)
- 345 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 675 compressed objects within 7 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 350 words of extra memory for PDF output out of 10000 (max. 10000000)
 
