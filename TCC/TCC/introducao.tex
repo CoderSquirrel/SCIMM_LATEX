@@ -28,7 +28,7 @@
 \section{Justificativa e Objetivos}
 
 Este trabalho tem por objetivo principal automatizar o sistema de identificação de objetos 
-coloridos em imagens provenientes de uma câmera  em tempo real, fazendo a calibração dos valores HSV definindo seus limites mínimos e máximos.  
+coloridos em imagens provenientes de uma câmera em imagens de tempo real, fazendo a calibração dos valores HSV definindo seus limites mínimos e máximos.  
 Se fez necessário um sistema para tal finalidade notando-se:
 
 \begin{itemize}
@@ -60,10 +60,10 @@ Para alcançar o objetivo principal, foram propostos os seguintes objetivos espe
 \newpage
 
 \section{Trabalhos Corelatos}
-Para o tema especifico deste trabalho, calibração de intervalo de cores para times de futebol de robos da categoria very small size, não foram encontrados trabalhos relacionados, porém foram encotrados Team Discription Papers e descrições de sistemas usados pelos times, onde consta sobre o processo de calibração e os metodos usados.
+Para o tema específico deste trabalho, calibração de intervalo de cores para times de futebol de robôs da categoria very small size, não foram encontrados trabalhos relacionados, porém foram encotrados Team Discription Papers e descrições de sistemas usados pelos times, onde consta sobre o processo de calibração e os métodos usados.
 
 \subsection{Calibra}
-O Centro Universitário da FEI, como publicado em artigo do I Encontro de Robótica Inteligente\cite{PenharbelTime}, utiliza em sua equipe Y04 um sistema denominado CALIBRA\cite{Penharbel:2004}. Desenvolvido para sistemas Linux e com Graphical User Interface\cite{Penharbel:2004}, o sistema de calibração possui um modulo chamado de MainWindow, que é responsavel pela configuracao de brilho, cor e contraste da imagem adquirida pela camera e gera um arquivo que é analizado na hora da criacao das cores padrao\cite{PenharbelTime}, onde cores-padrão são definidas como intervalos no espaço de cores HSI\cite{PenharbelTime}.
+O Centro Universitário da FEI, como publicado em artigo do I Encontro de Robótica Inteligente\cite{PenharbelTime}, utiliza em sua equipe Y04 um sistema denominado CALIBRA\cite{Penharbel:2004}. Desenvolvido para sistemas Linux e com Graphical User Interface\cite{Penharbel:2004}, o sistema de calibração possui um módulo chamado de MainWindow, que é responsavel pela configuração de brilho, cor e contraste da imagem adquirida pela câmera e gera um arquivo que é analizado na hora da criação das cores padrão\cite{PenharbelTime}, onde cores-padrão são definidas como intervalos no espaço de cores HSI\cite{PenharbelTime}.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{calibra.pdf}
@@ -73,7 +73,7 @@ O Centro Universitário da FEI, como publicado em artigo do I Encontro de Robót
 
 \subsection{VSS-Vision}
 
-Em 2015 Rosa\cite{Rosa:2015} descreve em seu Trabalho de Conclusão sobre a equipe de futebol de rob\^os Very Small Size, do Laboratório de Sistemas Inteligentes e Robótica, SIRLab(Faeterj-Petrópolis), o sistema de visão computacional da equipe, durante a competição do ano de 2014, que abrange inclusive a parte de calibração. 
+Em 2015 Rosa\cite{Rosa:2015} descreveu em seu Trabalho de Conclusão sobre a equipe de futebol de rob\^os Very Small Size, do Laboratório de Sistemas Inteligentes e Robótica, SIRLab(Faeterj-Petrópolis), o sistema de visão computacional da equipe, durante a competição do ano de 2014, que abrange inclusive a parte de calibração. 
 
 \begin{figure}[!h]
 	\centering
@@ -81,10 +81,10 @@ Em 2015 Rosa\cite{Rosa:2015} descreve em seu Trabalho de Conclusão sobre a equi
 	\caption{Sistema de calibracao desenvolvido peloSIRLab \cite{Rosa:2015}}
 	\label{SIRLabCalibracao}
 \end{figure}
-O autor menciona que a calibração de cores e feita calibrando obrigatoriamente laranja, amarelo e azul, e então as outas cores referentes aos jogadores em campo. Como visto na Figura \ref{SIRLabCalibracao} a imagem da camera é dividida em nove cantos, e para calibrar a cor o usuario deve clicar em cima da cor que gostaria de ser calibrada salvando um intervalo de cor tratado como RGB máximo daquela cor e o mínimo, a medida
+O autor menciona que a calibração de cores e feita calibrando obrigatoriamente laranja, amarelo e azul, e então as outras cores referentes aos jogadores em campo. Como visto na Figura \ref{SIRLabCalibracao} a imagem da c\^amera é dividida em nove cantos, e para calibrar a cor o usuário deve clicar em cima da cor que gostaria de ser calibrada, assim salvando um intervalo de cor tratado como RGB máximo e o mínimo daquela cor , a medida
 que vão havendo os cliques o sistema verifica para cada atributo se ele é maior que o atributo
 máximo salvo ou menor que mínimo salvo, caso seja, o mesmo assume o lugar de menor ou
-maior\cite{Rosa:2015} e esse processo deve ser feito em cada um dos nove cantos da imagem. Os valores HSV encontrados sao ajustados manualmente com a ajuda de sliders, como visto na Figura \ref{SIRLabCalibracaoHSV}. Este processo de calibração pode demorar entre cinco e dez minutos.
+maior\cite{Rosa:2015} e esse processo deve ser feito em cada um dos nove cantos da imagem. Os valores HSV encontrados s\~ao ajustados manualmente com a ajuda de sliders, como visto na Figura \ref{SIRLabCalibracaoHSV}. Este processo de calibração pode demorar entre cinco e dez minutos.
 O desenvolvimento do sistema utiliza para procesamento de imagens a biblioteca OpenCV e para telas interativas a biblioteca  ImGui.
 
 \begin{figure}[!h]
@@ -95,7 +95,7 @@ O desenvolvimento do sistema utiliza para procesamento de imagens a biblioteca O
 \end{figure}
 
 O atual sistema de visão computacional do SIRLab passou por algumas mudanças desde 2015 e conta com uma inteface e metodo de calibração diferentes\cite{VSSVision}. 
-Como disponivel no repositorio online do Laboratorio, o atual sistema de calibração de cores utiliza o espaço de cores HSV, no lugar do RGB\cite{Rosa:2015}. A antiga inteface do sistema, feita inicialmente em ImGui deu lugar à nova, desenvolvida em Qt, como mostrado na Figura \ref{SIRLabNova}.
+Como disponível no repositorio online do Laboratorio, o atual sistema de calibração de cores utiliza o espaço de cores HSV, no lugar do RGB\cite{Rosa:2015}. A antiga inteface do sistema, feita inicialmente em ImGui deu lugar a nova, desenvolvida em Qt, como mostra a Figura \ref{SIRLabNova}.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{vsssnovonormal.png} 	
@@ -104,7 +104,7 @@ Como disponivel no repositorio online do Laboratorio, o atual sistema de calibra
 \end{figure}
 
 
-O metodo de calibração de cores tambem foi modificado, segundo a equipe\cite{VSSVision} o sistema possibilita a calibragem de 8 cores, Laranja, Amarelo, Azul, Vermelho, Verde, Rosa, Roxo, Marrom. Após o usuário escolher uma cor para calibrar o mesmo deve encontrar um intervalo de cor, no espaço de cores HSV, que represente-a. Ao clicar na tela com o botão direito o sistema da um zoom na área para ajuste fino. A figura \ref{SIRLabNovaCalibracao} demonstra o novo metodo de calibração.
+O método de calibração de cores também foi modificado, segundo a equipe\cite{VSSVision} o sistema possibilita a calibragem de 8 cores, Laranja, Amarelo, Azul, Vermelho, Verde, Rosa, Roxo, Marrom. Após o usuário escolher uma cor para calibrar o mesmo deve encontrar um intervalo de cor, no espaço de cores HSV, que represente-a. Ao clicar na tela com o botão direito o sistema da um zoom na área para ajuste fino. A Figura \ref{SIRLabNovaCalibracao} demonstra o novo método de calibração.
 
 \begin{figure}[!h]
 	\centering
@@ -116,12 +116,12 @@ O metodo de calibração de cores tambem foi modificado, segundo a equipe\cite{V
 \newpage
 \section{Organização da Trabalho} \label{Sec:Organizacao}
 
-Este trabalho está divido em cinco capitulos, incluindo esta introdução como capitulo inicial.
+Este trabalho está divido em cinco capítulos, incluindo esta introdução como capítulo inicial.
 
-No segundo capitulo encontra-se a fundamentação teorica do texto, contento sobre processamento de imagens referente à detecção de objetos e cores. A descrição da probabilidade usada no trabalho, na descoberta do tamanho desejavel dos objetos, uma breve descrição sobre o futebol de robôs. 
+No segundo capítulo encontra-se a fundamentação teórica do texto, contento informaç\~oes sobre processamento de imagens referente à detecção de objetos e cores. A descrição da probabilidade usada no trabalho, na descoberta do tamanho desejavel dos objetos, uma breve descrição sobre o futebol de robôs. 
 
-No terceiro capitulo encontra-se todo o desenvolvimento do projeto, suas classes, a descrição das tecnologias utilizadas no projeto, e o detalhamento de cada um dos tipos de calibração.
+No terceiro capítulo encontra-se todo o desenvolvimento do projeto, suas classes, a descrição das tecnologias utilizadas no projeto, e o detalhamento de cada um dos tipos de calibração.
 
-No quarto capitulo são apresentados os testes e os resultados obtidos em cada um dos testes do projeto.
+No quarto capítulo são apresentados os testes e os resultados obtidos em cada um dos testes do projeto.
 
-No quinto capitulo são feitas as conclusões do trabalho e considerações finais, bem como expostas melhorias que possam vir a ser implementadas em trabalhos futuros.
+No quinto capítulo são feitas as conclusões do trabalho e considerações finais, bem como expostas melhorias que possam vir a ser implementadas em trabalhos futuros.

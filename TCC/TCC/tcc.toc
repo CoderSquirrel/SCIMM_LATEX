@@ -45,5 +45,5 @@
 \contentsline {subsubsection}{5\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{32}{section*.42}
 \contentsline {chapter}{\numberline {4}Resultados}{33}{chapter.4}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{34}{chapter.5}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{35}{section*.43}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{35}{section*.44}
 \contentsline {chapter}{Ap\^endices}{36}{Item.26}
