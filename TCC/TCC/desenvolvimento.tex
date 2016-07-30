@@ -260,10 +260,10 @@ este é então salvo na variavel nomeada \textit{tamanho}, está então sera usa
 \subsubsection{2ª Etapa - Detecção e validação de Objetos}
 A detecção dos objetos a serem calibrados é dada pelo algoritmo de detecção de bordas de Canny. Como mais um recurso para eliminação de ruidos e melhoria da imagem antes de ser executado a detecção de objetos atravez da detecção de bordas é utilizado desfoque na imagem. O algoritmo de Canny já está implementado dentro da biblioteca OpenCV e com a seguite usagem:
 \begin{center}
-\centering \textit{  Canny(src\_gray, canny\_output, thresh, thresh * 3, 3);}
+\centering \textit{  Canny(src\_gray, canny\_output, limiar, limiar * 3, 3);}
 \end{center}
 O algoritmo de Canny utiliza por padrão imagem em padrões de cinza, sendo assim \textbf{src\_gray} é a imagem orignal tranformada para escala de cinza, esta é a imagem na qual o algoritmo sera aplicado. \textbf{canny\_output} será a imagem de saida da função.
-\textbf{thresh} e \textbf{thresh*3} são os limites mínimos e máximos para considerar uma borda. \textbf{3} é o valor de apertura ou kernel, o valor 3 é utilizado como padro.
+\textbf{limiar} e \textbf{limiar*3} são os limites mínimos e máximos para considerar uma borda. \textbf{3} é o valor de apertura ou kernel, o valor 3 é utilizado como padro.
 
 Apos o uso do algoritmo de Canny para detecção de bordas é necessario então fazer uso da função \textit{findContours}, nativa no \textit{OpenCV} para detecção de contornos.
 \begin{center}

@@ -14,10 +14,7 @@
 % NO FUTURO
 \chapter{Resultados} 
 
-Para obtenção dos resultados foram organizados dois tipos de testes: Teste por região e
-Teste geral.
-
-No teste por região o campo foi dividido verticalmente em cinco faixas, de vinte e nove centimetros cada, e horizontalmente em três faixas de quatrenta e um centimetro cada, somanto um total de quinte "pedaços", nomeados de A `a O, como mostrado na Figura \ref{campodivisao}.
+Para a execução dos tipos de testes, o campo foi dividido verticalmente em cinco partes, de vinte e nove centimetros cada, e horizontalmente em três parte de quarenta e um centimetro cada, somando um total de quinze areas de calibração, nomeadas alfabeticamente de A à O, como mostrado na Figura \ref{campodivisao}.
 
 \begin{figure}[!: h]
 		\centering
@@ -26,11 +23,7 @@ No teste por região o campo foi dividido verticalmente em cinco faixas, de vint
 		\label{campodivisao}
 	\end{figure}
 	
-	
- Cada uma das faixas possue ao seu centro um conjunto de cinco cores.
-Cada faixa horizontal possui vinte e nove centimetros, já as faixas verticais possuem quarenta e um centimetros com um intervalo de um centimetro entre elas.
-
-Em cada ponto de teste estão disposta cinco cores: Vermelho  e Verde na primeira linha, Amarelo, Azul e Laranja na segunda. As cores estão distantes verticalmente \textit{7.5cm}, na primeria linha a distancia entre as cores é  de \textit{11 cm} e na segunda linha de \textit{7.2 cm}. Um  melhor detalhamento da disposiçao das cores é  mostrado na Figura \ref{disposicaoparte}.
+Em cada areas de calbração estão dispostas cinco cores: Vermelho  e Verde na primeira linha, Amarelo, Azul e Laranja na segunda. As cores estão distantes verticalmente \textit{7.5cm}, na primeria linha a distancia entre as cores é  de \textit{11 cm} e na segunda linha de \textit{7.2 cm}. Um  melhor detalhamento da disposiçao das cores é  mostrado na Figura \ref{disposicaoparte}. No total estavam disposto no campo quinze pontos de cada cor.
 
 \begin{figure}[!: h]
 		\centering
@@ -39,21 +32,66 @@ Em cada ponto de teste estão disposta cinco cores: Vermelho  e Verde na primeir
 		\label{disposicaoparte}
 	\end{figure}
 	
-No total estavam disposto no campo quinze pontos de cada cor, sendo as cores: . Sendo cinco areas horizontais e três verticais, a divisão do campo resulta em quinze partes, cada um das partes sera testada vinte e cinco vezes.
- Para cada uma das faixas foram testadas calibrações com cinco tipos diferentes de contraste e luminosidade, somando um total de vinte e cinco testes.	
-	Valor de contraste iniciando em 30, pois verificou-se que abaixo disso a imagem fica totalmente da cor preta.
-	
+\section{Teste Geral}
+Este foi o teste feito com o campo inteiro, usando todas as quinze partes. Três variaveis fora usadas para este teste, foram elas \textit{Brilho}, \textit{Contraste} e  \textit{Limiar}, este ultimo ajutava a sensibilidade da deteção de borda do algoritmo de Canny. Os valores a serem usados para cada variarel estao deisposto na tabela a baixo:
+
 \begin{table}[h]
 \centering
 \caption{Tabela de Testes}
-\begin{tabular}{r|lr}
-Tipo de Teste & Quantidade \\ % Note a separação de col. e a quebra de linhas
+\begin{tabular}{r|c|l}
+Brilho & Constrate & Limiar \\ % Note a separação de col. e a quebra de linhas
 \hline                               % para uma linha horizontal
-Divisões no Campo        & 25 \\
-Constrate  & 5\\
-Brilho            & 5 \\
+0 & 30 &  20\\
+\hline 
+20 &  44 &  40\\
+\hline 
+40 & 58 &  60 \\
+\hline 
+60 &  72 &  80\\
+\hline 
+80 & 86  & 100\\
+\hline 
+100 & 100  & \\
 \hline  
-Total & 260
- 
 \end{tabular}
 \end{table}
+Note que o valor de contraste iniciando em 30, pois verificou-se que abaixo disso a imagem fica totalmente da escura, sendo assim é inviavel o teste com essa configuração. Ja o valor de limiar inicia em 20 pois verificou-se que um valor de limiar menor que 20 possuiu muito ruido e detecçoes de pequenas linhas, como luzes e sombras, sendo assim tambem inviavel.
+O total de testes executados com o campo todo foi:
+\begin{displaymath}
+ Contraste \times Brilho \times Limiar \equiv 6 \times 6 \times 4 = 180
+\end{displaymath}
+	
+	
+	
+	
+	
+	\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{exgeral1.pdf}
+  \caption{Configuraçao de Imagem antes da calibracao}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{exgeral2.pdf}
+  \caption{Resultado final da configuracao mostrada antes de se iniciar a calibracao}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{A figure with two subfigures}
+\label{fig:test}
+\end{figure}
+	
+	
+	
+	\section{Teste Por Area}
+	Ao final dos testes geral identificamos o limiar com maior ocorrencia de ojetos detectados com precisao. Para diminuir a quantidade de casos de teste por area que  ateriormente seria:
+	\begin{displaymath}
+ Contraste \times Brilho \times Limiar \times Areas \equiv 6 \times 6 \times 4  \times 15 = 2160
+\end{displaymath}
+
+Optou-se entao a usar o limiar 40, assim a quantidade de testes diminuiu drasticamente para apenas um quarto do valor original.
+	\begin{displaymath}
+ Contraste \times Brilho \times Limiar \equiv 6 \times 6 \times 15 = 540
+\end{displaymath}
