@@ -18,7 +18,7 @@ Para a execução dos tipos de testes, o campo foi dividido verticalmente em cin
 
 \begin{figure}[!: h]
 		\centering
-		\includegraphics[width=0.4\textwidth]{campodivisao.pdf}
+		\includegraphics[width=0.3\textwidth]{campodivisao.pdf}
 		\caption{Divisao do campo em quinze partes nomeadas alfabeticamente.}
 		\label{campodivisao}
 	\end{figure}
@@ -27,13 +27,13 @@ Em cada areas de calbração estão dispostas cinco cores: Vermelho  e Verde na 
 
 \begin{figure}[!: h]
 		\centering
-		\includegraphics[width=0.4\textwidth]{disposicaoparte.pdf}
+		\includegraphics[width=0.3\textwidth]{disposicaoparte.pdf}
 		\caption{Disposição dos objetos coloridos dentro de cada uma das partes}
 		\label{disposicaoparte}
 	\end{figure}
-	
+	\newpage
 \section{Teste Geral}
-Este foi o teste feito com o campo inteiro, usando todas as quinze partes. Três variaveis fora usadas para este teste, foram elas \textit{Brilho}, \textit{Contraste} e  \textit{Limiar}, este ultimo ajutava a sensibilidade da deteção de borda do algoritmo de Canny. Os valores a serem usados para cada variarel estao deisposto na tabela a baixo:
+Este foi o teste feito com o campo inteiro, usando todas as quinze partes. Três variaveis fora usadas para este teste, foram elas \textit{Brilho}, \textit{Contraste} e  \textit{Limiar}, este ultimo ajustava a sensibilidade da deteção de borda do algoritmo de Canny. Os valores a serem usados para cada variarel estao deisposto na tabela a baixo:
 
 \begin{table}[h]
 \centering
@@ -65,25 +65,55 @@ O total de testes executados com o campo todo foi:
 	
 	
 	
-	\begin{figure}
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.9\linewidth]{exgeral1.pdf}
-  \caption{Configuraçao de Imagem antes da calibracao}
-  \label{fig:sub1}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.9\linewidth]{exgeral2.pdf}
-  \caption{Resultado final da configuracao mostrada antes de se iniciar a calibracao}
-  \label{fig:sub2}
-\end{subfigure}
-\caption{A figure with two subfigures}
-\label{fig:test}
-\end{figure}
+%	\begin{figure}
+%\centering
+%\begin{subfigure}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=.9\linewidth]{exgeral1.pdf}
+%  \caption{Configuraçao de Imagem antes da calibracao}
+%  \label{fig:sub1}
+%\end{subfigure}%
+%\begin{subfigure}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=.9\linewidth]{exgeral2.pdf}
+%  \caption{Resultado final da configuracao mostrada antes de se iniciar a calibracao}
+%  \label{fig:sub2}
+%\end{subfigure}
+%\caption{•}
+%\label{fig:test}
+%\end{figure}
+
+Em cada um dos 180 testes foram analisadas 11 variaveis, sendo elas:
+\begin{description}
+\item [Q-E] significando a quantidade de objetos, gerais, detectado pela deteccao de contornos;
+\item[OC-E] significando a quantidade de objetos-cor encontrados durante a analise da imagem; 
+\item[C-E] significando a quantidade de objetos-cor encontrados que realmente correspondiam aos objetos-cor desejados;
+\item[\%] significando a porcentagem de \textbf[C-E] relativo a \textbf[OC-E];
+\item[AZUL] significando a quantidade de objetos encontrado no melhor caso obtido;
+\item[AMARELO] significando a quantidade de objetos encontrado no melhor caso obtido;
+\item[LARANJA] significando a quantidade de objetos encontrado no melhor caso obtido;
+\item[VERDE] significando a quantidade de objetos encontrado no melhor caso obtido;
+\item[VERMELHO] significando a quantidade de objetos encontrado no melhor caso obtido;
+\item[T-E] significando o total de cores que foram encontrados;
+\item[P-E] significando o total de cores que foram encontrados corretamente, ou seja todas as quinze partes da cor disposta em campo;
+\end{description}
 	
 	
+	
+	
+	Em uma analise inicial sobre o \textbf{Teste Geral} foi encontrado, o considerado, limiar otimo para detecçao, sendo este aquele que em \textbf{P-E} de todas as cores obtiveram as melhores porcentagem de \textbf{\%}, como mostra a Figura \ref{graficoanaliselimiar}. 
+	
+	
+	
+	
+	Mesmo sabendo que o limiar com maior sensibilidade é o limiar 20, o mesmo nao obteve um desenpenho tao continuo em \textbf{\%} quanto o limiar 40.
+	
+	\begin{figure}[!: h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{testegeralgraficolimiar.pdf}
+		\caption{Grafico de limiar de acordo com a porcentagem de objetos-cor encontrados.}
+		\label{graficoanaliselimiar}
+	\end{figure}
 	
 	\section{Teste Por Area}
 	Ao final dos testes geral identificamos o limiar com maior ocorrencia de ojetos detectados com precisao. Para diminuir a quantidade de casos de teste por area que  ateriormente seria:
