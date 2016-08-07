@@ -11,25 +11,20 @@
 \BOOKMARK [2][-]{subsection.2.1.1}{Detec\347\343o de Objetos}{section.2.1}% 11
 \BOOKMARK [2][-]{subsection.2.1.2}{Detec\347\343o de Bordas}{section.2.1}% 12
 \BOOKMARK [1][-]{section.2.2}{Cores}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.3}{Probabilidade e Estat\355stica}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.3.1}{T de Student}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.2}{Graus de Liberdade}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.3}{Intervalos de Confian\347a}{section.2.3}% 17
-\BOOKMARK [1][-]{section.2.4}{Futebol de Rob\364s}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.5}{Trabalhos Relacionados}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.5.1}{Calibra}{section.2.5}% 20
-\BOOKMARK [2][-]{subsection.2.5.2}{VSS-Vision}{section.2.5}% 21
-\BOOKMARK [0][-]{chapter.3}{Desenvolvimento}{}% 22
-\BOOKMARK [1][-]{section.3.1}{Tecnologias Usadas}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.2}{Projeto}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.2.1}{Organiza\347\343o do Projeto}{section.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.2.2}{Classes}{section.3.2}% 26
-\BOOKMARK [1][-]{section.3.3}{O Sistema}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.1}{Calibra\347\343o Automatica}{section.3.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.2}{Calibra\347\343o Manual}{section.3.3}% 29
-\BOOKMARK [0][-]{chapter.4}{Resultados}{}% 30
-\BOOKMARK [1][-]{section.4.1}{Teste Geral}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{Teste Por Area}{chapter.4}% 32
-\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 33
-\BOOKMARK [0][-]{section*.47}{Refer\352ncias Bibliogr\341ficas}{}% 34
-\BOOKMARK [0][-]{Item.26}{Ap\352ndices}{}% 35
+\BOOKMARK [1][-]{section.2.3}{Futebol de Rob\364s}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Trabalhos Relacionados}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Calibra}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.2}{VSS-Vision}{section.2.4}% 17
+\BOOKMARK [0][-]{chapter.3}{Desenvolvimento}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Tecnologias Usadas}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Projeto}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.2.1}{Organiza\347\343o do Projeto}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.2}{Classes}{section.3.2}% 22
+\BOOKMARK [1][-]{section.3.3}{O Sistema}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.1}{1\252 Etapa - Reconhecimento de Fundo}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.2}{2\252 Etapa - Configura\347\343o de Camera}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.3}{3\252 Etapa - Extra\347\343o dos Objetos do Fundo}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.4}{4\252 Etapa - Detec\347\343o e valida\347\343o de Objetos}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.5}{5\252 Etapa - Classifica\347ao do Pixel}{section.3.3}% 28
+\BOOKMARK [0][-]{section*.28}{Refer\352ncias Bibliogr\341ficas}{}% 29
+\BOOKMARK [0][-]{Item.22}{Ap\352ndices}{}% 30

@@ -5,11 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
-\bibitem{PenharbelTime}
-\abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{}
-{PENHARBEL, E.~A. et al. Time de futebol de rob{\^o}s y04 do centro
-  universit{\'a}rio da fei.}
-
 \bibitem{Penharbel:2004}
 \abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{2004}
 {PENHARBEL, E.~A. et al. Filtro de imagem baseado em matriz rgb de
@@ -30,6 +25,25 @@ Dispon{\'\i}vel em:
 \abntrefinfo{SIRLab}{SIRLAB}{}
 {SIRLAB. Imagens hsv, hsl e rgb. In:  . [s.n.]. Acessado 06/06/2016 14:50.
   Dispon{\'\i}vel em: \url{https://github.com/SIRLab/VSS-Vision/wiki}.}
+
+\bibitem{Saini:2013}
+\abntrefinfo{Saini, Kasliwal e Bhatia}{SAINI; KASLIWAL; BHATIA}{2013}
+{SAINI, S.; KASLIWAL, B.; BHATIA, S. Comparative study of image edge detection
+  algorithms.
+\emph{arXiv e-print service in the fields of physics, mathematics, computer
+  science, quantitative biology, quantitative finance and statistics, Cornell
+  University Library}, 2013.
+Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/1311.4963}.}
+
+\bibitem{ImagensHSLHSVRGB}
+\abntrefinfo{Horvath}{HORVATH}{}
+{HORVATH, M. \emph{"Imagens HSV, HSL e RGB"}.
+Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
+
+\bibitem{PenharbelTime}
+\abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{}
+{PENHARBEL, E.~A. et al. Time de futebol de rob{\^o}s y04 do centro
+  universit{\'a}rio da fei.}
 
 \bibitem{Viola:2001}
 \abntrefinfo{Viola e Jones}{VIOLA; JONES}{2001}
@@ -88,15 +102,6 @@ ISSN 0162-8828.}
   GIBSON, R.~G. (Ed.). \emph{Simpósio Brasileiro de Geomática}. [S.l.: s.n.],
   2002. p. 292--303.}
 
-\bibitem{Saini:2013}
-\abntrefinfo{Saini, Kasliwal e Bhatia}{SAINI; KASLIWAL; BHATIA}{2013}
-{SAINI, S.; KASLIWAL, B.; BHATIA, S. Comparative study of image edge detection
-  algorithms.
-\emph{arXiv e-print service in the fields of physics, mathematics, computer
-  science, quantitative biology, quantitative finance and statistics, Cornell
-  University Library}, 2013.
-Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/1311.4963}.}
-
 \bibitem{Azevedo:2003}
 \abntrefinfo{Azevedo e A.}{AZEVEDO; A.}{2003}
 {AZEVEDO, E.; A., C. \emph{Computação Gráfica: Geração de Imagens}.
@@ -116,29 +121,6 @@ Disserta\c{c}\~{a}o (Dissertação de Mestrado) --- INPE, São José dos
   gerenciamento de cores para imagens digitais. In:  TEIXEIRA, A.~C.; BARRéRE,
   E.; ABRãO, I.~C. (Ed.). \emph{Web e multimídia: desafios e soluções}.
   [S.l.]: PUC Minas, 2005.}
-
-\bibitem{ImagensHSLHSVRGB}
-\abntrefinfo{Horvath}{HORVATH}{}
-{HORVATH, M. \emph{"Imagens HSV, HSL e RGB"}.
-Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
-
-\bibitem{TabelaUFF}
-\abntrefinfo{Fluminense}{FLUMINENSE}{}
-{FLUMINENSE, U.~F. \emph{Tabela T: Distribuição de t-Student segundo os graus
-  de liberdade e uma dada probabilidade num teste bicaudal}.
-Epidemiologia, curso de Medicina, Acessado 01/04/2016 10:00.
-Dispon{\'\i}vel em:
-  \url{http://www.epi.uff.br/wp-content/uploads/2015/05/Tabela-T.pdf}.}
-
-\bibitem{Spiegel:1974}
-\abntrefinfo{Spiegel}{SPIEGEL}{1974}
-{SPIEGEL, M.~R. \emph{Estatística}. [S.l.]: McGraw-Hill do Brasil, 1974.}
-
-\bibitem{UFRN}
-\abntrefinfo{Norte}{NORTE}{}
-{NORTE, U.~F. do~Rio Grande~do. \emph{História da Estatística}.
-Acessado 31/03/2016 14:50.
-Dispon{\'\i}vel em: \url{http://www.estatistica.ccet.ufrn.br/historia.php}.}
 
 \bibitem{Costa:2000}
 \abntrefinfo{Costa e Pegoraro}{COSTA; PEGORARO}{2000}
@@ -162,12 +144,6 @@ Dispon{\'\i}vel em: \url{http://www.estatistica.ccet.ufrn.br/historia.php}.}
 {STROUSTRUP, B. A history of c++: 1979--1991. In:  BERGIN, T.~J.; GIBSON, R.~G.
   (Ed.). \emph{History of programming languages --- II}. [S.l.]:
   Addison-Wesley, 1996.}
-
-\bibitem{QCustomPlot}
-\abntrefinfo{Eichhammer}{EICHHAMMER}{}
-{EICHHAMMER, E. \emph{QCustomPlot}.
-Acessado 28/06/2016 22:09.
-Dispon{\'\i}vel em: \url{http://qcustomplot.com/}.}
 
 \bibitem{OpenCV}
 \abntrefinfo{itseez}{ITSEEZ}{}

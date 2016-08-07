@@ -134,47 +134,6 @@ O modelo HSV define tonalidade (hue) que é a cor em si, variando de 0 a 360º, 
 
 O sistema HSV ultiliza definiçoes de cor mais intuitivas que o conjunto de cores primarias, por isso são mais adequados quando se necessita obter varias tonalidades.
 
-\section{Probabilidade e Estatística}
-
-Para a automatização dos sistema de detecção de bordas e objetos foi utilizado a Distribuição T de Student para encontrar o valor de referencia \textit{t} para encontrar a Tabela T\cite{TabelaUFF} para assim calcular o valor do Intervalo de Confiança, usado para limitar o tamanho desejado dos objetos.
-Todas as definições dessa seção foram retidas do livro Estatística de Spiegel\cite{Spiegel:1974}. 
-\subsection{T de Student}
-Com a necessidade de manipular dados de pequenas amostras William Sealey Gosset com o pseudônimo de Student derivou o teste t de Student baseado na distribuição de probabilidades t, publicando esses estudos em 1908 na revista Biometrika\cite{UFRN}.
-A teoria T de Student é um teoria usada em pequenas amostras, ou seja, amostras com tamanho menor que 30.
-
-De acordo com Spiegel \cite{Spiegel:1974}, a definição da distribuição de "Student" t é dada por:
-\begin{displaymath} 
-\textit{t}= \frac{\bar{X} - \mu }{\textit{s}} \sqrt{N - 1} = \frac{\bar{X} - \mu}{  \hat{s} / \sqrt{N} }
-\end{displaymath}
-
-Considerando-se amostras de tamanho N, extraídas de uma população normal de média  $\mu$, e, se para cada amostra cacular-se o valor de \textit{t}, por meio da média amostral e $\bar{X}$ e do desvio padrão s ou $\hat{s}$, pode-se obter a distribuição amostral de \textit{t}.
-\begin{figure}[!h]
-	\centering
-	\includegraphics{distt.pdf}
-	\caption{Distribuição de Student(t) para valores de v.  Spiegel \cite{Spiegel:1974}}
-	\label{DistribuicaoTparV}
-\end{figure}
-
-\newpage
-A distribuição(figura 2.5) é dada por:
-\begin{displaymath}
-Y=\frac{Y_{0}}{\left ( 1 + \frac{\mathit{t}^{2}}{N-1} \right ) ^{N/2}} = \frac{Y_{0}}{\left ( 1 + \frac{\mathit{t}^{2}}{\nu} \right ) ^{\left (\nu+1  \right )/2}}
-\end{displaymath}
-em que Y$_0$ é uma constante que depende de N, de modo que a Área subentendida pela curva é igual a 1, e que a constante  $\nu$ = (N - 1) é denominada \textit{número de graus de liberdade $\nu$}.
-\subsection{Graus de Liberdade}
-O numero de graus de liberdade é definido como o número N de observações independente da amostra, menos o numero \textit{k} de parâmetros populacionais que devem ser estimados por meio das observações amostrais. Simbolicamente, $\nu$ = N - \textit{k}.
-O numero de graus de liberdade para a Distribuição T de Student é definida pelo número de observações independentes da amostra N, do qual podem ser calculados $\bar{X}$ e \textit{s}. Entretanto, como $\mu$  deve ser avaliado, k =1, então, $\nu$ = N-1.
-
-
-\subsection{Intervalos de Confiança}
-
-A estimativa de parâmetro dada por dois números é denominada \textit{estimativa por intervalo}, esta estimativa é considerada mais precisa e exata e assim é preferível à outras estimativas. Se a distribuição é aproximadamente normal pode se esperar que se encontre uma estatística amostral real, situada nos intervalos, assim pode-se esperar, ou estar confiante, de que o valor seja encontrado entre os intervalos, por esse motivo, esses intervalos são considerados intervalos de confiança. Para fazer o cálculo dos Intervalos de Confiança é necessário escolher o \textit{Nível de Confiança}, dados em percentagem e que ficam, na maioria dos casos, entre 95\% e 99\%.
-
-Os limites do Intervalo de Confiança para médias, pode ser representado por:
-\begin{displaymath}
-\bar{X}  \pm \mathit{t}_{\mathit{c}}\frac{\mathit{s}}{{\sqrt{N-1}}}
-\end{displaymath}
-onde os valores, dos limites iniciai e final, \textit{t$_c$} são denominados \textit{críticos} ou \textit{coeficiente de confiança} e dependem do nível de confiança desejado e do tamanho da amostra. Valores retirados da Tabela T, neste trabalho foi usada para referencia a Tabela T da Universidade Federal Fluminense\cite{TabelaUFF}. Para os propósitos finais foi escolhido um nível de confiança de 95%.
 \section{Futebol de Robôs}
  Visto como um dominio bastente complexo, dinamico e imprevisivel\cite{Costa:2000}, o futebol de robos surgiu como uma tentativa de promover pesquisas nos campos de Inteligencia Artificial e robotica, pela avaliacao teorias, algoritmos e arquiteturas atraves problemas padrao\cite{Kitano:1997}.
  A Equipe Cedro se enquadra na categoria IEEE Very Small Size. Esta categoria é regulamentada pelo Instituto de Engenheiros Eletricistas e Eletrônicos (IEEE) e possui regras baseadas na MiroSot\cite{Rosa:2015}. O futebol de robos se assemelha ao futebol humano onde o objetivo do jogo é fazer gols para vencer a partida, porem tendo regras adaptadas para o "ambito" robotico. 
