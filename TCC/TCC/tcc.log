@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  7 AUG 2016 13:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  7 AUG 2016 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,7 +938,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 62.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
- <figuras/calibra.pdf, id=246, 792.9625pt x 489.83pt>
+ <figuras/calibra.pdf, id=251, 792.9625pt x 489.83pt>
 File: figuras/calibra.pdf Graphic file (type pdf)
 
 <use figuras/calibra.pdf>
@@ -946,56 +946,61 @@ Package pdftex.def Info: figuras/calibra.pdf used on input line 69.
 (pdftex.def)             Requested size: 281.68515pt x 174.00671pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 74.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 75.
 
-<figuras/vssvision.pdf, id=250, 457.71pt x 363.3575pt>
+
+LaTeX Warning: Citation `Neura:2009' on page 7 undefined on input line 76.
+
+<figuras/vssvision.pdf, id=255, 457.71pt x 363.3575pt>
 File: figuras/vssvision.pdf Graphic file (type pdf)
 
 <use figuras/vssvision.pdf>
-Package pdftex.def Info: figuras/vssvision.pdf used on input line 80.
+Package pdftex.def Info: figuras/vssvision.pdf used on input line 82.
 (pdftex.def)             Requested size: 187.78532pt x 149.07178pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 91.
 [7 <./figuras/calibra.pdf>]
-<figuras/calibration.pdf, id=270, 1590.94376pt x 498.86375pt>
+<figuras/calibration.pdf, id=275, 1590.94376pt x 498.86375pt>
 File: figuras/calibration.pdf Graphic file (type pdf)
 
 <use figuras/calibration.pdf>
-Package pdftex.def Info: figuras/calibration.pdf used on input line 92.
+Package pdftex.def Info: figuras/calibration.pdf used on input line 94.
 (pdftex.def)             Requested size: 375.57782pt x 117.76584pt.
 
-<figuras/vsssnovonormal.png, id=276, 1123.19624pt x 758.835pt>
+<figuras/vsssnovonormal.png, id=281, 1123.19624pt x 758.835pt>
 File: figuras/vsssnovonormal.png Graphic file (type png)
 
 <use figuras/vsssnovonormal.png>
-Package pdftex.def Info: figuras/vsssnovonormal.png used on input line 101.
+Package pdftex.def Info: figuras/vsssnovonormal.png used on input line 103.
 (pdftex.def)             Requested size: 234.73524pt x 158.58426pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/vsssnovo.png, id=281, 1122.1925pt x 756.8275pt>
+<figuras/vsssnovo.png, id=286, 1122.1925pt x 756.8275pt>
 File: figuras/vsssnovo.png Graphic file (type png)
 
 <use figuras/vsssnovo.png>
-Package pdftex.def Info: figuras/vsssnovo.png used on input line 111.
+Package pdftex.def Info: figuras/vsssnovo.png used on input line 113.
 (pdftex.def)             Requested size: 234.73524pt x 158.30331pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 118.
 [8 <./figuras/vssvision.pdf> <./figuras/calibration.pdf
 
 pdfTeX warning: pdflatex (file ./figuras/calibration.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 119.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 102.
@@ -1019,7 +1024,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 
-] <figuras/canny.pdf, id=336, 569.12625pt x 262.9825pt>
+] <figuras/canny.pdf, id=341, 569.12625pt x 262.9825pt>
 File: figuras/canny.pdf Graphic file (type pdf)
 
 <use figuras/canny.pdf>
@@ -1030,14 +1035,14 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 76.
  [11 <./figuras/canny.pdf>]
-<figuras/graficocie.pdf, id=363, 477.785pt x 542.025pt>
+<figuras/graficocie.pdf, id=368, 477.785pt x 542.025pt>
 File: figuras/graficocie.pdf Graphic file (type pdf)
 
 <use figuras/graficocie.pdf>
 Package pdftex.def Info: figuras/graficocie.pdf used on input line 88.
 (pdftex.def)             Requested size: 117.36761pt x 133.14879pt.
 
-<figuras/espacos.pdf, id=365, 2131.24232pt x 1059.47823pt>
+<figuras/espacos.pdf, id=370, 2131.24232pt x 1059.47823pt>
 File: figuras/espacos.pdf Graphic file (type pdf)
 
 <use figuras/espacos.pdf>
@@ -1046,7 +1051,7 @@ Package pdftex.def Info: figuras/espacos.pdf used on input line 98.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 102.
  [12 <./figuras/graficocie.pdf>]
-<figuras/rgb.pdf, id=382, 803.0pt x 602.25pt>
+<figuras/rgb.pdf, id=387, 803.0pt x 602.25pt>
 File: figuras/rgb.pdf Graphic file (type pdf)
  <use figuras/rgb.pdf>
 Package pdftex.def Info: figuras/rgb.pdf used on input line 115.
@@ -1057,7 +1062,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 pdfTeX warning: pdflatex (file ./figuras/rgb.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
->] <figuras/hsv.pdf, id=412, 1606.0pt x 1204.5pt>
+>] <figuras/hsv.pdf, id=417, 1606.0pt x 1204.5pt>
 File: figuras/hsv.pdf Graphic file (type pdf)
  <use figuras/hsv.pdf>
 Package pdftex.def Info: figuras/hsv.pdf used on input line 128.
@@ -1127,7 +1132,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 
-] <figuras/organizacaoProjeto.pdf, id=478, 219.82124pt x 218.8175pt>
+] <figuras/organizacaoProjeto.pdf, id=483, 219.82124pt x 218.8175pt>
 File: figuras/organizacaoProjeto.pdf Graphic file (type pdf)
 
 <use figuras/organizacaoProjeto.pdf>
@@ -1143,7 +1148,7 @@ put line 99.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 124.
 
-<figuras/FluxodoSistema.pdf, id=493, 307.86183pt x 531.41922pt>
+<figuras/FluxodoSistema.pdf, id=498, 307.86183pt x 531.41922pt>
 File: figuras/FluxodoSistema.pdf Graphic file (type pdf)
 
 <use figuras/FluxodoSistema.pdf>
@@ -1216,7 +1221,7 @@ ux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: 25FADC21427A18086DB746341EFECC45;2075.
+(rerunfilecheck)             Checksum: 2A1C6BD47C369CD743962F1811EEF21D;2131.
 
 
 LaTeX Warning: There were undefined references.
@@ -1227,10 +1232,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 11868 strings out of 493304
- 173941 string characters out of 6139871
+ 11875 strings out of 493304
+ 174046 string characters out of 6139871
  288209 words of memory out of 5000000
- 14954 multiletter control sequences out of 15000+600000
+ 14960 multiletter control sequences out of 15000+600000
  14920 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  40i,16n,60p,1863b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1248,10 +1253,10 @@ blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on tcc.pdf (27 pages, 3495294 bytes).
+Output written on tcc.pdf (27 pages, 3495577 bytes).
 PDF statistics:
- 652 PDF objects out of 1000 (max. 8388607)
- 556 compressed objects within 6 object streams
- 130 named destinations out of 1000 (max. 500000)
- 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 657 PDF objects out of 1000 (max. 8388607)
+ 561 compressed objects within 6 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

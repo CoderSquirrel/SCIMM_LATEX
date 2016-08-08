@@ -91,8 +91,8 @@ Os métodos da propria classe são:
 	\item ObterPorcentagem: Método simples para devolver a porcentagem de um valor, ao ser informado o valor  e a porcentagem escolhida.
 		
 		
-		\item Calcular: Método onde cada pixel pertencente à cada um dos objetos encontrados é analisado e seus valores HSV adicionados a lista de ocorrencia. 
-		O algoritmo de contagem de ocorrencia em cada pixel é dado da seguinte maneira:
+		\item Calcular: Método onde cada pixel pertencente à cada um dos objetos encontrados é analisado, seu valor H é categorizado de acordo com o intervalo de cada cor e então o valor do pixel é adicionado Á cor correspondente.
+		O algoritmo de categorizacao:
  
 	        
 	        \begin{algorithm}
@@ -101,9 +101,9 @@ Os métodos da propria classe são:
 		     	
 		     	\ForAll{objeto encontrado} 
 		     		\ForAll{pixel do objeto} 
-		   				 \State OcorrenciasDeH[pixel.h]++ 
-		    			 \State	OcorrenciasDeS[pixel.s]++ 
-		     	  		 \State	OcorrenciasDeV[pixel.v]++
+					\If{H de pixel entre 0 e 20} 
+					\State	cores.laranja.adicionar(pixel)
+					\EndIf
 		     	   \EndFor
 		     	\EndFor
 		     		
