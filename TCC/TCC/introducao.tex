@@ -72,8 +72,6 @@ O Centro Universitário da FEI, como publicado em artigo do I Encontro de Robót
 \end{figure}
 
 \subsection{VSS-Vision}
-\subsection{??}
-\cite{Neura:2009} em artigo do IX Simposio Brasileiro de Inteligencia Artificial descreve uma abordagem de detecção em tempo real utilizando redes neurais MLP, Perceptron de Multiplas Camadas.
 
 Em 2015 Rosa\cite{Rosa:2015} descreveu em seu Trabalho de Conclusão sobre a equipe de futebol de rob\^os Very Small Size, do Laboratório de Sistemas Inteligentes e Robótica, SIRLab(Faeterj-Petrópolis), o sistema de visão computacional da equipe, durante a competição do ano de 2014, que abrange inclusive a parte de calibração. 
 
@@ -115,7 +113,11 @@ O método de calibração de cores também foi modificado, segundo a equipe\cite
 	\label{SIRLabNovaCalibracao}
 \end{figure}
 
-\newpage
+\subsection{??}
+\cite{Neura:2009} em artigo do IX Simposio Brasileiro de Inteligencia Artificial descreve uma abordagem de detecção em tempo real utilizando redes neurais MLP, Perceptron de Multiplas Camadas. Como a utilização de somete redes neurais podem causas um grande custo computacional, as mesmas foram implementadas juntamente com um sistema baseado em modelo para classificação cores, assim melhorando a acuracia do sistema.
+A rede é composta por três camadas, a camada de entrada possui três neuronios, uma vez que os valores de entradas são cada um dos valores HSV de um pixel; a camada de saida possui sete neuronios, onde seis são para a representação de cada uma das cores em que o pixel podera ser classificado e um setimo neuronio para representação do fundo; para a camada intermediaria foram utilizados vinte neurosios, pois apos estudos foi o valor onde indentificaram melhor acuracia. Sendo assim a topologia da rede MLP foi configurada como  3-20-7.
+
+
 \section{Organização da Trabalho} \label{Sec:Organizacao}
 
 Este trabalho está divido em cinco capítulos, incluindo esta introdução como capítulo inicial.

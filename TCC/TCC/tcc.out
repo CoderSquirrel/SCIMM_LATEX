@@ -13,19 +13,16 @@
 \BOOKMARK [2][-]{subsection.2.1.2}{Detec\347\343o de Bordas}{section.2.1}% 13
 \BOOKMARK [1][-]{section.2.2}{Cores}{chapter.2}% 14
 \BOOKMARK [1][-]{section.2.3}{Futebol de Rob\364s}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.4}{Trabalhos Relacionados}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.4.1}{Calibra}{section.2.4}% 17
-\BOOKMARK [2][-]{subsection.2.4.2}{VSS-Vision}{section.2.4}% 18
-\BOOKMARK [0][-]{chapter.3}{Desenvolvimento}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Tecnologias Usadas}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.2}{Projeto}{chapter.3}% 21
-\BOOKMARK [2][-]{subsection.3.2.1}{Organiza\347\343o do Projeto}{section.3.2}% 22
-\BOOKMARK [2][-]{subsection.3.2.2}{Classes}{section.3.2}% 23
-\BOOKMARK [1][-]{section.3.3}{O Sistema}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.1}{1\252 Etapa - Reconhecimento de Fundo}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.2}{2\252 Etapa - Configura\347\343o de Camera}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.3}{3\252 Etapa - Extra\347\343o dos Objetos do Fundo}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.4}{4\252 Etapa - Detec\347\343o e valida\347\343o de Objetos}{section.3.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.5}{5\252 Etapa - Classifica\347ao do Pixel}{section.3.3}% 29
-\BOOKMARK [0][-]{section*.28}{Refer\352ncias Bibliogr\341ficas}{}% 30
-\BOOKMARK [0][-]{Item.22}{Ap\352ndices}{}% 31
+\BOOKMARK [0][-]{chapter.3}{Desenvolvimento}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Tecnologias Usadas}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Projeto}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{Organiza\347\343o do Projeto}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.2}{Classes}{section.3.2}% 20
+\BOOKMARK [1][-]{section.3.3}{O Sistema}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.1}{1\252 Etapa - Configura\347\343o de Camera}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.2}{2\252 Etapa - Reconhecimento de Fundo}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.3}{3\252 Etapa - Extra\347\343o dos Objetos do Fundo}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.4}{4\252 Etapa - Detec\347\343o e valida\347\343o de Objetos}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.5}{5\252 Etapa - Classifica\347ao do Pixel}{section.3.3}% 26
+\BOOKMARK [0][-]{section*.23}{Refer\352ncias Bibliogr\341ficas}{}% 27
+\BOOKMARK [0][-]{Item.22}{Ap\352ndices}{}% 28

@@ -6,16 +6,11 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Nova interface do time da SIRLab \cite {VSSVision}\relax }}{9}{figure.caption.8}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Calibra\IeC {\c c}\IeC {\~a}o atual do time da SIRLab \cite {VSSVision} ap\IeC {\'o}s calibra\IeC {\c c}\IeC {\~a}o\relax }}{9}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Detec\IeC {\c c}cao de Borda com Algoritmo de Canny \cite {Saini:2013} \relax }}{11}{figure.caption.10}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Universo de cores estabelecido pelo CIE.\relax }}{12}{figure.caption.11}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo dos espa\IeC {\c c}os de cores RGB E CMY.\relax }}{13}{figure.caption.12}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo do Modelo de Cor RGB. Horvath\cite {ImagensHSLHSVRGB} \relax }}{13}{figure.caption.13}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo do Modelo de Cor HSV, Horvath\cite {ImagensHSLHSVRGB}\relax }}{14}{figure.caption.14}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Sistema Calibra desenvolvido pelo Centro Universit\IeC {\'a}rio da FEI \cite {Penharbel:2004}\relax }}{15}{figure.caption.15}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Sistema de calibracao desenvolvido peloSIRLab \cite {Rosa:2015}\relax }}{16}{figure.caption.16}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Sistema de calibracao desenvolvido peloSIRLab \cite {VSSVision}\relax }}{16}{figure.caption.17}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Nova interface do time da SIRLab \cite {VSSVision}\relax }}{16}{figure.caption.18}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Calibra\IeC {\c c}\IeC {\~a}o atual do time da SIRLab \cite {VSSVision}\relax }}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Detec\IeC {\c c}cao de Borda com Algoritmo de Canny \cite {Saini:2013} \relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Universo de cores estabelecido pelo CIE.\relax }}{13}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo dos espa\IeC {\c c}os de cores RGB E CMY.\relax }}{14}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo do Modelo de Cor RGB. Horvath\cite {ImagensHSLHSVRGB} \relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo do Modelo de Cor HSV, Horvath\cite {ImagensHSLHSVRGB}\relax }}{15}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Organiza\IeC {\c c}\IeC {\~a}o das pastas do projeto\relax }}{19}{figure.caption.20}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Fluxo\relax }}{21}{figure.caption.25}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Organiza\IeC {\c c}\IeC {\~a}o das pastas do projeto\relax }}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Fluxo\relax }}{19}{figure.caption.20}
