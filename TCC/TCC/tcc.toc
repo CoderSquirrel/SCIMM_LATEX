@@ -23,12 +23,15 @@
 \contentsline {subsubsection}{JanelaPrincipal}{17}{section*.17}
 \contentsline {subsubsection}{Calibracao}{18}{section*.18}
 \contentsline {subsubsection}{SCIMM\_COR}{18}{section*.19}
-\contentsline {section}{\numberline {3.3}O Sistema}{18}{section.3.3}
+\contentsline {section}{\numberline {3.3}O Sistema}{19}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{19}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}2\IeC {\textordfeminine } Etapa - Reconhecimento de Fundo}{20}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}3\IeC {\textordfeminine } Etapa - Extra\IeC {\c c}\IeC {\~a}o dos Objetos do Fundo}{21}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{21}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}ao do Pixel}{22}{subsection.3.3.5}
-\contentsline {subsubsection}{7\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{23}{section*.22}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{24}{section*.23}
-\contentsline {chapter}{Ap\^endices}{25}{Item.22}
+\contentsline {subsection}{\numberline {3.3.2}2\IeC {\textordfeminine } Etapa - Reconhecimento de Fundo}{21}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}3\IeC {\textordfeminine } Etapa - Extra\IeC {\c c}\IeC {\~a}o dos Objetos do Fundo}{22}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{23}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}ao do Pixel}{24}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{25}{subsection.3.3.6}
+\contentsline {chapter}{\numberline {4}Resultados}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Teste Geral}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}Teste Por Area}{28}{section.4.2}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{29}{section*.29}
+\contentsline {chapter}{Ap\^endices}{30}{Item.22}

@@ -49,7 +49,7 @@ Os passos detalhados do projeto e seu desenvolvimento estará presente no Capít
 
 \section{Projeto}
 \subsection{Organização do Projeto}
-	 O projeto foi desenvolvido seguindo o paradigma de programação Orientada à Objetos, esse paradigma baseia-se na utilização de objetos individuais para criação de um sistema maior e complexo. A IDE usada para o desenvolvimento foi a QT Creator, esta separada o projeto em três pastas, Headers, Sources e Forms. Na pasta Headers estão os arquivos de cabeçalho(.h) onde estão as declarações dos métodos e variáveis usados nas classes  executáveis. Já na pasta Sources estão os arquivos fonte(.cpp), são nesses arquivos que os métodos declarados nos arquivos da pasta Header são implementados. Na pasta Forms está o arquivo de interface gráfica(.ui) que é usado no projeto para ser a ponte entre o usuario e as funções do sistema.
+	 O projeto foi desenvolvido seguindo o paradigma de programação Orientada à Objetos, esse paradigma baseia-se na utilização de objetos individuais para criação de um sistema maior e complexo. A IDE usada para o desenvolvimento foi a QT Creator, esta separada o projeto em três pastas: Headers, Sources e Forms. Na pasta Headers estão os arquivos de cabeçalho(.h), onde estão as declarações dos métodos e variáveis usados nas classes  executáveis. Já na pasta Sources estão os arquivos fonte(.cpp), são nesses arquivos que os métodos declarados nos arquivos da pasta Header são implementados. Na pasta Forms está o arquivo de interface gráfica(.ui) que é usado no projeto para ser a ponte entre o usuario e as funções do sistema.
 	 
 	\begin{figure}[!h]
 		\centering
@@ -57,62 +57,58 @@ Os passos detalhados do projeto e seu desenvolvimento estará presente no Capít
 		\caption{Organização das pastas do projeto}
 		\label{Organizacao do Projeto}
 	\end{figure}
-	Cada arquivo de cabeçalho possui um arquivo fonte correspondente, formando assim uma Classe, com exceção do arquivo fonte main, pois para este arquivo não há a necessidade.
-	As classes desenvolvidas no projeto são: calibracao, automatica, scimm\_cor, janelaprincipal.
+	Com exceção do arquivo fonte main, cada arquivo de cabeçalho possui um arquivo fonte correspondente, formando assim um objeto, todo objeto é uma classe mas nem toda classe fomar um objeto. As classes desenvolvidas no projeto são: Calibracao, scimm\_cor e janelaprincipal.
 %Para melhor entendimento da interação entre as classes a figura 3.2 trás o diagrama de classes do projeto.
 
 \subsection{Classes}
 \subsubsection{main}
- Esta é o que se chama de \textit{ponto de entrada} em programação.\textit{Ponto de entrada} é onde o sistema operacional ira iniciar a execução do sistema desenvolvido. Esta classe possui somente o metodo \textbf{main} e este invoca a classe \textbf{JanelaPrincipal} que apresenta a interfaçe grafica para interação com o usuario, e de acordo com esta interação iniciar o processo de calibração.
+ Esta é o que se chama de \textit{ponto de entrada} em programação. \textit{Ponto de entrada} é onde o sistema operacional ira iniciar a execução do sistema desenvolvido. Esta classe possui somente o metodo \textbf{main} e este instancia e inicia o objeto \textbf{JanelaPrincipal} que apresenta a interfaçe grafica para interação com o usuario.
  
 \subsubsection{JanelaPrincipal}
-É uma classe-objeto que utiliza da implementação de objetos QWidget e suas subclasses disponiveis pelo framework Qt, para a criação de uma interface grafica que faz a interação com o usuario e que seleciona o tipo de calibração a ser iniciada. Todos os metodos presentes nessa clase são para utilização grafica, ex. comportamento de botões, slider, abas, menus de seleção, gráficos, bem como a comunicação com as classes de calibração.	
+É uma classe-objeto que utiliza da implementação de objetos QWidget e suas subclasses disponiveis pelo framework Qt, para a criação de uma interface grafica que faz a interação com o usuario. Todos os metodos presentes nessa classe são para utilização grafica, comportamento de botões e menu de seleção, para a comunicação com a classe de calibração.	
 
 \subsubsection{Calibracao}
- É classe que contem todos os metodos e variaveis usados no processo de calibração, é dentro dessa classe que são feitas todos os tipos de manipulação em imagem.
+ É classe que contem todos os metodos e variaveis usados no processo de calibração, é tambem dentro dessa classe que são feitas todos os tipos de manipulação em imagem.
  
 Os métodos contidos na classe Calibracao são:
 	\begin{description}
 
-\item Iniciar: Método onde é instanciado o objeto que faz referencia à \textbf{JanelaPrincipal}, onde tambem se fixa o ID da camera dentro da classe, alem de ser onde se verifica se a mesma esta disponivel.
+\item Iniciar: Método onde é instanciado o objeto que faz referencia à \textbf{JanelaPrincipal}, para ser usado quando houver necessidade de comunicação com a interface que não seja por meio de retorno, este metodo tambem é onde se inicializa o a camera, a partir do id contido na interface, e se verifica se a mesma esta disponivel.
 
 
-\item ConfigurarCamera: Método onde a imagem de exibição é ajustando o tamanho da tela a ser usada durante a detecção de objetos alem de ajustar as configurações de brilho e contraste para melhoramento da nitidez da imagem no momento da detecção de objetos.	
+\item ConfigurarCamera: Método onde a imagem de exibição é ajustando o tamanho da tela a ser usada durante a detecção de objetos, alem do ajuste de brilho e contraste para tornar mais nitido os contornos durante a detecção de objetos.	
 	
-  \item ReconhecerFundoExtrairObjetos: Método que utiliza o algoritmo de subtração de fundo por mistura gaussiana para identificar o campo. Uma vez que o campo foi identificado o metodo espera a informação do usuario de que já é possivel fazer a extração dos objetos. A extração dos objetos é então feita gerando uma imagem \textit{mascara} que sera usada na detecção dos objetos para esta ser executada com mais precisão, uma vez que os objetos-cor eram os unicos que não fazim parte da imagem inicial, o fundo.
+  \item ReconhecerFundoExtrairObjetos: Método onde se utiliza o algoritmo de subtração de fundo para identificar, inicialmente, o campo e uma vez identificado se separa os objetos que não fazem parte do fundo inicial, a extração dos objetos. A extração dos objetos gerando uma imagem \textit{mascara} que sera usada na detecção dos objetos para que a mesma ser executada com mais precisão, uma vez que os objetos coloridos eram os unicos que não fazim parte da imagem inicial, o fundo.
   
  
-	\item Calibrar: Método onde é exibido a imagem da camera e quando estiver de acordo com a exigencia do usuario o mesmo inicial a calibração. So apos ser iniciada a calibração o método \textbf{DetectarObjetos} é invocado, apos os objetos de cores serem identificados, apos a detecção dos objtos o metodo invocado é o \textbf{Calcular} onde são analisados os valores de cada pixel de cada objetos e estes classificados de acordo com as cores pré definicas pelo sistemas. Uma vez terminado o processo de calibração é exibida na tela para o usuario os objetos da cor que esta definida no menu de cores.			
+	\item Calibrar: Metodo onde se a imagem atual da camera é obtida e ajustada de acordo com os parametros estabelecidos no metodo\textbf{ConfigurarCamera} e iniciado o método \textbf{DetectarObjetos}. Uma vez que os objetos foram identificados se faz o uso do metodo \textbf{Calcular}  para serem analisados os valores de cada pixel de cada objetos e estes classificados de acordo com as cores pré definicas pelo sistemas. Uma vez terminado o processo de calibração é exibida na tela para o usuario os objetos da cor que esta selecionada no menu de cores.			
 		
-	\item DetectarObjetos: Método onde serão aplicados filtros de diminuição de ruido, detectadas as bordas existentes na imagem, detectados os objetos a partis das bordas contidas na imagem, o aumento da precisão dos objetos e diminuição do tamanho do objeto de acordo com a porcentagem de borda a ser eliminada. 
+	\item DetectarObjetos: Método onde serão aplicados filtros de diminuição de ruido, detectadas as bordas existentes na imagem, detectados os objetos a partir das bordas contidas na imagem, o aumento da precisão do contorno dos objetos e diminuição do tamanho do objeto de acordo com a porcentagem de borda a ser eliminada. 
 
-	\item ObterPorcentagem: Método simples para devolver a porcentagem de um valor, ao ser informado o valor  e a porcentagem escolhida.
+	\item ObterPorcentagem: Método simples para devolver a porcentagem de um valor, ao ser informado o valor e a porcentagem escolhida.
 		
-		\item Calcular: Método onde cada pixel pertencente à cada um dos objetos encontrados é analisado, seu valor H é categorizado de acordo com o intervalo de cada cor e então o valor do pixel é adicionado Á cor correspondente.
+		\item Calcular: Método onde cada pixel pertencente à cada um dos objetos encontrados é analisado, seu valor H é categorizado de acordo com as cores pre-definidas no sistema e adicionado à cor correspondente.
 		O algoritmo de categorizacao:
  
 	
 		\end{description}	
 
 \subsubsection{SCIMM\_COR}
-
+	Classe de cor utilizada do sistema. Onde são salvos os valores maximos e minimos de HSV. Possui seis valores, um minimo e um maximo para H, S e V. 
 
 
 \section{O Sistema}
 
-		\begin{figure}[!h]
+		 O sistema consiste na apresentação da \textbf{interface gráfica} ao usuario. A \textbf{interface grafica} que por sua vez oferece as duas possibilidades ao usuario, de acordo com o tipo de calibração escolhido o sistema inicia a rotina de calibração referente. Apos a execução de toda o sistema é finalizada, como mostra o diagrama de fluxo na Figura \ref{FlowCHart}.
+		
+		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.45\textwidth]{FluxodoSistema.pdf}
 			\caption{Diagrama de Fluxo}
 			\label{FlowCHart}
-		\end{figure}
-		A Figura 3.3 mostra o diagrama de fluxo do sistema de calibraçao.
-		
-		 O sistema consiste na apresentação da \textbf{interface gráfica} ao usuario. A \textbf{interface grafica} que por sua vez oferece as duas possibilidades ao usuario, de acordo com o tipo de calibração escolhido o sistema inicia a rotina de calibração referente. Apos a execução de toda o sistema é finalizada.
-			
+		\end{figure}			
 	 
-		Conformo mostrado na Figura \ref{DiagramaDeFluxoAutomatico} a rotina de calibração automatica possui cinco etapas. Este tipo de calibração  possui o mínimo possivel de interação com o usuario. O sistema faz automaticamente a detecção de objetos e utilizando a probabilidade matematica T de Student, considerando o tamanho de todos os objetos encontrados para encontrar os tamanhos minimo e maximo que os objetos desejados devem ter, nesse caso as etiquetas de cores dos robos, e só após determinar quais objetos possuem o tamanho desejado, analisar os valores e calcular as ocorrencias de cada um dos três valores do modelo HSV.
-			Nas subsessões à seguir explicarei detalhadamente cada uma das etapas do processo de calibração automatica
+		A rotina de calibração automatica possui cinco etapas e os mesmos possuem o mínimo de interação possivel do usuario. Nas subsessões à seguir explicarei detalhadamente cada uma das etapas do processo de calibração automatica
 		\subsection{1ª Etapa - Configuração de Camera}
 		
 
@@ -126,6 +122,15 @@ Dentro da função \textbf{mouseHandler} são identificados os pontos iniciai e 
 \centering \textit{ cv::rectangle(frameA, point1, point2, CV\_RGB(255, 0, 0), 2, 5, 0);}
 \end{center}
 A função rebece os parametros \textbf{frameA} indicando a imagem na qual será demarcada a area selecionada, depois o parametro \textbf{point1} que é o ponto incial de seleção na imagem, \textbf{point2} que é o ponto final da seleção. \textbf{CV\_RGB(255, 0, 0)} que indica a cor da demarcação, \textbf{2} indicando a expessura da demarcação, \textbf{5} que significa o tipo de linha a ser utilizado na demarcação e \textbf{0} que é o numero de bits fracinarios.
+
+\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\textwidth]{passo1.pdf}
+			\caption{ Configuração de Camera}
+			\label{Configuracao}
+		\end{figure}		
+
+
  Após confirmada a escolha do tamanho da tela 
 este é então salvo na variavel nomeada \textit{tamanho}, está então sera usado durante todo o processo de calibração.
 Além de recorte da imagem, nessa etapa tambem são configurados Brilho e Constrate de forma que os objetos de cor no campo se tornem mais vividos, se tornando assim tambem mais nitidos, para que os processos de separaçao e detecçao de objetos sejam mais precisos.	A configuração de Brilho e Constrate utiliza o metodo \textit{convertTo} da biblioteca \textit{OpenCV} que é utilizada para o melhoramento da imagem antes da detecção dos objetos, a utilização completa fica da seguinte maneira:
@@ -138,15 +143,30 @@ Esta função recebe quatro parametros. O primeiro \textbf{frameA} informa aonde
 	Um principais problemas que ocorrem na detecçao de objetos é a confusão do fundo junto ao proprio objeto, fazendo assim que o mesmo seja detectado porem nao seu contorno correto, ou em outras vezes ignorado por ser considerado parte do fundo. Para eliminar este problema foi utilizado a tecnica  Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponivel na biblioteca \textit{OpenCV}. Esta tecnica utiliza um algoritmo de analise pixel a pixel e que classifica o mesmo baseando-se na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande pesso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco no tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem baseando-se na variancia do objetos da mesma e de sua variancia. O objeto criado pela biblioteca, por meio do metodo \textbf{apply}, analisa quadro a quadro a imagem, a compara com o fundo obtido e gera uma imagem chamada de \textbf{mascara} com os objetos que nao fazem parte do fundo, no exato momento da imagem, com o passar dos quadros o objeto se torna parte do fundo. Uso do metodo:
 \begin{center}
  \begin{displaymath}  \centering \textit{pMOG2->apply(frame, mask);}  \end{displaymath}
-
 \end{center}
 
 Onde \textbf{frame} significa a imagem atual capturada pela camera e \textbf{mask} a mascara gerada pela diferença da imagem atual com o modelo de fundo. 
+
+\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.45\textwidth]{passo2.pdf}
+			\caption{Configuração de Camera}
+			\label{Configuracao}
+		\end{figure}		
+
 
 Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} esta vazio, basta que ele seja executado algumas vezes para que o campo se torne o modelo de fundo. Nesse caso a mascara gerada pelo metodo não chega a ser utilizada, porem sera na 3ª etapa.
 	\subsection{3ª Etapa - Extração dos Objetos do Fundo}
 	Como visto na 1ª etapa, o objeto \textbf{pMOG2} chamando o metodo \textit{apply} o mesmo gera uma mascara de diferença da imagem atual para o modelo de fundo. Sendo assim para obtermos os objetos que virao a ser detectados basta que o metodo \textit{apply} seja chamado um numero de vezes suficiente para criar a mascara e o mesmo nao alterar o modelo de fundo.
 	
+\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\textwidth]{passo3.pdf}
+			\caption{Geraçao de Mascara}
+			\label{Configuracao}
+		\end{figure}		
+
+
 \subsection{4ª Etapa - Detecção e validação de Objetos}
 A detecção dos objetos a serem calibrados é dada pelo algoritmo de detecção de bordas de Canny. Como mais um recurso para eliminação de ruidos e melhoria da imagem antes de ser executado a detecção de objetos atravez da detecção de bordas é utilizado desfoque na imagem. O algoritmo de Canny já está implementado dentro da biblioteca OpenCV e com a seguite usagem:
 \begin{center}
@@ -192,9 +212,9 @@ Amarelo & de 21 à 30\\
 \hline 
 Verde & de 61 à 90 \\
 \hline 
-Azul\footnote{Foi percebido que a cor Azul possui uma especifidade no seu intervalo de valores. Ao contrario das demais cores, quais não se torna necessario analizar valores de S e V, a cor azul requer que ambos valores seram analizados e que seus intervalos seram entre 100 e 255.}& de 91 à 120 \\
+Azul& de 91 à 120 \\
 \hline 
-Roxo & de 121 à 160 \\
+Roxo & de 125 à 160 \\
 \hline 
 Rosa & de 161 à 168 \\
 \hline 
@@ -203,6 +223,12 @@ Vermelha & de 169 à 180 \\
 \end{tabular}
 \caption{Intervalo de Valores de Cores - HSV}
 \end{table}
+
+
+Para chegarmos à esta pré-definição de valores
+Estes valores foram obtidos atraves da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teorica, o intervalo de valores da matiz(h) é de 0 a 360º graus, porem o valor maximo de armazenamento de um bit é 255, foi incorporada na biblioteca o intervalo de valores de 0 à 180 sendo assim metade do valor do intervalo no mundo real. Uma outra ressalva deve ser feita quando à conversão de valores. O modelo padrão de uma imagem é o RGB, porem dentro da biblioteca espaço padrão é o BGR, quando a imagem é obtida a mesma possui alguns valores invertidos, ou seja, os intervalos de valores da tabela acima podem parecer diferentes do que seria considerado real se forem feitos conversao de valores RGB para HSV.
+Como não há pre-definiçao destes valores disponivel pela biblioteca, foi feito um estudo dos intervalos onde foram levados em condiseração a conversao padrao do mundo real, divindo os valores por dois, uma vez o intervalo dentro da biblioteca é, que corresponde a metade do intervalo no mundo real, juntamente com uma serie de testes para encontrar os valores analisando seu resultado ao limitar a exibição da imagem da camera para determinados intervalos de cores.
+	
 %\begin{algorithm}
 % 	       		 \caption{Contagem dos Valores HSV}
 % 		        \begin{algorithmic}
@@ -222,12 +248,10 @@ Vermelha & de 169 à 180 \\
   		      
 
 	   
-        
-Uma vez terminada a analise dos pixeis do objeto o sistema procupa o valor mínimo e máximo, ou seja a primeira e ultima ocorrencia. Esses valores são encontrados procurando o primeiro valor de pixel que não esta zerado e o ultimo valor que não esta zerado. Isto é feito para eliminar que durante a analise o numero de valores a serem comparados ao valor real do pixel, da imagem final, seja menor. Para exemplificar a Figura 3.6 tras o gráfico dos valores de H da calibração de um certo objeto antes de ser feia a eliminação dos valores. Se fosse analisado esses valores, não eliminando os valores zerados, o sistema buscaria no valor de H do pixel desde o valor 1 ao 126 sem a necessidade, pois se não houve ocorrencia desses valores no objeto de referencia, o que foi analisado, então esses valores não fazem parte da cor desejada.
-% e tambem para remover ruidos de outros cores para que estas não interfiram na pureza da busca da dada cor.
+      % e tambem para remover ruidos de outros cores para que estas não interfiram na pureza da busca da dada cor.
 
 
-  \subsubsection{7ª Etapa - Gerar Arquivo de Cores}
+  \subsection{6ª Etapa - Gerar Arquivo de Cores}
   Assim que todas as cores já estiverem sido assimiladas e a calibração finalizada, gera-se um arquivo chamado \textbf{cores.arff} contendo o indice de cada cor calibraa e seus valores máximos e mínimos.
   
   		
