@@ -27,11 +27,9 @@
 \contentsline {subsection}{\numberline {3.3.1}1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{19}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}2\IeC {\textordfeminine } Etapa - Reconhecimento de Fundo}{21}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}3\IeC {\textordfeminine } Etapa - Extra\IeC {\c c}\IeC {\~a}o dos Objetos do Fundo}{22}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{23}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}ao do Pixel}{24}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{25}{subsection.3.3.6}
-\contentsline {chapter}{\numberline {4}Resultados}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Teste Geral}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}Teste Por Area}{28}{section.4.2}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{29}{section*.29}
+\contentsline {subsection}{\numberline {3.3.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{22}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}ao do Pixel}{23}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{24}{subsection.3.3.6}
+\contentsline {chapter}{\numberline {4}Resultados}{25}{chapter.4}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{29}{section*.30}
 \contentsline {chapter}{Ap\^endices}{30}{Item.22}
