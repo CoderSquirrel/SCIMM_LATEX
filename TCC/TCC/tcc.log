@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  20 AUG 2016 20:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  21 AUG 2016 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,12 +1189,12 @@ File: figuras/campodivisao.pdf Graphic file (type pdf)
 Package pdftex.def Info: figuras/campodivisao.pdf used on input line 25.
 (pdftex.def)             Requested size: 140.84258pt x 165.64836pt.
 
-<figuras/disposicaoparte.pdf, id=557, 1395.73495pt x 1037.56592pt>
+<figuras/disposicaoparte.pdf, id=557, 1415.81168pt x 1048.0058pt>
 File: figuras/disposicaoparte.pdf Graphic file (type pdf)
 
 <use figuras/disposicaoparte.pdf>
 Package pdftex.def Info: figuras/disposicaoparte.pdf used on input line 36.
-(pdftex.def)             Requested size: 140.84258pt x 104.69675pt.
+(pdftex.def)             Requested size: 140.84258pt x 104.24702pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 40.
  [25
@@ -1227,9 +1227,14 @@ File: figuras/mascaragerada.pdf Graphic file (type pdf)
 <use figuras/mascaragerada.pdf>
 Package pdftex.def Info: figuras/mascaragerada.pdf used on input line 63.
 (pdftex.def)             Requested size: 328.6279pt x 259.28087pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--83
+
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 84.
- [27 <./figuras/objetosdispostos.pdf> <./figuras/mascaragerada.pdf
+(babel)             in language  on input line 83.
+[27 <./figuras/objetosdispostos.pdf> <./figuras/mascaragerada.pdf
 
 pdfTeX warning: pdflatex (file ./figuras/mascaragerada.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
@@ -1292,7 +1297,7 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on tcc.pdf (30 pages, 5694070 bytes).
+Output written on tcc.pdf (30 pages, 5695342 bytes).
 PDF statistics:
  724 PDF objects out of 1000 (max. 8388607)
  597 compressed objects within 6 object streams

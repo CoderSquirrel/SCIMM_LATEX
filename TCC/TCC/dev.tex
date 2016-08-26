@@ -225,9 +225,15 @@ Vermelha & de 169 à 180 \\
 \end{table}
 
 
-Para chegarmos à esta pré-definição de valores
+Os valores prédefinidos de H foram obtidos 
+
+
 Estes valores foram obtidos atraves da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teorica, o intervalo de valores da matiz(h) é de 0 a 360º graus, porem o valor maximo de armazenamento de um bit é 255, foi incorporada na biblioteca o intervalo de valores de 0 à 180 sendo assim metade do valor do intervalo no mundo real. Uma outra ressalva deve ser feita quando à conversão de valores. O modelo padrão de uma imagem é o RGB, porem dentro da biblioteca espaço padrão é o BGR, quando a imagem é obtida a mesma possui alguns valores invertidos, ou seja, os intervalos de valores da tabela acima podem parecer diferentes do que seria considerado real se forem feitos conversao de valores RGB para HSV.
 Como não há pre-definiçao destes valores disponivel pela biblioteca, foi feito um estudo dos intervalos onde foram levados em condiseração a conversao padrao do mundo real, divindo os valores por dois, uma vez o intervalo dentro da biblioteca é, que corresponde a metade do intervalo no mundo real, juntamente com uma serie de testes para encontrar os valores analisando seu resultado ao limitar a exibição da imagem da camera para determinados intervalos de cores.
+
+
+Durante o desenvolvimento foi observador que, em sua maioria, as cores necessitavam de um valor S e V pré estabelecido.Para as cores Vermelho, Rosa, Azul, Laranja e Verde foi pré estabelecido o valor de 100 para ambos, S e V, já para Amarelo e Roxo ambos os valores assumem 50.
+
 	
 %\begin{algorithm}
 % 	       		 \caption{Contagem dos Valores HSV}
