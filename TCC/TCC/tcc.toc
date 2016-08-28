@@ -1,35 +1,42 @@
 \select@language {portuguese}
 \contentsline {chapter}{Lista de Figuras}{5}{section*.3}
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{6}{chapter.1}
-\contentsline {section}{\numberline {1.1}Contexto}{6}{section.1.1}
-\contentsline {section}{\numberline {1.2}Justificativa e Objetivos}{6}{section.1.2}
-\contentsline {section}{\numberline {1.3}Trabalhos Corelatos}{7}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Calibra}{7}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}VSS-Vision}{7}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}??}{8}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o da Trabalho}{9}{section.1.4}
-\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Processamento de Imagens}{11}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Detec\IeC {\c c}\IeC {\~a}o de Objetos}{11}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Detec\IeC {\c c}\IeC {\~a}o de Bordas}{11}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Cores}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}Futebol de Rob\IeC {\^o}s}{15}{section.2.3}
-\contentsline {chapter}{\numberline {3}Desenvolvimento}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Tecnologias Usadas}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Projeto}{17}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Organiza\IeC {\c c}\IeC {\~a}o do Projeto}{17}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Classes}{17}{subsection.3.2.2}
-\contentsline {subsubsection}{main}{17}{section*.16}
-\contentsline {subsubsection}{JanelaPrincipal}{17}{section*.17}
-\contentsline {subsubsection}{Calibracao}{18}{section*.18}
-\contentsline {subsubsection}{SCIMM\_COR}{18}{section*.19}
-\contentsline {section}{\numberline {3.3}O Sistema}{19}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{19}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}2\IeC {\textordfeminine } Etapa - Reconhecimento de Fundo}{21}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}3\IeC {\textordfeminine } Etapa - Extra\IeC {\c c}\IeC {\~a}o dos Objetos do Fundo}{22}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{22}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}ao do Pixel}{23}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{24}{subsection.3.3.6}
-\contentsline {chapter}{\numberline {4}Resultados}{25}{chapter.4}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{29}{section*.30}
-\contentsline {chapter}{Ap\^endices}{30}{Item.22}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}Contexto}{7}{section.1.1}
+\contentsline {section}{\numberline {1.2}Justificativa e Objetivos}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Trabalhos Corelatos}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Calibra}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}VSS-Vision}{8}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}??}{9}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o da Trabalho}{10}{section.1.4}
+\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{12}{chapter.2}
+\contentsline {section}{\numberline {2.1}Processamento de Imagens}{12}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Detec\IeC {\c c}\IeC {\~a}o de Objetos}{12}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Detec\IeC {\c c}\IeC {\~a}o de Bordas}{12}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Cores}{14}{section.2.2}
+\contentsline {section}{\numberline {2.3}Futebol de Rob\IeC {\^o}s}{16}{section.2.3}
+\contentsline {chapter}{\numberline {3}Desenvolvimento}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tecnologias Usadas}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Projeto}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Organiza\IeC {\c c}\IeC {\~a}o do Projeto}{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Classes}{18}{subsection.3.2.2}
+\contentsline {subsubsection}{main}{18}{section*.16}
+\contentsline {subsubsection}{JanelaPrincipal}{18}{section*.17}
+\contentsline {subsubsection}{Calibracao}{19}{section*.18}
+\contentsline {subsubsection}{SCIMM\_COR}{19}{section*.19}
+\contentsline {section}{\numberline {3.3}O Sistema}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}2\IeC {\textordfeminine } Etapa - Reconhecimento de Fundo}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}3\IeC {\textordfeminine } Etapa - Extra\IeC {\c c}\IeC {\~a}o dos Objetos do Fundo}{23}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{23}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}ao do Pixel}{24}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{25}{subsection.3.3.6}
+\contentsline {chapter}{\numberline {4}Resultados}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Amarelo}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Azul}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}Verde}{31}{section.4.3}
+\contentsline {section}{\numberline {4.4}Vermelho}{32}{section.4.4}
+\contentsline {section}{\numberline {4.5}Rosa}{32}{section.4.5}
+\contentsline {section}{\numberline {4.6}Roxo}{33}{section.4.6}
+\contentsline {section}{\numberline {4.7}Laranja}{33}{section.4.7}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{35}{section*.36}
+\contentsline {chapter}{Ap\^endices}{36}{Item.22}
