@@ -35,8 +35,8 @@
 \contentsline {section}{\numberline {4.2}Azul}{30}{section.4.2}
 \contentsline {section}{\numberline {4.3}Verde}{31}{section.4.3}
 \contentsline {section}{\numberline {4.4}Vermelho}{32}{section.4.4}
-\contentsline {section}{\numberline {4.5}Rosa}{32}{section.4.5}
-\contentsline {section}{\numberline {4.6}Roxo}{33}{section.4.6}
-\contentsline {section}{\numberline {4.7}Laranja}{33}{section.4.7}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{35}{section*.36}
-\contentsline {chapter}{Ap\^endices}{36}{Item.22}
+\contentsline {section}{\numberline {4.5}Rosa}{33}{section.4.5}
+\contentsline {section}{\numberline {4.6}Roxo}{34}{section.4.6}
+\contentsline {section}{\numberline {4.7}Laranja}{35}{section.4.7}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{36}{section*.43}
+\contentsline {chapter}{Ap\^endices}{37}{Item.22}
