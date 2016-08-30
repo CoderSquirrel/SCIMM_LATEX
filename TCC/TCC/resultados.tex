@@ -15,10 +15,10 @@
 \chapter{Resultados} 
 
 
-	Para serem feitos os testes foram despostos no campo tiras coloridas entre 17 e 40 centimetros de largura e  5,5 e 10,5 centimetros de altura. Cada cor possue três tiras, e cada uma das tiras foi colocada em uma parte do campo que foi dividio em três.
+	Para serem feitos os testes foram dispostos no campo tiras coloridas entre 17 e 40 centímetros de largura e  5,5 e 10,5 centímetros de altura. Cada cor possue três tiras, e cada uma das tiras foi colocada em uma parte do campo que foi dividio em três.
 
 
-Para a execução dos tipos de testes, o campo foi dividido verticalmente em cinco partes, de vinte e nove centimetros cada, e horizontalmente em três parte de quarenta e um centimetro cada, somando um total de quinze areas de calibração, nomeadas alfabeticamente de A à O, como mostrado na Figura \ref{campodivisao}.
+O campo foi dividido verticalmente em cinco partes, de vinte e nove centímetros cada, e horizontalmente em três parte de quarenta e um centímetro cada, somando um total de quinze áreas de calibração, nomeadas alfabeticamente de A à O, como mostrado na Figura \ref{campodivisao}.
 
 \begin{figure}[!: h]
 		\centering
@@ -27,7 +27,7 @@ Para a execução dos tipos de testes, o campo foi dividido verticalmente em cin
 		\label{campodivisao}
 	\end{figure}
 	
-Em cada areas de calbração estão dispostas cinco cores: Vermelho  e Verde na primeira linha, Amarelo, Azul e Laranja na segunda. As cores estão distantes verticalmente \textit{7.5cm}, na primeria linha a distancia entre as cores é  de \textit{11 cm} e na segunda linha de \textit{7.2 cm}. Um  melhor detalhamento da disposiçao das cores é  mostrado na Figura \ref{disposicaoparte}. No total estavam disposto no campo quinze pontos de cada cor.
+Em cada áreas de calibração estão dispostas sete cores: Vermelho, Amarelo e Azul na primeira linha, Verde, Roxo, Laranja e Rosa na segunda. As cores estão distantes verticalmente \textit{6cm}, na primeria linha a distancia entre as cores é de \textit{7,25 cm} e na segunda linha de \textit{5 cm}. Um  melhor detalhamento da disposiçao das cores é  mostrado na Figura \ref{disposicaoparte}. No total estavam disposto no campo quinze pontos de cada cor.
 
 
 
@@ -54,7 +54,7 @@ Em cada areas de calbração estão dispostas cinco cores: Vermelho  e Verde na 
 \end{figure}
 
 	
-A realização da aquisição de minimos ocorreu dia 19 de Agosto de 2016, entre 17:36 e 17:39.
+A realização da aquisição de mínimos e máximos ocorreu dia no 19 de Agosto de 2016, entre 17:36 e 17:39.
 
 Seleção de Campo:
 \begin{figure}[H]
@@ -63,23 +63,11 @@ Seleção de Campo:
 		\caption{Imagem do fundo com a seleção de campo}
 		\label{disposicaoparte}
 	\end{figure}
-	
-I%magem dos objetos dispostos:
-%	\begin{figure}[H]
-%	\centering
-%		\includegraphics[width=0.6\textwidth]{objetosdispostos.pdf}
-%		\caption{Objetos dispostos no campo para calibração}
-%		\label{disposicaoparte}
-%	\end{figure}
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[width=0.6\textwidth]{mascaragerada.pdf}
-%		\caption{Objetos dispostos no campo para calibração}
-%		\label{disposicaoparte}
-%	\end{figure}
+
 	
 	\begin{figure}[H]
 \begin{minipage}[H]{0.34\linewidth}
+\hspace{0.5cm}
 \centering
 \includegraphics[width=\textwidth]{objetosdispostos.pdf}
 \caption{Objetos dispostos no campo para calibração}
@@ -127,7 +115,7 @@ Arquivo \textit{cores.arff} gerado:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/amarelo.pdf}
-		\caption{Resultado final da cor amarela}
+		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor amarela}
 		\label{disposicaoparte}
 	\end{figure}
 	
@@ -135,49 +123,52 @@ Arquivo \textit{cores.arff} gerado:
 	
 	\begin{table}[h]
 \centering
-\begin{tabular}{l|r}
-Tipo de Objeto & Quantidade \\ % Note a separação de col. e a quebra de linhas
+\begin{tabular}{l|c|c}
+Tipo de Objeto & Quantidade & \%  \\% Note a separação de col. e a quebra de linhas
 \hline                               % para uma linha horizontal
-Objetos Completos & 14 \\
+Objetos Completos & 14 & 93,33 \\
 \hline 
-Objetos Com Falha de Preenchimento & 1 \\
+Objetos Com Falha de Preenchimento & 1 & 6,66 \\
 \hline 
-Objetos Com Diminuição de Contorno & 0 \\
+Objetos Com Diminuição de Contorno & 0 &\\
 \hline 
-Objetos Extrapolados & 0 \\
+Objetos Extrapolados & 0 &\\
 \hline 
-Objetos Com Diminuição de Area &  0\\
+Objetos Com Diminuição de Área &  0 &\\
 \hline 
-Objetos Com Falhas Problematicas & 0\\
+Objetos Com Falhas Problematicas & 0 &\\
 \hline 
 \end{tabular}
 \caption{Categorizaçao Dos Objetos}
 \end{table}
 
+Dentre as classficações dos objetos as que  \textit{Objetos Com Falhas Problematicas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam 6,67\% dos objetos.
+
 \section{Azul}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/azul.pdf}
-		\caption{Resultado final da cor amarela}
-		\label{disposicaoparte}3
+		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor azul}
+		\label{disposicaoparte}
 	\end{figure}
 
-Os objetos da cor azul foram os que obtiveram os melhores resultados, os quinze objetos foram encontrados de forma preenchida.	Apesar dos quinze estarem totalmente preenchido um dos objetos apresenta um tamanho reduzido aos demais devido a sua borda que não foi totamente detectada.
+Os objetos da cor azul foram os que obtiveram os melhores resultados, os quinze objetos foram encontrados de forma preenchida.	Apesar dos quinze estarem totalmente preenchidos um dos objetos apresentou um tamanho reduzido aos demais devido ao fato de sua borda que não ter sido totamente detectada.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|r}
-Tipo de Objeto & Quantidade \\ % Note a separação de col. e a quebra de linhas
+\begin{tabular}{l|c|c}
+Tipo de Objeto & Quantidade & \% \\ % Note a separação de col. e a quebra de linhas
 \hline                               % para uma linha horizontal
-Objetos Completos & 14 \\
+Objetos Completos & 14 & 93,33 \\
 \hline 
 Objetos Com Falha de Preenchimento & 0\\
 \hline 
-Objetos Com Diminuição de Contorno &  1\\
+Objetos Com Diminuição de Contorno &  1 & 6,66
+\\
 \hline 
 Objetos Extrapolados &  0\\
 \hline 
-Objetos Com Diminuição de Area & 0 \\
+Objetos Com Diminuição de Área & 0 \\
 \hline 
 Objetos Com Falhas Problematicas & 0 \\
 \hline 
@@ -189,18 +180,18 @@ Objetos Com Falhas Problematicas & 0 \\
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/verde.pdf}
-		\caption{Resultado final da cor verde}
+		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor verde}
 		\label{disposicaoparte}
 	\end{figure}
 
-Os objetos da cor verde foram satisfatoriamente encontrados, com seu preenchimento total e sem perca de area devido a qualquer interferencia de luz em sua borda.	
+Os objetos da cor verde foram satisfatoriamente encontrados, com seu preenchimento total e não havendo perda de área devido a qualquer interferência de luz em sua borda.	
 	
 \begin{table}[h]
 \centering
-\begin{tabular}{l|r}
-Tipo de Objeto & Quantidade \\ % Note a separação de col. e a quebra de linhas
+\begin{tabular}{l|c|c}
+Tipo de Objeto & Quantidade & \% \\ % Note a separação de col. e a quebra de linhas
 \hline                               % para uma linha horizontal
-Objetos Completos &  15\\
+Objetos Completos &  15 &100 \\
 \hline 
 Objetos Com Falha de Preenchimento & 0\\
 \hline 
@@ -208,7 +199,7 @@ Objetos Com Diminuição de Contorno &  0\\
 \hline 
 Objetos Extrapolados & 0 \\
 \hline 
-Objetos Com Diminuição de Area &  0 \\
+Objetos Com Diminuição de Área &  0 \\
 \hline 
 Objetos Com Falhas Problematicas & 0 \\
 \hline 
@@ -220,26 +211,26 @@ Objetos Com Falhas Problematicas & 0 \\
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/vermelho.pdf}
-		\caption{Resultado final da cor vermelho}
+		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor vermelho}
 		\label{disposicaoparte}
 	\end{figure}
 	
 	\begin{table}[h]
 \centering
-\begin{tabular}{l|r}
-Tipo de Objeto & Quantidade \\ % Note a separação de col. e a quebra de linhas
+\begin{tabular}{l|c|c}
+Tipo de Objeto & Quantidade  & \% \\ % Note a separação de col. e a quebra de linhas
 \hline                               % para uma linha horizontal
-Objetos Completos &  8 \\
+Objetos Completos &  8 & 53,33 \\
 \hline 
-Objetos Com Falha de Preenchimento & 1 \\
+Objetos Com Falha de Preenchimento & 1 & 6,66 \\
 \hline 
-Objetos Com Diminuição de Contorno &  4\\
+Objetos Com Diminuição de Contorno &  4 & 26,66 \\
 \hline 
 Objetos Extrapolados &  13 \\
 \hline 
-Objetos Com Diminuição de Area &  1\\
+Objetos Com Diminuição de Área &  1 &6,66 \\
 \hline 
-Objetos Com Falhas Problematicas &  1\\
+Objetos Com Falhas Problematicas &  1 & 6,66\\
 \hline 
 \end{tabular}
 \caption{Categorizaçao Dos Objetos}
@@ -249,28 +240,29 @@ Objetos Com Falhas Problematicas &  1\\
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/rosa.pdf}
-		\caption{Resultado final da cor rosa}
+		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor rosa}
 		\label{disposicaoparte}
 	\end{figure}
 	
-Dentre os objetos rosa detectados, quatro obtiveram falhas em sua detecção, falhas de preenchimento e diminuição de borda, estes podem ser desconsiderados dos objetos. Dentro os outros onze: três foram detectados sem falhas de preenchimentos apenas com diminuição de sua area para aproximadamente metade da area real do objeto; os outros oito foram encontrados apesas com diminuição de area devido a diminuição de borda.
+Dentre os objetos rosa detectados, quatro obtiveram falhas em sua detecção, falhas de preenchimento e diminuição de borda, estes podem ser desconsiderados dos objetos. Dentro os outros onze: três foram detectados sem falhas de preenchimentos apenas com diminuição de sua área para aproximadamente metade da área real do objeto; os outros oito foram encontrados apesas com diminuição de área devido a diminuição de borda.
 	
 	\begin{table}[h]
 \centering
-\begin{tabular}{l|r}
-Tipo de Objeto & Quantidade \\ % Note a separação de col. e a quebra de linhas
+\begin{tabular}{l|c|r}
+Tipo de Objeto & Quantidade  & \% \\ % Note a separação de col. e a quebra de linhas
 \hline                               % para uma linha horizontal
 Objetos Completos &  0\\
 \hline 
 Objetos Com Falha de Preenchimento & 0\\
 \hline 
-Objetos Com Diminuição de Contorno & 8 \\
+Objetos Com Diminuição de Contorno & 8& 53,33
+ \\
 \hline 
 Objetos Extrapolados & 0 \\
 \hline 
-Objetos Com Diminuição de Area & 3\\
+Objetos Com Diminuição de Área & 3 & 20\\
 \hline 
-Objetos Com Falhas Problematicas & 4 \\
+Objetos Com Falhas Problematicas & 4 & 26,66 \\
 \hline 
 \end{tabular}
 \caption{Categorizaçao Dos Objetos}
@@ -280,25 +272,25 @@ Objetos Com Falhas Problematicas & 4 \\
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/roxo.pdf}
-		\caption{Resultado final da cor roxo}
+		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor roxo}
 		\label{disposicaoparte}
 	\end{figure}
 
-Todos os objetos roxos dispostos no campo foram encontrados pelo intervalo da cor. Dentre os quinze, quatro não apresentaram problema algum e foram completamente detectados; oito possuiram diminiução em seu contorno e três diminuição em sua area relativa.
+Todos os objetos roxos dispostos no campo foram encontrados pelo intervalo da cor. Dentre os quinze, quatro não apresentaram problema algum e foram completamente detectados; oito possuiram diminiução em seu contorno e três diminuição em sua área relativa.
 \begin{table}[h]
 \centering
-\begin{tabular}{l|r}
-Tipo de Objeto & Quantidade \\ % Note a separação de col. e a quebra de linhas
+\begin{tabular}{l|c|r}
+Tipo de Objeto & Quantidade  & \% \\ % Note a separação de col. e a quebra de linhas
 \hline                               % para uma linha horizontal
-Objetos Completos &  4\\
+Objetos Completos &  4 & 26,66\\
 \hline 
 Objetos Com Falha de Preenchimento & 0 \\
 \hline 
-Objetos Com Diminuição de Contorno &  8 \\
+Objetos Com Diminuição de Contorno &  8 & 53,33\\
 \hline 
 Objetos Extrapolados & 0 \\
 \hline 
-Objetos Com Diminuição de Area & 3 \\
+Objetos Com Diminuição de Área & 3 & 20\\
 \hline 
 Objetos Com Falhas Problematicas & 0 \\
 \hline 
@@ -310,21 +302,21 @@ Objetos Com Falhas Problematicas & 0 \\
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/laranja.pdf}
-		\caption{Resultado final da cor laranja}
+		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor laranja}
 		\label{disposicaoparte}
 	\end{figure}
 	
-	Os objetos laranjas foram intencionalmente deixados por ultimo.
-	Devido a um problema muito comum na area de calibraçao de cores, a cor laranja possui o problema de ser, por muitas vezes, assemelhada ao vermelho, e devido a luminosidade implicada tanto em uma quanto na outra cor, ambas tendem a se tornarem proximas.
+	Os objetos laranjas foram intencionalmente deixados por último.
+	Devido à um problema muito comum na área de calibração de cores, a cor laranja possui o problema de ser, por muitas vezes, semelhante a vermelha, e devido a luminosidade implicada tanto em uma quanto na outra cor, ambas tendem a se tornarem próximas.
 	Sabendo deste problema, o fato de terem sido encontrados objetos da cor vermelha dentro do intervalo de valores da cor laranja é ignorado e somente serão levados em consideração os objetos realmente laranjas.
 	Os quinze objetos da cor laranja foram encontrados com precisão. Todos possuindo seu completo preenchimento e borda.
 	
 \begin{table}[h]
 \centering
-\begin{tabular}{l|r}
-Tipo de Objeto & Quantidade \\ % Note a separação de col. e a quebra de linhas
+\begin{tabular}{l|c|r}
+Tipo de Objeto & Quantidade  & \% \\ % Note a separação de col. e a quebra de linhas
 \hline                               % para uma linha horizontal
-Objetos Completos &  15 \\
+Objetos Completos &  15 & 100 \\
 \hline 
 Objetos Com Falha de Preenchimento & 0 \\
 \hline 
@@ -332,10 +324,22 @@ Objetos Com Diminuição de Contorno &  0 \\
 \hline 
 Objetos Extrapolados & 8 \\
 \hline 
-Objetos Com Diminuição de Area &  0 \\
+Objetos Com Diminuição de Área &  0 \\
 \hline 
 Objetos Com Falhas Problematicas & 0 \\
 \hline 
 \end{tabular}
 \caption{Categorizaçao Dos Objetos}
 \end{table}
+\newpage
+\section{Totais}
+De modo total estavam disposto pelo campo cento e cinco objetos coloridos. Destes, 66,7\% dos objetos foram encontrados corretamente, 1,9\% foram encontrados com falhas de preenchimento, 20\% apresentaram perda de contorno, 6,67\% apresentaram diminuição da área e 4,76\% apresentaram falhas e faltas que prejudicaram totalmente o objeto.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{/testes/graficotestes.pdf}
+		\caption{Grafico de analise do resultado dos testes}
+		\label{disposicaoparte}
+	\end{figure}
+	
+	
+	Sabendo destes valores, os que podem ser considerados criticos na detecção de objetos atraves da sua cor são \textit{Objetos Com Falhas Problematicas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam 6,67\% dos objetos.

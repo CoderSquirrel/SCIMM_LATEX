@@ -38,5 +38,6 @@
 \contentsline {section}{\numberline {4.5}Rosa}{33}{section.4.5}
 \contentsline {section}{\numberline {4.6}Roxo}{34}{section.4.6}
 \contentsline {section}{\numberline {4.7}Laranja}{35}{section.4.7}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{36}{section*.43}
-\contentsline {chapter}{Ap\^endices}{37}{Item.22}
+\contentsline {section}{\numberline {4.8}Totais}{36}{section.4.8}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{37}{section*.44}
+\contentsline {chapter}{Ap\^endices}{38}{Item.22}
