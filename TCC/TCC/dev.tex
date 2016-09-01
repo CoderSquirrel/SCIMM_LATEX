@@ -94,7 +94,7 @@ Os métodos contidos na classe Calibracao são:
 		\end{description}	
 
 \subsubsection{SCIMM\_COR}
-	Classe de cor utilizada do sistema. Onde são salvos os valores maximos e minimos de HSV. Possui seis valores, um minimo e um maximo para H, S e V. 
+	Classe de cor utilizada do sistema. Onde são salvos os valores máximos e mínimos de HSV. Possui seis valores, um mínimo e um máximo para H, S e V. 
 
 
 \section{O Sistema}
@@ -140,7 +140,7 @@ Além de recorte da imagem, nessa etapa tambem são configurados Brilho e Constr
 Esta função recebe quatro parametros. O primeiro \textbf{frameA} informa aonde sera salvo o resultado da conversão. O segundo \textbf{-1} indica o tipo da matrix, ou numero de canais, da imagem a ser gerada, usa-se -1 quando se deseja que se use os valores semelhantes aos da imagem da imagem original\cite{OpenCV}, O terceiro \textbf{contrast\_value / 50.0} indica o valor de constraste, ou alpha, a ser usado para multiplicar os valores do pixel da imagem\cite{OpenCV} e por ultimo \textbf{brightness\_value} que é o valor do brilho, ou beta, a ser adicionado à imagem. É importante ressaltar que a configuração de  Brilho e Constrate é somente usada para a melhor precisão na detecção dos objetos, no momento da analise do pixel, a imagem esta \textit{limpa} sem alguma alteraçao.\newline
 
 	\subsection{2ª Etapa - Reconhecimento de Fundo}
-	Um principais problemas que ocorrem na detecçao de objetos é a confusão do fundo junto ao proprio objeto, fazendo assim que o mesmo seja detectado porem nao seu contorno correto, ou em outras vezes ignorado por ser considerado parte do fundo. Para eliminar este problema foi utilizado a tecnica  Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponivel na biblioteca \textit{OpenCV}. Esta tecnica utiliza um algoritmo de analise pixel a pixel e que classifica o mesmo baseando-se na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande pesso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco no tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem baseando-se na variancia do objetos da mesma e de sua variancia. O objeto criado pela biblioteca, por meio do metodo \textbf{apply}, analisa quadro a quadro a imagem, a compara com o fundo obtido e gera uma imagem chamada de \textbf{mascara} com os objetos que nao fazem parte do fundo, no exato momento da imagem, com o passar dos quadros o objeto se torna parte do fundo. Uso do metodo:
+	Um principais problemas que ocorrem na detecçao de objetos é a confusão do fundo junto ao proprio objeto, fazendo assim que o mesmo seja detectado porém nao seu contorno correto, ou em outras vezes ignorado por ser considerado parte do fundo. Para eliminar este problema foi utilizado a tecnica  Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponivel na biblioteca \textit{OpenCV}. Esta tecnica utiliza um algoritmo de analise pixel a pixel e que classifica o mesmo baseando-se na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande pesso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco no tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem baseando-se na variancia do objetos da mesma e de sua variancia. O objeto criado pela biblioteca, por meio do metodo \textbf{apply}, analisa quadro a quadro a imagem, a compara com o fundo obtido e gera uma imagem chamada de \textbf{mascara} com os objetos que nao fazem parte do fundo, no exato momento da imagem, com o passar dos quadros o objeto se torna parte do fundo. Uso do metodo:
 \begin{center}
  \begin{displaymath}  \centering \textit{pMOG2->apply(frame, mask);}  \end{displaymath}
 \end{center}
@@ -155,7 +155,7 @@ Onde \textbf{frame} significa a imagem atual capturada pela camera e \textbf{mas
 		\end{figure}		
 
 
-Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} esta vazio, basta que ele seja executado algumas vezes para que o campo se torne o modelo de fundo. Nesse caso a mascara gerada pelo metodo não chega a ser utilizada, porem sera na 3ª etapa.
+Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} esta vazio, basta que ele seja executado algumas vezes para que o campo se torne o modelo de fundo. Nesse caso a mascara gerada pelo metodo não chega a ser utilizada, porém sera na 3ª etapa.
 	\subsection{3ª Etapa - Extração dos Objetos do Fundo}
 	Como visto na 1ª etapa, o objeto \textbf{pMOG2} chamando o metodo \textit{apply} o mesmo gera uma mascara de diferença da imagem atual para o modelo de fundo. Sendo assim para obtermos os objetos que virao a ser detectados basta que o metodo \textit{apply} seja chamado um numero de vezes suficiente para criar a mascara e o mesmo nao alterar o modelo de fundo.
 	
@@ -228,7 +228,7 @@ Vermelha & de 169 à 180 \\
 Os valores prédefinidos de H foram obtidos 
 
 
-Estes valores foram obtidos atraves da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teorica, o intervalo de valores da matiz(h) é de 0 a 360º graus, porem o valor maximo de armazenamento de um bit é 255, foi incorporada na biblioteca o intervalo de valores de 0 à 180 sendo assim metade do valor do intervalo no mundo real. Uma outra ressalva deve ser feita quando à conversão de valores. O modelo padrão de uma imagem é o RGB, porem dentro da biblioteca espaço padrão é o BGR, quando a imagem é obtida a mesma possui alguns valores invertidos, ou seja, os intervalos de valores da tabela acima podem parecer diferentes do que seria considerado real se forem feitos conversao de valores RGB para HSV.
+Estes valores foram obtidos atraves da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teorica, o intervalo de valores da matiz(h) é de 0 a 360º graus, porém o valor máximo de armazenamento de um bit é 255, foi incorporada na biblioteca o intervalo de valores de 0 à 180 sendo assim metade do valor do intervalo no mundo real. Uma outra ressalva deve ser feita quando à conversão de valores. O modelo padrão de uma imagem é o RGB, porém dentro da biblioteca espaço padrão é o BGR, quando a imagem é obtida a mesma possui alguns valores invertidos, ou seja, os intervalos de valores da tabela acima podem parecer diferentes do que seria considerado real se forem feitos conversao de valores RGB para HSV.
 Como não há pre-definiçao destes valores disponivel pela biblioteca, foi feito um estudo dos intervalos onde foram levados em condiseração a conversao padrao do mundo real, divindo os valores por dois, uma vez o intervalo dentro da biblioteca é, que corresponde a metade do intervalo no mundo real, juntamente com uma serie de testes para encontrar os valores analisando seu resultado ao limitar a exibição da imagem da camera para determinados intervalos de cores.
 
 
@@ -258,7 +258,7 @@ Durante o desenvolvimento foi observador que, em sua maioria, as cores necessita
 
 
   \subsection{6ª Etapa - Gerar Arquivo de Cores}
-  Assim que todas as cores já estiverem sido assimiladas e a calibração finalizada, gera-se um arquivo chamado \textbf{cores.arff} contendo o indice de cada cor calibraa e seus valores máximos e mínimos.
+  Assim que todas as cores já estiverem sido assimiladas e a calibração finalizada, gera-se um arquivo chamado \textbf{cores.arff} com 
   
   		
   

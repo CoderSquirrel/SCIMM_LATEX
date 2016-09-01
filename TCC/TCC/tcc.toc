@@ -30,14 +30,18 @@
 \contentsline {subsection}{\numberline {3.3.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{23}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}ao do Pixel}{24}{subsection.3.3.5}
 \contentsline {subsection}{\numberline {3.3.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{25}{subsection.3.3.6}
-\contentsline {chapter}{\numberline {4}Resultados}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Amarelo}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Azul}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Verde}{31}{section.4.3}
-\contentsline {section}{\numberline {4.4}Vermelho}{32}{section.4.4}
-\contentsline {section}{\numberline {4.5}Rosa}{33}{section.4.5}
-\contentsline {section}{\numberline {4.6}Roxo}{34}{section.4.6}
-\contentsline {section}{\numberline {4.7}Laranja}{35}{section.4.7}
-\contentsline {section}{\numberline {4.8}Totais}{36}{section.4.8}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{37}{section*.44}
+\contentsline {chapter}{\numberline {4}Testes e Resultados}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Calibra\IeC {\c c}\IeC {\~a}o}{26}{section.4.1}
+\contentsline {section}{\numberline {4.2}Testes}{28}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Cores Comuns}{29}{subsection.4.2.1}
+\contentsline {subsubsection}{Amarelo}{29}{section*.30}
+\contentsline {subsubsection}{Azul}{30}{section*.33}
+\contentsline {subsubsection}{Verde}{31}{section*.36}
+\contentsline {subsubsection}{Rosa}{32}{section*.39}
+\contentsline {subsubsection}{Roxo}{33}{section*.42}
+\contentsline {subsection}{\numberline {4.2.2}Cores Com Problemas Conhecidos}{33}{subsection.4.2.2}
+\contentsline {subsubsection}{Vermelho}{34}{section*.45}
+\contentsline {subsubsection}{Laranja}{35}{section*.48}
+\contentsline {subsubsection}{Totais}{36}{section*.51}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{37}{section*.53}
 \contentsline {chapter}{Ap\^endices}{38}{Item.22}

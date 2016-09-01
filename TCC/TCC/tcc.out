@@ -25,14 +25,10 @@
 \BOOKMARK [2][-]{subsection.3.3.4}{4\252 Etapa - Detec\347\343o e valida\347\343o de Objetos}{section.3.3}% 25
 \BOOKMARK [2][-]{subsection.3.3.5}{5\252 Etapa - Classifica\347ao do Pixel}{section.3.3}% 26
 \BOOKMARK [2][-]{subsection.3.3.6}{6\252 Etapa - Gerar Arquivo de Cores}{section.3.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Resultados}{}% 28
-\BOOKMARK [1][-]{section.4.1}{Amarelo}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.2}{Azul}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.3}{Verde}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.4}{Vermelho}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.5}{Rosa}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.6}{Roxo}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.7}{Laranja}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.8}{Totais}{chapter.4}% 36
-\BOOKMARK [0][-]{section*.44}{Refer\352ncias Bibliogr\341ficas}{}% 37
-\BOOKMARK [0][-]{Item.22}{Ap\352ndices}{}% 38
+\BOOKMARK [0][-]{chapter.4}{Testes e Resultados}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Calibra\347\343o}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Testes}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.2.1}{Cores Comuns}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.2}{Cores Com Problemas Conhecidos}{section.4.2}% 32
+\BOOKMARK [0][-]{section*.53}{Refer\352ncias Bibliogr\341ficas}{}% 33
+\BOOKMARK [0][-]{Item.22}{Ap\352ndices}{}% 34
