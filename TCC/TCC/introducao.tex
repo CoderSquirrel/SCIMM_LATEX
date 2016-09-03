@@ -28,17 +28,18 @@
 \section{Justificativa e Objetivos}
 
 Este trabalho tem por objetivo principal automatizar o sistema de identificação de objetos 
-coloridos em imagens provenientes de uma câmera em imagens de tempo real, fazendo a calibração dos valores HSV definindo seus limites mínimos e máximos.  
+coloridos em imagens provenientes de uma câmera em imagens de tempo real, fazendo a calibração dos valores HSV identificando seus limites mínimos e máximos.  
 Se fez necessário um sistema para tal finalidade notando-se:
 
 \begin{itemize}
 
 %	\item A ausência de métodos que facilitem a calibração de corem nas bibliotecas de processamento de imagem já existentes
-	\item A falta, na equipe, de um sistema de fácil manuseio para detecção de valores HSV
-	\item A falta, na equipe, de um sistema automático de registro do valores HSV mínimos e máximos
-	\item A falta, na equipe, de um sistema que defina mínimos e máximos de forma automática, baseando-se nos objetos escolhidos
-	\item A falta, na equipe, de um sistema autônomo de calibração de intervalo de cores
-	\item Aplicação do sistema proposto na identificação de robôs moveis em times de futebol de robôs.
+	%\item A falta de um sistema prático para detecção de valores HSV
+	\item O alto tempo gasto na calibração de intervalo de cores para cada cor disposta em campo, antes dos jogos;
+	\item A falta de um sistema autônomo de registro do valores HSV;
+	\item A falta de um sistema autônomo de identificação dos objetos em campo;
+	\item A falta de um sistema autônomo de definição de intervalos de cores baseando-se nos objetos em campo .
+
 	
 			
 
@@ -48,11 +49,10 @@ Para alcançar o objetivo principal, foram propostos os seguintes objetivos espe
 
 \begin{itemize}
 	
-%	\item Detecção e calculo dos valores mínimos e máximos para cada cor
-	\item Implementar uma interface que conte com disposição de informações no estilo gráfico ou histograma de cores para um corte manual de valores visando diminuição da velocidade de detecção; 
-	\item Estudo e implementação de um sistema inteligente de calibração de cores e no corte inteligente de valores minimo e máximo das cores
-	\item Testar o sistema proposto para identificação de equipes e participantes do futebol 
-	de robô na categoria Very Small Size. 
+	\item Detecção dos objetos em campo de forma automatica 
+	\item Estudo de cores para identificação de intervalos de cores dentro da biblioteca OpenCV
+	\item Categorização das cores dos objetos identificados dentro dos intervalos estudados
+	\item Testar o sistema proposto para identificação de cores
 	
 	
 \end{itemize}
@@ -64,7 +64,7 @@ Para o tema específico deste trabalho, calibração de intervalo de cores para 
 
 \subsection{Calibra}
 O Centro Universitário da FEI, como publicado em artigo do I Encontro de Robótica Inteligente\cite{PenharbelTime}, utiliza em sua equipe Y04 um sistema denominado CALIBRA\cite{Penharbel:2004}. Desenvolvido para sistemas Linux e com Graphical User Interface\cite{Penharbel:2004}, o sistema de calibração possui um módulo chamado de MainWindow, que é responsavel pela configuração de brilho, cor e contraste da imagem adquirida pela câmera e gera um arquivo que é analizado na hora da criação das cores padrão\cite{PenharbelTime}, onde cores-padrão são definidas como intervalos no espaço de cores HSI\cite{PenharbelTime}.
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{calibra.pdf}
 	\caption{Sistema Calibra desenvolvido pelo Centro Universitário da FEI \cite{Penharbel:2004}}
@@ -75,7 +75,7 @@ O Centro Universitário da FEI, como publicado em artigo do I Encontro de Robót
 
 Em 2015 Rosa\cite{Rosa:2015} descreveu em seu Trabalho de Conclusão sobre a equipe de futebol de rob\^os Very Small Size, do Laboratório de Sistemas Inteligentes e Robótica, SIRLab(Faeterj-Petrópolis), o sistema de visão computacional da equipe, durante a competição do ano de 2014, que abrange inclusive a parte de calibração. 
 
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{vssvision.pdf} 	
 	\caption{Sistema de calibracao desenvolvido peloSIRLab \cite{Rosa:2015}}
@@ -96,26 +96,26 @@ O desenvolvimento do sistema utiliza para procesamento de imagens a biblioteca O
 
 O atual sistema de visão computacional do SIRLab passou por algumas mudanças desde 2015 e conta com uma inteface e metodo de calibração diferentes\cite{VSSVision}. 
 Como disponível no repositorio online do Laboratorio, o atual sistema de calibração de cores utiliza o espaço de cores HSV, no lugar do RGB\cite{Rosa:2015}. A antiga inteface do sistema, feita inicialmente em ImGui deu lugar a nova, desenvolvida em Qt, como mostra a Figura \ref{SIRLabNova}.
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{vsssnovonormal.png} 	
-	\caption{Nova interface do time da SIRLab \cite{VSSVision}}
-	\label{SIRLabNova}
-\end{figure}
+\
 
 
 O método de calibração de cores também foi modificado, segundo a equipe\cite{VSSVision} o sistema possibilita a calibragem de 8 cores, Laranja, Amarelo, Azul, Vermelho, Verde, Rosa, Roxo, Marrom. Após o usuário escolher uma cor para calibrar o mesmo deve encontrar um intervalo de cor, no espaço de cores HSV, que represente-a. Ao clicar na tela com o botão direito o sistema da um zoom na área para ajuste fino. A Figura \ref{SIRLabNovaCalibracao} demonstra o novo método de calibração.
-
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{vsssnovo.png} 	
-	\caption{Calibração atual do time da SIRLab \cite{VSSVision} após calibração}
-	\label{SIRLabNovaCalibracao}
-\end{figure}
-
-\subsection{??}
-\cite{Neura:2009} em artigo do IX Simposio Brasileiro de Inteligencia Artificial descreve uma abordagem de detecção em tempo real utilizando redes neurais MLP, Perceptron de Multiplas Camadas. Como a utilização de somete redes neurais podem causas um grande custo computacional, as mesmas foram implementadas juntamente com um sistema baseado em modelo para classificação cores, assim melhorando a acuracia do sistema.
-A rede é composta por três camadas, a camada de entrada possui três neuronios, uma vez que os valores de entradas são cada um dos valores HSV de um pixel; a camada de saida possui sete neuronios, onde seis são para a representação de cada uma das cores em que o pixel podera ser classificado e um setimo neuronio para representação do fundo; para a camada intermediaria foram utilizados vinte neurosios, pois apos estudos foi o valor onde indentificaram melhor acuracia. Sendo assim a topologia da rede MLP foi configurada como  3-20-7.
+\begin{figure}[H]
+\begin{minipage}[H]{0.45\linewidth}
+\hspace{0.5cm}
+\centering
+\includegraphics[width=\textwidth]{vsssnovonormal.png}
+\caption{Nova interface do time da SIRLab \cite{VSSVision}}
+\label{SIRLabNova}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[H]{0.40\linewidth}
+\centering
+\includegraphics[width=\textwidth]{vsssnovo.png}
+\caption{Calibração atual do time da SIRLab \cite{VSSVision} após calibração}
+\label{SIRLabNovaCalibracao}
+\end{minipage}
+\end{figure}	
 
 
 \section{Organização da Trabalho} \label{Sec:Organizacao}

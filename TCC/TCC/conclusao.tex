@@ -15,3 +15,12 @@
 \chapter{Conclusão} \label{Cap:Conclusao}
 
 
+Foi estudado o problema da calibração de cores para competição de futebol de robôs categoria Very Small Size Soccer. Onde a calibração de cada uma das cores em campo acaba se tornando um processo euxastivo por ter de ser feito um a um, cerca de 5 minutos para cada cor. 
+
+Geralmente o tempo de preparo inicial antes de cada jogo é de 20 minutos, tempo esse que acaba sendo usado praticamente inteiro no processo de calibração. Se o mesmo fosse automatizado, e assim reduzido, haveria mais tempo para ser usado em melhorias tecnicas, hardware dos robos com problemas, melhorias na estratégia de jogo, ou resolvendo problema de comunicação.
+
+	Foi realizado um estudo dos modelos de cores dentro da biblioteca OpenCV e foram identificados intervalos definidos de cada uma das cores. Seus espectros foram encontrados uma vez que se identificou que, ao contrario do que acontece no mundo real, um pixel na biblioteca assume o  padrão GBR e uma vez convertido ao HSV possui os valores alterados. Assim por meio de experimentação e da ajuda de artigos já disponiveis na internet, se chegou ao melhor espectro para cada cor, categorizando o pixel dentre de seus respectivos intervalos.
+
+Para a serem identificados os objetos cores a serem calibrados no campo, utlizou-se da tecnica de detecção de bordas conhecida como Algoritmo de Canny. Uma vez identificados, cada um dos objetos era analisado de acordo com o estudo das cores para identificar a qual cor o mesmo pertencia. Uma vez identificado o pixel era anexado aos valores já encontrados, e comparado aos mesmo para saber se este seria um limite do intervalo da cor identificada.
+
+Após a imagem ter sido analizada e as cores calibradas foi elaborado o teste do sistema. O teste foi divido em duas partes: Calibração, que é o funcionamento do sistema, e Teste, que é a simulação de um possivel uso para idenficação da eficacia do sistema. Foram usadas 7 cores no processo de calibração: Amarelo, Azul, Laranja, Rosa, Roxo, Verde e Vermelho. Cada cor foi calbrada separadamente.
