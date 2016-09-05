@@ -3,7 +3,7 @@
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{7}{chapter.1}
 \contentsline {section}{\numberline {1.1}Contexto}{7}{section.1.1}
 \contentsline {section}{\numberline {1.2}Justificativa e Objetivos}{7}{section.1.2}
-\contentsline {section}{\numberline {1.3}Trabalhos Corelatos}{8}{section.1.3}
+\contentsline {section}{\numberline {1.3}Trabalhos Correlatos}{8}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Calibra}{8}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}VSS-Vision}{8}{subsection.1.3.2}
 \contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o da Trabalho}{10}{section.1.4}
@@ -23,11 +23,11 @@
 \contentsline {subsubsection}{Calibracao}{18}{section*.17}
 \contentsline {subsubsection}{SCIMM\_COR}{18}{section*.18}
 \contentsline {section}{\numberline {3.3}O Sistema}{19}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Camera}{19}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Ca mera}{19}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}2\IeC {\textordfeminine } Etapa - Reconhecimento de Fundo}{21}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}3\IeC {\textordfeminine } Etapa - Extra\IeC {\c c}\IeC {\~a}o dos Objetos do Fundo}{22}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{22}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}ao do Pixel}{23}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}\IeC {\~a}o do Pixel}{23}{subsection.3.3.5}
 \contentsline {subsection}{\numberline {3.3.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{24}{subsection.3.3.6}
 \contentsline {chapter}{\numberline {4}Testes e Resultados}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calibra\IeC {\c c}\IeC {\~a}o}{25}{section.4.1}
@@ -44,4 +44,3 @@
 \contentsline {subsubsection}{Totais}{35}{section*.50}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{36}{chapter.5}
 \contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{38}{section*.52}
-\contentsline {chapter}{Ap\^endices}{39}{Item.22}
