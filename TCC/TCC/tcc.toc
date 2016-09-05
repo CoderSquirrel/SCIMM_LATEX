@@ -43,4 +43,5 @@
 \contentsline {subsubsection}{Laranja}{34}{section*.47}
 \contentsline {subsubsection}{Totais}{35}{section*.50}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{37}{section.5.1}
 \contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{38}{section*.52}
