@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  5 SEP 2016 16:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  5 SEP 2016 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,62 +948,62 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 58.
 [7
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 63.
  <figuras/calibra.pdf, id=286, 792.9625pt x 489.83pt>
 File: figuras/calibra.pdf Graphic file (type pdf)
 
 <use figuras/calibra.pdf>
-Package pdftex.def Info: figuras/calibra.pdf used on input line 69.
+Package pdftex.def Info: figuras/calibra.pdf used on input line 67.
 (pdftex.def)             Requested size: 281.68515pt x 174.00671pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 72.
 
 <figuras/vssvision.pdf, id=290, 457.71pt x 363.3575pt>
 File: figuras/vssvision.pdf Graphic file (type pdf)
 
 <use figuras/vssvision.pdf>
-Package pdftex.def Info: figuras/vssvision.pdf used on input line 80.
+Package pdftex.def Info: figuras/vssvision.pdf used on input line 78.
 (pdftex.def)             Requested size: 187.78532pt x 149.07178pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 82.
  [8 <./figuras/calibra.pdf>]
 <figuras/calibration.pdf, id=309, 1590.94376pt x 498.86375pt>
 File: figuras/calibration.pdf Graphic file (type pdf)
 
 <use figuras/calibration.pdf>
-Package pdftex.def Info: figuras/calibration.pdf used on input line 92.
+Package pdftex.def Info: figuras/calibration.pdf used on input line 90.
 (pdftex.def)             Requested size: 375.57782pt x 117.76584pt.
 
 <figuras/vsssnovonormal.png, id=317, 1123.19624pt x 758.835pt>
 File: figuras/vsssnovonormal.png Graphic file (type png)
 
 <use figuras/vsssnovonormal.png>
-Package pdftex.def Info: figuras/vsssnovonormal.png used on input line 107.
+Package pdftex.def Info: figuras/vsssnovonormal.png used on input line 105.
 (pdftex.def)             Requested size: 211.26028pt x 142.7212pt.
 
 <figuras/vsssnovo.png, id=320, 1122.1925pt x 756.8275pt>
 File: figuras/vsssnovo.png Graphic file (type png)
 
 <use figuras/vsssnovo.png>
-Package pdftex.def Info: figuras/vsssnovo.png used on input line 114.
+Package pdftex.def Info: figuras/vsssnovo.png used on input line 112.
 (pdftex.def)             Requested size: 187.78532pt x 126.63803pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 117.
  [9 <./figuras/vssvision.pdf> <./figuras/calibration.pdf
 
 pdfTeX warning: pdflatex (file ./figuras/calibration.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 119.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 102.
@@ -1387,7 +1387,7 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on tcc.pdf (39 pages, 6294667 bytes).
+Output written on tcc.pdf (39 pages, 6294898 bytes).
 PDF statistics:
  911 PDF objects out of 1000 (max. 8388607)
  740 compressed objects within 8 object streams
