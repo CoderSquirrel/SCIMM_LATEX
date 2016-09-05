@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  3 SEP 2016 02:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  5 SEP 2016 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1333,6 +1333,9 @@ Package babel Info: Redefining portuges shorthand "|
 
 ]
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 108.
+ [37]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 114.
  (./tcc.bbl
 Overfull \hbox (39.85764pt too wide) in paragraph at lines 16--23
@@ -1342,7 +1345,7 @@ bos-[]para-[]a-[]categoria-[]ieee-[]very-[]small-[]size-[]soccer .
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 90.
-[37
+[38
 
 
 
@@ -1352,7 +1355,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 130.
- [38]
+ [39]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./tcc.aux (./cabecalho.aux) (./introducao.aux) (./fundamentacao.aux) (./dev.a
 ux) (./resultados.aux) (./conclusao.aux))
@@ -1367,8 +1370,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 11993 strings out of 493304
- 176544 string characters out of 6139871
+ 11994 strings out of 493304
+ 176551 string characters out of 6139871
  291112 words of memory out of 5000000
  15011 multiletter control sequences out of 15000+600000
  14667 words of font info for 55 fonts, out of 8000000 for 9000
@@ -1384,10 +1387,10 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on tcc.pdf (38 pages, 6291439 bytes).
+Output written on tcc.pdf (39 pages, 6293000 bytes).
 PDF statistics:
- 905 PDF objects out of 1000 (max. 8388607)
- 735 compressed objects within 8 object streams
- 167 named destinations out of 1000 (max. 500000)
+ 909 PDF objects out of 1000 (max. 8388607)
+ 738 compressed objects within 8 object streams
+ 168 named destinations out of 1000 (max. 500000)
  413 words of extra memory for PDF output out of 10000 (max. 10000000)
 
