@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  5 SEP 2016 19:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  8 SEP 2016 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1142,35 +1142,35 @@ Package babel Info: Redefining portuges shorthand "|
 File: figuras/passo2.pdf Graphic file (type pdf)
 
 <use figuras/passo2.pdf>
-Package pdftex.def Info: figuras/passo2.pdf used on input line 152.
+Package pdftex.def Info: figuras/passo2.pdf used on input line 153.
 (pdftex.def)             Requested size: 211.26028pt x 197.45726pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 162.
  [21 <./figuras/passo2.pdf>]
 <figuras/passo3.pdf, id=548, 1326.9575pt x 612.2875pt>
 File: figuras/passo3.pdf Graphic file (type pdf)
 
 <use figuras/passo3.pdf>
-Package pdftex.def Info: figuras/passo3.pdf used on input line 164.
+Package pdftex.def Info: figuras/passo3.pdf used on input line 165.
 (pdftex.def)             Requested size: 375.57782pt x 173.29854pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 185.
  [22 <./figuras/passo3.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
+(babel)             in language  on input line 193.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 234.
+(babel)             in language  on input line 235.
 [23]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 238.
+(babel)             in language  on input line 239.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 105.
@@ -1370,11 +1370,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 11995 strings out of 493304
- 176566 string characters out of 6139871
- 291116 words of memory out of 5000000
- 15011 multiletter control sequences out of 15000+600000
- 14667 words of font info for 55 fonts, out of 8000000 for 9000
+ 12000 strings out of 493304
+ 176612 string characters out of 6139871
+ 291117 words of memory out of 5000000
+ 15014 multiletter control sequences out of 15000+600000
+ 15312 words of font info for 58 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  40i,12n,60p,1863b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -1387,7 +1387,7 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on tcc.pdf (39 pages, 6294898 bytes).
+Output written on tcc.pdf (39 pages, 6294725 bytes).
 PDF statistics:
  911 PDF objects out of 1000 (max. 8388607)
  740 compressed objects within 8 object streams

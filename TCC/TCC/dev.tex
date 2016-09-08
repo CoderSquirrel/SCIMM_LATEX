@@ -78,10 +78,10 @@ Os métodos contidos na classe Calibração são:
 
 \item ConfigurarCamera: Método onde a imagem de exibição é ajustando o tamanho da tela a ser usada durante a detecção de objetos, além do ajuste de brilho e contraste para tornar mais nítido os contornos durante a detecção de objetos.	
 	
-  \item ReconhecerFundoExtrairObjetos: Método onde se utiliza o algoritmo de subtração de fundo para identificar, inicialmente, o campo e uma vez identificado se separa os objetos que não fazem parte do fundo inicial, a extração dos objetos. A extração dos objetos gerando uma imagem \textit{mascara} que sera usada na detecção dos objetos para que a mesma ser executada com mais precisão, uma vez que os objetos coloridos eram os únicos que não fazem parte da imagem inicial, o fundo.
+  \item ReconhecerFundoExtrairObjetos: Método onde se utiliza o algoritmo de subtração de fundo para identificar, inicialmente, o campo e uma vez identificado se separa os objetos que não fazem parte do fundo inicial, a extração dos objetos. A extração dos objetos gerando uma imagem \textit{máscara} que sera usada na detecção dos objetos para que a mesma ser executada com mais precisão, uma vez que os objetos coloridos eram os únicos que não fazem parte da imagem inicial, o fundo.
   
  
-	\item Calibrar: Método onde se a imagem atual da câmera é obtida e ajustada de acordo com os parâmetros estabelecidos no método\textbf{ConfigurarCamera} e iniciado o método \textbf{DetectarObjetos}. Uma vez que os objetos foram identificados se faz o uso do método \textbf{Calcular}  para serem analisados os valores de cada pixel de cada objetos e estes classificados de acordo com as cores pré definidas pelo sistemas. Uma vez terminado o processo de calibração é exibida na tela para o usuário os objetos da cor que esta selecionada no menu de cores.			
+	\item Calibrar: Método onde se a imagem atual da câmera é obtida e ajustada de acordo com os parâmetros estabelecidos no método \textbf{ConfigurarCamera} e iniciado o método \textbf{DetectarObjetos}. Uma vez que os objetos foram identificados se faz o uso do método \textbf{Calcular}  para serem analisados os valores de cada pixel de cada objetos e estes classificados de acordo com as cores pré definidas pelo sistemas. Uma vez terminado o processo de calibração é exibida na tela para o usuário os objetos da cor que esta selecionada no menu de cores.			
 		
 	\item DetectarObjetos: Método onde serão aplicados filtros de diminuição de ruido, detectadas as bordas existentes na imagem, detectados os objetos a partir das bordas contidas na imagem, o aumento da precisão do contorno dos objetos e diminuição do tamanho do objeto de acordo com a porcentagem de borda a ser eliminada. 
 
@@ -126,7 +126,7 @@ A função recebe os parâmetros \textbf{frameA} indicando a imagem na qual ser�
 \begin{figure}[H]
 			\centering
 			\includegraphics[width=0.8\textwidth]{passo1.pdf}
-			\caption{ Configuração de Ca mera}
+			\caption{ Configuração de Camera}
 			\label{Configuracao}
 		\end{figure}		
 
@@ -140,12 +140,13 @@ Além de recorte da imagem, nessa etapa também são configurados Brilho e Contr
 Esta função recebe quatro parametros. O primeiro \textbf{frameA} informa aonde sera salvo o resultado da conversão. O segundo \textbf{-1} indica o tipo da matrix, ou numero de canais, da imagem a ser gerada, usa-se -1 quando se deseja que se use os valores semelhantes aos da imagem da imagem original\cite{OpenCV}, O terceiro \textbf{contrast\_value / 50.0} indica o valor de constraste, ou alpha, a ser usado para multiplicar os valores do pixel da imagem\cite{OpenCV} e por ultimo \textbf{brightness\_value} que é o valor do brilho, ou beta, a ser adicionado à imagem. É importante ressaltar que a configuração de  Brilho e Contraste é somente usada para a melhor precisão na detecção dos objetos, no momento da analise do pixel, a imagem esta \textit{limpa} sem alguma alteração.\newline
 
 	\subsection{2ª Etapa - Reconhecimento de Fundo}
-	Um principais problemas que ocorrem na detecção de objetos é a confusão do fundo junto ao próprio objeto, fazendo assim que o mesmo seja detectado porém não seu contorno correto, ou em outras vezes ignorado por ser considerado parte do fundo. Para eliminar este problema foi utilizado a técnica  Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponível na biblioteca \textit{OpenCV}. Esta técnica utiliza um algoritmo de analise pixel a pixel e que classifica o mesmo baseando-se na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande peso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco no tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem baseando-se na variância do objetos da mesma e de sua variância. O objeto criado pela biblioteca, por meio do método \textbf{apply}, analisa quadro a quadro a imagem, a compara com o fundo obtido e gera uma imagem chamada de \textbf{mascara} com os objetos que não fazem parte do fundo, no exato momento da imagem, com o passar dos quadros o objeto se torna parte do fundo. Uso do método:
+	Um principais problemas que ocorrem na detecção de objetos é a confusão do fundo junto ao próprio objeto, fazendo assim que o mesmo seja detectado porém não seu contorno correto, ou em outras vezes ignorado por ser considerado parte do fundo. Para eliminar este problema foi utilizado a técnica  Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponível na biblioteca \textit{OpenCV}. Esta técnica utiliza um algoritmo de analise pixel a pixel e que classifica o mesmo baseando-se na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande peso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco no tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem baseando-se na variância do objetos da mesma e de sua variância. O objeto criado pela biblioteca, por meio do método \textbf{apply}, analisa quadro a quadro a imagem, a compara com o fundo obtido e gera uma imagem chamada de \textbf{máscara} com os objetos que não fazem parte do fundo, no exato momento da imagem, com o passar dos quadros o objeto se torna parte do fundo. Uso do método:
 \begin{center}
- \begin{displaymath}  \centering \textit{pMOG2->apply(frame, mask);}  \end{displaymath}
+ \begin{displaymath}  \centering \textit{pMOG2-$\rangle$apply(frame, mask);}  \end{displaymath}
+
 \end{center}
 
-Onde \textbf{frame} significa a imagem atual capturada pela câmera e \textbf{mask} a mascara gerada pela diferença da imagem atual com o modelo de fundo. 
+Onde \textbf{frame} significa a imagem atual capturada pela câmera e \textbf{mask} a máscara gerada pela diferença da imagem atual com o modelo de fundo. 
 
 \begin{figure}[H]
 			\centering
@@ -155,14 +156,14 @@ Onde \textbf{frame} significa a imagem atual capturada pela câmera e \textbf{ma
 		\end{figure}		
 
 
-Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} esta vazio, basta que ele seja executado algumas vezes para que o campo se torne o modelo de fundo. Nesse caso a mascara gerada pelo método não chega a ser utilizada, porém sera na 3ª etapa.
+Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} esta vazio, basta que ele seja executado algumas vezes para que o campo se torne o modelo de fundo. Nesse caso a máscara gerada pelo método não chega a ser utilizada, porém sera na 3ª etapa.
 	\subsection{3ª Etapa - Extração dos Objetos do Fundo}
-	Como visto na 1ª etapa, o objeto \textbf{pMOG2} chamando o método \textit{apply} o mesmo gera uma mascara de diferença da imagem atual para o modelo de fundo. Sendo assim para obtermos os objetos que virão a ser detectados basta que o método \textit{apply} seja chamado um numero de vezes suficiente para criar a mascara e o mesmo não alterar o modelo de fundo.
+	Como visto na 2ª etapa, o objeto \textbf{pMOG2} chamando o método \textit{apply} gera uma máscara de diferença da imagem atual para o modelo de fundo. Sendo assim para obtermos os objetos que virão a ser detectados basta que o método \textit{apply} seja chamado um numero de vezes suficiente para criar a máscara e o mesmo não alterar o modelo de fundo.
 	
 \begin{figure}[H]
 			\centering
 			\includegraphics[width=0.8\textwidth]{passo3.pdf}
-			\caption{Geração de Mascara}
+			\caption{Geração de Máscara}
 			\label{Configuracao}
 		\end{figure}		
 
@@ -224,13 +225,7 @@ Vermelha & de 169 à 180 \\
 \caption{Intervalo de Valores de Cores - HSV}
 \end{table}
 
-!!!!!
-Os valores pré-definidos de H foram obtidos 
-
-
-Estes valores foram obtidos através da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teórica, o intervalo de valores da matiz(h) é de 0 a 360º graus, porém o valor máximo de armazenamento de um bit é 255, foi incorporada na biblioteca o intervalo de valores de 0 à 180 sendo assim metade do valor do intervalo no mundo real. Uma outra ressalva deve ser feita quando à conversão de valores. O modelo padrão de uma imagem é o RGB, porém dentro da biblioteca espaço padrão é o BGR, quando a imagem é obtida a mesma possui alguns valores invertidos, ou seja, os intervalos de valores da tabela acima podem parecer diferentes do que seria considerado real se forem feitos conversão de valores RGB para HSV.
-Como não há pre-definição destes valores disponível pela biblioteca, foi feito um estudo dos intervalos onde foram levados em consideração a conversão padrão do mundo real, dividindo os valores por dois, uma vez o intervalo dentro da biblioteca é, que corresponde a metade do intervalo no mundo real, juntamente com uma serie de testes para encontrar os valores analisando seu resultado ao limitar a exibição da imagem da câmera para determinados intervalos de cores.
-!!!!
+Estes valores foram obtidos através da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teórica, o intervalo de valores da matiz(h) é de 0 a 360º graus, porém o valor máximo de armazenamento de um bit é 255, foi incorporada na biblioteca o intervalo de valores de 0 à 180 sendo assim metade do valor do intervalo no mundo real. Uma outra ressalva deve ser feita quando à conversão de valores. O modelo padrão de uma imagem é o RGB, porém dentro da biblioteca espaço padrão é o BGR, quando a imagem é obtida a mesma possui alguns valores invertidos, ou seja, os intervalos de valores da tabela acima podem parecer diferentes do que seria considerado real se forem feitos conversão de valores RGB para HSV. Como não há pre-definição destes valores disponível pela biblioteca, foi feito então testes utilizando os valores considerados no mundo real como base para que chegássemos a esses valores.
 
 Durante o desenvolvimento foi observador que, em sua maioria, as cores necessitavam de um valor S e V pré estabelecido.Para as cores Vermelho, Rosa, Azul, Laranja e Verde foi pré estabelecido o valor de 100 para ambos, S e V, já para Amarelo e Roxo ambos os valores assumem 50.
 
