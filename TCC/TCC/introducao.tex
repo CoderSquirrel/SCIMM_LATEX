@@ -14,33 +14,26 @@
 % NO FUTURO
 \chapter{Introdução} \label{Cap:Introducao}
 \section{Contexto}
-%Avanços tecnológicos tentam a cada dia mais dar vida as máquinas aplicando sentidos e percepções que se assemelham as humanas. Dentre estes, Inteligência Artificial, Aprendizado de Máquina, processamento de áudio, processamento de imagem entre outros. Segundo Albuquerque\cite{Albuquerque:2001} processar uma imagem, da mesma maneira que o nosso sistema visual humano é capaz de fazer é extremamente complexo, realizar as mesmas tarefas com a ajuda de máquinas, exige por antecedência uma compreensão “filosófica” do mundo ou dos conhecimentos humanos. Sem esse conhecimento pré existente por parte da máquina, a interpretação de uma imagem e seu processamento se baseia nas informações contidas na mesma.
-%	
-%	 Essa obtenção e entendimento das informações contidas na imagem se dá pela Visão Computacional, o ramo encarregado por simular o sistema visual humano. O que é feito de uma maneira única pelo sentido humano é separado em varias tarefas dentro da Visão Computacional com a captura de imagem, seu processamento, aquisição de informações da mesma, processamento dessa informação e aplicação de parâmetros para classificação da informação entre outros. Gonzalez\cite{Gonzalez:2008} descreve que uma imagem digital é composta por um número finito de elementos, cada um dos quais tem um determinado local e valor, assim o Processamento de Imagem Digital tem como tarefa a retirada de informações dos elementos de uma imagem.
-%	
-%	Dentre tipos de processamento de imagens existem, Gonzalez\cite{Gonzalez:2008} os define como: aplicações de ações primitivas de modificação de imagem, esta caraterizada por seu resultado final ser também uma imagem semelhante a imagem inicial porém modificada (Low-Level-Process), divisão de imagem em regiões e alguns tipos de reconhecimento e classificação de objetos, caraterizada por seu resultado final ser muitas vezes apenas regiões ou informações da imagem inicial (Mid-Level-Process), e o mais “sensorial” de todos que é a analise de objetos usando funções cognitivas associadas a visão computacional, essa usa informações relevantes para o reconhecimento de objetos (Higher-Level-Process).     
-%%
-%%	Neste trabalho propõe-se a realização de um processo de reconhecimento do objetos em imagens em tempo real coloridas com tempo de maquina reduzido. Este processamento irá ser realizado em imagens de futebol de robô da categoria Very Small Size, que serão processadas usando modelo de cores HPG e usando intervalos de valores de histograma de cores como parâmetro para detecção do objeto. O reconhecimento desses objetos também apresentara uma forma dinâmica de alocamento de equipes onde o sistema detectara os times e seus participantes de forma autônoma. 
-% 
-%	Neste trabalho propõe-se o a automatização do processo de detecção de objetos desenvolvendo um sistema de calibração de intervalo de Mínimos e Máximos dos valores HSV de cores para ser usado pela equipe de Futebol de Robôs Cedro, categoria Very Small Size. Valores HSV são um dos tipos de valores usados para definir as cores em computação, esses valores são correspondentemente Hue, a cor pura, Saturation, o grau de pureza da cor, e Lightness, que é o luminosidade aplicada. No sistema além da detecção automática estará também disponível a detecção manual de objetos. 
 
 
-\section{Justificativa e Objetivos}
+Porem a maneira como um técnico de futebol passa as informações para seus jogadores em campo, cara à cara, torna-se indisponível no futebol de robôs onde essas informações precisam ser passadas via comunicação de dados, onde cada um dos robôs possuem um IP. Para saber qual dos robôs possui cada IP, eles possuem marcadores com duas cores, uma cor designando o time a qual o robô pertence e outra que o identifica de maneira única dentro de sua equipe. A estratégia, de cada equipe, então detecta os marcadores de cor utilizando técnicas de visão computacional disponíveis e decide a partir da posição dos robôs, qual atitude sera tomada em campo.
+Acontece que 
+\section{Motivação}
+Durante a Competição Latino Americana de Robótica de 2015 participei juntamente com a equipe CEDRO. Foi a minha primeira vez em um evento deste âmbito, e por este motivo fiz algumas observações sobre as equipes e as partidas, a principal foi quanto a calibração de cores. De forma informal, todo jogo possue um \textit{aquecimento} de 20 minutos, onde a maioria das equipes utilizada deste tempo para fazer a calibração de cores. Na equipes que observei, o processo de calibração era feito de forma manual com uma interface muito semelhante ao deselvolvido por Kyle Hounslow\cite{YouTube}. Em algumas equipes, inclusive foi desenvolvido um novo modelo de cores, como é o caso da POTI(UFRN)\cite{Martins:2007}.
+
+Foi estudado o problema da calibração de cores para competição de futebol de robôs categoria Very Small Size Soccer. Onde a calibração de cada uma das cores em campo acaba se tornando um processo exaustivo por ter de ser feito um a um, cerca de 5 minutos para cada cor. Geralmente o tempo de preparo inicial antes de cada jogo é de 20 minutos, tempo que acaba sendo gasto praticamente inteiro no processo de calibração. Se o processo de calibração fosse automatizado, e assim reduzido, haveria mais tempo para ser usado em melhorias técnicas, hardware dos robôs com problemas, melhorias na estratégia de jogo ou resolvendo problema de comunicação.
+
+\section{Objetivos}
 
 Este trabalho tem por objetivo principal automatizar o sistema de identificação de objetos 
 coloridos em imagens provenientes de uma câmera em imagens de tempo real, fazendo a calibração dos valores HSV identificando seus limites mínimos e máximos.  
 Se fez necessário um sistema para tal finalidade notando-se:
 
-
-Este trabalho tem por objetivo principal automatizar a calibração de cores no padrão HSV identificando seus limites mínimos e máximos em imagens provenientes de uma câmera em imagens de tempo real, fazendo automaticamente detecção dos objetos que possuem as cores a serem calibradas.
-Se fez necessário um sistema para tal finalidade notando-se:
-
-
 \begin{itemize}
 	\item O alto tempo gasto na calibração de intervalo de cores para cada cor disposta em campo, antes dos jogos;
+	\item A necessidade um sistema de identificação automática dos objetos em campo;
 	\item A falta de um sistema autônomo de registro do valores HSV;
-	\item A falta de um sistema autônomo de identificação dos objetos em campo;
-	\item A falta de um sistema autônomo de definição de intervalos de cores baseando-se nos objetos em campo .
+	\item A necessidade de um sistema de definição de intervalos de cores baseando-se nos objetos em campo .
 \end{itemize}
 
 Para alcançar o objetivo principal, foram propostos os seguintes objetivos específicos.
@@ -58,10 +51,10 @@ Para alcançar o objetivo principal, foram propostos os seguintes objetivos espe
 \newpage
 
 \section{Trabalhos Correlatos}
-Para o tema específico deste trabalho, calibração de intervalo de cores para times de futebol de robôs da categoria very small size, não foram encontrados trabalhos relacionados, porém foram encotrados Team Discription Papers e descrições de sistemas usados pelos times, onde consta sobre o processo de calibração e os métodos usados.
+Para o tema específico deste trabalho, calibração de intervalo de cores para times de futebol de robôs da categoria IEEE Very Small Size Soccer, não foram encontrados trabalhos relacionados, porém foram encontrados Team Discription Papers e descrições de sistemas usados pelos times, onde consta sobre o processo de calibração e os métodos usados\cite{Penharbel:2004}\cite{Rosa:2015}\cite{VSSVision}\cite{PenharbelTime}.
 
 \subsection{Calibra}
-O Centro Universitário da FEI, como publicado em artigo do I Encontro de Robótica Inteligente\cite{PenharbelTime}, utiliza em sua equipe Y04 um sistema denominado CALIBRA\cite{Penharbel:2004}. Desenvolvido para sistemas Linux e com Graphical User Interface\cite{Penharbel:2004}, o sistema de calibração possui um módulo chamado de MainWindow, que é responsavel pela configuração de brilho, cor e contraste da imagem adquirida pela câmera e gera um arquivo que é analizado na hora da criação das cores padrão\cite{PenharbelTime}, onde cores-padrão são definidas como intervalos no espaço de cores HSI\cite{PenharbelTime}.
+O Centro Universitário da FEI\cite{PenharbelTime} utiliza em sua equipe Y04 um sistema denominado CALIBRA\cite{Penharbel:2004}. Desenvolvido para sistemas Linux e com Graphical User Interface\cite{Penharbel:2004}, o sistema de calibração possui um módulo chamado de MainWindow, que é responsavel pela configuração de brilho, cor e contraste da imagem adquirida pela câmera e gera um arquivo que é analizado na hora da criação das cores padrão\cite{PenharbelTime}, onde cores-padrão são definidas como intervalos no espaço de cores HSI\cite{PenharbelTime}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{calibra.pdf}
@@ -71,7 +64,7 @@ O Centro Universitário da FEI, como publicado em artigo do I Encontro de Robót
 
 \subsection{VSS-Vision}
 
-Em 2015 Rosa\cite{Rosa:2015} descreveu em seu Trabalho de Conclusão sobre a equipe de futebol de rob\^os Very Small Size, do Laboratório de Sistemas Inteligentes e Robótica, SIRLab(Faeterj-Petrópolis), o sistema de visão computacional da equipe, durante a competição do ano de 2014, que abrange inclusive a parte de calibração. 
+Em 2015, Rosa\cite{Rosa:2015} descreveu sobre a equipe de futebol de rob\^os Very Small Size, do Laboratório de Sistemas Inteligentes e Robótica, SIRLab(Faeterj-Petrópolis), o sistema de visão computacional da equipe, durante a competição do ano de 2014, que abrange inclusive a parte de calibração. 
 
 \begin{figure}[H]
 	\centering
@@ -79,7 +72,7 @@ Em 2015 Rosa\cite{Rosa:2015} descreveu em seu Trabalho de Conclusão sobre a equ
 	\caption{Sistema de calibracao desenvolvido peloSIRLab \cite{Rosa:2015}}
 	\label{SIRLabCalibracao}
 \end{figure}
-O autor menciona que a calibração de cores e feita calibrando obrigatoriamente laranja, amarelo e azul, e então as outras cores referentes aos jogadores em campo. Como visto na Figura \ref{SIRLabCalibracao} a imagem da c\^amera é dividida em nove cantos, e para calibrar a cor o usuário deve clicar em cima da cor que gostaria de ser calibrada, assim salvando um intervalo de cor tratado como RGB máximo e o mínimo daquela cor , a medida
+Rosa menciona que a calibração de cores e feita calibrando obrigatoriamente laranja, amarelo e azul, e então as outras cores referentes aos jogadores em campo. Como visto na Figura \ref{SIRLabCalibracao} a imagem da c\^amera é dividida em nove cantos, e para calibrar a cor o usuário deve clicar em cima da cor que gostaria de ser calibrada, assim salvando um intervalo de cor tratado como RGB máximo e o mínimo daquela cor , a medida
 que vão havendo os cliques o sistema verifica para cada atributo se ele é maior que o atributo
 máximo salvo ou menor que mínimo salvo, caso seja, o mesmo assume o lugar de menor ou
 maior\cite{Rosa:2015} e esse processo deve ser feito em cada um dos nove cantos da imagem. Os valores HSV encontrados s\~ao ajustados manualmente com a ajuda de sliders, como visto na Figura \ref{SIRLabCalibracaoHSV}. Este processo de calibração pode demorar entre cinco e dez minutos.
@@ -118,12 +111,4 @@ O método de calibração de cores também foi modificado, segundo a equipe\cite
 
 \section{Organização da Trabalho} \label{Sec:Organizacao}
 
-Este trabalho está divido em cinco capítulos, incluindo esta introdução como capítulo inicial.
-
-No segundo capítulo encontra-se a fundamentação teórica do texto, contento informaç\~oes sobre processamento de imagens referente à detecção de objetos e cores. A descrição da probabilidade usada no trabalho, na descoberta do tamanho desejável dos objetos, uma breve descrição sobre o futebol de robôs. 
-
-No terceiro capítulo encontra-se todo o desenvolvimento do projeto, suas classes, a descrição das tecnologias utilizadas no projeto, e o detalhamento de cada um dos tipos de calibração.
-
-No quarto capítulo são apresentados os testes e os resultados obtidos em cada um dos testes do projeto.
-
-No quinto capítulo são feitas as conclusões do trabalho e considerações finais, bem como expostas melhorias que possam vir a ser implementadas em trabalhos futuros.
+Este trabalho está divido em cinco capítulos, incluindo esta introdução como capítulo inicial. No segundo capítulo encontra-se a fundamentação teórica do texto, contento informaç\~oes sobre processamento de imagens referente à detecção de objetos e cores. A descrição da probabilidade usada no trabalho, na descoberta do tamanho desejável dos objetos, uma breve descrição sobre o futebol de robôs. No terceiro capítulo encontra-se todo o desenvolvimento do projeto, suas classes, a descrição das tecnologias utilizadas no projeto, e o detalhamento de cada um dos tipos de calibração. No quarto capítulo são apresentados os testes e os resultados obtidos em cada um dos testes do projeto. No quinto capítulo são feitas as conclusões do trabalho e considerações finais, bem como expostas melhorias que possam vir a ser implementadas em trabalhos futuros.

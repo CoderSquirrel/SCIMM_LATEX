@@ -23,57 +23,60 @@ Warning--entry type for "ImagensHSLHSVRGB" isn't style-file defined
 --line 169 of file bibliografia.bib.bib
 Warning--entry type for "OpenCV" isn't style-file defined
 --line 297 of file bibliografia.bib.bib
+Warning--entry type for "YouTube" isn't style-file defined
+--line 322 of file bibliografia.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--campo year vazio ou faltando em VSSVision
 Warning--campo year vazio ou faltando em ImagensHSLHSVRGB
+Warning--campo year vazio ou faltando em YouTube
 Warning--campo year vazio ou faltando em OpenCV
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-num.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 23 entries,
+You've used 25 entries,
             6706 wiz_defined-function locations,
-            1362 strings with 13909 characters,
-and the built_in function-call counts, 24332 in all, are:
-= -- 2566
-> -- 545
-< -- 415
-+ -- 649
-- -- 164
-* -- 1581
-:= -- 3081
-add.period$ -- 92
-call.type$ -- 23
-change.case$ -- 233
-chr.to.int$ -- 41
-cite$ -- 25
-duplicate$ -- 1991
-empty$ -- 1298
-format.name$ -- 868
-if$ -- 5213
+            1373 strings with 14331 characters,
+and the built_in function-call counts, 26485 in all, are:
+= -- 2792
+> -- 591
+< -- 459
++ -- 712
+- -- 178
+* -- 1716
+:= -- 3348
+add.period$ -- 100
+call.type$ -- 25
+change.case$ -- 254
+chr.to.int$ -- 43
+cite$ -- 28
+duplicate$ -- 2182
+empty$ -- 1411
+format.name$ -- 943
+if$ -- 5669
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 394
-newline$ -- 119
-num.names$ -- 92
-pop$ -- 561
+missing$ -- 427
+newline$ -- 129
+num.names$ -- 100
+pop$ -- 609
 preamble$ -- 1
-purify$ -- 88
+purify$ -- 96
 quote$ -- 0
-skip$ -- 2082
+skip$ -- 2288
 stack$ -- 1
-substring$ -- 965
-swap$ -- 759
-text.length$ -- 23
+substring$ -- 1035
+swap$ -- 825
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 15
-warning$ -- 3
-while$ -- 135
+type$ -- 16
+warning$ -- 4
+while$ -- 145
 width$ -- 0
-write$ -- 309
-(There were 5 warnings)
+write$ -- 334
+(There were 7 warnings)

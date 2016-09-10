@@ -169,7 +169,7 @@ Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} esta vazio, 
 
 
 \subsection{4ª Etapa - Detecção e validação de Objetos}
-A detecção dos objetos a serem calibrados é dada pelo algoritmo de detecção de bordas de Canny. Como mais um recurso para eliminação de ruídos e melhoria da imagem antes de ser executado a detecção de objetos através da detecção de bordas é utilizado desfoque na imagem. O algoritmo de Canny já está implementado dentro da biblioteca OpenCV e com a seguinte usagem:
+A detecção dos objetos a serem calibrados é dada pelo algoritmo de detecção de bordas de Canny. Como mais um recurso para eliminação de ruídos e melhoria da imagem antes de ser executado a detecção de objetos por meio da detecção de bordas é utilizado desfoque na imagem. O algoritmo de Canny já está implementado dentro da biblioteca OpenCV e com a seguinte usagem:
 \begin{center}
 \centering \textit{  Canny(src\_gray, canny\_output, limiar, limiar * 3, 3);}
 \end{center}
@@ -202,7 +202,7 @@ Uma vez obtidos os contornos é necessários que se faça a eliminação de vér
 
 Apos a conversão é necessário, então, ser feita uma analise dos objetos encontrados. Para cada objeto serão todos os seus pixeis, cada pixel separadamente o mesmo categorizado de acordo com o intervalo de valores ta tabela a baixo:
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{r|r}
 Cor & Intervalo de H \\ % Note a separação de col. e a quebra de linhas
@@ -225,7 +225,7 @@ Vermelha & de 169 à 180 \\
 \caption{Intervalo de Valores de Cores - HSV}
 \end{table}
 
-Estes valores foram obtidos através da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teórica, o intervalo de valores da matiz(h) é de 0 a 360º graus, porém o valor máximo de armazenamento de um bit é 255, foi incorporada na biblioteca o intervalo de valores de 0 à 180 sendo assim metade do valor do intervalo no mundo real. Uma outra ressalva deve ser feita quando à conversão de valores. O modelo padrão de uma imagem é o RGB, porém dentro da biblioteca espaço padrão é o BGR, quando a imagem é obtida a mesma possui alguns valores invertidos, ou seja, os intervalos de valores da tabela acima podem parecer diferentes do que seria considerado real se forem feitos conversão de valores RGB para HSV. Como não há pre-definição destes valores disponível pela biblioteca, foi feito então testes utilizando os valores considerados no mundo real como base para que chegássemos a esses valores.
+Estes valores foram obtidos por meio da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teórica, o intervalo de valores da matiz(h) é de 0º a 360º, dentro da biblioteca o intervalo é dado entre os pelo intervalo de números inteiros de 0 à 180 . Uma outra ressalva deve ser feita quando à conversão de valores. Como não há pre-definição destes valores disponível pela biblioteca, foi feito então testes utilizando os valores considerados no mundo real como base para que chegássemos a esses valores.
 
 Durante o desenvolvimento foi observador que, em sua maioria, as cores necessitavam de um valor S e V pré estabelecido.Para as cores Vermelho, Rosa, Azul, Laranja e Verde foi pré estabelecido o valor de 100 para ambos, S e V, já para Amarelo e Roxo ambos os valores assumem 50.
 

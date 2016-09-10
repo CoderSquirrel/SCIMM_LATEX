@@ -40,6 +40,18 @@ Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/1311.4963}.}
 {HORVATH, M. \emph{"Imagens HSV, HSL e RGB"}.
 Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
 
+\bibitem{YouTube}
+\abntrefinfo{Hounslow}{HOUNSLOW}{}
+{HOUNSLOW, K. \emph{Tutorial: Real-Time Object Tracking Using OpenCV}.
+Acessado 09/09/2016 20:11.
+Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=bSeFrPrqZ2A}.}
+
+\bibitem{Martins:2007}
+\abntrefinfo{Martins et al.}{MARTINS et al.}{2007}
+{MARTINS, D.~L. et al. A versão 2007 da equipe poti de futebol de robôs. In:
+  \emph{Team Description Paper. Competi{\c{c}}ao Brasileira de Rob{\'o}tica,
+  Florianópolis, Brasil}. [S.l.: s.n.], 2007.}
+
 \bibitem{PenharbelTime}
 \abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{}
 {PENHARBEL, E.~A. et al. Time de futebol de rob{\^o}s y04 do centro
