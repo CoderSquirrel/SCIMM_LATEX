@@ -40,6 +40,24 @@ Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/1311.4963}.}
 {HORVATH, M. \emph{"Imagens HSV, HSL e RGB"}.
 Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
 
+\bibitem{FiraHistory}
+\abntrefinfo{FIRA}{FIRA}{a}
+{FIRA. \emph{Brief History}.
+Acessado 09/09/2016 22:35.
+Dispon{\'\i}vel em: \url{http://fira.net/contents/sub01/sub01\_3.asp}.}
+
+\bibitem{FiraOverview}
+\abntrefinfo{FIRA}{FIRA}{b}
+{FIRA. \emph{Overview}.
+Acessado 09/09/2016 22:36.
+Dispon{\'\i}vel em: \url{http://fira.net/contents/sub01/sub01\_2.asp}.}
+
+\bibitem{Costa:2000}
+\abntrefinfo{Costa e Pegoraro}{COSTA; PEGORARO}{2000}
+{COSTA, A. H.~R.; PEGORARO, R. Construindo rob{\^o}s aut{\^o}nomos para
+  partidas de futebol: o time guaran{\'a}.
+\emph{SBA Controle \& Automa{\c{c}}{\~a}o}, v.~11, n.~03, p. 141--149, 2000.}
+
 \bibitem{YouTube}
 \abntrefinfo{Hounslow}{HOUNSLOW}{}
 {HOUNSLOW, K. \emph{Tutorial: Real-Time Object Tracking Using OpenCV}.
@@ -133,12 +151,6 @@ Disserta\c{c}\~{a}o (Dissertação de Mestrado) --- INPE, São José dos
   gerenciamento de cores para imagens digitais. In:  TEIXEIRA, A.~C.; BARRéRE,
   E.; ABRãO, I.~C. (Ed.). \emph{Web e multimídia: desafios e soluções}.
   [S.l.]: PUC Minas, 2005.}
-
-\bibitem{Costa:2000}
-\abntrefinfo{Costa e Pegoraro}{COSTA; PEGORARO}{2000}
-{COSTA, A. H.~R.; PEGORARO, R. Construindo rob{\^o}s aut{\^o}nomos para
-  partidas de futebol: o time guaran{\'a}.
-\emph{SBA Controle \& Automa{\c{c}}{\~a}o}, v.~11, n.~03, p. 141--149, 2000.}
 
 \bibitem{Kitano:1997}
 \abntrefinfo{Kitano et al.}{KITANO et al.}{1997}
