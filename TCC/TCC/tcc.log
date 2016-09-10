@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  9 SEP 2016 22:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  9 SEP 2016 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1328,14 +1328,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 23.
-)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 108.
- [37
+(babel)             in language  on input line 25.
+[37
 
 
 
-]
+])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 108.
  [38]
@@ -1389,7 +1388,7 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on tcc.pdf (40 pages, 6296250 bytes).
+Output written on tcc.pdf (40 pages, 6296473 bytes).
 PDF statistics:
  943 PDF objects out of 1000 (max. 8388607)
  771 compressed objects within 8 object streams
