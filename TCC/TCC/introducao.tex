@@ -14,7 +14,7 @@
 % NO FUTURO
 \chapter{Introdução} \label{Cap:Introducao}
 \section{Contexto}
-Como uma prova dos crescentes avanços robóticos nas ultimas décadas, em 1997 foi estabelecida a FIRA\cite{FiraHistory}, Federation of International Robot-soccer Association. Com o intuito de promover o desenvolvimento nas àreas de multi-agentes autonomos e cooperação entre robôs, bem como pesquisas e estudos relacionados a mecatrônica, processamento de imagens e robótica\cite{FiraOverview}. O Futebol de Robôs tem sido  uma das principais áreas de foco por ser um domínio complexo exigindo autonomia do sistema e solução de problemas em tempo real, como dito por Costa\cite{Costa:2000}. 
+Como uma prova dos crescentes avanços robóticos nas ultimas décadas, em 1997 foi estabelecida a FIRA\cite{FiraHistory}, Federation of International Robot-soccer Association. Com o intuito de promover o desenvolvimento nas àreas de multi-agentes autonomos e cooperação entre robôs, bem como pesquisas e estudos relacionados a mecatrônica, processamento de imagens e robótica\cite{FiraOverview}. O Futebol de Robôs tem sido  uma das principais áreas de foco por ser um domínio complexo, exigindo autonomia do sistema e solução de problemas em tempo real, como dito por Costa\cite{Costa:2000}. 
 
 Porém a maneira como um técnico de futebol passa as informações para seus jogadores em campo, cara à cara, torna-se indisponível no futebol de robôs, já que neste ambiente tais informações precisam ser passadas via comunicação de dados, onde cada um dos robôs se difere do outro por obter um IP único. Para saber qual dos robôs possui cada IP, eles possuem marcadores com duas cores, uma cor designando o time a qual o robô pertence e outra que o identifica de maneira única dentro de sua equipe. A estratégia, de cada equipe, então detecta os marcadores de cor utilizando técnicas de visão computacional e decide a partir da posição dos robôs, qual atitude será tomada em campo.
 
@@ -37,14 +37,14 @@ Se fez necessário um sistema para tal finalidade notando-se:
 	\item A necessidade de um sistema de definição de intervalos de cores baseando-se nos objetos em campo .
 \end{itemize}
 
-Para alcançar o objetivo principal, foram propostos os seguintes objetivos específicos.
+Para desenvolver um sistema que supra essas necessidades, foram propostos os seguintes objetivos específicos:
 
 \begin{itemize}
 	
-	\item Detecção dos objetos em campo de forma automática 
-	\item Estudo de cores para identificação de intervalos de cores dentro da biblioteca OpenCV
-	\item Categorização das cores dos objetos identificados dentro dos intervalos estudados
-	\item Testar o sistema proposto para identificação de cores
+	\item Detecção dos objetos em campo de forma automática; 
+	\item Estudo de cores para identificação de intervalos de cores dentro da biblioteca OpenCV;
+	\item Categorização das cores dos objetos identificados dentro dos intervalos estudados;
+	\item Testar o sistema proposto para identificação de cores.
 	
 	
 \end{itemize}
@@ -87,9 +87,8 @@ O desenvolvimento do sistema utiliza para processamento de imagens a biblioteca 
 \end{figure}
 
 O atual sistema de visão computacional do SIRLab passou por algumas mudanças desde 2015 e conta com uma inteface e metodo de calibração diferentes\cite{VSSVision}. 
-Como disponível no repositorio online do Laboratorio, o atual sistema de calibração de cores utiliza o espaço de cores HSV, no lugar do RGB\cite{Rosa:2015}. A antiga inteface do sistema, feita inicialmente em ImGui deu lugar a nova, desenvolvida em Qt, como mostra a Figura \ref{SIRLabNova}.
-\
 
+Como disponível no repositorio online do Laboratorio, o atual sistema de calibração de cores utiliza o espaço de cores HSV, no lugar do RGB\cite{Rosa:2015}. A antiga inteface do sistema, feita inicialmente em ImGui deu lugar a nova, desenvolvida em Qt, como mostra a Figura \ref{SIRLabNova}.
 
 O método de calibração de cores também foi modificado, segundo a equipe\cite{VSSVision} o sistema possibilita a calibragem de 8 cores, Laranja, Amarelo, Azul, Vermelho, Verde, Rosa, Roxo, Marrom. Após o usuário escolher uma cor para calibrar o mesmo deve encontrar um intervalo de cor, no espaço de cores HSV, que represente-a. Ao clicar na tela com o botão direito o sistema da um zoom na área para ajuste fino. A Figura \ref{SIRLabNovaCalibracao} demonstra o novo método de calibração.
 \begin{figure}[H]
