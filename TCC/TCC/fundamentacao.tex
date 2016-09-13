@@ -45,11 +45,11 @@ O primeiro Framework de métodos que usam base de dados categorizando uma ou mai
 Para um objeto poder ser detectado por algum método de detecção a imagem passa por um processo de segmentação. A segmentação pode ser dita como o processo de divisão da imagem em objetos\cite{Gonzalez:2008}. De acordo com Wangenheim\cite{Wangenheim:2014} o processo de segmentação se baseia em dois conceitos: similaridade e descontinuidade. A descontinuidade é o processo onde se separa o fundo das partículas e estas umas das outras, através de linhas, bordas ou pontos. Já a similaridade é o processo onde os pixeis provenientes da descontinuidade são agrupados de acordo com a proximidade um dos outros para formar os objetos de interesse. De acordo com Canny\cite{Canny:1986} o processo de detecção de bordas é um processo simplificado que serve para diminuir drasticamente o total de dados a serem processados e ao mesmo que o mesmo preserva informações valiosas sobre os objetos, este tambem é considerado um processamento de imagem de baixo nivel, uma vez que age diretamente na imagem original apenas melhorando-a. É muito comum a ocorrência de ruídos quando se trata da detecção de bordas, e por sua vez para evitar esses ruídos é necessário a suavização da imagem antes de fazer a detecção. Vale\cite{Vale:2002} lembra que a suavização possui pontos negativos como perda de informação e deslocamento de estruturas de feições proeminentes no plano da imagem. Além disso, existem diferenças entre as propriedades dos operadores diferenciais comumente utilizados, o que ocasiona  bordas diferentes.Assim, como dito por Ziou e Tabbone citados por Vale\cite{Vale:2002}, se torna difícil encontrar um algoritmo que tenha bom desempenho em diferenciados contextos e capture os requisitos necessários aos estágios subsequentes do processamento. 
 Quando se trata de detecção de bordas existem dois critérios\cite{Canny:1986} para essa detecção que devem ser levados em consideração, Taxa de Erro e Localização\cite{Vale:2002}. 
 \begin{description}
-	\item[Taxa de Erro] É importante que as bordam contidas na imagem não sejam confundidas ou perdidas e ainda que não sejam detectadas bordas falsas. É necessário que o algoritmo de detecção de borda tenha uma baixa taxa de erro para que seja eficiente.\cite{Wangenheim:2014, Canny:1986, Vale:2002}
-	\item[Localização] A distância entre os pixels de borda encontradas pelo algoritmo e a borda atual deveriam ser o menor possível.\cite{Wangenheim:2014}
+	\item[Taxa de Erro] É importante que as bordam contidas na imagem não sejam confundidas ou perdidas e ainda que não sejam detectadas bordas falsas. É necessário que o algoritmo de detecção de borda tenha uma baixa taxa de erro para que seja eficiente\cite{Wangenheim:2014, Canny:1986, Vale:2002}.
+	\item[Localização] A distância entre os pixels de borda encontradas pelo algoritmo e a borda atual deveriam ser o menor possível\cite{Wangenheim:2014}.
 \end{description}
-Ao tentar aplicas esses dois critérios para desenvolver um modelo matemático para detecção de bordas sem a necessidade de base em regras preestabelecidas em seu artigo
-\textit{ A Computational Approach to Edge Detection} Canny percebeu que somente esses dois critérios não eram o suficiente para obter uma boa precisão da detecção de bordas. E então propôs um terceiro critério: Resposta.
+Ao tentar aplicas esses dois critérios para desenvolver um modelo matemático para detecção de bordas sem a necessidade de base em regras preestabelecidas em seu artigo,
+\textit{A Computational Approach to Edge Detection}, Canny percebeu que somente esses dois critérios não eram o suficiente para obter uma boa precisão da detecção de bordas. E então propôs um terceiro critério: Resposta.
 \begin{description}
 	\item[Resposta] Para contornar a possibilidade de mais de uma resposta para a mesma borda, ou seja o detector de bordas não deveria identificar múltiplos pixels de borda onde somente exista um único pixel. \cite{Wangenheim:2014, Canny:1986, Vale:2002}
 \end{description}
@@ -60,7 +60,7 @@ mostrou-se bastante flexível, independente da origem da imagem utilizada\cite{V
  \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{canny.pdf}
-	\caption{Detecçcao de Borda com Algoritmo de Canny \cite{Saini:2013} }
+	\caption{Detecçcao de Borda com Algoritmo de Canny\cite{Saini:2013} }
 	\label{Canny}
 \end{figure}
 

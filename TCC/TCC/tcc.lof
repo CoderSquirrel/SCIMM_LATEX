@@ -1,12 +1,12 @@
 \select@language {portuguese}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Sistema Calibra desenvolvido pelo Centro Universit\IeC {\'a}rio da FEI \cite {Penharbel:2004}\relax }}{12}{figure.caption.8}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Sistema de calibracao desenvolvido peloSIRLab \cite {Rosa:2015}\relax }}{13}{figure.caption.9}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Sistema de calibracao desenvolvido peloSIRLab \cite {VSSVision}\relax }}{13}{figure.caption.10}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Nova interface do time da SIRLab \cite {VSSVision}\relax }}{14}{figure.caption.11}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Calibra\IeC {\c c}\IeC {\~a}o atual do time da SIRLab \cite {VSSVision} ap\IeC {\'o}s calibra\IeC {\c c}\IeC {\~a}o\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Sistema Calibra, FEI \cite {Penharbel:2004}\relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Sistema de calibracao, SIRLab \cite {Rosa:2015}\relax }}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Sistema de calibracao, SIRLab \cite {VSSVision}\relax }}{13}{figure.caption.10}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Nova interface do sistema de calibra\IeC {\c c}\IeC {\~a}o da SIRLab\cite {VSSVision}\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Atual Sistema de calibra\IeC {\c c}\IeC {\~a}o da SIRLab\cite {VSSVision}\relax }}{14}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Detec\IeC {\c c}cao de Borda com Algoritmo de Canny \cite {Saini:2013} \relax }}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Detec\IeC {\c c}cao de Borda com Algoritmo de Canny\cite {Saini:2013} \relax }}{16}{figure.caption.12}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Universo de cores estabelecido pelo CIE.\relax }}{17}{figure.caption.13}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo dos espa\IeC {\c c}os de cores RGB E CMY.\relax }}{18}{figure.caption.14}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo do Modelo de Cor RGB. Horvath\cite {ImagensHSLHSVRGB} \relax }}{18}{figure.caption.15}
