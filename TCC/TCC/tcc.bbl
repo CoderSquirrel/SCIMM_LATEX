@@ -75,6 +75,22 @@ Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=bSeFrPrqZ2A}.}
 {PENHARBEL, E.~A. et al. Time de futebol de rob{\^o}s y04 do centro
   universit{\'a}rio da fei.}
 
+\bibitem{Albuquerque:2001}
+\abntrefinfo{Albuquerque e Albuquerque}{ALBUQUERQUE; ALBUQUERQUE}{2001}
+{ALBUQUERQUE, M.; ALBUQUERQUE, M. Processamento de imagens: métodos e
+  análises.
+\emph{Revista de Ciência e Tecnologia}, FaCET, Rio de Janeiro, v.~1, n.~1, p.
+  10--22, 2001.
+ISSN 1519-8022.
+Centro Brasileiro de Pesquisas Fısicas MCT.}
+
+\bibitem{Gonzalez:2008}
+\abntrefinfo{Gonzalez e Woods}{GONZALEZ; WOODS}{2008}
+{GONZALEZ, R.; WOODS, R. \emph{Digital Image Processing}. Pearson/Prentice
+  Hall, 2008.
+ISBN 9780131687288. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=8uGOnjRGEzoC}.}
+
 \bibitem{Viola:2001}
 \abntrefinfo{Viola e Jones}{VIOLA; JONES}{2001}
 {VIOLA, P.; JONES, M. Rapid object detection using a boosted cascade of simple
@@ -102,13 +118,6 @@ Dispon{\'\i}vel em: \url{www.cin.ufpe.br/~tg/2007-2/mcn2.doc}.}
 {AMIT, Y.; FELZENSZWALB, P. Object detection. In:  IKEUCHI, K. (Ed.).
   \emph{Computer Vision, A Reference Guide}. New York, NY, USA: Springer, 2014.
   v.~2, p. 537--542.}
-
-\bibitem{Gonzalez:2008}
-\abntrefinfo{Gonzalez e Woods}{GONZALEZ; WOODS}{2008}
-{GONZALEZ, R.; WOODS, R. \emph{Digital Image Processing}. Pearson/Prentice
-  Hall, 2008.
-ISBN 9780131687288. Dispon{\'\i}vel em:
-  \url{https://books.google.com.br/books?id=8uGOnjRGEzoC}.}
 
 \bibitem{Wangenheim:2014}
 \abntrefinfo{WANGENHEIM}{WANGENHEIM}{2014}

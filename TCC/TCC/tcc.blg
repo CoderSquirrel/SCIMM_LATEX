@@ -2,6 +2,9 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: tcc.aux
 A level-1 auxiliary file: cabecalho.aux
+A level-1 auxiliary file: resumo.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: agradecimentos.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: fundamentacao.aux
 A level-1 auxiliary file: dev.aux
@@ -44,45 +47,45 @@ Warning--campo year vazio ou faltando em OpenCV
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 27 entries,
+You've used 28 entries,
             6706 wiz_defined-function locations,
-            1384 strings with 14536 characters,
-and the built_in function-call counts, 29155 in all, are:
-= -- 3124
-> -- 615
-< -- 545
-+ -- 807
-- -- 186
-* -- 1860
-:= -- 3668
-add.period$ -- 108
-call.type$ -- 27
-change.case$ -- 268
-chr.to.int$ -- 44
-cite$ -- 32
-duplicate$ -- 2490
-empty$ -- 1511
-format.name$ -- 983
-if$ -- 6185
+            1397 strings with 14802 characters,
+and the built_in function-call counts, 30025 in all, are:
+= -- 3194
+> -- 642
+< -- 549
++ -- 817
+- -- 194
+* -- 1926
+:= -- 3775
+add.period$ -- 113
+call.type$ -- 28
+change.case$ -- 280
+chr.to.int$ -- 48
+cite$ -- 33
+duplicate$ -- 2541
+empty$ -- 1571
+format.name$ -- 1024
+if$ -- 6390
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 459
-newline$ -- 141
-num.names$ -- 108
-pop$ -- 659
+missing$ -- 478
+newline$ -- 148
+num.names$ -- 112
+pop$ -- 677
 preamble$ -- 1
-purify$ -- 102
+purify$ -- 106
 quote$ -- 0
-skip$ -- 2605
+skip$ -- 2646
 stack$ -- 1
-substring$ -- 1135
-swap$ -- 929
-text.length$ -- 26
+substring$ -- 1179
+swap$ -- 960
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 16
 warning$ -- 6
-while$ -- 155
+while$ -- 163
 width$ -- 0
-write$ -- 358
+write$ -- 377
 (There were 11 warnings)
