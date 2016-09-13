@@ -1,34 +1,33 @@
 \select@language {portuguese}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Sistema Calibra, FEI\cite {Penharbel:2004}\relax }}{12}{figure.caption.8}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Sistema de calibracao, SIRLab\cite {Rosa:2015}\relax }}{13}{figure.caption.9}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Sistema de calibracao, SIRLab\cite {VSSVision}\relax }}{13}{figure.caption.10}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Nova interface do sistema de calibra\IeC {\c c}\IeC {\~a}o da SIRLab\cite {VSSVision}\relax }}{14}{figure.caption.11}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Atual Sistema de calibra\IeC {\c c}\IeC {\~a}o da SIRLab\cite {VSSVision}\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Sistema Calibra, FEI\cite {Penharbel:2004}\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Sistema de calibracao, SIRLab\cite {Rosa:2015}\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Nova interface do sistema de calibra\IeC {\c c}\IeC {\~a}o da SIRLab\cite {VSSVision}\relax }}{11}{figure.caption.9}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Atual Sistema de calibra\IeC {\c c}\IeC {\~a}o da SIRLab\cite {VSSVision}\relax }}{11}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Detec\IeC {\c c}cao de Borda com Algoritmo de Canny\cite {Saini:2013} \relax }}{17}{figure.caption.12}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Universo de cores estabelecido pelo CIE.\relax }}{18}{figure.caption.13}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo dos espa\IeC {\c c}os de cores RGB E CMY.\relax }}{18}{figure.caption.14}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo do Modelo de Cor RGB. Horvath\cite {ImagensHSLHSVRGB} \relax }}{19}{figure.caption.15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo do Modelo de Cor HSV, Horvath\cite {ImagensHSLHSVRGB}\relax }}{19}{figure.caption.16}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Detec\IeC {\c c}cao de Borda com Algoritmo de Canny\cite {Saini:2013} \relax }}{16}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Universo de cores estabelecido pelo CIE.\relax }}{17}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo dos espa\IeC {\c c}os de cores RGB E CMY.\relax }}{17}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo do Modelo de Cor RGB. Horvath\cite {ImagensHSLHSVRGB} \relax }}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo do Modelo de Cor HSV, Horvath\cite {ImagensHSLHSVRGB}\relax }}{18}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Organiza\IeC {\c c}\IeC {\~a}o das pastas do projeto\relax }}{22}{figure.caption.17}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Fluxo\relax }}{24}{figure.caption.22}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o de Camera\relax }}{25}{figure.caption.23}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o de Camera\relax }}{26}{figure.caption.24}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Gera\IeC {\c c}\IeC {\~a}o de M\IeC {\'a}scara\relax }}{27}{figure.caption.25}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Organiza\IeC {\c c}\IeC {\~a}o das pastas do projeto\relax }}{21}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Fluxo\relax }}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o de Camera\relax }}{24}{figure.caption.21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o de Camera\relax }}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Gera\IeC {\c c}\IeC {\~a}o de M\IeC {\'a}scara\relax }}{26}{figure.caption.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Imagem do fundo com a sele\IeC {\c c}\IeC {\~a}o de campo\relax }}{30}{figure.caption.27}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Objetos dispostos no campo para calibra\IeC {\c c}\IeC {\~a}o\relax }}{31}{figure.caption.28}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Divis\IeC {\~a}o do campo em quinze partes nomeadas alfabeticamente.\relax }}{32}{figure.caption.30}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Disposi\IeC {\c c}\IeC {\~a}o de cada parte quanto as cores\relax }}{32}{figure.caption.31}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Campo ap\IeC {\'o}s terem sido dispostas as cores\relax }}{32}{figure.caption.31}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor amarela\relax }}{33}{figure.caption.33}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor azul\relax }}{34}{figure.caption.36}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor verde\relax }}{35}{figure.caption.39}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor rosa\relax }}{36}{figure.caption.42}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor roxo\relax }}{37}{figure.caption.45}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor vermelho\relax }}{38}{figure.caption.48}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor laranja\relax }}{39}{figure.caption.51}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Gr\IeC {\'a}fico de an\IeC {\'a}lise do resultado dos testes\relax }}{40}{figure.caption.54}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Imagem do fundo com a sele\IeC {\c c}\IeC {\~a}o de campo\relax }}{29}{figure.caption.25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Objetos dispostos no campo para calibra\IeC {\c c}\IeC {\~a}o\relax }}{30}{figure.caption.26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Divis\IeC {\~a}o do campo em quinze partes nomeadas alfabeticamente.\relax }}{31}{figure.caption.28}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Disposi\IeC {\c c}\IeC {\~a}o de cada parte quanto as cores\relax }}{31}{figure.caption.29}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Campo ap\IeC {\'o}s terem sido dispostas as cores\relax }}{31}{figure.caption.29}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor amarela\relax }}{32}{figure.caption.31}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor azul\relax }}{33}{figure.caption.34}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor verde\relax }}{34}{figure.caption.37}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor rosa\relax }}{35}{figure.caption.40}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor roxo\relax }}{36}{figure.caption.43}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor vermelho\relax }}{37}{figure.caption.46}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Imagem somente com os objetos dentro do intervalo do valor da cor laranja\relax }}{38}{figure.caption.49}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Gr\IeC {\'a}fico de an\IeC {\'a}lise do resultado dos testes\relax }}{39}{figure.caption.52}
 \addvspace {10\p@ }
