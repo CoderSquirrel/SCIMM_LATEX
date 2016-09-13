@@ -13,7 +13,7 @@
 %====================================================================================================
 % 
 \chapter{Testes e Resultados} 
-Este capitulo será dividio em duas seções: \textbf{Calibração} e \textbf{Testes}. A seção \textbf{Calibração} tera a descrição do processo de calibração de cores, a preparação do campo, configuração de imagem, etc. A seção \textbf{Testes} é onde descrevo o testes usados para a análise de eficiência do sistema desenvolvido.
+Este capitulo será dividido em duas seções: \textbf{Calibração} e \textbf{Testes}. A seção \textbf{Calibração} tera a descrição do processo de calibração de cores, a preparação do campo, configuração de imagem, etc. A seção \textbf{Testes} é onde descrevo o testes usados para a análise de eficiência do sistema desenvolvido.
 \section{Calibração}
 A calibração aqui descrita ocorreu dia no 19 de Agosto de 2016, entre 17:36 e 17:39.
 A rotina de calibração do sistema, já descrita no Capitulo 3 deste trabalho, envolve primeiramente uma aquisição da imagem do campo vazio, sem nada no mesmo, como visto na Figura \ref{campovazio}.
@@ -24,7 +24,7 @@ A rotina de calibração do sistema, já descrita no Capitulo 3 deste trabalho, 
 		\label{campovazio}
 	\end{figure}
 Após ter o campo identificado pelo sistema, deve-se dispor sobre o campos os objetos coloridos, com as cores cujo se deseja obter o intervalo. É preferido que se usem tiras coloridas, pois quanto maior o tamanho da tira de cor, maior sera o espectro de cores que seja analisado, assim sendo possível uma melhor qualidade de calibração.
-Neste teste foram dispostos no campo tiras coloridas com largura entre \textit{17cm} e \textit{40cm} e altura entre \textit{5,5cm} e \textit{10,5cm}, cada cor com 3 tiras uma vez que o campo foi separado em três partes, significando as partes com diferentes luminosidades, sendo assim cada uma das tiras colocada em uma das partes do campos, como é possível visualiar na Figura \ref{fig:objetodispostos}.
+Neste teste foram dispostos no campo tiras coloridas com largura entre \textit{17cm} e \textit{40cm} e altura entre \textit{5,5cm} e \textit{10,5cm}, cada cor com 3 tiras uma vez que o campo foi separado em três partes, significando as partes com diferentes luminosidades, sendo assim cada uma das tiras colocada em uma das partes do campos, como é possível visualizar na Figura \ref{fig:objetodispostos}.
 	
 	\begin{figure}[H]
 %\begin{minipage}[H]{0.34\linewidth}
@@ -43,7 +43,7 @@ Neste teste foram dispostos no campo tiras coloridas com largura entre \textit{1
 %\end{minipage}
 \end{figure}	
 	
-Como resultado da rotina de calibraç\~{a}o foi gerado um arquivo .arff contendo 14 linhas. A tabela abaixo possui uma explicação sobre o arquivo gerado. A primeira coluna da tabela designa a linha contida no arquivo, a segunda coluna possui o conteúdo existente na linha do arquivo e na ultima coluna está a descrição do conteúdo do arquivo.
+Como resultado da rotina de calibração foi gerado um arquivo .arff contendo 14 linhas. A tabela abaixo possui uma explicação sobre o arquivo gerado. A primeira coluna da tabela designa a linha contida no arquivo, a segunda coluna possui o conteúdo existente na linha do arquivo e na ultima coluna está a descrição do conteúdo do arquivo.
 	\begin{table}[H]
 \centering 
 \begin{tabular}{l|c|c}
@@ -65,7 +65,7 @@ Linha & Conteúdo & Descrição  \\% Note a separação de col. e a quebra de li
 14& 160.255.255 &  Valor máximo da cor Roxo \\  \hline 
 
 \end{tabular}
-\caption{Os valores de HSV est\~{a}o separados por pontuação, H.S.V}
+\caption{Os valores de HSV estão separados por pontuação, H.S.V}
 \end{table}
 
 
@@ -74,7 +74,7 @@ Linha & Conteúdo & Descrição  \\% Note a separação de col. e a quebra de li
 
  \section{Testes}
 O teste aqui descrito ocorreu dia no 26 de Agosto de 2016, entre à 13:28 e 16:28.
-Para elaboração do teste optou-se por dividir o campos no maior numero de partes possiveis, e ainda assim que essas partes coubessem todas as 7 cores usadas. Essa divisão foi feita para simular as cores em todas as partes possiveis do campos. O campo foi divido então em 15 partes de \textit{29cm} por \textit{41cm}, nomeadas alfabeticamente de A à O, como mostrado na Figura \ref{campodivisao}.
+Para elaboração do teste optou-se por dividir o campos no maior numero de partes possíveis, e ainda assim que essas partes coubessem todas as 7 cores usadas. Essa divisão foi feita para simular as cores em todas as partes possíveis do campos. O campo foi divido então em 15 partes de \textit{29cm} por \textit{41cm}, nomeadas alfabeticamente de A à O, como mostrado na Figura \ref{campodivisao}.
 
 \begin{figure}[H]
 		\centering
@@ -83,7 +83,7 @@ Para elaboração do teste optou-se por dividir o campos no maior numero de part
 		\label{campodivisao}
 	\end{figure}
 	
-Em cada uma das partes do campo estavam dispostas sete cores. Vermelho, Amarelo e Azul na primeira linha. Verde, Roxo, Laranja e Rosa na segunda. As cores estão distantes verticalmente \textit{6cm}, na primeria linha a distância entre as cores é de \textit{7,25cm} e na segunda linha de \textit{5cm}. Um  melhor detalhamento da disposição das cores é mostrado na Figura \ref{disposicaoparte}.
+Em cada uma das partes do campo estavam dispostas sete cores. Vermelho, Amarelo e Azul na primeira linha. Verde, Roxo, Laranja e Rosa na segunda. As cores estão distantes verticalmente \textit{6cm}, na primeira linha a distância entre as cores é de \textit{7,25cm} e na segunda linha de \textit{5cm}. Um  melhor detalhamento da disposição das cores é mostrado na Figura \ref{disposicaoparte}.
 
 
 \begin{figure}[H]
@@ -134,7 +134,7 @@ Objetos Com Falhas Críticas & 0 &\\
 \caption{Categorização Dos Objetos}
 \end{table}
 
-Dentre as classficações dos objetos as que  \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam 6,66\% dos objetos.
+Dentre as classificações dos objetos as que  \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam 6,66\% dos objetos.
 
 \subsubsection{Azul}
 	\begin{figure}[H]
@@ -144,7 +144,7 @@ Dentre as classficações dos objetos as que  \textit{Objetos Com Falhas Crític
 		\label{disposicaoparte}
 	\end{figure}
 
-Os objetos da cor azul foram os que obtiveram os melhores resultados, os quinze objetos foram encontrados de forma preenchida.	Apesar dos quinze estarem totalmente preenchidos um dos objetos apresentou um tamanho reduzido aos demais devido ao fato de sua borda que não ter sido totamente detectada.
+Os objetos da cor azul foram os que obtiveram os melhores resultados, os quinze objetos foram encontrados de forma preenchida.	Apesar dos quinze estarem totalmente preenchidos um dos objetos apresentou um tamanho reduzido aos demais devido ao fato de sua borda que não ter sido totalmente detectada.
 
 \begin{table}[h]
 \centering
@@ -207,7 +207,7 @@ Objetos Com Falhas Críticas & 0 \\
 		\label{disposicaoparte}
 	\end{figure}
 	
-Dentre os objetos rosa detectados, quatro obtiveram falhas em sua detecção, falhas de preenchimento e diminuição de borda, estes podem ser desconsiderados dos objetos. Dentro os outros onze: três foram detectados sem falhas de preenchimentos apenas com diminuição de sua área para aproximadamente metade da área real do objeto; os outros oito foram encontrados apesas com diminuição de área devido a diminuição de borda.
+Dentre os objetos rosa detectados, quatro obtiveram falhas em sua detecção, falhas de preenchimento e diminuição de borda, estes podem ser desconsiderados dos objetos. Dentro os outros onze: três foram detectados sem falhas de preenchimentos apenas com diminuição de sua área para aproximadamente metade da área real do objeto; os outros oito foram encontrados apenas com diminuição de área devido a diminuição de borda.
 	
 	\begin{table}[h]
 \centering
@@ -231,7 +231,7 @@ Objetos Com Falhas Críticas & 4 & 26,66 \\
 \caption{Categorização Dos Objetos}
 \end{table}
 
-Dentre as classficações dos objetos as que  \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam 26,66\% dos objetos. Apesar de ser um numero não tão baixo, a cor rosa não é uma cor que a equipe Cedro costuma usar em seus jogos, sendo assim, essa taxa de erro não influencia na eficienca do sistema.
+Dentre as classificações dos objetos as que  \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam 26,66\% dos objetos. Apesar de ser um numero não tão baixo, a cor rosa não é uma cor que a equipe Cedro costuma usar em seus jogos, sendo assim, essa taxa de erro não influencia na eficiência do sistema.
 \subsubsection{Roxo}
 \begin{figure}[H]
 		\centering
@@ -240,7 +240,7 @@ Dentre as classficações dos objetos as que  \textit{Objetos Com Falhas Crític
 		\label{disposicaoparte}
 	\end{figure}
 
-Todos os objetos roxos dispostos no campo foram encontrados pelo intervalo da cor. Dentre os quinze, quatro não apresentaram problema algum e foram completamente detectados; oito possuiram diminiução em seu contorno e três diminuição em sua área relativa.
+Todos os objetos roxos dispostos no campo foram encontrados pelo intervalo da cor. Dentre os quinze, quatro não apresentaram problema algum e foram completamente detectados; oito possuíram diminuição em seu contorno e três diminuição em sua área relativa.
 \begin{table}[h]
 \centering
 \begin{tabular}{l|c|c}
@@ -263,7 +263,7 @@ Objetos Com Falhas Críticas & 0 \\
 \end{table}
 	
 \subsection{Cores Com Problemas Conhecidos}
-Cores como Vermelho e Laranja possuem o problema de por vezes, devido a interferencia externas, se assemelharem a outras. Este problemas ja são de conhecimento da área.
+Cores como Vermelho e Laranja possuem o problema de por vezes, devido a interferência externas, se assemelharem a outras. Este problemas já são de conhecimento da área.
 	
 	
 \subsubsection{Vermelho}
@@ -298,7 +298,7 @@ Objetos Com Falhas Críticas &  1 & 6,66\\
 \caption{Categorização Dos Objetos}
 \end{table}
 
-Dentre as classficações dos objetos as que  \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam somente 13,32\% dos objetos.
+Dentre as classificações dos objetos as que  \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam somente 13,32\% dos objetos.
 
 \subsubsection{Laranja}
 	\begin{figure}[H]

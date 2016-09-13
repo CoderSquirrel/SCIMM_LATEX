@@ -181,7 +181,7 @@ Apos o uso do algoritmo de Canny para detecção de bordas é necessário então
 \centering \textit{ findContours(canny\_output, contours, hierarchy, CV\_RETR\_EXTERNAL, CV\_CHAIN\_APPROX\_SIMPLE, Point(0, 0))}
 \end{center}
 
-O primeiro parametro, \textbf{canny\_output}, é a imagem que o algoritmo de Canny gerou com as bordas encontrada na imagem, e é a imagem que o método \textit{findContours} ira utilizar para detectar os contornos, \textbf{contours} é o parametro que indica onde serão salvos os contornos encontrados, cada contorno é armazenado como sendo um vetor de pontos \cite{OpenCV}. \textbf{hierarchy} é onde será salva um vetor de informações sobre a topologia da imagem, e terá como total de elementos o mesmo numero que o total de contornos encontrado\cite{OpenCV}. O quarto parametro, \textbf{CV\_RETR\_EXTERNAL} indica o modo de obtenção de contornos, nesse caso \textit{CV\_RETR\_EXTERNAL} indica que o metodo só obtera os contornos exteriores\cite{OpenCV}. \textbf{CV\_CHAIN\_APPROX\_SIMPLE} indica o metodo que sera usado para aproximação de contornos, o metodo \textit{CV\_CHAIN\_APPROX\_SIMPLE} comprime segmentos horizontais, verticais, diagonais e deixa apenas os seus pontos finais\cite{OpenCV}. E o ultimo parâmetro, \textbf{Point(0, 0)}, indica o valor a ser usado para deslocar a imagem ao encontrar os objetos, neste caso esse valor é 0 para Y e 0 para X, pois não sera necessário. 
+O primeiro parametro, \textbf{canny\_output}, é a imagem que o algoritmo de Canny gerou com as bordas encontrada na imagem, e é a imagem que o método \textit{findContours} ira utilizar para detectar os contornos, \textbf{contours} é o parametro que indica onde serão salvos os contornos encontrados, cada contorno é armazenado como sendo um vetor de pontos\cite{OpenCV}. \textbf{hierarchy} é onde será salva um vetor de informações sobre a topologia da imagem, e terá como total de elementos o mesmo numero que o total de contornos encontrado\cite{OpenCV}. O quarto parametro, \textbf{CV\_RETR\_EXTERNAL} indica o modo de obtenção de contornos, nesse caso \textit{CV\_RETR\_EXTERNAL} indica que o metodo só obtera os contornos exteriores\cite{OpenCV}. \textbf{CV\_CHAIN\_APPROX\_SIMPLE} indica o metodo que sera usado para aproximação de contornos, o metodo \textit{CV\_CHAIN\_APPROX\_SIMPLE} comprime segmentos horizontais, verticais, diagonais e deixa apenas os seus pontos finais\cite{OpenCV}. E o ultimo parâmetro, \textbf{Point(0, 0)}, indica o valor a ser usado para deslocar a imagem ao encontrar os objetos, neste caso esse valor é 0 para Y e 0 para X, pois não sera necessário. 
 
 Uma vez obtidos os contornos é necessários que se faça a eliminação de vértices dos polígonos encontrados nos objetos deixando assim o objeto mais preciso. Isso é necessário para deixar a forma encontrada mais precisa dá forma original. Para este ajuste foi usado o método \textit{approxPolyDP}, já implementado dentro da biblioteca OpenCV. Esse método teve que ser aplicado em cada um dos contornos encontrados, e foi utilizado da seguinte maneira:
 \begin{center}
@@ -227,16 +227,7 @@ Vermelha & de 169 à 180 \\
 
 Estes valores foram obtidos por meio da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teórica, o intervalo de valores da matiz(h) é de 0º a 360º, dentro da biblioteca o intervalo é dado entre os pelo intervalo de números inteiros de 0 à 180 . Uma outra ressalva deve ser feita quando à conversão de valores. Como não há pre-definição destes valores disponível pela biblioteca, foi feito então testes utilizando os valores considerados no mundo real como base para que chegássemos a esses valores.
 
-Durante o desenvolvimento foi observador que, em sua maioria, as cores necessitavam de um valor S e V pré estabelecido.Para as cores Vermelho, Rosa, Azul, Laranja e Verde foi pré estabelecido o valor de 100 para ambos, S e V, já para Amarelo e Roxo ambos os valores assumem 50.
-
+Durante o desenvolvimento foi observador que, em sua maioria, as cores necessitavam de um valor S e V pré estabelecido. Para as cores Laranja, Azul, Rosa e Vermelho foi pré estabelecido o valor de 100 para ambos, S e V. A cor Amarelo usa a pré definição de S e V com o valor. A cor Verde é a única que possui os valores pré definidos diferenciados um do outro, tendo 30 para S e 50 para V. Já a cor Roxo possui tanto para S quanto para V o valor 30.
 
   \subsection{6ª Etapa - Gerar Arquivo de Cores}
-  Assim que todas as cores já estiverem sido assimiladas e a calibração finalizada, gera-se um arquivo chamado \textbf{cores.arff}. 
-  
-  		
-  
-  
-  
-
- 
- 
+  Assim que todas as cores já estiverem sido assimiladas e a calibração finalizada, gera-se um arquivo chamado \textbf{cores.arff}, contendo 14 linhas. Sabendo que o sistema calibra 7 cores o arquivo é gerado com o dobro de linhas da quantidade de cor, de modo que a primeira designe o valor mínimo HSV e a segunda o valor máximo para cada cor.
