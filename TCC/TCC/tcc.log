@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  12 SEP 2016 22:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  12 SEP 2016 22:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1159,55 +1159,55 @@ File: figuras/FluxodoSistema.pdf Graphic file (type pdf)
 Package pdftex.def Info: figuras/FluxodoSistema.pdf used on input line 107.
 (pdftex.def)             Requested size: 211.26028pt x 364.66867pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 121.
  [23 <./figuras/FluxodoSistema.pdf>]
 <figuras/passo1.pdf, id=556, 1309.89375pt x 602.25pt>
 File: figuras/passo1.pdf Graphic file (type pdf)
  <use figuras/passo1.pdf>
-Package pdftex.def Info: figuras/passo1.pdf used on input line 129.
+Package pdftex.def Info: figuras/passo1.pdf used on input line 128.
 (pdftex.def)             Requested size: 375.57782pt x 172.68144pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 141.
 [24 <./figuras/passo1.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 142.
 
 <figuras/passo2.pdf, id=576, 660.4675pt x 617.30624pt>
 File: figuras/passo2.pdf Graphic file (type pdf)
 
 <use figuras/passo2.pdf>
-Package pdftex.def Info: figuras/passo2.pdf used on input line 154.
+Package pdftex.def Info: figuras/passo2.pdf used on input line 153.
 (pdftex.def)             Requested size: 211.26028pt x 197.45726pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 162.
  [25 <./figuras/passo2.pdf>]
 <figuras/passo3.pdf, id=590, 1326.87724pt x 612.12692pt>
 File: figuras/passo3.pdf Graphic file (type pdf)
 
 <use figuras/passo3.pdf>
-Package pdftex.def Info: figuras/passo3.pdf used on input line 166.
+Package pdftex.def Info: figuras/passo3.pdf used on input line 165.
 (pdftex.def)             Requested size: 375.57782pt x 173.26242pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 172.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 185.
  [26 <./figuras/passo3.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 228.
+(babel)             in language  on input line 227.
  [27]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 234.
+(babel)             in language  on input line 233.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 105.
@@ -1425,7 +1425,7 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on tcc.pdf (43 pages, 6999462 bytes).
+Output written on tcc.pdf (43 pages, 6999479 bytes).
 PDF statistics:
  957 PDF objects out of 1000 (max. 8388607)
  783 compressed objects within 8 object streams
