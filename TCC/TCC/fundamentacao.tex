@@ -20,7 +20,7 @@
 
 \section{Processamento de Imagens}
 
-O processamento de imagens é a técnica de trabalhar com uma imagem e seus elementos visando retirar suas informações\cite{Albuquerque:2001}. Além da retirada de informações, o processamento de imagens também inclui a modificação ou melhoria da imagem por meio de redução de ruido, melhoria no contraste, segmentações da image entre outras técnicas. Dentre tipos de processamento de imagens existem, Gonzalez\cite{Gonzalez:2008} os define como: aplicações de ações primitivas de modificação de imagem, esta caraterizada por seu resultado final ser também uma imagem semelhante a imagem inicial porém modificada (Low-Level-Process), divisão de imagem em regiões e alguns tipos de reconhecimento e classificação de objetos, caraterizada por seu resultado final ser muitas vezes apenas regiões ou informações da imagem inicial (Mid-Level-Process), e o mais sensorial de todos que é a analise de objetos usando funções cognitivas associadas a visão computacional, essa usa informações relevantes para o reconhecimento de objetos (Higher-Level-Process). 
+O processamento de imagens é a técnica de trabalhar com uma imagem e seus elementos visando retirar suas informações\cite{Albuquerque:2001}. Além da retirada de informações, o processamento de imagens também inclui a modificação ou melhoria da imagem por meio de redução de ruido, melhoria no contraste, segmentações da image entre outras técnicas. Dentre tipos de processamento de imagens existem, Gonzalez\cite{Gonzalez:2008} os define como: aplicações de ações primitivas de modificação de imagem, esta caraterizada por seu resultado final ser também uma imagem semelhante a imagem inicial porém modificada(Low-Level-Process), divisão de imagem em regiões e alguns tipos de reconhecimento e classificação de objetos, caraterizada por seu resultado final ser muitas vezes apenas regiões ou informações da imagem inicial(Mid-Level-Process), e o mais sensorial de todos que é a analise de objetos usando funções cognitivas associadas a visão computacional, essa usa informações relevantes para o reconhecimento de objetos(Higher-Level-Process). 
 Uma vez que o objetivo deste trabalho é reconhecer os objetos em campo para calibra-los, usaremos técnicas de retirada de informações e regiões. Explicaremos sobre as técnicas usadas nas subseções seguintes.
 
 \subsection{Detecção de Objetos}
@@ -97,7 +97,7 @@ correspondente. O espaço de cores pode ser entendido como a quantidade de detal
 
 
 Quando fez sua primeira experiência com a decomposição da luz em um prisma para obter cores Newton percebeu que não havia a cor branca. Ele tentou então misturar as sete cores que obteve para gerar a branca, sem sucesso. 
- Para conseguir cobrir todas as alterações e caracteristicas as cores em 1921 a Comissão Internacional de Iluminação (CEI)\cite{Souto:2003} definiu três primarias(X, Y e Z) que podem ser combinadas para formarem todas as cores e entendeu-se que existe duas formas de se obter cores: através da emissão ou reflexão de luz, espaços RGB e CMY respectivamente, \figurename{ 2.2}. Assim entendeu-se então porque em seu experimento Newton não obteve sucesso para gerar a cor branca, pois parar gerar a cor branca é necessário a soma das três cores primarias azul, verde e vermelho, uma vez que seu experimento utilizava a reflexão e não emissão de cores.
+ Para conseguir cobrir todas as alterações e caracteristicas as cores em 1921 a Comissão Internacional de Iluminação(CEI)\cite{Souto:2003} definiu três primarias(X, Y e Z) que podem ser combinadas para formarem todas as cores e entendeu-se que existe duas formas de se obter cores: através da emissão ou reflexão de luz, espaços RGB e CMY respectivamente, \figurename{ 2.2}. Assim entendeu-se então porque em seu experimento Newton não obteve sucesso para gerar a cor branca, pois parar gerar a cor branca é necessário a soma das três cores primarias azul, verde e vermelho, uma vez que seu experimento utilizava a reflexão e não emissão de cores.
  \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{espacos.pdf}
@@ -125,7 +125,7 @@ O modelo de cores RGB pode ser considerado mais básico dos modelos de cores. Se
 
 
 
-O modelo HSV define tonalidade (hue) que é a cor em si, variando de 0 a 360º, a saturação(saturation) que define o grau de pureza da cor, variando de 0 a 1, obtido pela mistura da tonalidade com a cor branca e brilho (value) que tenta fazer referência à percepção humana\cite{Leao:2005} que é a intensidade da cor, escala de tons de cinza\cite{Azevedo:2003}, variando também de 0 a 1.
+O modelo HSV define tonalidade(hue) que é a cor em si, variando de 0 a 360º, a saturação(saturation) que define o grau de pureza da cor, variando de 0 a 1, obtido pela mistura da tonalidade com a cor branca e brilho(value) que tenta fazer referência à percepção humana\cite{Leao:2005} que é a intensidade da cor, escala de tons de cinza\cite{Azevedo:2003}, variando também de 0 a 1.
 
 
 \begin{figure}[!h]
@@ -141,7 +141,7 @@ O sistema HSV utiliza definições de cor mais intuitivas que o conjunto de core
 
 \section{Futebol de Robôs}
  Visto como um dominio bastente complexo, dinamico e imprevisivel\cite{Costa:2000}, o futebol de robos surgiu como uma tentativa de promover pesquisas nos campos de Inteligência Artificial e robótica, pela avaliação teorias, algoritmos e arquiteturas por meio de problemas padrão\cite{Kitano:1997}.
- A Equipe Cedro se enquadra na categoria IEEE Very Small Size Soccer. Esta categoria é regulamentada pelo Instituto de Engenheiros Eletricistas e Eletrônicos (IEEE) e possui regras baseadas na MiroSot\cite{Rosa:2015}. O futebol de robôs se assemelha ao futebol humano onde o objetivo do jogo é fazer gols para vencer a partida, porém tendo regras adaptadas para o âmbito robótico. 
+ A Equipe Cedro se enquadra na categoria IEEE Very Small Size Soccer. Esta categoria é regulamentada pelo Instituto de Engenheiros Eletricistas e Eletrônicos(IEEE) e possui regras baseadas na MiroSot\cite{Rosa:2015}. O futebol de robôs se assemelha ao futebol humano onde o objetivo do jogo é fazer gols para vencer a partida, porém tendo regras adaptadas para o âmbito robótico. 
  Rosa\cite{Rosa:2015} em seu trabalho de graduação faz uma boa enumeração das regras básicas:
  \begin{itemize}
  \item A partida dura 10 minutos com dois tempos de 5 minutos;
