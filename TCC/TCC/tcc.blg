@@ -4,23 +4,15 @@ The top-level auxiliary file: tcc.aux
 A level-1 auxiliary file: cabecalho.aux
 A level-1 auxiliary file: resumo.aux
 A level-1 auxiliary file: abstract.aux
-A level-1 auxiliary file: agradecimentos.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: fundamentacao.aux
 A level-1 auxiliary file: dev.aux
 A level-1 auxiliary file: resultados.aux
 A level-1 auxiliary file: conclusao.aux
-The style file: abntex2-num.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+The style file: apalike.bst
 Database file #1: abntex2-options.bib
+Warning--entry type for "abnt-url-package=url" isn't style-file defined
+--line 199 of file abntex2-options.bib
 Database file #2: bibliografia.bib.bib
 Warning--entry type for "ImagensHSLHSVRGB" isn't style-file defined
 --line 169 of file bibliografia.bib.bib
@@ -32,60 +24,56 @@ Warning--entry type for "FiraHistory" isn't style-file defined
 --line 331 of file bibliografia.bib.bib
 Warning--entry type for "FiraOverview" isn't style-file defined
 --line 341 of file bibliografia.bib.bib
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio ou faltando em VSSVision
-Warning--campo year vazio ou faltando em ImagensHSLHSVRGB
-Warning--campo year vazio ou faltando em FiraHistory
-Warning--campo year vazio ou faltando em FiraOverview
-Warning--campo year vazio ou faltando em YouTube
-Warning--campo year vazio ou faltando em OpenCV
-+---------------------------------------------------------+
-| Estilo bibliográfico abntex2-num.bst versão v-1.9.2           |
-| Em caso de dúvidas ou problemas com este estilo procure |
-| http://abntex2.googlecode.com                           |
-+---------------------------------------------------------+
+Warning--empty year in abnt-url-package=url
+Warning--empty publisher in Vale:2002
+Warning--empty year in FiraHistory
+Warning--empty year in FiraOverview
+Warning--empty year in ImagensHSLHSVRGB
+Warning--empty year in YouTube
+Warning--empty year in OpenCV
+Warning--empty year in PenharbelTime
+Warning--empty journal in PenharbelTime
+Warning--empty year in VSSVision
+Warning--empty booktitle in VSSVision
 You've used 28 entries,
-            6706 wiz_defined-function locations,
-            1397 strings with 14802 characters,
-and the built_in function-call counts, 30025 in all, are:
-= -- 3194
-> -- 642
-< -- 549
-+ -- 817
-- -- 194
-* -- 1926
-:= -- 3775
-add.period$ -- 113
+            1935 wiz_defined-function locations,
+            657 strings with 8609 characters,
+and the built_in function-call counts, 10105 in all, are:
+= -- 976
+> -- 425
+< -- 26
++ -- 147
+- -- 138
+* -- 761
+:= -- 1801
+add.period$ -- 85
 call.type$ -- 28
-change.case$ -- 280
-chr.to.int$ -- 48
-cite$ -- 33
-duplicate$ -- 2541
-empty$ -- 1571
-format.name$ -- 1024
-if$ -- 6390
-int.to.chr$ -- 1
+change.case$ -- 206
+chr.to.int$ -- 27
+cite$ -- 39
+duplicate$ -- 419
+empty$ -- 697
+format.name$ -- 181
+if$ -- 1986
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 478
-newline$ -- 148
-num.names$ -- 112
-pop$ -- 677
+missing$ -- 21
+newline$ -- 140
+num.names$ -- 89
+pop$ -- 218
 preamble$ -- 1
-purify$ -- 106
+purify$ -- 206
 quote$ -- 0
-skip$ -- 2646
-stack$ -- 1
-substring$ -- 1179
-swap$ -- 960
-text.length$ -- 29
+skip$ -- 301
+stack$ -- 0
+substring$ -- 533
+swap$ -- 53
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
-warning$ -- 6
-while$ -- 163
+type$ -- 164
+warning$ -- 11
+while$ -- 74
 width$ -- 0
-write$ -- 377
-(There were 11 warnings)
+write$ -- 344
+(There were 17 warnings)

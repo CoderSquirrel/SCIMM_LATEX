@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  13 SEP 2016 18:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.18)  13 SEP 2016 22:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,8 +1038,20 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 21.
+
+Overfull \hbox (33.11136pt too wide) in paragraph at lines 23--25
+\OT1/cmr/m/n/12 t^^Secnicas. Den-tre ti-pos de pro-ces-sa-mento de ima-gens exi
+s-tem, Gonzalez([])
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
+
+Overfull \hbox (23.39801pt too wide) in paragraph at lines 35--37
+\OT1/cmr/m/n/12 do ob-jeto em ta-ma-nho fixo ape-nas va-ri-ando na posi^^Xc~ao 
+na imagem([]). 
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 37.
 [14
@@ -1049,64 +1061,87 @@ Package babel Info: Redefining portuges shorthand "|
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 48.
- <figuras/canny.pdf, id=403, 569.12625pt x 262.9825pt>
-File: figuras/canny.pdf Graphic file (type pdf)
 
-<use figuras/canny.pdf>
+Overfull \hbox (52.06952pt too wide) in paragraph at lines 49--51
+\OT1/cmr/m/n/12 ima-gem em objetos([]). De acordo com Wangenheim([])
+ []
+
+
+Overfull \hbox (50.24776pt too wide) in paragraph at lines 52--53
+\OT1/cmr/m/n/12 de de-tec^^Xc~ao de borda te-nha uma baixa taxa de erro para qu
+e seja eficiente([],
+ []
+
+<figuras/canny.pdf, id=402, 569.12625pt x 262.9825pt>
+File: figuras/canny.pdf Graphic file (type pdf)
+ <use figuras/canny.pdf>
 Package pdftex.def Info: figuras/canny.pdf used on input line 66.
 (pdftex.def)             Requested size: 375.57782pt x 173.55292pt.
 
+Overfull \hbox (64.13092pt too wide) in paragraph at lines 62--70
+\OT1/cmr/m/n/12 Canny mostrou-se bas-tante flex^^S^^Pvel, in-de-pen-dente da or
+i-gem da ima-gem utilizada([]).
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 70.
+[15]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 77.
+
+Overfull \hbox (89.09732pt too wide) in paragraph at lines 80--81
+\OT1/cmr/m/n/12 vis~ao pe-ri-fe-rica e tem como ca-rac-te-ris-tica se-rem sen-s
+i-veis a baixo ni-vel de luminosidade([]),
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
-[15] <figuras/graficocie.pdf, id=421, 477.785pt x 542.025pt>
+(babel)             in language  on input line 90.
+[16 <./figuras/canny.pdf>]
+<figuras/graficocie.pdf, id=438, 477.785pt x 542.025pt>
 File: figuras/graficocie.pdf Graphic file (type pdf)
 
 <use figuras/graficocie.pdf>
 Package pdftex.def Info: figuras/graficocie.pdf used on input line 93.
 (pdftex.def)             Requested size: 117.36761pt x 133.14879pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figuras/espacos.pdf, id=423, 2131.24232pt x 1059.47823pt>
+<figuras/espacos.pdf, id=440, 2131.24232pt x 1059.47823pt>
 File: figuras/espacos.pdf Graphic file (type pdf)
 
 <use figuras/espacos.pdf>
 Package pdftex.def Info: figuras/espacos.pdf used on input line 103.
 (pdftex.def)             Requested size: 234.73524pt x 116.68846pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 107.
- [16 <./figuras/canny.pdf>]
-<figuras/rgb.pdf, id=443, 803.0pt x 602.25pt>
+(babel)             in language  on input line 116.
+ [17 <./figuras/graficocie.pdf> <./figuras/espacos.pdf
+
+pdfTeX warning: pdflatex (file ./figuras/espacos.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>] <figuras/rgb.pdf, id=470, 803.0pt x 602.25pt>
 File: figuras/rgb.pdf Graphic file (type pdf)
  <use figuras/rgb.pdf>
 Package pdftex.def Info: figuras/rgb.pdf used on input line 120.
 (pdftex.def)             Requested size: 187.78532pt x 140.83954pt.
 
+Overfull \hbox (38.66869pt too wide) in paragraph at lines 128--129
+\OT1/cmr/m/n/12 humana([]) que ^^Se a in-ten-si-dade da cor, es-cala de tons de
+ cinza([]),
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
-[17 <./figuras/graficocie.pdf> <./figuras/espacos.pdf
-
-pdfTeX warning: pdflatex (file ./figuras/espacos.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->] <figuras/hsv.pdf, id=475, 1606.0pt x 1204.5pt>
+<figuras/hsv.pdf, id=475, 1606.0pt x 1204.5pt>
 File: figuras/hsv.pdf Graphic file (type pdf)
  <use figuras/hsv.pdf>
 Package pdftex.def Info: figuras/hsv.pdf used on input line 133.
 (pdftex.def)             Requested size: 187.78532pt x 140.83955pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 142.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
 
+Overfull \hbox (32.21042pt too wide) in paragraph at lines 143--146
+[]\OT1/cmr/m/n/12 Visto como um do-mi-nio bas-tente com-plexo, di-na-mico e imp
+revisivel([]),
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 146.
 [18 <./figuras/rgb.pdf> <./figuras/hsv.pdf
 
 pdfTeX warning: pdflatex (file ./figuras/hsv.pdf): PDF inclusion: multiple pdfs
@@ -1362,14 +1397,14 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 24.
 [40
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 24.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 108.
@@ -1377,14 +1412,9 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 114.
  (./tcc.bbl
-Overfull \hbox (39.85764pt too wide) in paragraph at lines 16--23
-\OT1/cmr/m/n/12 11866286-[]Construcao-[]de-[]um-[]time-[]de-[]futebol-[]de-[]ro
-bos-[]para-[]a-[]categoria-[]ieee-[]very-[]small-[]size-[]soccer . 
- []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 93.
-[42
+(babel)             in language  on input line 84.
+ [42
 
 
 
@@ -1394,9 +1424,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 130.
  [43]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
- (./tcc.aux (./cabecalho.aux) (./resumo.aux) (./abstract.aux)
-(./introducao.aux) (./fundamentacao.aux) (./dev.aux) (./resultados.aux)
-(./conclusao.aux))
+ (./tcc.aux (./cabecalho.aux) (./resumo.aux)
+(./abstract.aux) (./introducao.aux) (./fundamentacao.aux) (./dev.aux)
+(./resultados.aux) (./conclusao.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `tcc.out' has not changed.
@@ -1408,13 +1438,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 12051 strings out of 493304
- 177304 string characters out of 6139871
- 294046 words of memory out of 5000000
- 15035 multiletter control sequences out of 15000+600000
+ 11920 strings out of 493304
+ 174993 string characters out of 6139871
+ 289216 words of memory out of 5000000
+ 14930 multiletter control sequences out of 15000+600000
  15312 words of font info for 58 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 40i,12n,60p,1864b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,12n,60p,1864b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1423,12 +1453,11 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti12.pfb>
-Output written on tcc.pdf (43 pages, 6586081 bytes).
+amsfonts/cm/cmti12.pfb>
+Output written on tcc.pdf (43 pages, 6576745 bytes).
 PDF statistics:
- 934 PDF objects out of 1000 (max. 8388607)
- 771 compressed objects within 8 object streams
- 186 named destinations out of 1000 (max. 500000)
+ 881 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
+ 160 named destinations out of 1000 (max. 500000)
  429 words of extra memory for PDF output out of 10000 (max. 10000000)
 
