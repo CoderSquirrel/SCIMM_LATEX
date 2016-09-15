@@ -140,7 +140,8 @@ O modelo HSV define tonalidade(hue) que é a cor em si, variando de 0 a 360º, a
 O sistema HSV utiliza definições de cor mais intuitivas que o conjunto de cores primarias, por isso são mais adequados quando se necessita obter varias tonalidades.
 
 \section{Futebol de Robôs}
- Visto como um dominio bastente complexo, dinamico e imprevisivel\cite{Costa:2000}, o futebol de robos surgiu como uma tentativa de promover pesquisas nos campos de Inteligência Artificial e robótica, pela avaliação teorias, algoritmos e arquiteturas por meio de problemas padrão\cite{Kitano:1997}.
+ Visto como um dominio bastente complexo, dinamico e imprevisivel\cite{Faria2006,Costa:2000}, o futebol de robos surgiu como uma tentativa de promover pesquisas nos campos de Inteligência Artificial e robótica, pela avaliação teorias, algoritmos e arquiteturas por meio de problemas padrão\cite{Kitano:1997}. Além disso se considera o futebol de robôs um problema padrão, no qual se torna possivel fazer a avaliação de algoritmos, arquiteturas, desepenhos e teorias\cite{Faria2006}.
+
  A Equipe Cedro se enquadra na categoria IEEE Very Small Size Soccer. Esta categoria é regulamentada pelo Instituto de Engenheiros Eletricistas e Eletrônicos(IEEE) e possui regras baseadas na MiroSot\cite{Rosa:2015}. O futebol de robôs se assemelha ao futebol humano onde o objetivo do jogo é fazer gols para vencer a partida, porém tendo regras adaptadas para o âmbito robótico. 
  Rosa\cite{Rosa:2015} em seu trabalho de graduação faz uma boa enumeração das regras básicas:
  \begin{itemize}
@@ -158,5 +159,19 @@ O sistema HSV utiliza definições de cor mais intuitivas que o conjunto de core
      \item A cada inicio de partida ou gol feito a bola deve ser posicionada no centro do campo e os
      robôs devem ser posicionados de acordo com a posse de bola.
  \end{itemize}
-
+Uma otima descriçao do ambiente de futebol de robos é descrita por \cite{Faria2006}, e pode ser vista na Figura \ref{VSSS}:
+\begin{quotation}
+``O futebol de robôs considera-se uma câmera para capturar
+a imagem de todo o campo e utilizando-se de recursos de processamento de imagem, um
+computador poderá fornecer as posições dos robôs pertencentes ao time, dos adversários,
+do gol e da bola. Um computador, chamado de técnico, pode utilizar algum sistema de
+controle que utilize as informações disponíveis para dar ordens de como os robôs de seu
+time devem agir."
+\end{quotation}
+ \begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{faria2006.png}
+	\caption{Estrutura de um ambiente de futebol de robos VSSS\cite{Faria2006}}
+	\label{VSSS}
+\end{figure} 
 \section{Considerações Finais}

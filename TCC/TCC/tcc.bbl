@@ -70,9 +70,9 @@ Dispon{\'\i}vel em: \url{http://fira.net/contents/sub01/sub01\_2.asp}.}
 ISBN 9780131687288. Dispon{\'\i}vel em:
   \url{https://books.google.com.br/books?id=8uGOnjRGEzoC}.}
 
-\bibitem[Horvath]{ImagensHSLHSVRGB}
-\abntrefinfo{Horvath}{HORVATH}{}
-{HORVATH, M. \emph{"Imagens HSV, HSL e RGB"}.
+\bibitem[Horvath 2008]{ImagensHSLHSVRGB}
+\abntrefinfo{Horvath}{HORVATH}{2008}
+{HORVATH, M. \emph{"Imagens HSV, HSL e RGB"}. 2008.
 Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
 
 \bibitem[Hounslow]{YouTube}
@@ -81,9 +81,9 @@ Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
 Acessado 09/09/2016 20:11.
 Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=bSeFrPrqZ2A}.}
 
-\bibitem[itseez]{OpenCV}
-\abntrefinfo{itseez}{ITSEEZ}{}
-{ITSEEZ. \emph{OpenCV}.
+\bibitem[itseez 2016]{OpenCV}
+\abntrefinfo{itseez}{ITSEEZ}{2016}
+{ITSEEZ. \emph{OpenCV}. 2016.
 Acessado 29/06/2016 16:53.
 Dispon{\'\i}vel em: \url{http://docs.opencv.org/3.1.0/}.}
 
@@ -114,15 +114,17 @@ Disserta\c{c}\~{a}o (Trabalho de Graduação) --- Centro de Informática,
 Dispon{\'\i}vel em: \url{www.cin.ufpe.br/~tg/2007-2/mcn2.doc}.}
 
 \bibitem[Penharbel et al. 2004]{Penharbel:2004}
-\abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{2004}
+\abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{2004a}
 {PENHARBEL, E.~A. et al. Filtro de imagem baseado em matriz rgb de
   cores-padr{\~a}o para futebol de rob{\^o}s.
-\emph{Submetido ao I Encontro de Rob{\'o}tica Inteligente}, 2004.}
+\emph{I Encontro de Rob{\'o}tica Inteligente}, 2004.}
 
-\bibitem[Penharbel et al.]{PenharbelTime}
-\abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{}
+\bibitem[Penharbel et al. 2004]{PenharbelTime}
+\abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{2004b}
 {PENHARBEL, E.~A. et al. Time de futebol de rob{\^o}s y04 do centro
-  universit{\'a}rio da fei.}
+  universit{\'a}rio da fei.
+\emph{Jornada de Robótica Inteligente - Encontro Nacional de Robótica
+  Inteligente}, 2004.}
 
 \bibitem[Rosa 2015]{Rosa:2015}
 \abntrefinfo{Rosa}{ROSA}{2015}
@@ -150,10 +152,10 @@ Dispon{\'\i}vel em:
   University Library}, 2013.
 Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/1311.4963}.}
 
-\bibitem[SIRLab]{VSSVision}
-\abntrefinfo{SIRLab}{SIRLAB}{}
-{SIRLAB. Imagens hsv, hsl e rgb. In:  . [s.n.]. Acessado 06/06/2016 14:50.
-  Dispon{\'\i}vel em: \url{https://github.com/SIRLab/VSS-Vision/wiki}.}
+\bibitem[SIRLab 2016]{VSSVision}
+\abntrefinfo{SIRLab}{SIRLAB}{2016}
+{SIRLAB. Imagens hsv, hsl e rgb. In:  . [s.n.], 2016. Acessado 06/06/2016
+  14:50. Dispon{\'\i}vel em: \url{https://github.com/SIRLab/VSS-Vision/wiki}.}
 
 \bibitem[Souto 2003]{Souto:2003}
 \abntrefinfo{Souto}{SOUTO}{2003}

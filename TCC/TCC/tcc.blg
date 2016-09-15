@@ -24,21 +24,18 @@ Database file #2: bibliografia.bib.bib
 Warning--entry type for "ImagensHSLHSVRGB" isn't style-file defined
 --line 169 of file bibliografia.bib.bib
 Warning--entry type for "OpenCV" isn't style-file defined
---line 297 of file bibliografia.bib.bib
+--line 272 of file bibliografia.bib.bib
 Warning--entry type for "YouTube" isn't style-file defined
---line 331 of file bibliografia.bib.bib
+--line 299 of file bibliografia.bib.bib
 Warning--entry type for "FiraHistory" isn't style-file defined
---line 340 of file bibliografia.bib.bib
+--line 308 of file bibliografia.bib.bib
 Warning--entry type for "FiraOverview" isn't style-file defined
---line 350 of file bibliografia.bib.bib
+--line 318 of file bibliografia.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio ou faltando em ImagensHSLHSVRGB
 Warning--campo year vazio ou faltando em YouTube
-Warning--campo year vazio ou faltando em OpenCV
-Warning--campo year vazio ou faltando em VSSVision
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
@@ -46,43 +43,43 @@ Warning--campo year vazio ou faltando em VSSVision
 +---------------------------------------------------------+
 You've used 29 entries,
             6711 wiz_defined-function locations,
-            1404 strings with 14906 characters,
-and the built_in function-call counts, 31922 in all, are:
-= -- 3305
+            1405 strings with 14983 characters,
+and the built_in function-call counts, 32127 in all, are:
+= -- 3331
 > -- 796
 < -- 549
-+ -- 866
++ -- 867
 - -- 243
-* -- 2093
-:= -- 4149
-add.period$ -- 118
+* -- 2122
+:= -- 4177
+add.period$ -- 121
 call.type$ -- 29
 change.case$ -- 286
-chr.to.int$ -- 49
-cite$ -- 32
-duplicate$ -- 2571
-empty$ -- 1680
+chr.to.int$ -- 48
+cite$ -- 29
+duplicate$ -- 2577
+empty$ -- 1703
 format.name$ -- 1179
-if$ -- 6795
-int.to.chr$ -- 1
+if$ -- 6837
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 496
-newline$ -- 154
+missing$ -- 499
+newline$ -- 155
 num.names$ -- 144
-pop$ -- 659
+pop$ -- 655
 preamble$ -- 1
 purify$ -- 109
 quote$ -- 0
-skip$ -- 2723
+skip$ -- 2712
 stack$ -- 1
-substring$ -- 1220
-swap$ -- 975
+substring$ -- 1268
+swap$ -- 982
 text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 18
-warning$ -- 4
-while$ -- 198
+warning$ -- 1
+while$ -- 202
 width$ -- 0
-write$ -- 450
-(There were 9 warnings)
+write$ -- 455
+(There were 6 warnings)
