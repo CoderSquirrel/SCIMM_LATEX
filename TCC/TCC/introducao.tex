@@ -13,17 +13,21 @@
 %====================================================================================================
 % NO FUTURO
 \chapter{Introdução} \label{Cap:Introducao}
-\section{Contexto}
-Como uma prova dos crescentes avanços robóticos nas ultimas décadas, em 1997 foi estabelecida a FIRA\cite{FiraHistory}, Federation of International Robot-soccer Association. Com o intuito de promover o desenvolvimento nas àreas de multi-agentes autonomos e cooperação entre robôs, bem como pesquisas e estudos relacionados a mecatrônica, processamento de imagens e robótica\cite{FiraOverview}. O Futebol de Robôs tem sido  uma das principais áreas de foco por ser um domínio complexo, exigindo autonomia do sistema e solução de problemas em tempo real\cite{Costa:2000}. 
+\section{Considerações Iniciais}
+Em 1997 foi estabelecida a Federation of International Robot-soccer Association (FIRA), com o intuito de promover o desenvolvimento nas áreas de multi-agentes autonomos e cooperação entre robôs, bem como pesquisas e estudos relacionados a mecatrônica, processamento de imagens e robótica\cite{FiraHistory,FiraOverview}. O Futebol de Robôs tem sido  uma das principais áreas de foco por ser um domínio complexo, exigindo autonomia do sistema e solução de problemas em tempo real\cite{Costa:2000,Faria2006}. 
 
-Porém a maneira como um técnico de futebol passa as informações para seus jogadores em campo, cara à cara, torna-se indisponível no futebol de robôs, já que neste ambiente tais informações precisam ser passadas via comunicação de dados, cada um dos robôs se difere do outro por obter um IP único. Para saber qual dos robôs possui cada IP, eles possuem marcadores com duas cores, uma cor designando o time a qual o robô pertence e outra que o identifica de maneira única dentro de sua equipe. A estratégia, de cada equipe, então detecta os marcadores de cor utilizando técnicas de visão computacional e decide a partir da posição dos robôs, qual atitude será tomada em campo.
+Nos jogos de futebol, o técnico passa as informações pessoalmente para seus jogadores em campo, porem isso não é possível no futebol de robôs, já que neste ambiente tais informações precisam ser passadas via comunicação de dados.%, no qual cada um dos robôs se difere do outro por obter um identificador único. 
+Os robôs são diferenciados computacionalmente por um identificador único (e.g. endereço MAC) e em sua carcaça por marcadores com duas cores, uma cor designando o time a qual o robô pertence e outra que o identifica de maneira única dentro de sua equipe. O software de estratégia de cada equipe deve detectar os marcadores de cor utilizando técnicas de visão computacional e decidir a partir da posição dos robôs em campo qual atitude será realizada.
 
-Acontece que para identificar cada uma das cores é necessário que se faça o que é chamado de calibração. A calibração de cores ocorre para designar o intervalo de valores que corresponde a cada cor naquele determinado momento. Intervalos de cores podem ser pré definidos, no entanto de acordo com a iluminação presente na imagem esses valores tendem a ser alterados, por isso a calibração em cada jogo se faz necessária.
+Para identificar cada uma das cores devem considerados alguns fatores como: a iluminação local, a tonalidade de cor dos marcadores, a posição dos refletores e sombras sobre o campo, portanto, é necessário que se faça o processo chamado de calibração. A calibração de cores ocorre para designar o intervalo de valores que corresponde a cada cor naquele determinado momento. Intervalos de cores podem ser pré definidos, no entanto, de acordo a mudança de qualquer um dos fatores já citados, uma nova calibração se faz necessária.
+
+
+
 \section{Trabalhos Correlatos}
-Para o tema específico deste trabalho, calibração de intervalo de cores para times de futebol de robôs da categoria IEEE Very Small Size Soccer, não foram encontrados trabalhos relacionados, porém foram encontrados Team Discription Papers e descrições de sistemas usados pelos times\cite{Penharbel:2004 Rosa:2015 VSSVision PenharbelTime}.
+Para o tema específico deste trabalho, calibração de intervalo de cores para times de futebol de robôs da categoria IEEE Very Small Size Soccer, não foram encontrados trabalhos relacionados, porém foram encontrados Team Discription Papers e descrições de sistemas usados pelos times\cite{Penharbel:2004}\cite{Rosa:2015}\cite{VSSVision}\cite{PenharbelTime}.
 
 \subsection{Calibra}
-O Centro Universitário da FEI\cite{PenharbelTime} utiliza em sua equipe Y04 um sistema denominado CALIBRA\cite{Penharbel:2004}. Desenvolvido para sistemas Linux e com Graphical User Interface\cite{Penharbel:2004}, o sistema de calibração possui um módulo chamado de MainWindow, que é responsavel pela configuração de brilho, cor e contraste da imagem adquirida pela câmera e gera um arquivo que é analizado na hora da criação das cores padrão\cite{PenharbelTime}, as cores-padrão são definidas como intervalos no espaço de cores HSI\cite{PenharbelTime}. Apesar da descrição do sistema, o modo como ocorre a calibração não é descrito pela documentação.
+O Centro Universitário da FEI propôs o sistema denominado CALIBRA, desenvolvido para sistemas Linux e com {\it Graphical User Interface}. O sistema de calibração possui um módulo chamado de {\it MainWindow} que disponibiliza a configuração de brilho, cor e contraste da imagem adquirida pela câmera, e grava estas configurações em um arquivo que é utlizado no momento de definir os intervalos no espaço de cores HSI para cada uma das cores dos marcadores de identificação dos robôs\cite{Penharbel:2004,PenharbelTime}. Deve-se ressaltar que a descriçao do sistema CABLIBRA n~ao contempla os detalhes de implementaç~ao da calibração das cores.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{calibra.pdf}
@@ -33,7 +37,7 @@ O Centro Universitário da FEI\cite{PenharbelTime} utiliza em sua equipe Y04 um 
 
 \subsection{VSS-Vision}
 
-Em 2015, Rosa\cite{Rosa:2015} descreveu sobre a equipe de futebol de rob\^os Very Small Size, do Laboratório de Sistemas Inteligentes e Robótica, SIRLab(Faeterj-Petrópolis), e o sistema de visão computacional da equipe, durante a competição do ano de 2014, que abrange inclusive a parte de calibração. 
+O VVS-Vision é um sistema completo de controle da equipe de futebol de robôs da categoria {\it Very Small Size}(VSS) do Laboratório de Sistemas Inteligentes e Robótica (SIRLab) da Faeterj/Petrópolis \cite{Rosa:2015}. Este sistema de contempla a calibaração de cores e foi utilizado durante a competição XXXXY (LARC) do ano de 2014.
 
 \begin{figure}[H]
 	\centering
@@ -98,4 +102,6 @@ Para desenvolver um sistema que supra essas necessidades, foram propostos os seg
 
 \section{Organização da Trabalho} \label{Sec:Organizacao}
 
-Este trabalho está divido em cinco capítulos, incluindo esta introdução como capítulo inicial. No segundo capítulo encontra-se a fundamentação teórica, contento informaç\~oes sobre processamento de imagens referente à detecção de objetos e cores e uma breve descrição sobre o futebol de robôs. No terceiro capítulo encontra-se todo o desenvolvimento do projeto, suas classes, a descrição das tecnologias utilizadas no projeto, e a descrição do processo de calibração. No quarto capítulo são apresentados os testes e discutidos os resultados obtidos. No quinto capítulo são feitas as conclusões do trabalho, bem como expostas melhorias que possam vir a ser implementadas em trabalhos futuros.
+Este trabalho está divido em cinco capítulos. No segundo capítulo encontra-se a fundamentação teórica, contento informações sobre processamento de imagens referente à detecção de objetos e cores e uma breve descrição sobre o futebol de robôs. No terceiro capítulo encontra-se todo o desenvolvimento do projeto, suas classes, a descrição das tecnologias utilizadas no projeto, e a descrição do processo de calibração. No quarto capítulo são apresentados os testes e discutidos os resultados obtidos. No quinto capítulo são feitas as conclusões do trabalho, bem como expostas melhorias que possam vir a ser implementadas em trabalhos futuros.
+
+\section{Considerações Finais}
