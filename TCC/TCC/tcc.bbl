@@ -75,9 +75,9 @@ ISBN 9780131687288. Dispon{\'\i}vel em:
 {HORVATH, M. \emph{"Imagens HSV, HSL e RGB"}. 2008.
 Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
 
-\bibitem[Hounslow]{YouTube}
-\abntrefinfo{Hounslow}{HOUNSLOW}{}
-{HOUNSLOW, K. \emph{Tutorial: Real-Time Object Tracking Using OpenCV}.
+\bibitem[Hounslow 2013]{YouTube}
+\abntrefinfo{Hounslow}{HOUNSLOW}{2013}
+{HOUNSLOW, K. \emph{Tutorial: Real-Time Object Tracking Using OpenCV}. 2013.
 Acessado 09/09/2016 20:11.
 Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=bSeFrPrqZ2A}.}
 
@@ -191,5 +191,12 @@ Disserta\c{c}\~{a}o (Dissertação de Mestrado) --- INPE, São José dos
 \emph{Departamento de Inform{\'a}tica e Estat{\'\i}stica-Universidade Federal
   de Santa Catarina, 2013a}, v.~16, 2014.
 Dispon{\'\i}vel em: \url{www.inf.ufsc.br/~visao/bordas.pdf}.}
+
+\bibitem[Ziou, Tabbone et al. 1998]{Ziou1998}
+\abntrefinfo{Ziou, Tabbone et al.}{ZIOU; TABBONE et al.}{1998}
+{ZIOU, D.; TABBONE, S. et al. Edge detection techniques-an overview.
+\emph{Pattern Recognition and Image Analysis C/C of Raspoznavaniye Obrazov I
+  Analiz Izobrazhenii}, NAUKA/INTERPERIODICA PUBLISHING, v.~8, p. 537--559,
+  1998.}
 
 \end{thebibliography}
