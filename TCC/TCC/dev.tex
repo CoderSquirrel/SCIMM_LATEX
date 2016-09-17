@@ -33,24 +33,27 @@
 		tabsize=3
 	}
 	\chapter{Desenvolvimento} 
-	Neste capítulo se apresenta toda a descrição do sistema proposto. Na seção 3.1 s\~ao descritas as tecnologias usadas no projeto juntamente com um breve contexto sobre cada. A seç\~ao 4.2 contem a organização do projeto, bem como suas classes, e a funcionalidade de cada uma.
+	Neste capítulo se apresenta toda a descrição do sistema proposto. Na seção 3.2 são descritas as tecnologias usadas no projeto juntamente com um breve contexto sobre cada. A seção 3.3 contem a organização do projeto, bem como suas classes, e a funcionalidade de cada uma. Na seção 3.4 descreve-se o fluxo do sistemas e cada uma das etapas do seu funcionamento são detalhadas.
 	\section{Considerações Iniciais}
-			Para o desenvolvimento foi escolhida a biblioteca OpenCV por ser OpenSource, multiplataforma, conter uma grande quantidade de métodos e algoritmos já implementados	e pelo seu rápido desempenho de máquina.
-			A linguagem escolhida para o desenvolvimento foi o C++ pois é uma linguagem de programação compilada, o que torna sua execução mais rápida que as linguagem interpretadas, dando ao sistema uma performance em tempo satisfatório.	
+			Para o desenvolvimento foi escolhida a biblioteca OpenCV por ser de código aberto\footnote{Modelo de desenvolvimento de {\it software}, no qual o código fonte é aberto e livre para modificações e adaptações}, multiplataforma, conter uma grande quantidade de métodos e algoritmos já implementados	e pelo seu rápido desempenho de máquina.
+			A linguagem escolhida para o desenvolvimento foi o C++ pois é uma linguagem de programação compilada, o que torna sua execução mais rápida que as linguagem interpretadas, dando ao sistema uma performance em tempo satisfatório. 
+			
+			Todo o sistema foi desenvolvido em sistema operacional Ubuntu e utilizou da ferramenta {\it Github} como repositório {\it online} para o controle de versão do projeto. A escolha desse repositório se deu ao fato da plataforma obter um grande numero de projetos de código aberto, e uma vez que este trabalho tem como finalidade principal beneficiar as equipe de times de futebol de robôs, deixar seu código aberto permite que melhorias possam ser adicionadas além de soluções para possíveis erros.
+			
 \section{Tecnologias Usadas}
-Para realização deste trabalho, irei utilizar a biblioteca de processamentos de imagens conhecida como OpenCV: Open Source Computer Vision Library. O trabalho será elaborado na linguagem C++, com uso do framework Qt para sua interface gráfica.
-Os passos detalhados do projeto e seu desenvolvimento estarão presente na seção Projeto, deste mesmo capitulo.
+Para realização deste trabalho, irei utilizar a biblioteca de processamentos de imagens OpenCV. O trabalho será elaborado na linguagem C++, com uso do {\it framework} Qt para sua interface gráfica.
+Os passos detalhados do projeto e seu desenvolvimento estarão presente na seção Projeto, deste mesmo capítulo.
 \begin{description}
-	\item[OpenCV] Lançado em 1999 pela Intel\cite{Culjak:2012}, com objetivo de ser otimizada, portável e com um grande número de funções, o Open Source Computer Vision Library, OpenCV, se tornou se tornou uma ferramenta que possui mais de 2500 algoritmos e 40 mil pessoas em seu grupo de usuários\cite{Culjak:2012}. Já possui interface para as linguagens C++, C, Python e Java além de suporte para as principais plataformas com Windows, Linux, Mac OS, iOS e Android. A biblioteca lida tanto com imagens em tempo real, como vídeos e imagens estáticas.
+	\item[OpenCV] Lançado em 1999 pela Intel\cite{Culjak:2012}, com objetivo de ser otimizada, portável e com um grande número de funções, se tornou uma ferramenta que possui mais de 2500 algoritmos e 40 mil pessoas em seu grupo de usuários\cite{Culjak:2012}. Já possui interface para as linguagens C++, C, Python e Java além de suporte para as principais plataformas com Windows, Linux, Mac OS, iOS e Android. A biblioteca lida tanto com imagens em tempo real, como vídeos e imagens estáticas.
 	
-	\item[Qt] Qt é um framework de desenvolvimento de aplicações multiplataforma. Entre suas funcionalidades está a possibilidade de criar interfaces gráficas diretamente em C++ usando seu módulo Widgets.
+	\item[Qt] Qt é um {\it framework} de desenvolvimento de aplicações multiplataforma. Entre suas funcionalidades está a possibilidade de criar interfaces gráficas diretamente em C++ usando seu módulo{\it  Widgets}.
 	
 	\item [C++] A linguagem de programação C++ foi projetado por Bjarne Stroustrup para fornecer eficiência e flexibilidade da linguagem C para programação de sistemas. A linguagem evoluiu a partir de uma versão anterior chamado C com Classes, o projeto C com Classes durou entre 1979 e 1983 e determinou os moldes para o C++. A linguagem foi oficialmente lancada em 1986\cite{Stroustrup:1996}.
 \end{description}
 
 \section{Projeto}
 \subsection{Organização do Projeto}
-	 O projeto foi desenvolvido seguindo o paradigma de programação Orientada à Objetos, esse paradigma baseia-se na utilização de objetos individuais para criação de um sistema maior e complexo. A IDE usada para o desenvolvimento foi a QT Creator, esta separada o projeto em três pastas: Headers, Sources e Forms. Na pasta Headers estão os arquivos de cabeçalho(.h), onde estão as declarações dos métodos e variáveis usados nas classes  executáveis. Já na pasta Sources estão os arquivos fonte(.cpp), são nesses arquivos que os métodos declarados nos arquivos da pasta Header são implementados. Na pasta Forms está o arquivo de interface gráfica(.ui) que é usado no projeto para ser a ponte entre o usuário e as funções do sistema.
+	 O projeto foi desenvolvido seguindo o paradigma de programação Orientada à Objetos, esse paradigma baseia-se na utilização de objetos individuais para criação de um sistema maior e complexo. A IDE usada para o desenvolvimento foi a QT Creator, esta separada o projeto em três pastas: {\it Headers}, {\it Sources} e {\it Forms}. Na pasta {\it Headers} estão os arquivos de cabeçalho(.h), onde estão as declarações dos métodos e variáveis usados nas classes  executáveis. Já na pasta {\it Sources} estão os arquivos fonte(.cpp), são nesses arquivos que os métodos declarados nos arquivos da pasta {\it Headers} são implementados. Na pasta {\it Forms} está o arquivo de interface gráfica(.ui) que é usado no projeto para ser a ponte entre o usuário e as funções do sistema.
 	 
 	\begin{figure}[!h]
 		\centering

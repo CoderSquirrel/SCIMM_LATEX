@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {1.5}Organiza\IeC {\c c}\IeC {\~a}o da Trabalho}{11}{section.1.5}
 \contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Considera\IeC {\c c}\IeC {\~o}es Iniciais}{13}{section.2.1}
-\contentsline {section}{\numberline {2.2}Processamento de Imagens}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Detec\IeC {\c c}\IeC {\~a}o de Objetos}{13}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.2}Processamento Digital de Imagens}{13}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Detec\IeC {\c c}\IeC {\~a}o de Objetos}{14}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Detec\IeC {\c c}\IeC {\~a}o de Bordas}{14}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Cores}{15}{section.2.3}
 \contentsline {section}{\numberline {2.4}Futebol de Rob\IeC {\^o}s}{18}{section.2.4}
@@ -21,35 +21,35 @@
 \contentsline {section}{\numberline {3.2}Tecnologias Usadas}{20}{section.3.2}
 \contentsline {section}{\numberline {3.3}Projeto}{21}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Organiza\IeC {\c c}\IeC {\~a}o do Projeto}{21}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Classes}{21}{subsection.3.3.2}
-\contentsline {subsubsection}{main}{21}{section*.14}
-\contentsline {subsubsection}{JanelaPrincipal}{21}{section*.15}
+\contentsline {subsection}{\numberline {3.3.2}Classes}{22}{subsection.3.3.2}
+\contentsline {subsubsection}{main}{22}{section*.14}
+\contentsline {subsubsection}{JanelaPrincipal}{22}{section*.15}
 \contentsline {subsubsection}{Calibracao}{22}{section*.16}
-\contentsline {subsubsection}{SCIMM\_COR}{22}{section*.17}
+\contentsline {subsubsection}{SCIMM\_COR}{23}{section*.17}
 \contentsline {section}{\numberline {3.4}O Sistema}{23}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Ca mera}{23}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}2\IeC {\textordfeminine } Etapa - Reconhecimento de Fundo}{25}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.1}1\IeC {\textordfeminine } Etapa - Configura\IeC {\c c}\IeC {\~a}o de Ca mera}{24}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}2\IeC {\textordfeminine } Etapa - Reconhecimento de Fundo}{26}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}3\IeC {\textordfeminine } Etapa - Extra\IeC {\c c}\IeC {\~a}o dos Objetos do Fundo}{26}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{26}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}\IeC {\~a}o do Pixel}{27}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{28}{subsection.3.4.6}
-\contentsline {section}{\numberline {3.5}Considera\IeC {\c c}\IeC {\~o}es Finais}{28}{section.3.5}
-\contentsline {chapter}{\numberline {4}Testes e Resultados}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Considera\IeC {\c c}\IeC {\~o}es Iniciais}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Calibra\IeC {\c c}\IeC {\~a}o}{29}{section.4.2}
-\contentsline {section}{\numberline {4.3}Testes}{31}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Cores Comuns}{32}{subsection.4.3.1}
-\contentsline {subsubsection}{Amarelo}{32}{section*.28}
-\contentsline {subsubsection}{Azul}{33}{section*.31}
-\contentsline {subsubsection}{Verde}{34}{section*.34}
-\contentsline {subsubsection}{Rosa}{35}{section*.37}
-\contentsline {subsubsection}{Roxo}{36}{section*.40}
-\contentsline {subsection}{\numberline {4.3.2}Cores Com Problemas Conhecidos}{36}{subsection.4.3.2}
-\contentsline {subsubsection}{Vermelho}{37}{section*.43}
-\contentsline {subsubsection}{Laranja}{38}{section*.46}
-\contentsline {subsection}{\numberline {4.3.3}Analise Geral}{39}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Considera\IeC {\c c}\IeC {\~o}es Finais}{39}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{40}{chapter.5}
-\contentsline {section}{\numberline {5.1}Principais Considera\IeC {\c c}\IeC {\~o}es}{40}{section.5.1}
-\contentsline {section}{\numberline {5.2}Trabalhos Futuros}{41}{section.5.2}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{42}{section*.50}
+\contentsline {subsection}{\numberline {3.4.4}4\IeC {\textordfeminine } Etapa - Detec\IeC {\c c}\IeC {\~a}o e valida\IeC {\c c}\IeC {\~a}o de Objetos}{27}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}5\IeC {\textordfeminine } Etapa - Classifica\IeC {\c c}\IeC {\~a}o do Pixel}{28}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}6\IeC {\textordfeminine } Etapa - Gerar Arquivo de Cores}{29}{subsection.3.4.6}
+\contentsline {section}{\numberline {3.5}Considera\IeC {\c c}\IeC {\~o}es Finais}{29}{section.3.5}
+\contentsline {chapter}{\numberline {4}Testes e Resultados}{30}{chapter.4}
+\contentsline {section}{\numberline {4.1}Considera\IeC {\c c}\IeC {\~o}es Iniciais}{30}{section.4.1}
+\contentsline {section}{\numberline {4.2}Calibra\IeC {\c c}\IeC {\~a}o}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}Testes}{32}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Cores Comuns}{33}{subsection.4.3.1}
+\contentsline {subsubsection}{Amarelo}{33}{section*.28}
+\contentsline {subsubsection}{Azul}{34}{section*.31}
+\contentsline {subsubsection}{Verde}{35}{section*.34}
+\contentsline {subsubsection}{Rosa}{36}{section*.37}
+\contentsline {subsubsection}{Roxo}{37}{section*.40}
+\contentsline {subsection}{\numberline {4.3.2}Cores Com Problemas Conhecidos}{37}{subsection.4.3.2}
+\contentsline {subsubsection}{Vermelho}{38}{section*.43}
+\contentsline {subsubsection}{Laranja}{39}{section*.46}
+\contentsline {subsection}{\numberline {4.3.3}Analise Geral}{40}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Considera\IeC {\c c}\IeC {\~o}es Finais}{40}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Principais Considera\IeC {\c c}\IeC {\~o}es}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}Trabalhos Futuros}{42}{section.5.2}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{43}{section*.50}

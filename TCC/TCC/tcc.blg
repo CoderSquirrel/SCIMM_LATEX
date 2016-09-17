@@ -21,16 +21,20 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib.bib
+I was expecting a `,' or a `}'---line 150 of file bibliografia.bib.bib
+ :   author={Mendes, Ellon P and Medeiros, Adelardo AD and Silva, Luiz Henrique R and Domingos, Elber C}
+ :                                                                                                      .
+I'm skipping whatever remains of this entry
 Warning--entry type for "ImagensHSLHSVRGB" isn't style-file defined
---line 169 of file bibliografia.bib.bib
+--line 178 of file bibliografia.bib.bib
 Warning--entry type for "OpenCV" isn't style-file defined
---line 280 of file bibliografia.bib.bib
+--line 289 of file bibliografia.bib.bib
 Warning--entry type for "YouTube" isn't style-file defined
---line 307 of file bibliografia.bib.bib
-Warning--entry type for "FiraHistory" isn't style-file defined
 --line 316 of file bibliografia.bib.bib
+Warning--entry type for "FiraHistory" isn't style-file defined
+--line 325 of file bibliografia.bib.bib
 Warning--entry type for "FiraOverview" isn't style-file defined
---line 326 of file bibliografia.bib.bib
+--line 335 of file bibliografia.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -40,45 +44,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 30 entries,
+You've used 32 entries,
             6711 wiz_defined-function locations,
-            1414 strings with 15216 characters,
-and the built_in function-call counts, 33228 in all, are:
-= -- 3412
-> -- 848
+            1424 strings with 15632 characters,
+and the built_in function-call counts, 34544 in all, are:
+= -- 3489
+> -- 904
 < -- 552
-+ -- 886
-- -- 258
-* -- 2216
-:= -- 4316
-add.period$ -- 125
-call.type$ -- 30
-change.case$ -- 301
-chr.to.int$ -- 52
-cite$ -- 29
-duplicate$ -- 2628
-empty$ -- 1772
-format.name$ -- 1249
-if$ -- 7094
++ -- 908
+- -- 275
+* -- 2309
+:= -- 4504
+add.period$ -- 131
+call.type$ -- 32
+change.case$ -- 322
+chr.to.int$ -- 54
+cite$ -- 31
+duplicate$ -- 2691
+empty$ -- 1880
+format.name$ -- 1333
+if$ -- 7405
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 519
-newline$ -- 160
-num.names$ -- 149
-pop$ -- 679
+missing$ -- 552
+newline$ -- 168
+num.names$ -- 159
+pop$ -- 726
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 122
 quote$ -- 0
-skip$ -- 2759
+skip$ -- 2835
 stack$ -- 1
-substring$ -- 1330
-swap$ -- 1012
+substring$ -- 1353
+swap$ -- 1032
 text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
+type$ -- 19
 warning$ -- 0
-while$ -- 212
+while$ -- 223
 width$ -- 0
-write$ -- 473
-(There were 5 warnings)
+write$ -- 500
+(There was 1 error message)

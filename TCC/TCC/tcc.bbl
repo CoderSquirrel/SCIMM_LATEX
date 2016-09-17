@@ -20,10 +20,10 @@ Centro Brasileiro de Pesquisas Fısicas MCT.}
   \emph{Computer Vision, A Reference Guide}. New York, NY, USA: Springer, 2014.
   v.~2, p. 537--542.}
 
-\bibitem[Azevedo e A. 2003]{Azevedo:2003}
-\abntrefinfo{Azevedo e A.}{AZEVEDO; A.}{2003}
-{AZEVEDO, E.; A., C. \emph{Computação Gráfica: Geração de Imagens}.
-  [S.l.]: Elsevier, 2003.
+\bibitem[Azevedo E. 2003]{Azevedo:2003}
+\abntrefinfo{Azevedo E.}{AZEVEDO E.}{2003}
+{AZEVEDO E., C.~A. \emph{Computação Gráfica: Geração de Imagens}. [S.l.]:
+  Elsevier, 2003.
 ISBN 9878535212525.}
 
 \bibitem[Canny 1986]{Canny:1986}
@@ -104,6 +104,17 @@ Dispon{\'\i}vel em: \url{http://docs.opencv.org/3.1.0/}.}
 {MARTINS, D.~L. et al. A versão 2007 da equipe poti de futebol de robôs. In:
   \emph{Team Description Paper. Competi{\c{c}}ao Brasileira de Rob{\'o}tica,
   Florianópolis, Brasil}. [S.l.: s.n.], 2007.}
+
+\bibitem[Mendes et al.]{Mendes:2009}
+\abntrefinfo{Mendes et al.}{MENDES et al.}{}
+{MENDES, E.~P. et al. A equipe de futebol de rob{\^o}s poti-ufrn 2009.}
+
+\bibitem[Mendes e Medeiros 2008]{Mendes:2008}
+\abntrefinfo{Mendes e Medeiros}{MENDES; MEDEIROS}{2008}
+{MENDES, E.~P.; MEDEIROS, A. A.~D. Sistema de localização visual da equipe de
+  futebol de robôs {POTI-UFRN} (versao 2008) na categoria very small size. In:
+   \emph{Team Description Paper: Competição Brasileira de Robótica}.
+  Salvador, Brasil: [s.n.], 2008.}
 
 \bibitem[Nascimento 2007]{Nascimento:2007}
 \abntrefinfo{Nascimento}{NASCIMENTO}{2007}

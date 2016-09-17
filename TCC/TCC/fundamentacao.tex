@@ -14,11 +14,11 @@
 % Define o caminho das figuras
 \graphicspath{{figuras/}}
 \chapter{Fundamentação Teórica} \label{Cap:Fundamentacao}
-
+Neste capitulo serão abordados os temas relacionados à processamento de imagem, cores e futebol de robôs. Na seção 2.2 explica-se sobre o processamento digital de imagens, mais aprofundadamente sobre detenção de objetos, subseção 2.2.1, por meio da detecção de bordas, subseção 2.2.2.  A seção 2.3 expõe sobre Cores, explicando seus espaços, sistemas e modelos de cores. Por fim, a seção 2.4 descreve o ambiente do futebol de robôs e suas regras.
 \section{Considerações Iniciais}
-%Como estado da arte foram relacionados os métodos de detecção de objetos em imagens em tempo real e estáticas.
+Como designado na seção 1.4 deste trabalho, estudou-se dentro da área de processamento de imagens a detecção de objetos
 
-\section{Processamento de Imagens}
+\section{Processamento Digital de Imagens}
 
 O processamento de imagens é a técnica de trabalhar com uma imagem e seus elementos visando retirar suas informações\cite{Albuquerque:2001}. Além da retirada de informações, o processamento de imagens também inclui a modificação ou melhoria da imagem por meio de redução de ruido, melhoria no contraste, segmentações da image entre outras técnicas. Dentre tipos de processamento de imagens existem, \citeonline{Gonzalez:2008} os define como: aplicações de ações primitivas de modificação de imagem, esta caraterizada por seu resultado final ser também uma imagem semelhante a imagem inicial porém modificada(Low-Level-Process), divisão de imagem em regiões e alguns tipos de reconhecimento e classificação de objetos, caraterizada por seu resultado final ser muitas vezes apenas regiões ou informações da imagem inicial(Mid-Level-Process), e o mais sensorial de todos que é a analise de objetos usando funções cognitivas associadas a visão computacional, essa usa informações relevantes para o reconhecimento de objetos(Higher-Level-Process). 
 Uma vez que o objetivo deste trabalho é reconhecer os objetos em campo para calibra-los, usaremos técnicas de retirada de informações e regiões. Explicaremos sobre as técnicas usadas nas subseções seguintes.
@@ -33,7 +33,8 @@ Uma vez que o objetivo deste trabalho é reconhecer os objetos em campo para cal
 %\end{itemize}
 
 A detecção de objetos pode ser considerada uma técnica herdada do reconhecimento de padrões, da área de aprendizado de máquina, esta consiste em separar objetos por categorias de acordo com uma ou mais características especificas. Quando essa técnica se junta ao processamento de imagens, estas características são acentuadas em um determinado objeto dentro da imagem para assim este se destacar, tornou-se possível a detecção de objetos em imagens, que dentro do campo de visão computacional é uma das áreas que mais obtêm a atenção de pesquisadores. 
-O primeiro Framework de métodos que usam base de dados categorizando uma ou mais características de um objetos para fazer o reconhecimento através de aprendizado foi apresentado por \citeonline{Viola:2001}. Desde o framework de Viola e Jones até os dias atuais muitos métodos e teorias para detecção já foram propostos e implementados, como detecção de faces utilizando um classificador de redes neurais na intensidade de padrões de uma imagem, support vector machine para localizar rostos humanos e carros\cite{Nascimento:2007}, análise de componentes principais, análise independente de componentes, fatoração de matriz não-negativa, análise discriminativa linear, boosting\cite{Roth:2008}, além da classificação binaria, que considera a detecção do objeto em tamanho fixo apenas variando na posição na imagem\cite{AmitFelzenszwalb:2014}. 
+
+O primeiro {\it framework} de métodos que usam base de dados categorizando uma ou mais características de um objetos para fazer o reconhecimento através de aprendizado foi apresentado por \citeonline{Viola:2001}. Desde o {\it framework}  de Viola e Jones até os dias atuais muitos métodos e teorias para detecção já foram propostos e implementados, como detecção de faces utilizando um classificador de redes neurais na intensidade de padrões de uma imagem, {\it support vector machine} para localizar rostos humanos e carros\cite{Nascimento:2007}, análise de componentes principais, análise independente de componentes, fatoração de matriz não-negativa, análise discriminativa linear,  {\it boosting}\cite{Roth:2008}, além da classificação binaria, que considera a detecção do objeto em tamanho fixo apenas variando na posição na imagem\cite{AmitFelzenszwalb:2014}. 
 
 %Em 2005 Ulusoy e Bishop\cite{Ulusoy:2005} mostraram o quão útil seria categorizar os métodos de detecção de imagens, e os dividiram em duas principais categorias: generativa e discriminativa. Categorias que foram aceitas e utilizadas como mostram Amit e Falzenszwalb\cite{AmitFelzenszwalb:2014} e Roth e Winter\cite{Roth:2008}.
 
