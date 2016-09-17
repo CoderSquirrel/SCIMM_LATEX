@@ -21,87 +21,52 @@ Os robôs são diferenciados computacionalmente por um identificador único (e.g
 
 Para identificar cada uma das cores devem considerados alguns fatores como: a iluminação local, a tonalidade de cor dos marcadores, a posição dos refletores e sombras sobre o campo, portanto, é necessário que se faça o processo chamado de calibração. A calibração de cores ocorre para designar o intervalo de valores que corresponde a cada cor naquele determinado momento. Intervalos de cores podem ser pré definidos, no entanto, de acordo a mudança de qualquer um dos fatores já citados, uma nova calibração se faz necessária.
 
-
+Neste trabalho, foi estudado o problema da calibração de cores para competição de futebol de robôs categoria {\it IEEE Very Small Size Soccer} (VSSS), na qual a calibração de cada uma das cores em campo acaba se tornando um processo exaustivo por ter de ser feito um a um, cerca de 5 minutos para cada cor. Sendo assim, automatizar o processo de calibração, auxiliaria em um problema comum a todas as equipes. Na próxima seção, serão apresentados dois trabalhos exemplificando a calibração de forma manual.  
 
 \section{Trabalhos Correlatos}
-Para o tema específico deste trabalho, calibração de intervalo de cores para times de futebol de robôs da categoria IEEE Very Small Size Soccer, não foram encontrados trabalhos relacionados, porém foram encontrados Team Discription Papers e descrições de sistemas usados pelos times\cite{Penharbel:2004}\cite{Rosa:2015}\cite{VSSVision}\cite{PenharbelTime}.
+Nas pesquisas sobre calibração de intervalo de cores para times de futebol de robôs, não foram encontrados trabalhos que descrevessem com detalhes a implementação do sistema de calibração, sendo os mais completos o {\it Team Discription Papers}
+\footnote{Documento obrigatório para inscrição nas competições brasileiras que descreve o time de robôs, contendo informações sobre o chassi, eletrônica, visão computacional e estratégia.} 
+dos times.
 
 \subsection{Calibra}
-O Centro Universitário da FEI propôs o sistema denominado CALIBRA, desenvolvido para sistemas Linux e com {\it Graphical User Interface}. O sistema de calibração possui um módulo chamado de {\it MainWindow} que disponibiliza a configuração de brilho, cor e contraste da imagem adquirida pela câmera, e grava estas configurações em um arquivo que é utlizado no momento de definir os intervalos no espaço de cores HSI para cada uma das cores dos marcadores de identificação dos robôs\cite{Penharbel:2004,PenharbelTime}. Deve-se ressaltar que a descriçao do sistema CABLIBRA n~ao contempla os detalhes de implementaç~ao da calibração das cores.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{calibra.pdf}
-	\caption{Sistema Calibra, FEI\cite{Penharbel:2004}}
-	\label{Calibra}
-\end{figure}
+O Centro Universitário da Fundação Educacional Inaciana(FEI) propôs o sistema denominado CALIBRA, desenvolvido para sistemas Linux e com {\it Graphical User Interface}. O sistema de calibração possui um módulo chamado de {\it MainWindow} que disponibiliza a configuração de brilho, cor e contraste da imagem adquirida pela câmera, e grava estas configurações em um arquivo que é utlizado no momento de definir os intervalos no espaço de cores HSI para cada uma das cores dos marcadores de identificação dos robôs\cite{Penharbel:2004,PenharbelTime}. Deve-se ressaltar que a descrição do sistema CABLIBRA não contempla os detalhes de implementação da calibração das cores.
 
 \subsection{VSS-Vision}
 
-O VVS-Vision é um sistema completo de controle da equipe de futebol de robôs da categoria {\it IEEE Very Small Size Soccer}(VSSS) do Laboratório de Sistemas Inteligentes e Robótica (SIRLab) da Faeterj/Petrópolis \cite{Rosa:2015}. Este sistema de contempla a calibaração de cores e foi utilizado durante a competição XXXXY (LARC) do ano de 2014.
+O VSS-Vision é um sistema completo de controle da equipe de futebol de robôs da categoria VSSS do Laboratório de Sistemas Inteligentes e Robótica (SIRLab) da Faeterj/Petrópolis  \cite{Rosa:2015}. %Este sistema de contempla a calibração de cores e foi utilizado durante a competição XXXXY (LARC) do ano de 2014.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.4\textwidth]{vssvision.pdf} 	
-	\caption{Sistema de calibracao, SIRLab\cite{Rosa:2015}}
-	\label{SIRLabCalibracao}
-\end{figure}
-Rosa menciona que a calibração de cores e feita calibrando obrigatoriamente laranja, amarelo e azul, e então as outras cores referentes aos jogadores em campo. Como visto na Figura \ref{SIRLabCalibracao} a imagem da c\^amera é dividida em nove cantos, e para calibrar a cor o usuário deve clicar em cima da cor que gostaria de ser calibrada, assim salvando um intervalo de cor tratado como RGB máximo e o mínimo daquela cor , a medida
-que vão havendo os cliques o sistema verifica para cada atributo se ele é maior que o atributo
+\citeonline{Rosa:2015} menciona que a calibração de cores é feita calibrando obrigatoriamente laranja, amarelo e azul, e então as outras cores referentes aos jogadores em campo. A imagem da câmera é dividida em nove partes, e para calibrar a cor o usuário deve clicar sobre a cor que gostaria de ser calibrada, assim salvando um intervalo de cor tratado como RGB máximo e o mínimo daquela cor, a medida
+que vão havendo os cliques, o sistema verifica para cada atributo (R,G e B) se ele é maior que o atributo
 máximo salvo ou menor que mínimo salvo, caso seja, o mesmo assume o lugar de menor ou
-maior e esse processo deve ser feito em cada um dos nove cantos da imagem\cite{Rosa:2015}. 
+maior, e esse processo deve ser feito em cada uma das nove partes da imagem. 
 %Os valores HSV encontrados s\~ao ajustados manualmente com a ajuda de sliders, como visto na Figura \ref{SIRLabCalibracaoHSV}. Este processo de calibração pode demorar entre cinco e dez minutos.
-O desenvolvimento do sistema utiliza para processamento de imagens a biblioteca OpenCV e para telas interativas a biblioteca  ImGui.
+Para desenvolvimento do sistema de processamento de imagens foi utilizada a biblioteca OpenCV e para telas interativas a biblioteca ImGui.
 
-%\begin{figure}[!h]
-%	\centering
-%	\includegraphics[width=0.8\textwidth]{calibration.pdf} 	
-%	\caption{Sistema de calibracao, SIRLab\cite{VSSVision}}
-%	\label{SIRLabCalibracaoHSV}
-%\end{figure}
+O atual sistema de visão computacional do SIRLab passou por algumas mudanças desde 2015 e conta com uma inteface e método de calibração diferentes do inicial, utilizando-se da calibração no espaço de cores HSV, no lugar do RGB. A antiga interface do sistema, feita inicialmente em ImGui deu lugar a nova, desenvolvida em Qt\cite{VSSVision}.
 
-O atual sistema de visão computacional do SIRLab passou por algumas mudanças desde 2015 e conta com uma inteface e metodo de calibração diferentes\cite{VSSVision}. Como disponível no repositorio online do Laboratorio, o atual sistema de calibração de cores utiliza o espaço de cores HSV, no lugar do RGB\cite{Rosa:2015}. A antiga interface do sistema, feita inicialmente em ImGui deu lugar a nova, desenvolvida em Qt, como mostra a Figura \ref{SIRLabNova}.
-
-O método de calibração de cores também foi modificado, o sistema possibilita a calibragem de 8 cores, Laranja, Amarelo, Azul, Vermelho, Verde, Rosa, Roxo, Marrom\cite{VSSVision}. Após o usuário escolher uma cor para calibrar o mesmo deve encontrar um intervalo de cor, no espaço de cores HSV, que represente-a. Ao clicar na tela com o botão direito o sistema da um zoom na área para ajuste fino. A Figura \ref{SIRLabNovaCalibracao} demonstra o novo método de calibração.
-\begin{figure}[H]
-\begin{minipage}[H]{0.45\linewidth}
-\hspace{0.5cm}
-\centering
-\includegraphics[width=\textwidth]{vsssnovonormal.png}
-\caption{Nova interface do sistema de calibração da SIRLab\cite{VSSVision}}
-\label{SIRLabNova}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[H]{0.40\linewidth}
-\centering
-\includegraphics[width=\textwidth]{vsssnovo.png}
-\caption{Atual Sistema de calibração da SIRLab\cite{VSSVision}}
-\label{SIRLabNovaCalibracao}
-\end{minipage}
-\end{figure}	
+O método de calibração de cores também foi modificado possibilitando a calibração de 8 cores: laranja, amarelo, azul, vermelho, verde, rosa, roxo e marrom\cite{VSSVision}. O processo de calibração das cores ocorre de forma manual, primeiramente o usuário escolhe uma cor e clica em algum objeto desta cor, o sistema então reconhece os valores  mínimos e máximos de HSV. No segundo passo, o usuário realiza um ajuste fino em cada um dos atributos (H, S e V) até encontrar os valores adequados que representem não só objeto selecionado, mas todos os objetos da cor escolhida.
 
 \section{Motivação e Justificativa}
-Em 2015 surgiu a equipe Cedro, equipe de futebol de robôs categoria IEEE Very Small Size Soccer da UFMS Campus Coxim. Já em seu primeiro ano a equipe participou da Competição Latino Americana de Robótica, competição cuja qual tive a oportunidade de participar como membro da equipe. Como minha primeira vez em um evento deste âmbito, fiz algumas observações sobre as equipes e as partidas, a principal foi quanto a calibração de cores. De forma informal, todo jogo possue um \emph{aquecimento} de 20 minutos, tempo esse que a maioria das equipes utilizada deste tempo para fazer a calibração de cores. Na equipes que observei, o processo de calibração foi feita de forma manual com uma interface muito semelhante ao deselvolvido por Kyle Hounslow\cite{YouTube}. Em algumas equipes, inclusive foi desenvolvido um novo modelo de cores, como é o caso da POTI/UFRN\cite{Martins:2007}.
+Em 2015 surgiu a equipe Cedro, equipe de futebol de robôs categoria VSSS da UFMS Câmpus Coxim. Neste mesmo ano, a equipe participou da Competição Latino Americana de Robótica (LARC), na qual foram realizadas algumas observações sobre as demais equipes e as partidas, mais especificamente, sobre a calibração de cores, motivando os estudos e pesquisas presentes neste trabalho. Embora não conste nas regras oficiais, todo jogo possue um tempo de 20 minuntos para aquecimento, no qual a maioria das equipes realiza a calibração de cores. Nas equipes que observadas, o processo de calibração foi feito de forma manual com uma interface muito semelhante ao deselvolvido por Kyle Hounslow\cite{YouTube}, sendo que, a equipe POTI/UFRN desenvolveu em 2007 um novo modelo de cores, o HPG, o qual utiliram em todas as competições desde então  \cite{Martins:2007,Mendes:2008,Mendes:2009}.
 
-Foi estudado o problema da calibração de cores para competição de futebol de robôs categoria IEEE VSSS, na qual a calibração de cada uma das cores em campo acaba se tornando um processo exaustivo por ter de ser feito um a um, cerca de 5 minutos para cada cor. Geralmente o tempo de preparo inicial antes de cada jogo é de 20 minutos, tempo que acaba sendo gasto praticamente inteiro no processo de calibração. Se o processo de calibração fosse automatizado, e assim reduzido, haveria mais tempo para ser usado em melhorias técnicas, hardware dos robôs com problemas, melhorias na estratégia de jogo ou resolvendo problema de comunicação. Devido ao problema citado percebeu-se o beneficio de se desenvolver um sistema autônomo de registro do valores HSV que faça a definição de intervalos de cores baseando-se nos objetos em campo, os identificando de forma automática, assim diminuindo o alto tempo gasto na calibração de cores 
+%Geralmente o tempo de preparo inicial antes de cada jogo é de 20 minutos, tempo que acaba sendo gasto praticamente inteiro no processo de calibração. 
+Automatizar o processo de calibração das cores, reduziria o tempo utilizado, e assim, haveria mais tempo para ser usado em melhorias técnicas, hardware dos robôs com problemas, melhorias na estratégia de jogo ou resolvendo problema de comunicação. Assim, o beneficio trazido para as equipes justifica o desenvolvimento um sistema autônomo de registro do valores HSV, que faça a definição de intervalos de cores baseando-se nos objetos em campo, os identificando de forma automática, e assim reduzindo o tempo gasto na calibração de cores. 
 \section{Objetivos}
-Neste trabalho tem-se por objetivo principal automatizar o sistema de identificação de objetos 
-coloridos em imagens provenientes de uma câmera em imagens de tempo real, fazendo a calibração dos valores HSV identificando seus limites mínimos e máximos.  
+Neste trabalho tem-se por objetivo principal automatizar o sistema de calibração de cores no espaço HSV em imagens capturadas em tempo real, identificando os limites mínimos e máximos dos atributos H, S e V para as cores de identificação dos robôs.  
 Para desenvolver um sistema que supra essas necessidades, foram propostos os seguintes objetivos específicos:
 
 \begin{itemize}
-	
-	\item Estudar e implementar a detecção automática dos objetos em campo; 
-	\item Estudo de cores para identificação de intervalos de cores dentro da biblioteca OpenCV;
-	\item Categorização das cores dos objetos identificados dentro dos intervalos estudados;
-	\item Testar o sistema proposto para identificação de cores.
+	\item Estudar detecção de bordas e implementar a detecção automática dos objetos em campo; 
+	\item Estudo do espaço de cores RGB, HSV e as diferenças para BGR e HSV presentes na biblioteca OpenCV;
+	\item Analisar as cores dos objetos detectados e classifica-los no espaço de cores HSV do OpenCV;
+	\item Testar a eficiência do sistema de calibração automático no reconhecimento de objetos estáticos em diversas localizações do campo.
 	
 	
 \end{itemize}
 
-\newpage
-
+%\newpage
 \section{Organização da Trabalho} \label{Sec:Organizacao}
 
 Este trabalho está divido em cinco capítulos. No segundo capítulo encontra-se a fundamentação teórica, contento informações sobre processamento de imagens referente à detecção de objetos e cores e uma breve descrição sobre o futebol de robôs. No terceiro capítulo encontra-se todo o desenvolvimento do projeto, suas classes, a descrição das tecnologias utilizadas no projeto, e a descrição do processo de calibração. No quarto capítulo são apresentados os testes e discutidos os resultados obtidos. No quinto capítulo são feitas as conclusões do trabalho, bem como expostas melhorias que possam vir a ser implementadas em trabalhos futuros.
 
-\section{Considerações Finais}
+%\section{Considerações Finais}

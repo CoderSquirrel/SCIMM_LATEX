@@ -20,7 +20,7 @@
 
 \section{Processamento de Imagens}
 
-O processamento de imagens é a técnica de trabalhar com uma imagem e seus elementos visando retirar suas informações\cite{Albuquerque:2001}. Além da retirada de informações, o processamento de imagens também inclui a modificação ou melhoria da imagem por meio de redução de ruido, melhoria no contraste, segmentações da image entre outras técnicas. Dentre tipos de processamento de imagens existem, Gonzalez\cite{Gonzalez:2008} os define como: aplicações de ações primitivas de modificação de imagem, esta caraterizada por seu resultado final ser também uma imagem semelhante a imagem inicial porém modificada(Low-Level-Process), divisão de imagem em regiões e alguns tipos de reconhecimento e classificação de objetos, caraterizada por seu resultado final ser muitas vezes apenas regiões ou informações da imagem inicial(Mid-Level-Process), e o mais sensorial de todos que é a analise de objetos usando funções cognitivas associadas a visão computacional, essa usa informações relevantes para o reconhecimento de objetos(Higher-Level-Process). 
+O processamento de imagens é a técnica de trabalhar com uma imagem e seus elementos visando retirar suas informações\cite{Albuquerque:2001}. Além da retirada de informações, o processamento de imagens também inclui a modificação ou melhoria da imagem por meio de redução de ruido, melhoria no contraste, segmentações da image entre outras técnicas. Dentre tipos de processamento de imagens existem, \citeonline{Gonzalez:2008} os define como: aplicações de ações primitivas de modificação de imagem, esta caraterizada por seu resultado final ser também uma imagem semelhante a imagem inicial porém modificada(Low-Level-Process), divisão de imagem em regiões e alguns tipos de reconhecimento e classificação de objetos, caraterizada por seu resultado final ser muitas vezes apenas regiões ou informações da imagem inicial(Mid-Level-Process), e o mais sensorial de todos que é a analise de objetos usando funções cognitivas associadas a visão computacional, essa usa informações relevantes para o reconhecimento de objetos(Higher-Level-Process). 
 Uma vez que o objetivo deste trabalho é reconhecer os objetos em campo para calibra-los, usaremos técnicas de retirada de informações e regiões. Explicaremos sobre as técnicas usadas nas subseções seguintes.
 
 \subsection{Detecção de Objetos}
@@ -33,7 +33,7 @@ Uma vez que o objetivo deste trabalho é reconhecer os objetos em campo para cal
 %\end{itemize}
 
 A detecção de objetos pode ser considerada uma técnica herdada do reconhecimento de padrões, da área de aprendizado de máquina, esta consiste em separar objetos por categorias de acordo com uma ou mais características especificas. Quando essa técnica se junta ao processamento de imagens, estas características são acentuadas em um determinado objeto dentro da imagem para assim este se destacar, tornou-se possível a detecção de objetos em imagens, que dentro do campo de visão computacional é uma das áreas que mais obtêm a atenção de pesquisadores. 
-O primeiro Framework de métodos que usam base de dados categorizando uma ou mais características de um objetos para fazer o reconhecimento através de aprendizado foi apresentado em 2001 por Viola e Jones\cite{Viola:2001}. Desde o framework de Viola e Jones até os dias atuais muitos métodos e teorias para detecção já foram propostos e implementados, como detecção de faces utilizando um classificador de redes neurais na intensidade de padrões de uma imagem, support vector machine para localizar rostos humanos e carros\cite{Nascimento:2007}, análise de componentes principais, análise independente de componentes, fatoração de matriz não-negativa, análise discriminativa linear, boosting\cite{Roth:2008}, além da classificação binaria, que considera a detecção do objeto em tamanho fixo apenas variando na posição na imagem\cite{AmitFelzenszwalb:2014}. 
+O primeiro Framework de métodos que usam base de dados categorizando uma ou mais características de um objetos para fazer o reconhecimento através de aprendizado foi apresentado por \citeonline{Viola:2001}. Desde o framework de Viola e Jones até os dias atuais muitos métodos e teorias para detecção já foram propostos e implementados, como detecção de faces utilizando um classificador de redes neurais na intensidade de padrões de uma imagem, support vector machine para localizar rostos humanos e carros\cite{Nascimento:2007}, análise de componentes principais, análise independente de componentes, fatoração de matriz não-negativa, análise discriminativa linear, boosting\cite{Roth:2008}, além da classificação binaria, que considera a detecção do objeto em tamanho fixo apenas variando na posição na imagem\cite{AmitFelzenszwalb:2014}. 
 
 %Em 2005 Ulusoy e Bishop\cite{Ulusoy:2005} mostraram o quão útil seria categorizar os métodos de detecção de imagens, e os dividiram em duas principais categorias: generativa e discriminativa. Categorias que foram aceitas e utilizadas como mostram Amit e Falzenszwalb\cite{AmitFelzenszwalb:2014} e Roth e Winter\cite{Roth:2008}.
 
@@ -46,7 +46,7 @@ O primeiro Framework de métodos que usam base de dados categorizando uma ou mai
 %Segundo Ulusoy e Bishop\cite{Ulusoy:2005} o método generativo se destaca por tratar perda de dados ou dados parcialmente rotulados, pela facilidade em que uma nova classe pode ser incrementada na classificação condicional de densidade, independentemente das classes anteriores, e por conseguir facilmente lidar com composição de objetos (ex: óculos, chapéus...), considerando que os modelos discriminativos precisar analisar todas as combinações durante o treinamento. Amit e Felzenszwalb\cite{AmitFelzenszwalb:2014} ainda aponta que as vantagens descritas sobre o método discriminativo são ditas como a flexibilidade do modelo  que pode ser utilizado em regiões do espaço de entrada onde as probabilidades posteriores diferem significativamente de 0 ou 1, ao passo que as abordagens detalhes generativas modelo de distribuição de X, que podem ser irrelevantes para determinar as probabilidades posteriores, além de ser tipicamente muito rápido em fazer previsões para os novos pontos (teste) de dados, enquanto os modelos generativos muitas vezes exigem solução iterativa, e pela igualdade de circunstâncias, seria de esperar que os métodos discriminativos tenham melhor desempenho preditivo, uma vez que são treinados para prever o rótulo de classe em vez de a distribuição conjunta de vetores e alvos de entrada.
 
 \subsection{Detecção de Bordas}
-Para um objeto poder ser detectado por algum método de detecção a imagem passa por um processo de segmentação. A segmentação pode ser dita como o processo de divisão da imagem em objetos\cite{Gonzalez:2008}. De acordo com Wangenheim\cite{Wangenheim:2014} o processo de segmentação se baseia em dois conceitos: similaridade e descontinuidade. A descontinuidade é o processo onde se separa o fundo das partículas e estas umas das outras, através de linhas, bordas ou pontos. Já a similaridade é o processo onde os pixeis provenientes da descontinuidade são agrupados de acordo com a proximidade um dos outros para formar os objetos de interesse. De acordo com Canny\cite{Canny:1986} o processo de detecção de bordas é um processo simplificado que serve para diminuir drasticamente o total de dados a serem processados e ao mesmo que o mesmo preserva informações valiosas sobre os objetos, este tambem é considerado um processamento de imagem de baixo nivel, uma vez que age diretamente na imagem original apenas melhorando-a. É muito comum a ocorrência de ruídos quando se trata da detecção de bordas, e por sua vez para evitar esses ruídos é necessário a suavização da imagem antes de fazer a detecção. Vale\cite{Vale:2002} lembra que a suavização possui pontos negativos como perda de informação e deslocamento de estruturas de feições proeminentes no plano da imagem. Além disso, existem diferenças entre as propriedades dos operadores diferenciais comumente utilizados, o que ocasiona  bordas diferentes. Assim, como dito por \apud{Ziou1998}{Vale:2002}, se torna difícil encontrar um algoritmo que tenha bom desempenho em diferenciados contextos e capture os requisitos necessários aos estágios subsequentes do processamento. 
+Para um objeto poder ser detectado por algum método de detecção a imagem passa por um processo de segmentação. A segmentação pode ser dita como o processo de divisão da imagem em objetos\cite{Gonzalez:2008}. De acordo com \citeonline{Wangenheim:2014} o processo de segmentação se baseia em dois conceitos: similaridade e descontinuidade. A descontinuidade é o processo onde se separa o fundo das partículas e estas umas das outras, através de linhas, bordas ou pontos. Já a similaridade é o processo onde os pixeis provenientes da descontinuidade são agrupados de acordo com a proximidade um dos outros para formar os objetos de interesse. De acordo com \citeonline{Canny:1986} o processo de detecção de bordas é um processo simplificado que serve para diminuir drasticamente o total de dados a serem processados e ao mesmo que o mesmo preserva informações valiosas sobre os objetos, este tambem é considerado um processamento de imagem de baixo nivel, uma vez que age diretamente na imagem original apenas melhorando-a. É muito comum a ocorrência de ruídos quando se trata da detecção de bordas, e por sua vez para evitar esses ruídos é necessário a suavização da imagem antes de fazer a detecção. \citeonline{Vale:2002} lembra que a suavização possui pontos negativos como perda de informação e deslocamento de estruturas de feições proeminentes no plano da imagem. Além disso, existem diferenças entre as propriedades dos operadores diferenciais comumente utilizados, o que ocasiona  bordas diferentes. Assim, como dito por \apudonline{Ziou1998}{Vale:2002}, se torna difícil encontrar um algoritmo que tenha bom desempenho em diferenciados contextos e capture os requisitos necessários aos estágios subsequentes do processamento. 
 Quando se trata de detecção de bordas existem dois critérios\cite{Canny:1986} para essa detecção que devem ser levados em consideração, Taxa de Erro e Localização\cite{Vale:2002}. 
 \begin{description}
 	\item[Taxa de Erro] É importante que as bordam contidas na imagem não sejam confundidas ou perdidas e ainda que não sejam detectadas bordas falsas. É necessário que o algoritmo de detecção de borda tenha uma baixa taxa de erro para que seja eficiente\cite{Wangenheim:2014, Canny:1986, Vale:2002}.
@@ -84,7 +84,7 @@ O olho humano é capaz de identificar cores mesmo com as mais diferentes interfe
 
 Para poder explicar as propriedades e comportamentos das cores em determinadas circunstâncias, surgiram os \textbf{Sistemas de cores}. Devido a complexidade existente em explicar todos os aspectos relacionados às cores são utilizados diversos sistemas para descrever as mais diferentes caracteristicas das cores e sua percepção pelo ser humano\cite{Azevedo:2003}.  Dentro os sistemas mais conhecidos, estão o RGB, HSV E HSL, sistemas quais serão neste trabalho.
 
-Segundo Azevedo\cite{Azevedo:2003} o universo de cores que podem ser reproduzidas por um sistem é chamado de \textbf{Espaço de Cores}. De acordo com Foley et. al citado por Souto\cite{Souto:2003} espaço de cores é um sistema tridimensional de coordenadas, onde cada eixo refere-se a uma cor primária. A quantidade de cor primária
+Segundo \citeonline{Azevedo:2003} o universo de cores que podem ser reproduzidas por um sistem é chamado de \textbf{Espaço de Cores}. De acordo com Foley et. al citado por \citeonline{Souto:2003} espaço de cores é um sistema tridimensional de coordenadas, onde cada eixo refere-se a uma cor primária. A quantidade de cor primária
 necessária para reproduzir uma determinada cor, é atribuída a um valor sobre o eixo
 correspondente. O espaço de cores pode ser entendido como a quantidade de detalhamento, tonalidades de uma cor, dentro do espectro de cores de um determinado modelo de cor.
 
@@ -119,7 +119,7 @@ O modelo de cores RGB pode ser considerado mais básico dos modelos de cores. Se
 	\centering
 	\includegraphics[width=0.4\textwidth]{rgb.pdf}
 	
-\caption{Exemplo do Modelo de Cor RGB.	 Horvath\cite{ImagensHSLHSVRGB}  }
+\caption{Exemplo do Modelo de Cor RGB.	 \citeonline{ImagensHSLHSVRGB}  }
 	\label{ModeloRGB}
 \end{figure}
 
@@ -132,7 +132,7 @@ O modelo HSV define tonalidade(hue) que é a cor em si, variando de 0 a 360º, a
 	\centering
 	\includegraphics[width=0.4\textwidth]{hsv.pdf}
 	
-	\caption{Exemplo do Modelo de Cor HSV, Horvath\cite{ImagensHSLHSVRGB}}
+	\caption{Exemplo do Modelo de Cor HSV, \citeonline{ImagensHSLHSVRGB}}
 	\label{ModeloHSV}
 \end{figure} 
 
@@ -142,8 +142,8 @@ O sistema HSV utiliza definições de cor mais intuitivas que o conjunto de core
 \section{Futebol de Robôs}
  Visto como um dominio bastente complexo, dinamico e imprevisivel\cite{Faria2006,Costa:2000}, o futebol de robos surgiu como uma tentativa de promover pesquisas nos campos de Inteligência Artificial e robótica, pela avaliação teorias, algoritmos e arquiteturas por meio de problemas padrão\cite{Kitano:1997}. Além disso se considera o futebol de robôs um problema padrão, no qual se torna possivel fazer a avaliação de algoritmos, arquiteturas, desepenhos e teorias\cite{Faria2006}.
 
- A Equipe Cedro se enquadra na categoria IEEE Very Small Size Soccer. Esta categoria é regulamentada pelo Instituto de Engenheiros Eletricistas e Eletrônicos(IEEE) e possui regras baseadas na MiroSot\cite{Rosa:2015}. O futebol de robôs se assemelha ao futebol humano onde o objetivo do jogo é fazer gols para vencer a partida, porém tendo regras adaptadas para o âmbito robótico. 
- Rosa\cite{Rosa:2015} em seu trabalho de graduação faz uma boa enumeração das regras básicas:
+ A Equipe Cedro se enquadra na categoria VSSS. Esta categoria é regulamentada pelo Instituto de Engenheiros Eletricistas e Eletrônicos(IEEE) e possui regras baseadas na MiroSot\cite{Rosa:2015}. O futebol de robôs se assemelha ao futebol humano onde o objetivo do jogo é fazer gols para vencer a partida, porém tendo regras adaptadas para o âmbito robótico. 
+ \citeonline{Rosa:2015}faz uma boa enumeração das regras básicas:
  \begin{itemize}
  \item A partida dura 10 minutos com dois tempos de 5 minutos;
   \item Há um intervalo de 10 minutos entre um tempo e outro;
@@ -159,19 +159,20 @@ O sistema HSV utiliza definições de cor mais intuitivas que o conjunto de core
      \item A cada inicio de partida ou gol feito a bola deve ser posicionada no centro do campo e os
      robôs devem ser posicionados de acordo com a posse de bola.
  \end{itemize}
-Uma otima descriçao do ambiente de futebol de robos é descrita por \cite{Faria2006}, e pode ser vista na Figura \ref{VSSS}:
+Uma ótima descrição do ambiente de futebol de robôs foi dada por \citeonline{Faria2006} e pode ser visualizada na Figura \ref{fig:VSSS}:
 \begin{quotation}
-``O futebol de robôs considera-se uma câmera para capturar
+\textit{
+``(...) futebol de robôs considera-se uma câmera para capturar
 a imagem de todo o campo e utilizando-se de recursos de processamento de imagem, um
 computador poderá fornecer as posições dos robôs pertencentes ao time, dos adversários,
 do gol e da bola. Um computador, chamado de técnico, pode utilizar algum sistema de
 controle que utilize as informações disponíveis para dar ordens de como os robôs de seu
-time devem agir."
+time devem agir."}\cite{Faria2006}
 \end{quotation}
  \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{faria2006.png}
 	\caption{Estrutura de um ambiente de futebol de robos VSSS\cite{Faria2006}}
-	\label{VSSS}
+	\label{fig:VSSS}
 \end{figure} 
 \section{Considerações Finais}
