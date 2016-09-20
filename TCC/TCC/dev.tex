@@ -53,7 +53,7 @@ Os passos detalhados do projeto e seu desenvolvimento estarão presente na seç�
 
 \section{Projeto}
 \subsection{Organização do Projeto}
-	 O projeto foi desenvolvido seguindo o paradigma de programação Orientada à Objetos, esse paradigma baseia-se na utilização de objetos individuais para criação de um sistema maior e complexo. A IDE usada para o desenvolvimento foi a QT Creator, esta separada o projeto em três pastas: {\it Headers}, {\it Sources} e {\it Forms}. Na pasta {\it Headers} estão os arquivos de cabeçalho(.h), onde estão as declarações dos métodos e variáveis usados nas classes  executáveis. Já na pasta {\it Sources} estão os arquivos fonte(.cpp), são nesses arquivos que os métodos declarados nos arquivos da pasta {\it Headers} são implementados. Na pasta {\it Forms} está o arquivo de interface gráfica(.ui) que é usado no projeto para ser a ponte entre o usuário e as funções do sistema.
+	 O projeto foi desenvolvido seguindo o paradigma de programação Orientada à Objetos, esse paradigma baseia-se na utilização de objetos individuais para criação de um sistema maior e complexo. A IDE usada para o desenvolvimento foi a QT Creator, esta separada o projeto em três pastas: {\it Headers}, {\it Sources} e {\it Forms}. Na pasta {\it Headers} estão os arquivos de cabeçalho(.h), onde estão as declarações dos métodos e variáveis usados nas classes  executáveis. Na pasta {\it Sources} estão os arquivos fonte(.cpp), são nesses arquivos que os métodos declarados nos arquivos da pasta {\it Headers} são implementados. Na pasta {\it Forms} está o arquivo de interface gráfica(.ui) que é usado no projeto.
 	 
 	\begin{figure}[!h]
 		\centering
@@ -61,18 +61,18 @@ Os passos detalhados do projeto e seu desenvolvimento estarão presente na seç�
 		\caption{Organização das pastas do projeto}
 		\label{Organizacao do Projeto}
 	\end{figure}
-	Com exceção do arquivo fonte main, cada arquivo de cabeçalho possui um arquivo fonte correspondente, formando assim um objeto, todo objeto é uma classe mas nem toda classe forma um objeto. As classes desenvolvidas no projeto são: Calibração, scimm\_cor e janelaprincipal.
+	Com exceção do arquivo fonte main, cada arquivo de cabeçalho possui um arquivo fonte correspondente, formando assim um objeto, todo objeto é uma classe mas nem toda classe forma um objeto. As classes desenvolvidas no projeto são: calibracao, scimm\_cor e janelaprincipal.
 %Para melhor entendimento da interação entre as classes a figura 3.2 trás o diagrama de classes do projeto.
 
 \subsection{Classes}
 \subsubsection{main}
- Esta é o que se chama de \textit{ponto de entrada} em programação. \textit{Ponto de entrada} é onde o sistema operacional ira iniciar a execução do sistema desenvolvido. Esta classe possui somente o método \textbf{main} e este instancia e inicia o objeto \textbf{JanelaPrincipal} que apresenta a interface gráfica para interação com o usuário.
+ Esta é o que se chama de \textit{ponto de entrada} em programação. \textit{Ponto de entrada} é onde o sistema operacional ira iniciar a execução do sistema desenvolvido. Esta classe possui somente o método \textit{main} e este instância e inicia o objeto \textbf{JanelaPrincipal} que apresenta a interface gráfica para interação com o usuário.
  
 \subsubsection{JanelaPrincipal}
-É uma classe-objeto que utiliza da implementação de objetos QWidget e suas subclasses disponíveis pelo framework Qt, para a criação de uma interface gráfica que faz a interação com o usuário. Todos os métodos presentes nessa classe são para utilização gráfica, comportamento de botões e menu de seleção, para a comunicação com a classe de calibração.	
+É uma classe-objeto que utiliza da implementação de objetos \textit{QWidget} e suas subclasses disponíveis pelo Qt, para a criação de uma interface gráfica que faz a interação com o usuário. Todos os métodos presentes nessa classe são para utilização gráfica, comportamento de botões e menu de seleção, para a comunicação com a classe de calibração.	
 
 \subsubsection{Calibracao}
- É classe que contem todos os métodos e variáveis usados no processo de calibração, é também dentro dessa classe que são feitas todos os tipos de manipulação em imagem.
+ Esta é classe que contem todos os métodos e variáveis usados no processo de calibração, é também dentro dessa classe que são feitas todos os tipos de manipulação em imagem.
  
 Os métodos contidos na classe Calibração são:
 	\begin{description}

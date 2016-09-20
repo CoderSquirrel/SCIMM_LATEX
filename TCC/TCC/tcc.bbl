@@ -41,7 +41,7 @@ ISSN 0162-8828.}
 
 \bibitem[Culjak et al. 2012]{Culjak:2012}
 \abntrefinfo{Culjak et al.}{CULJAK et al.}{2012}
-{CULJAK, I. et al. A brief introduction to opencv. In:  \emph{MIPRO, 2012
+{CULJAK, I. et al. A brief introduction to {OpenCV}. In:  \emph{MIPRO, 2012
   Proceedings of the 35th International Convention}. [S.l.: s.n.], 2012. p.
   1725--1730.}
 
@@ -63,6 +63,19 @@ Dispon{\'\i}vel em: \url{http://fira.net/contents/sub01/sub01\_3.asp}.}
 Acessado 09/09/2016 22:36.
 Dispon{\'\i}vel em: \url{http://fira.net/contents/sub01/sub01\_2.asp}.}
 
+\bibitem[Freund e Schapire 1995]{Freund:1995}
+\abntrefinfo{Freund e Schapire}{FREUND; SCHAPIRE}{1995}
+{FREUND, Y.; SCHAPIRE, R.~E. A desicion-theoretic generalization of on-line
+  learning and an application to boosting. In:  SPRINGER. \emph{European
+  conference on computational learning theory}. [S.l.], 1995. p. 23--37.}
+
+\bibitem[GARCIA e DELAKIS 2004]{Garcia:2004}
+\abntrefinfo{GARCIA e DELAKIS}{GARCIA; DELAKIS}{2004}
+{GARCIA, C.; DELAKIS, M. Convolutional face finder: a neural architecture for
+  fast and robust face detection.
+\emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~26,
+  p. 1408--1423, 2004.}
+
 \bibitem[Gonzalez e Woods 2008]{Gonzalez:2008}
 \abntrefinfo{Gonzalez e Woods}{GONZALEZ; WOODS}{2008}
 {GONZALEZ, R.; WOODS, R. \emph{Digital Image Processing}. Pearson/Prentice
@@ -70,9 +83,14 @@ Dispon{\'\i}vel em: \url{http://fira.net/contents/sub01/sub01\_2.asp}.}
 ISBN 9780131687288. Dispon{\'\i}vel em:
   \url{https://books.google.com.br/books?id=8uGOnjRGEzoC}.}
 
+\bibitem[Hart, Stork e Duda 2001]{Duda2012}
+\abntrefinfo{Hart, Stork e Duda}{HART; STORK; DUDA}{2001}
+{HART, P.~E.; STORK, D.~G.; DUDA, R.~O. \emph{Pattern classification}. 2. ed.
+  New York: John Wiley \& Sons, 2001.}
+
 \bibitem[Horvath 2008]{ImagensHSLHSVRGB}
 \abntrefinfo{Horvath}{HORVATH}{2008}
-{HORVATH, M. \emph{"Imagens HSV, HSL e RGB"}. 2008.
+{HORVATH, M. \emph{Imagens {HSV}, {HSL} e {RGB}}. 2008.
 Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
 
 \bibitem[Hounslow 2013]{YouTube}
@@ -81,16 +99,32 @@ Dispon{\'\i}vel em: \url{http://isometricland.net/artwork/artwork.php}.}
 Acessado 09/09/2016 20:11.
 Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=bSeFrPrqZ2A}.}
 
+\bibitem[Hyv{\"a}rinen, Karhunen e Oja 2004]{Hyvarinen:2004}
+\abntrefinfo{Hyv{\"a}rinen, Karhunen e Oja}{HYV{\"A}RINEN; KARHUNEN; OJA}{2004}
+{HYV{\"A}RINEN, A.; KARHUNEN, J.; OJA, E. \emph{Independent component
+  analysis}. [S.l.]: John Wiley \& Sons, 2004.}
+
 \bibitem[itseez 2016]{OpenCV}
 \abntrefinfo{itseez}{ITSEEZ}{2016}
-{ITSEEZ. \emph{OpenCV}. 2016.
+{ITSEEZ. \emph{Open{CV}}. 2016.
 Acessado 29/06/2016 16:53.
 Dispon{\'\i}vel em: \url{http://docs.opencv.org/3.1.0/}.}
 
+\bibitem[Jolliffe 2002]{Jolliffe:2002}
+\abntrefinfo{Jolliffe}{JOLLIFFE}{2002}
+{JOLLIFFE, I. \emph{Principal component analysis}. 2. ed. New York/USA:
+  Springer, 2002.  (0172-7397).}
+
 \bibitem[Kitano et al. 1997]{Kitano:1997}
 \abntrefinfo{Kitano et al.}{KITANO et al.}{1997}
-{KITANO, H. et al. Robocup: A challenge problem for ai.
-\emph{AI magazine}, v.~18, n.~1, p.~73, 1997.}
+{KITANO, H. et al. Robocup: A challenge problem for {AI}.
+\emph{AI magazine}, v.~18, n.~1, p. 73--85, 1997.}
+
+\bibitem[Lee e Seung 1999]{Lee:1999}
+\abntrefinfo{Lee e Seung}{LEE; SEUNG}{1999}
+{LEE, D.~D.; SEUNG, H.~S. Learning the parts of objects by non-negative matrix
+  factorization.
+\emph{Nature}, Nature Publishing Group, v.~401, n.~6755, p. 788--791, 1999.}
 
 \bibitem[Leão, Araújo e Souza 2005]{Leao:2005}
 \abntrefinfo{Leão, Araújo e Souza}{LEãO; ARAúJO; SOUZA}{2005}
@@ -101,13 +135,9 @@ Dispon{\'\i}vel em: \url{http://docs.opencv.org/3.1.0/}.}
 
 \bibitem[Martins et al. 2007]{Martins:2007}
 \abntrefinfo{Martins et al.}{MARTINS et al.}{2007}
-{MARTINS, D.~L. et al. A versão 2007 da equipe poti de futebol de robôs. In:
-  \emph{Team Description Paper. Competi{\c{c}}ao Brasileira de Rob{\'o}tica,
+{MARTINS, D.~L. et al. A versão 2007 da equipe {POTI} de futebol de robôs.
+  In:  \emph{Team Description Paper. Competição Brasileira de Robótica,
   Florianópolis, Brasil}. [S.l.: s.n.], 2007.}
-
-\bibitem[Mendes et al.]{Mendes:2009}
-\abntrefinfo{Mendes et al.}{MENDES et al.}{}
-{MENDES, E.~P. et al. A equipe de futebol de rob{\^o}s poti-ufrn 2009.}
 
 \bibitem[Mendes e Medeiros 2008]{Mendes:2008}
 \abntrefinfo{Mendes e Medeiros}{MENDES; MEDEIROS}{2008}
@@ -124,6 +154,18 @@ Disserta\c{c}\~{a}o (Trabalho de Graduação) --- Centro de Informática,
   Universidade Federal de Pernambuco, 2007.
 Dispon{\'\i}vel em: \url{www.cin.ufpe.br/~tg/2007-2/mcn2.doc}.}
 
+\bibitem[OSUNA, FREUND e GIROSI 1997]{Osuna:1997}
+\abntrefinfo{OSUNA, FREUND e GIROSI}{OSUNA; FREUND; GIROSI}{1997}
+{OSUNA, E.; FREUND, R.; GIROSI, F. Training support vector machines: an
+  application to face detection.
+\emph{IEEE Conference on Computer Vision and Pattern Recognition}, p. 130--136,
+  1997.}
+
+\bibitem[PAPAGEPRGIOU e POGGIO 1999]{Papageprgiou:1999}
+\abntrefinfo{PAPAGEPRGIOU e POGGIO}{PAPAGEPRGIOU; POGGIO}{1999}
+{PAPAGEPRGIOU, C.; POGGIO, T. \emph{A training object system: car detection in
+  static images}. 1999.}
+
 \bibitem[Penharbel et al. 2004]{Penharbel:2004}
 \abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{2004a}
 {PENHARBEL, E.~A. et al. Filtro de imagem baseado em matriz rgb de
@@ -133,40 +175,31 @@ Dispon{\'\i}vel em: \url{www.cin.ufpe.br/~tg/2007-2/mcn2.doc}.}
 \bibitem[Penharbel et al. 2004]{PenharbelTime}
 \abntrefinfo{Penharbel et al.}{PENHARBEL et al.}{2004b}
 {PENHARBEL, E.~A. et al. Time de futebol de rob{\^o}s y04 do centro
-  universit{\'a}rio da fei.
+  universit{\'a}rio da {FEI}.
 \emph{Jornada de Robótica Inteligente - Encontro Nacional de Robótica
   Inteligente}, 2004.}
 
 \bibitem[Rosa 2015]{Rosa:2015}
 \abntrefinfo{Rosa}{ROSA}{2015}
 {ROSA, J.~F. da.
-\emph{Construção de um time de futebol de robôs para a categoria IEEE Very
+\emph{Construção de um time de futebol de robôs para a categoria {IEEE} Very
   Small Size Soccer}.
-Disserta\c{c}\~{a}o (Trabalho de Conclusão de Curso) --- FACULDADE DEE
-  DUCAÇÃO TECNOLÓGICA DO ESTADO DO RIO DE JANEIRO, 2015.
+Disserta\c{c}\~{a}o (Trabalho de Conclusão de Curso) --- Faculdade de
+  Educação Tecnológica do Estado do Rio de Janeiro, Petrópolis/RJ, 2015.
 Dispon{\'\i}vel em:
   \url{http://docplayer.com.br/11866286-Construcao-de-um-time-de-futebol-de-robos-para-a-categoria-ieee-very-small-size-soccer.html}.}
 
-\bibitem[Roth e Winter 2008]{Roth:2008}
-\abntrefinfo{Roth e Winter}{ROTH; WINTER}{2008}
-{ROTH, P.~M.; WINTER, M. Survey of appearance-based methods for object
-  recognition.
-\emph{Inst. for Computer Graphics and Vision, Graz University of Technology,
-  Austria, Technical Report ICGTR0108 (ICG-TR-01/08)}, 2008.}
+\bibitem[ROWLEY H.A;~BALUJA 1998]{Rowley:1998}
+\abntrefinfo{ROWLEY H.A;~BALUJA}{ROWLEY H.A;~BALUJA}{1998}
+{ROWLEY H.A;~BALUJA, S. K.~T. Neural network-based face detection.
+\emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~20,
+  p. 29--38, 1998.}
 
 \bibitem[Saini, Kasliwal e Bhatia 2013]{Saini:2013}
 \abntrefinfo{Saini, Kasliwal e Bhatia}{SAINI; KASLIWAL; BHATIA}{2013}
-{SAINI, S.; KASLIWAL, B.; BHATIA, S. Comparative study of image edge detection
-  algorithms.
-\emph{arXiv e-print service in the fields of physics, mathematics, computer
-  science, quantitative biology, quantitative finance and statistics, Cornell
-  University Library}, 2013.
+{SAINI, S.; KASLIWAL, B.; BHATIA, S. \emph{Comparative study of image edge
+  detection algorithms}. 2013.
 Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/1311.4963}.}
-
-\bibitem[SIRLab 2016]{VSSVision}
-\abntrefinfo{SIRLab}{SIRLAB}{2016}
-{SIRLAB. Imagens hsv, hsl e rgb. In:  . [s.n.], 2016. Acessado 06/06/2016
-  14:50. Dispon{\'\i}vel em: \url{https://github.com/SIRLab/VSS-Vision/wiki}.}
 
 \bibitem[Souto 2003]{Souto:2003}
 \abntrefinfo{Souto}{SOUTO}{2003}
@@ -177,9 +210,16 @@ Disserta\c{c}\~{a}o (Dissertação de Mestrado) --- INPE, São José dos
 
 \bibitem[Stroustrup 1996]{Stroustrup:1996}
 \abntrefinfo{Stroustrup}{STROUSTRUP}{1996}
-{STROUSTRUP, B. A history of c++: 1979--1991. In:  BERGIN, T.~J.; GIBSON, R.~G.
-  (Ed.). \emph{History of programming languages --- II}. [S.l.]:
+{STROUSTRUP, B. A history of {C++}: 1979--1991. In:  BERGIN, T.~J.; GIBSON,
+  R.~G. (Ed.). \emph{History of programming languages --- II}. [S.l.]:
   Addison-Wesley, 1996.}
+
+\bibitem[Suzuki et al. 1985]{Suzuki:1985}
+\abntrefinfo{Suzuki et al.}{SUZUKI et al.}{1985}
+{SUZUKI, S. et al. Topological structural analysis of digitized binary images
+  by border following.
+\emph{Computer Vision, Graphics, and Image Processing}, Elsevier, v.~30, n.~1,
+  p. 32--46, 1985.}
 
 \bibitem[Vale e Poz 2002]{Vale:2002}
 \abntrefinfo{Vale e Poz}{VALE; POZ}{2002}
@@ -192,16 +232,15 @@ Disserta\c{c}\~{a}o (Dissertação de Mestrado) --- INPE, São José dos
 \abntrefinfo{Viola e Jones}{VIOLA; JONES}{2001}
 {VIOLA, P.; JONES, M. Rapid object detection using a boosted cascade of simple
   features. In:  IEEE. \emph{Computer Vision and Pattern Recognition, 2001.
-  CVPR 2001. Proceedings of the 2001 IEEE Computer Society Conference on}.
-  [S.l.], 2001. v.~1, p. I--511.}
+  CVPR 2001. Proceedings of the 2001 IEEE Computer Society, Conference on}.
+  [S.l.], 2001. v.~1, p. ?--511.}
 
 \bibitem[WANGENHEIM 2014]{Wangenheim:2014}
 \abntrefinfo{WANGENHEIM}{WANGENHEIM}{2014}
-{WANGENHEIM, A. Von. encontrando a linha divis{\'o}ria: Detec{\c{c}}{\~a}o de
-  borda.
-\emph{Departamento de Inform{\'a}tica e Estat{\'\i}stica-Universidade Federal
-  de Santa Catarina, 2013a}, v.~16, 2014.
-Dispon{\'\i}vel em: \url{www.inf.ufsc.br/~visao/bordas.pdf}.}
+{WANGENHEIM, A.~v. Encontrando a linha divisória: Detecção de borda.
+In:  \underline{\ \ \ \ \ \ \ \ }. [s.n.], 2014. v.~16, p. 9--24.
+Dispon{\'\i}vel em:
+  \url{https://www.yumpu.com/pt/document/view/12577417/encontrando-a-linha-divisoria-deteccao-de-bordas-ufsc}.}
 
 \bibitem[Ziou, Tabbone et al. 1998]{Ziou1998}
 \abntrefinfo{Ziou, Tabbone et al.}{ZIOU; TABBONE et al.}{1998}
