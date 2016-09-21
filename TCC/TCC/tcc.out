@@ -12,17 +12,17 @@
 \BOOKMARK [1][-]{section.2.2}{Processamento Digital de Imagens}{chapter.2}% 12
 \BOOKMARK [2][-]{subsection.2.2.1}{Detec\347\343o de Objetos}{section.2.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.2}{Detec\347\343o de Bordas}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Cores}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.3}{Universo de Cores}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.4}{Futebol de Rob\364s}{chapter.2}% 16
 \BOOKMARK [1][-]{section.2.5}{Considera\347\365es Finais}{chapter.2}% 17
 \BOOKMARK [0][-]{chapter.3}{Desenvolvimento}{}% 18
 \BOOKMARK [1][-]{section.3.1}{Considera\347\365es Iniciais}{chapter.3}% 19
 \BOOKMARK [1][-]{section.3.2}{Tecnologias Usadas}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.3}{Projeto}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Descri\347\343o do Projeto}{chapter.3}% 21
 \BOOKMARK [2][-]{subsection.3.3.1}{Organiza\347\343o do Projeto}{section.3.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.2}{Classes}{section.3.3}% 23
-\BOOKMARK [1][-]{section.3.4}{O Sistema}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.4.1}{1\252 Etapa - Configura\347\343o de Ca mera}{section.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.3.2}{Apresenta\347\343o das Classes}{section.3.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Detalhes de Implementa\347\343o do Sistema SCIMM}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.4.1}{1\252 Etapa - Configura\347\343o de C\342mera}{section.3.4}% 25
 \BOOKMARK [2][-]{subsection.3.4.2}{2\252 Etapa - Reconhecimento de Fundo}{section.3.4}% 26
 \BOOKMARK [2][-]{subsection.3.4.3}{3\252 Etapa - Extra\347\343o dos Objetos do Fundo}{section.3.4}% 27
 \BOOKMARK [2][-]{subsection.3.4.4}{4\252 Etapa - Detec\347\343o e valida\347\343o de Objetos}{section.3.4}% 28

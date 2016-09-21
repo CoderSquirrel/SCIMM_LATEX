@@ -33,95 +33,96 @@
 		tabsize=3
 	}
 	\chapter{Desenvolvimento} 
-	Neste capítulo se apresenta toda a descrição do sistema proposto. Na seção 3.2 são descritas as tecnologias usadas no projeto juntamente com um breve contexto sobre cada. A seção 3.3 contem a organização do projeto, bem como suas classes, e a funcionalidade de cada uma. Na seção 3.4 descreve-se o fluxo do sistemas e cada uma das etapas do seu funcionamento são detalhadas.
 	\section{Considerações Iniciais}
-			Para o desenvolvimento foi escolhida a biblioteca OpenCV por ser de código aberto\footnote{Modelo de desenvolvimento de {\it software}, no qual o código fonte é aberto e livre para modificações e adaptações}, multiplataforma, conter uma grande quantidade de métodos e algoritmos já implementados	e pelo seu rápido desempenho de máquina.
-			A linguagem escolhida para o desenvolvimento foi o C++ pois é uma linguagem de programação compilada, o que torna sua execução mais rápida que as linguagem interpretadas, dando ao sistema uma performance em tempo satisfatório. 
+	Neste capítulo descreve-se o sistema proposto, denominado SCIMM, as tecnologias utilizadas no projeto, a organização do projeto e suas classes, o fluxo do sistemas e cada uma das etapas do seu funcionamento.
+	
+	Para o desenvolvimento foi escolhida a biblioteca OpenCV por ser de código aberto\footnote{Modelo de desenvolvimento de {\it software}, no qual o código fonte é aberto e livre para modificações e adaptações}, multiplataforma, conter uma grande quantidade de métodos e algoritmos já implementados	e pelo seu rápido desempenho de máquina.
+	
+	A linguagem escolhida para o desenvolvimento foi o C++, pois é uma linguagem de programação compilada, o que torna sua execução mais rápida que as linguagem interpretadas, dando ao sistema uma performance em tempo satisfatório. 
 			
-			Todo o sistema foi desenvolvido em sistema operacional Ubuntu e utilizou da ferramenta {\it Github} como repositório {\it online} para o controle de versão do projeto. A escolha desse repositório se deu ao fato da plataforma obter um grande numero de projetos de código aberto, e uma vez que este trabalho tem como finalidade principal beneficiar as equipe de times de futebol de robôs, deixar seu código aberto permite que melhorias possam ser adicionadas além de soluções para possíveis erros.
+	Todo o projeto foi desenvolvido em sistema operacional Ubuntu e utilizou-se a ferramenta {\it Github} como repositório {\it online} para o controle de versão do projeto. A escolha desse repositório se deve ao fato da plataforma conter um grande número de projetos de código aberto, e uma vez que este trabalho tem como finalidade principal beneficiar as equipe de times de futebol de robôs, deixar seu código aberto permite que melhorias possam ser adicionadas além de soluções para possíveis erros.
 			
 \section{Tecnologias Usadas}
-Para realização deste trabalho, irei utilizar a biblioteca de processamentos de imagens OpenCV. O trabalho será elaborado na linguagem C++, com uso do {\it framework} Qt para sua interface gráfica.
-Os passos detalhados do projeto e seu desenvolvimento estarão presente na seção Projeto, deste mesmo capítulo.
+Para realização deste trabalho,  utilizou-se a biblioteca de processamentos de imagens OpenCV. O trabalho foi elaborado na linguagem C++, com uso do {\it framework} Qt para a composição da interface gráfica.
+ 
 \begin{description}
-	\item[OpenCV] Lançado em 1999 pela Intel\cite{Culjak:2012}, com objetivo de ser otimizada, portável e com um grande número de funções, se tornou uma ferramenta que possui mais de 2500 algoritmos e 40 mil pessoas em seu grupo de usuários\cite{Culjak:2012}. Já possui interface para as linguagens C++, C, Python e Java além de suporte para as principais plataformas com Windows, Linux, Mac OS, iOS e Android. A biblioteca lida tanto com imagens em tempo real, como vídeos e imagens estáticas.
+	\item[OpenCV] foi lançado em 1999 pela Intel\cite{Culjak:2012}, com objetivo de ser otimizada, portável e com um grande número de funções, se tornou uma ferramenta que possui mais de 2500 algoritmos e 40 mil pessoas em seu grupo de usuários\cite{Culjak:2012}. Já possui interface para as linguagens C++, C, Python e Java, além de suporte para as principais plataformas como Windows, Linux, Mac OS, iOS e Android. A biblioteca pode ser utilizada para manipular tanto imagens em tempo real, quanto vídeos e imagens estáticas.
 	
-	\item[Qt] Qt é um {\it framework} de desenvolvimento de aplicações multiplataforma. Entre suas funcionalidades está a possibilidade de criar interfaces gráficas diretamente em C++ usando seu módulo{\it  Widgets}.
+	\item[Qt] é um {\it framework} de desenvolvimento de aplicações multiplataforma. Entre suas funcionalidades está a possibilidade de criar interfaces gráficas diretamente em C++ usando seu módulo{\it  Widgets}.
 	
-	\item [C++] A linguagem de programação C++ foi projetado por Bjarne Stroustrup para fornecer eficiência e flexibilidade da linguagem C para programação de sistemas. A linguagem evoluiu a partir de uma versão anterior chamado C com Classes, o projeto C com Classes durou entre 1979 e 1983 e determinou os moldes para o C++. A linguagem foi oficialmente lancada em 1986\cite{Stroustrup:1996}.
+	\item [C++] é uma linguagem de programação projetada por \citeonline{Stroustrup:1996} para fornecer eficiência e flexibilidade da linguagem C para programação de sistemas. A linguagem C++ evoluiu a partir de um projeto chamado C com Classes que foi realizado  entre 1979 e 1983. A linguagem foi oficialmente lancada em 1986.
 \end{description}
 
-\section{Projeto}
+\section{Descrição do Projeto}
 \subsection{Organização do Projeto}
-	 O projeto foi desenvolvido seguindo o paradigma de programação Orientada à Objetos, esse paradigma baseia-se na utilização de objetos individuais para criação de um sistema maior e complexo. A IDE usada para o desenvolvimento foi a QT Creator, esta separada o projeto em três pastas: {\it Headers}, {\it Sources} e {\it Forms}. Na pasta {\it Headers} estão os arquivos de cabeçalho(.h), onde estão as declarações dos métodos e variáveis usados nas classes  executáveis. Na pasta {\it Sources} estão os arquivos fonte(.cpp), são nesses arquivos que os métodos declarados nos arquivos da pasta {\it Headers} são implementados. Na pasta {\it Forms} está o arquivo de interface gráfica(.ui) que é usado no projeto.
+	 O projeto foi desenvolvido seguindo o paradigma de programação Orientada à Objetos, esse paradigma baseia-se na utilização de objetos individuais para criação de um sistema maior e complexo. A IDE usada para o desenvolvimento foi a QT Creator, esta separada o projeto em três pastas: {\it Headers}, {\it Sources} e {\it Forms} (Figura \ref{fig:OrganizacaoDoProjeto}). Na pasta {\it Headers} estão os arquivos de cabeçalho(.h), onde estão as declarações dos métodos e variáveis usados nas classes  executáveis. Na pasta {\it Sources} estão os arquivos fonte(.cpp), são nesses arquivos que os métodos declarados nos arquivos da pasta {\it Headers} são implementados. Na pasta {\it Forms} está o arquivo de interface gráfica(.ui) que é usado no projeto.
 	 
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=0.2\textwidth]{organizacaoProjeto.pdf}
 		\caption{Organização das pastas do projeto}
-		\label{Organizacao do Projeto}
+		\label{fig:OrganizacaoDoProjeto}
 	\end{figure}
-	Com exceção do arquivo fonte main, cada arquivo de cabeçalho possui um arquivo fonte correspondente, formando assim um objeto, todo objeto é uma classe mas nem toda classe forma um objeto. As classes desenvolvidas no projeto são: calibracao, scimm\_cor e janelaprincipal.
+	%Com exceção do arquivo fonte main, cada arquivo de cabeçalho possui um arquivo fonte correspondente, formando assim um objeto, todo objeto é uma classe mas nem toda classe forma um objeto. As classes desenvolvidas no projeto são: calibracao, scimm\_cor e janelaprincipal.
 %Para melhor entendimento da interação entre as classes a figura 3.2 trás o diagrama de classes do projeto.
 
-\subsection{Classes}
-\subsubsection{main}
- Esta é o que se chama de \textit{ponto de entrada} em programação. \textit{Ponto de entrada} é onde o sistema operacional ira iniciar a execução do sistema desenvolvido. Esta classe possui somente o método \textit{main} e este instância e inicia o objeto \textbf{JanelaPrincipal} que apresenta a interface gráfica para interação com o usuário.
+\subsection{Apresentação das Classes}
+\subsubsection{Classe main}
+ Esta é o que se chama de \textit{ponto de entrada} em programação. \textit{Ponto de entrada} é onde o sistema operacional irá iniciar a execução do sistema desenvolvido. Esta classe possui somente o método \textit{main} e este instancia e inicia o objeto \textbf{JanelaPrincipal} que apresenta a interface gráfica para interação com o usuário.
  
-\subsubsection{JanelaPrincipal}
-É uma classe-objeto que utiliza da implementação de objetos \textit{QWidget} e suas subclasses disponíveis pelo Qt, para a criação de uma interface gráfica que faz a interação com o usuário. Todos os métodos presentes nessa classe são para utilização gráfica, comportamento de botões e menu de seleção, para a comunicação com a classe de calibração.	
+\subsubsection{Classe JanelaPrincipal}
+Nesta classe utiliza-se da implementação de objetos \textit{QWidget} e suas subclasses disponíveis pelo Qt, para a criação de uma interface gráfica que faz a interação com o usuário. Todos os métodos presentes nessa classe são para utilização gráfica, comportamento de botões e menu de seleção, e para a comunicação com a classe de calibração.	
 
-\subsubsection{Calibracao}
- Esta é classe que contem todos os métodos e variáveis usados no processo de calibração, é também dentro dessa classe que são feitas todos os tipos de manipulação em imagem.
+\subsubsection{Classe Calibracao}
+ Esta classe contém todos os métodos e variáveis usados no processo de calibração, é também dentro dessa classe que são feitas todos os tipos de manipulação em imagem.
  
 Os métodos contidos na classe Calibração são:
 	\begin{description}
 
-\item Iniciar: Método onde é instanciado o objeto que faz referencia à \textbf{JanelaPrincipal}, para ser usado quando houver necessidade de comunicação com a interface que não seja por meio de retorno, este método também é onde se inicializa o a câmera, a partir do id contido na interface, e se verifica se a mesma esta disponível.
+\item Iniciar: Método utilizado para fazer referencia à \textbf{JanelaPrincipal}, devido a necessidade de comunicação com a interface que não seja por meio de retorno. Este método também inicializa a câmera, se esta estiver disponível.
 
-
-\item ConfigurarCamera: Método onde a imagem de exibição é ajustando o tamanho da tela a ser usada durante a detecção de objetos, além do ajuste de brilho e contraste para tornar mais nítido os contornos durante a detecção de objetos.	
+\item ConfigurarCamera: Método utilizado para delimitar, um retângulo, ou seja, o espaço de trabalho dentro da imagem proveniente da câmera. Também é utilizada para ajuste de brilho e contraste para tornar mais nítido os contornos durante a detecção de objetos dentro do retângulo já delimitado.	
 	
-  \item ReconhecerFundoExtrairObjetos: Método onde se utiliza o algoritmo de subtração de fundo para identificar, inicialmente, o campo e uma vez identificado se separa os objetos que não fazem parte do fundo inicial, a extração dos objetos. A extração dos objetos gerando uma imagem \textit{máscara} que sera usada na detecção dos objetos para que a mesma ser executada com mais precisão, uma vez que os objetos coloridos eram os únicos que não fazem parte da imagem inicial, o fundo.
+  \item ReconhecerFundoExtrairObjetos: Método no qual utiliza-se o algoritmo de subtração de fundo. Identifica-se, inicialmente, o campo e uma vez identificado, qualquer objeto colocado sobre o campo ficará em destaque pois não faziam parte do fundo inicial. Esse destaque é uma \textbf{máscara} sobre a imagem que é usada melhorar a precisão do algoritmo de detecção dos objetos.
   
- 
-	\item Calibrar: Método onde se a imagem atual da câmera é obtida e ajustada de acordo com os parâmetros estabelecidos no método \textbf{ConfigurarCamera} e iniciado o método \textbf{DetectarObjetos}. Uma vez que os objetos foram identificados se faz o uso do método \textbf{Calcular}  para serem analisados os valores de cada pixel de cada objetos e estes classificados de acordo com as cores pré definidas pelo sistemas. Uma vez terminado o processo de calibração é exibida na tela para o usuário os objetos da cor que esta selecionada no menu de cores.			
-		
-	\item DetectarObjetos: Método onde serão aplicados filtros de diminuição de ruido, detectadas as bordas existentes na imagem, detectados os objetos a partir das bordas contidas na imagem, o aumento da precisão do contorno dos objetos e diminuição do tamanho do objeto de acordo com a porcentagem de borda a ser eliminada. 
+ 	\item DetectarObjetos: Método onde serão aplicados filtros de diminuição de ruido, detectadas as bordas existentes na imagem, detectados os objetos a partir das bordas contidas na imagem, o aumento da precisão do contorno dos objetos e diminuição do tamanho do objeto de acordo com a porcentagem de borda a ser eliminada. 
+
+\item Calcular: Método utilizado para analisar cada pixel pertencente aos objetos detectados. O valor H do HSV é categorizado de acordo com as cores pre-definidas no sistema. % e adicionado a cor correspondente.
+%O algoritmo de categorização:
+
+\item Calibrar: Método utilizado para administrar a utilização dos métodos \textbf{DetectarObjetos} e \textbf{Calcular}. % para serem analisados os valores de cada pixel de cada objetos e estes classificados de acordo com as cores pré definidas pelo sistemas. Uma vez terminado o processo de calibração é exibida na tela para o usuário os objetos da cor que esta selecionada no menu de cores.		
 
 	\item ObterPorcentagem: Método simples para devolver a porcentagem de um valor, ao ser informado o valor e a porcentagem escolhida.
 		
-		\item Calcular: Método onde cada pixel pertencente à cada um dos objetos encontrados é analisado, seu valor H é categorizado de acordo com as cores pre-definidas no sistema e adicionado à cor correspondente.
-		O algoritmo de categorização:
- 
+		
 	
 		\end{description}	
 
-\subsubsection{SCIMM\_COR}
-	Classe de cor utilizada do sistema. Onde são salvos os valores máximos e mínimos de HSV. Possui seis valores, um mínimo e um máximo para H, S e V. 
+\subsubsection{Classe SCIMM\_COR}
+	Classe na qual se instancia cada cor que é reconhecida pelo sistema. Os objetos desse tipo armazenam os valores máximos e mínimos de H, S e V. 
 
 
-\section{O Sistema}
+\section{Detalhes de Implementação do Sistema SCIMM}
 
-		 O sistema consiste na apresentação da \textbf{interface gráfica} simples e objetiva. Possuindo seis botões, um menu de escolha e uma janela de exibição.
-		 A Figura \ref{FlowCHart} exemplifica o fluxo do sistema, que se constitui em cinco etapas e os mesmos possuem o mínimo de ação possível do usuário.
+		 O sistema consiste na apresentação da \textbf{interface gráfica} objetiva. Possuindo seis botões, um menu de escolha e uma janela de exibição.
+		 Na Figura \ref{fig:FlowCHart} pode ser observado o fluxo do sistema, que se constitui em cinco etapas com o mínimo de ação possível do usuário.
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.45\textwidth]{FluxodoSistema.pdf}
 			\caption{Diagrama de Fluxo}
-			\label{FlowCHart}
+			\label{fig:FlowCHart}
 		\end{figure}			
-Nas subseções à seguir explicarei detalhadamente cada uma das etapas do processo de calibração automática.
-		\subsection{1ª Etapa - Configuração de Ca mera}
+Nas subseções à seguir serão detalhadas cada uma das etapas do processo de calibração automática.
+		\subsection{1ª Etapa - Configuração de Câmera}
 		
 
-Para melhor desempenho do algoritmo de detecção de objetos, a imagem é recortada somente para o tamanho necessário do campo. O recorte de imagem foi feito utilizando a função setMouseCallback para possibilitar a interação do usuário na imagem por meio do mouse, sua utilização é dada da seguinte maneira:
+Para melhor desempenho do algoritmo de detecção de objetos, a imagem é recortada somente para o tamanho necessário. O recorte de imagem foi feito utilizando a função {\it setMouseCallback}, disponível pelo OpenCV, para possibilitar a interação do usuário na imagem utilizando o mouse, sua utilização é dada da seguinte maneira:
 \begin{center}
 \centering \textit{ cv::setMouseCallback(src\_window,mouseHandler,0);}
 \end{center}
-Tem como primeiro parâmetro \textbf{src\_windows} que indica a janela na qual a função recebera a interação,  o segundo, \textbf{mouseHandler}, indica a função na qual esta implementada a interação e o ultimo parâmetro, \textbf{0}, indica parâmetros opcionais, neste caso não usaremos nenhum então foi usado o numero 0.
-Dentro da função \textbf{mouseHandler} são identificados os pontos iniciai e final da seleção na tela e utilizada a função \textit{rectangle} para demarcar a seleção na tela. A utilização da função \textit{rectangle} completa fica da seguinte maneira:
+O primeiro parâmetro, \textbf{src\_windows}, indica a janela na qual a função recebera a interação. O segundo, \textbf{mouseHandler}, indica a função na qual esta implementada a interação. Já ultimo parâmetro, \textbf{0}, indica parâmetros opcionais.
+Dentro da função \textbf{mouseHandler} são identificados os dois pontos da seleção, inicio e fim, além da utilização da função \textit{rectangle} para demarcar a seleção na tela. A função \textit{rectangle} foi utilizada da seguinte maneira:
 \begin{center}
 \centering \textit{ cv::rectangle(frameA, point1, point2, CV\_RGB(255, 0, 0), 2, 5, 0);}
 \end{center}
@@ -135,16 +136,16 @@ A função recebe os parâmetros \textbf{frameA} indicando a imagem na qual ser�
 		\end{figure}		
 
 
- Após confirmada a escolha do tamanho da tela 
-este é então salvo na variável nomeada \textit{tamanho}, está então sera usado durante todo o processo de calibração.
-Além de recorte da imagem, nessa etapa também são configurados Brilho e Contraste de forma que os objetos de cor no campo se tornem mais vividos, se tornando assim também mais nítidos, para que os processos de separação e detecção de objetos sejam mais precisos.	A configuração de Brilho e Contraste utiliza o método \textit{convertTo} da biblioteca \textit{OpenCV} que é utilizada para o melhoramento da imagem antes da detecção dos objetos, a utilização completa fica da seguinte maneira:
+ Após confirmada a escolha, o tamanho da tela 
+este é salvo na variável nomeada \emph{tamanho}, usado durante todo o processo de calibração.
+Além do recorte da imagem, nessa etapa também são configurados Brilho e Contraste de forma que as cores dos objetos no campo se tornem mais vívidos, e consequentemente mais nítidos, fazendo com que os processos de separação e detecção de objetos sejam mais precisos. A configuração de Brilho e Contraste utiliza o método \textit{convertTo} da biblioteca, que é utilizada para o melhoramento da imagem antes da detecção dos objetos. A utilização do método se deu por:
 \begin{center}
 \centering \textit{ frameA.convertTo(frameA, -1, contrast\_value / 50.0, brightness\_value)}
 \end{center}
-Esta função recebe quatro parametros. O primeiro \textbf{frameA} informa aonde sera salvo o resultado da conversão. O segundo \textbf{-1} indica o tipo da matrix, ou numero de canais, da imagem a ser gerada, usa-se -1 quando se deseja que se use os valores semelhantes aos da imagem da imagem original\cite{OpenCV}, O terceiro \textbf{contrast\_value / 50.0} indica o valor de constraste, ou alpha, a ser usado para multiplicar os valores do pixel da imagem\cite{OpenCV} e por ultimo \textbf{brightness\_value} que é o valor do brilho, ou beta, a ser adicionado à imagem. É importante ressaltar que a configuração de  Brilho e Contraste é somente usada para a melhor precisão na detecção dos objetos, no momento da analise do pixel, a imagem esta \textit{limpa} sem alguma alteração.\newline
+Esta função recebe quatro parâmetros. O primeiro \textbf{frameA} será o resultado da conversão. O segundo \textbf{-1} indica o tipo da matriz, ou numero de canais, da imagem a ser gerada, usa-se -1 quando se deseja que se use os valores semelhantes aos da imagem original\cite{OpenCV}. O terceiro \textbf{contrast\_value / 50.0} indica o valor de contraste, ou alpha, a ser usado para multiplicar os valores do pixel da imagem\cite{OpenCV} e por último \textbf{brightness\_value} que é o valor do brilho, ou beta, a ser adicionado à imagem. É importante ressaltar que a configuração de Brilho e Contraste é somente usada para a melhor precisão na detecção dos objetos, no momento da análise do pixel, a imagem não contêm alterações.\newline
 
 	\subsection{2ª Etapa - Reconhecimento de Fundo}
-	Um principais problemas que ocorrem na detecção de objetos é a confusão do fundo junto ao próprio objeto, fazendo assim que o mesmo seja detectado porém não seu contorno correto, ou em outras vezes ignorado por ser considerado parte do fundo. Para eliminar este problema foi utilizado a técnica  Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponível na biblioteca \textit{OpenCV}. Esta técnica utiliza um algoritmo de analise pixel a pixel e que classifica o mesmo baseando-se na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande peso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco no tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem baseando-se na variância do objetos da mesma e de sua variância. O objeto criado pela biblioteca, por meio do método \textbf{apply}, analisa quadro a quadro a imagem, a compara com o fundo obtido e gera uma imagem chamada de \textbf{máscara} com os objetos que não fazem parte do fundo, no exato momento da imagem, com o passar dos quadros o objeto se torna parte do fundo. Uso do método:
+	Um principais problemas que ocorrem na detecção de objetos é a confusão do fundo junto ao próprio objeto, fazendo assim que o mesmo seja detectado, porém não o contorno correto, ou em outras vezes ignorado por ser considerado parte do fundo. Para eliminar este problema foi utilizado a técnica  Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponível na biblioteca \textit{OpenCV}. Esta técnica utiliza um algoritmo de analise pixel a pixel e que classifica o mesmo baseando-se na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande peso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco no tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem baseando-se na variância do objetos da mesma e de sua variância. O objeto criado pela biblioteca, por meio do método \textbf{apply}, analisa quadro a quadro a imagem, a compara com o fundo obtido e gera uma imagem chamada de \textbf{máscara} com os objetos que não fazem parte do fundo, no exato momento da imagem, com o passar dos quadros o objeto se torna parte do fundo. Uso do método:
 \begin{center}
  \begin{displaymath}  \centering \textit{pMOG2-$\rangle$apply(frame, mask);}  \end{displaymath}
 
@@ -160,9 +161,9 @@ Onde \textbf{frame} significa a imagem atual capturada pela câmera e \textbf{ma
 		\end{figure}		
 
 
-Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} esta vazio, basta que ele seja executado algumas vezes para que o campo se torne o modelo de fundo. Nesse caso a máscara gerada pelo método não chega a ser utilizada, porém sera na 3ª etapa.
+Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} está vazio, basta que ele seja executado algumas vezes para que o campo se torne o modelo de fundo. Nesse caso a máscara gerada pelo método não chega a ser utilizada.
 	\subsection{3ª Etapa - Extração dos Objetos do Fundo}
-	Como visto na 2ª etapa, o objeto \textbf{pMOG2} chamando o método \textit{apply} gera uma máscara de diferença da imagem atual para o modelo de fundo. Sendo assim para obtermos os objetos que virão a ser detectados basta que o método \textit{apply} seja chamado um numero de vezes suficiente para criar a máscara e o mesmo não alterar o modelo de fundo.
+	Como visto na 2ª etapa, o objeto \textbf{pMOG2} chamando o método \textit{apply} gera uma máscara de diferença da imagem atual para o modelo de fundo. Sendo assim para obtermos os objetos que virão a ser detectados basta que o método \textit{apply} seja chamado um número de vezes suficiente para criar a máscara e o mesmo não alterar o modelo de fundo.
 	
 \begin{figure}[H]
 			\centering
@@ -177,34 +178,34 @@ A detecção dos objetos a serem calibrados é dada pelo algoritmo de detecção
 \begin{center}
 \centering \textit{  Canny(src\_gray, canny\_output, limiar, limiar * 3, 3);}
 \end{center}
-O algoritmo de Canny utiliza por padrão imagem em padrões de cinza, sendo assim \textbf{src\_gray} é a imagem original transformada para escala de cinza, esta é a imagem na qual o algoritmo sera aplicado. \textbf{canny\_output} será a imagem de saída da função.
-\textbf{limiar} e \textbf{limiar*3} são os limites mínimos e máximos para considerar uma borda. \textbf{3} é o valor de apertura ou kernel, o valor 3 é utilizado como padro.
+O algoritmo de Canny utiliza por padrão imagem em padrões de cinza, sendo assim \textbf{src\_gray} é a imagem original transformada para escala de cinza, está é a imagem na qual o algoritmo será aplicado. \textbf{canny\_output} será a imagem de saída da função.
+\textbf{limiar} e \textbf{limiar*3} são os limites mínimos e máximos para considerar uma borda. \textbf{3} é o valor de apertura ou kernel, o valor 3 é utilizado como padrão.
 
 Apos o uso do algoritmo de Canny para detecção de bordas é necessário então fazer uso da função \textit{findContours}, nativa no \textit{OpenCV} para detecção de contornos.
 \begin{center}
 \centering \textit{ findContours(canny\_output, contours, hierarchy, CV\_RETR\_EXTERNAL, CV\_CHAIN\_APPROX\_SIMPLE, Point(0, 0))}
 \end{center}
 
-O primeiro parametro, \textbf{canny\_output}, é a imagem que o algoritmo de Canny gerou com as bordas encontrada na imagem, e é a imagem que o método \textit{findContours} ira utilizar para detectar os contornos, \textbf{contours} é o parametro que indica onde serão salvos os contornos encontrados, cada contorno é armazenado como sendo um vetor de pontos\cite{OpenCV}. \textbf{hierarchy} é onde será salva um vetor de informações sobre a topologia da imagem, e terá como total de elementos o mesmo numero que o total de contornos encontrado\cite{OpenCV}. O quarto parametro, \textbf{CV\_RETR\_EXTERNAL} indica o modo de obtenção de contornos, nesse caso \textit{CV\_RETR\_EXTERNAL} indica que o metodo só obtera os contornos exteriores\cite{OpenCV}. \textbf{CV\_CHAIN\_APPROX\_SIMPLE} indica o metodo que sera usado para aproximação de contornos, o metodo \textit{CV\_CHAIN\_APPROX\_SIMPLE} comprime segmentos horizontais, verticais, diagonais e deixa apenas os seus pontos finais\cite{OpenCV}. E o ultimo parâmetro, \textbf{Point(0, 0)}, indica o valor a ser usado para deslocar a imagem ao encontrar os objetos, neste caso esse valor é 0 para Y e 0 para X, pois não sera necessário. 
+O primeiro parametro, \textbf{canny\_output}, é a imagem que o algoritmo de Canny gerou com as bordas encontradas na imagem, e é a imagem que o método \textit{findContours} irá utilizar para detectar os contornos, \textbf{contours} é o parâmetro q=no qual serão salvos os contornos encontrados, cada contorno é armazenado como sendo um vetor de pontos\cite{OpenCV}. Na variavel \textbf{hierarchy} será salva um vetor de informações sobre a topologia da imagem, e terá como total de elementos o mesmo número que o total de contornos encontrado\cite{OpenCV}. O quarto parâmetro, \textbf{CV\_RETR\_EXTERNAL} indica o modo de obtenção de contornos, nesse caso \textit{CV\_RETR\_EXTERNAL} indica que o método só obterá os contornos exteriores\cite{OpenCV}. \textbf{CV\_CHAIN\_APPROX\_SIMPLE} indica o método que será usado para aproximação de contornos, o metodo \textit{CV\_CHAIN\_APPROX\_SIMPLE} comprime segmentos horizontais, verticais, diagonais e deixa apenas os seus pontos finais\cite{OpenCV}. E o ultimo parâmetro, \textbf{Point(0, 0)}, indica o valor a ser usado para deslocar a imagem ao encontrar os objetos, neste caso esse valor é 0 para Y e 0 para X, pois não será necessário. 
 
-Uma vez obtidos os contornos é necessários que se faça a eliminação de vértices dos polígonos encontrados nos objetos deixando assim o objeto mais preciso. Isso é necessário para deixar a forma encontrada mais precisa dá forma original. Para este ajuste foi usado o método \textit{approxPolyDP}, já implementado dentro da biblioteca OpenCV. Esse método teve que ser aplicado em cada um dos contornos encontrados, e foi utilizado da seguinte maneira:
+Uma vez obtidos os contornos é necessários que se faça a eliminação de vértices dos polígonos encontrados nos objetos deixando assim o objeto mais preciso. Isso é necessário para deixar a forma encontrada mais precisa da forma original. Para este ajuste foi usado o método \textit{approxPolyDP}, já implementado dentro da biblioteca OpenCV. Esse método teve que ser aplicado em cada um dos contornos encontrados, e foi utilizado da seguinte maneira:
 \begin{center}
 \centering \textit{    approxPolyDP(Mat(contours[i]), contours\_poly[i], 3, true)}
 \end{center}
- Onde o metodo inicia recebendo como paralametro, \textbf{Mat(contours[i])} que é a criação de uma nova imagem, somente com aquele unico objeto, que esta sendo analisado. A seguir é informado no segundo parametro a variavel de destino \textbf{contours\_poly[i]}, onde sera salvo o objeto com a eliminação dos vertices. O terceiro parametro indica o valor do \textit{epilson}, usado o valor \textbf{3} que especifica a precisão da aproximação, a distância máxima entre a curva original e a sua aproximação\cite{OpenCV}. O ultimo parâmetro indica se a curva aproximada sera fechada ou não, foi usado o valor \textbf{true} pois neste caso fechar um uma curva é necessário para que o objeto onde está a cor, seja identificado e analisado na probabilidade.
+ Onde o metodo inicia recebendo como parâmetro, \textbf{Mat(contours[i])} que é a criação de uma nova imagem, somente com aquele único objeto, que esta sendo analisado. A seguir é informado no segundo parâmetro a variável de destino \textbf{contours\_poly[i]}, na qual será salvo o objeto com a eliminação dos vértices O terceiro parâmetro indica o valor do \textit{epilson}, usado o valor \textbf{3} que especifica a precisão da aproximação, a distância máxima entre a curva original e a sua aproximação\cite{OpenCV}. O ultimo parâmetro indica se a curva aproximada será fechada ou não, foi usado o valor \textbf{true} pois neste caso fechar um uma curva é necessário para que o objeto no qual está a cor, seja identificado e analisado na probabilidade.
  Por ultimo os objetos possuem sua borda ignorada, sendo assim calculado o tamanho interior dele, para que por ventura não hajam pixeis de cor preta ou derivadas a serem calculadas.
  
  \subsection{5ª Etapa - Classificação do Pixel}
 
  
  
- Para que possam ser feita classificação do pixel é necessário que se faça, primeiramente a conversão da imagem obtida pela câmera, normalmente no espaço de cores RGB, para o espaço de cores HSV, pois a mesma lida melhor com diferenças de luminosidade. 
- A biblioteca \textbf{OpenCV} converte o espaço de cor usando a função \textit{cvtColor} que utiliza da imagem original, e de uma imagem vazia com memoria alocada para ser salva a imagem apos a conversão, além do parâmetro do tipo de conversão, Exemplo do uso do método:
+ Para que possa ser feita a classificação do pixel é necessário que se faça, primeiramente, a conversão da imagem obtida pela câmera, normalmente no espaço de cores RGB, para o espaço de cores HSV, pois, este lida melhor com diferenças de luminosidade. 
+ A biblioteca \textbf{OpenCV} converte o espaço de cor usando a função \textit{cvtColor}, que utiliza da imagem original, e de uma imagem vazia com memória alocada para ser salva a imagem após a conversão, além do parâmetro do tipo de conversão. Exemplo do uso do método:
 \begin{center}
 \centering \textit{cvtColor(frame, HSV, CV\_RGB2HSV);}
 \end{center}
 
-Apos a conversão é necessário, então, ser feita uma analise dos objetos encontrados. Para cada objeto serão todos os seus pixeis, cada pixel separadamente o mesmo categorizado de acordo com o intervalo de valores ta tabela a baixo:
+Após a conversão, é necessário ser feita uma análise dos objetos encontrados. Para cada objeto serão todos os seus pixeis, cada pixel separadamente o mesmo categorizado de acordo com o intervalo de valores da tabela abaixo:
 
 \begin{table}[H]
 \centering
@@ -229,7 +230,7 @@ Vermelha & de 169 à 180 \\
 \caption{Intervalo de Valores de Cores - HSV}
 \end{table}
 
-Estes valores foram obtidos por meio da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na sessão 2.2 Cores da fundamentação teórica, o intervalo de valores da matiz(h) é de 0º a 360º, dentro da biblioteca o intervalo é dado entre os pelo intervalo de números inteiros de 0 à 180 . Uma outra ressalva deve ser feita quando à conversão de valores. Como não há pre-definição destes valores disponível pela biblioteca, foi feito então testes utilizando os valores considerados no mundo real como base para que chegássemos a esses valores.
+Estes valores foram obtidos por meio da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na seção 2.2 Cores da fundamentação teórica, o intervalo de valores da tonalidade(h) é de 0º a 360º, dentro da biblioteca o intervalo é dado entre o intervalo de números inteiros de 0 à 180 . Uma outra ressalva deve ser feita quando à conversão de valores. Como não há pre-definição destes valores disponível pela biblioteca, foi feito então testes utilizando os valores considerados no mundo real como base para que chegássemos a esses valores.
 
 Durante o desenvolvimento foi observador que, em sua maioria, as cores necessitavam de um valor S e V pré estabelecido. Para as cores Laranja, Azul, Rosa e Vermelho foi pré estabelecido o valor de 100 para ambos, S e V. A cor Amarelo usa a pré definição de S e V com o valor. A cor Verde é a única que possui os valores pré definidos diferenciados um do outro, tendo 30 para S e 50 para V. Já a cor Roxo possui tanto para S quanto para V o valor 30.
 

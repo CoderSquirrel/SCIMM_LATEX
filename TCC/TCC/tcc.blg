@@ -22,80 +22,68 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib.bib
 Warning--entry type for "FiraHistory" isn't style-file defined
---line 92 of file bibliografia.bib.bib
+--line 110 of file bibliografia.bib.bib
 Warning--entry type for "FiraOverview" isn't style-file defined
---line 103 of file bibliografia.bib.bib
+--line 121 of file bibliografia.bib.bib
 Warning--entry type for "ImagensHSLHSVRGB" isn't style-file defined
---line 161 of file bibliografia.bib.bib
+--line 179 of file bibliografia.bib.bib
 Warning--entry type for "YouTube" isn't style-file defined
---line 168 of file bibliografia.bib.bib
+--line 186 of file bibliografia.bib.bib
 Warning--entry type for "OpenCV" isn't style-file defined
---line 187 of file bibliografia.bib.bib
+--line 220 of file bibliografia.bib.bib
+Warning--entry type for "Tiene:2014" isn't style-file defined
+--line 451 of file bibliografia.bib.bib
+Warning--entry type for "Wangenheim:2014" isn't style-file defined
+--line 504 of file bibliografia.bib.bib
 Warning--I didn't find a database entry for "VSSVision"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Too many commas in name 1 of "ROWLEY, H.A; BALUJA, S; KANADE, T" for entry Rowley:1998
-while executing---line 2162 of file abntex2-alf.bst
-Too many commas in name 1 of "ROWLEY, H.A; BALUJA, S; KANADE, T" for entry Rowley:1998
-while executing---line 2162 of file abntex2-alf.bst
-Too many commas in name 1 of "ROWLEY, H.A; BALUJA, S; KANADE, T" for entry Rowley:1998
-while executing---line 2162 of file abntex2-alf.bst
-Too many commas in name 1 of "ROWLEY, H.A; BALUJA, S; KANADE, T" for entry Rowley:1998
-while executing---line 2162 of file abntex2-alf.bst
-Too many commas in name 1 of "ROWLEY, H.A; BALUJA, S; KANADE, T" for entry Rowley:1998
-while executing---line 2162 of file abntex2-alf.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Too many commas in name 1 of "ROWLEY, H.A; BALUJA, S; KANADE, T" for entry Rowley:1998
-while executing---line 2217 of file abntex2-alf.bst
-Too many commas in name 1 of "ROWLEY, H.A; BALUJA, S; KANADE, T" for entry Rowley:1998
-while executing---line 2217 of file abntex2-alf.bst
-Too many commas in name 1 of "ROWLEY, H.A; BALUJA, S; KANADE, T" for entry Rowley:1998
-while executing---line 2217 of file abntex2-alf.bst
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 39 entries,
+You've used 42 entries,
             6711 wiz_defined-function locations,
-            1479 strings with 16707 characters,
-and the built_in function-call counts, 42004 in all, are:
-= -- 4127
-> -- 1165
-< -- 597
-+ -- 1029
-- -- 353
-* -- 2852
-:= -- 5409
-add.period$ -- 158
-call.type$ -- 39
-change.case$ -- 401
-chr.to.int$ -- 79
-cite$ -- 38
-duplicate$ -- 3116
-empty$ -- 2412
-format.name$ -- 1693
-if$ -- 9185
+            1504 strings with 17482 characters,
+and the built_in function-call counts, 44816 in all, are:
+= -- 4354
+> -- 1296
+< -- 596
++ -- 1080
+- -- 392
+* -- 3070
+:= -- 5776
+add.period$ -- 173
+call.type$ -- 42
+change.case$ -- 444
+chr.to.int$ -- 82
+cite$ -- 41
+duplicate$ -- 3232
+empty$ -- 2611
+format.name$ -- 1886
+if$ -- 9867
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 692
-newline$ -- 199
-num.names$ -- 194
-pop$ -- 914
+missing$ -- 751
+newline$ -- 211
+num.names$ -- 209
+pop$ -- 999
 preamble$ -- 1
-purify$ -- 151
+purify$ -- 166
 quote$ -- 0
-skip$ -- 3267
+skip$ -- 3410
 stack$ -- 1
-substring$ -- 1705
-swap$ -- 1263
-text.length$ -- 43
+substring$ -- 1779
+swap$ -- 1321
+text.length$ -- 42
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 19
+type$ -- 18
 warning$ -- 0
-while$ -- 283
+while$ -- 301
 width$ -- 0
-write$ -- 617
-(There were 8 error messages)
+write$ -- 663
+(There were 8 warnings)
