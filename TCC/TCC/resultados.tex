@@ -13,25 +13,26 @@
 %====================================================================================================
 % 
 \chapter{Testes e Resultados} 
-Este capítulo está divido em duas seções onde estão presente os testes realizados bem como se discute os mesmos. A seção 4.2 contém a descrição do processo de calibração de cores bem como a preparação do campo e configuração de imagem, e o seu resultado. Já seção 4.3 são apresentados os resultados dos testes executados com o arquivo gerado na calibração da seção 4.2. Os resultados foram separados em Cores Comuns, subseção 4.2.1,  e Cores com Problemas, subseção 4.3.2. Por último se faz uma análise geral dos resultados obtidos na subseção 4.3.3.
 \section{Considerações Iniciais}
-%A seção \textbf{Calibração} foram executados e a maneira indicada de utilização do sistema de calibração desenvolvido. Ao final da calibração um arquivo é gerado contendo os valores mínimo e máximo.
+Este capítulo está divido em duas seções, nas quais estão presente os testes realizados bem como se discute os mesmos. Primeiramente se descreve o processo de calibração de cores bem como a preparação do campo, configuração de imagem, e seu resultado. Em seguida são apresentados os resultados dos testes executados com o arquivo gerado na calibração. Os resultados foram separados em Cores Comuns e Cores com Problemas. Por último se faz uma análise geral dos resultados obtidos.
+
+
  Para realização dos testes foi desenvolvido um aplicativo Desktop para fazer a leitura do arquivo gerado pela calibração, que possibilita a exibição de uma imagem contendo os objetos de acordo com a cor selecionada, por meio de um menu de escolha. Sendo assim possível a análise dos resultados obtidos para cada uma das cores. 
  
   O teste foi feito de uma só vez, porém sua análise está separada em duas partes. A primeira parte Cores Comuns, são as cores que não apresentam problema devido a semelhança com outras cores, na qual estava presente as cores amarelo, azul, verde, rosa, roxo. Na segunda parte estão presente as Cores com Problemas, que contem as cores vermelho e laranja. 
  
  A seguir está detalhado o processo de calibração, bem como a maneiro com que o mesmo ocorreu. Após a explanação da calibração estão exposto os resultados deste teste e a validação de cada um.
 \section{Calibração}
-A calibração aqui descrita ocorreu no dia 19 de Agosto de 2016, entre 17:36 e 17:39.
-A rotina de calibração do sistema, já descrita no Capitulo 3 deste trabalho, envolve primeiramente uma aquisição da imagem do campo vazio, sem nada no mesmo, como visto na Figura \ref{campovazio}.
+A calibração descrita ocorreu no dia 19 de Agosto de 2016, entre 17:36 e 17:39.
+A rotina de calibração do sistema, já descrita no Capítulo 3, envolve primeiramente uma aquisição da imagem do campo vazio, como visto na Figura \ref{campovazio}.
 \begin{figure}[H]
 		\centering
 		\includegraphics[width=0.45\textwidth]{fundoteste.pdf}
 		\caption{Imagem do fundo com a seleção de campo}
 		\label{campovazio}
 	\end{figure}
-Após ter o campo identificado pelo sistema, deve-se dispor sobre o campos os objetos coloridos, com as cores cujo se deseja obter o intervalo. É preferido que se usem tiras coloridas, pois quanto maior o tamanho da tira de cor, maior sera o espectro de cores que seja analisado, assim sendo possível uma melhor qualidade de calibração.
-Neste teste foram dispostos no campo tiras coloridas com largura entre \textit{17cm} e \textit{40cm} e altura entre \textit{5,5cm} e \textit{10,5cm}, cada cor com 3 tiras uma vez que o campo foi separado em três partes, significando as partes com diferentes luminosidades, sendo assim cada uma das tiras colocada em uma das partes do campos, como é possível visualizar na Figura \ref{fig:objetodispostos}.
+Após ter o campo identificado pelo sistema, deve-se dispor sobre o campo os objetos coloridos, com as cores que se deseja obter o intervalo. É preferido que se usem tiras coloridas, pois quanto maior o tamanho da tira de cor, maior sera o espectro de cores que será analisado, assim sendo possível uma melhor qualidade de calibração.
+Neste teste foram dispostos no campo tiras coloridas com largura entre \textit{17cm} e \textit{40cm} e altura entre \textit{5,5cm} e \textit{10,5cm}. Cada cor com 3 tiras, uma vez que o campo foi separado em três partes, para exemplificar diferentes luminosidades. A disposição das tiras pode ser vista na Figura \ref{fig:objetodispostos}.
 	
 	\begin{figure}[H]
 %\begin{minipage}[H]{0.34\linewidth}
@@ -50,7 +51,7 @@ Neste teste foram dispostos no campo tiras coloridas com largura entre \textit{1
 %\end{minipage}
 \end{figure}	
 	
-Como resultado da rotina de calibração foi gerado um arquivo .arff contendo 14 linhas. A Tabela \ref{tab:arquivo} possui uma explicação sobre o arquivo gerado. A primeira coluna da tabela designa a linha contida no arquivo, a segunda coluna possui o conteúdo existente na linha do arquivo e na última coluna está a descrição do conteúdo do arquivo.
+Como resultado da rotina de calibração foi gerado um arquivo .arff contendo 14 linhas. A Tabela \ref{tab:arquivo} possui uma explicação sobre o arquivo gerado. A primeira coluna da tabela designa a linha contida no arquivo, a segunda coluna possui o conteúdo existente na arquivo, na última coluna está a descrição do conteúdo da linha do arquivo.
 	\begin{table}[H]
 \centering 
 \begin{tabular}{l|c|c}
@@ -82,7 +83,7 @@ Linha & Conteúdo & Descrição  \\% Note a separação de col. e a quebra de li
 
  \section{Testes}
 O teste aqui descrito ocorreu dia no 26 de Agosto de 2016, entre à 13:28 e 16:28.
-Para elaboração do teste optou-se por dividir o campo no maior numero de partes possíveis, e ainda assim que essas partes coubessem todas as 7 cores usadas. Essa divisão foi feita para simular as cores em todas as partes possíveis do campos. O campo foi divido em 15 partes de \textit{29cm} por \textit{41cm}, nomeadas alfabeticamente de A à O, como mostrado na Figura \ref{campodivisao}.
+Para elaboração do teste optou-se por dividir o campo no maior numero de partes possíveis, e ainda assim que essas partes coubessem todas as 7 cores usadas. Essa divisão foi feita para simular as cores em todas as partes possíveis do campos. O campo foi divido em 15 partes de \textit{29cm x 41cm}, nomeadas alfabeticamente de A a O, como mostra a Figura \ref{campodivisao}.
 
 \begin{figure}[H]
 		\centering
@@ -91,7 +92,7 @@ Para elaboração do teste optou-se por dividir o campo no maior numero de parte
 		\label{campodivisao}
 	\end{figure}
 	
-Em cada uma das partes do campo estavam dispostas sete cores: Vermelho, Amarelo e Azul na primeira linha. Verde, Roxo, Laranja e Rosa na segunda. As cores estão distantes verticalmente \textit{6cm}, na primeira linha a distância entre as cores é de \textit{7,25cm} e na segunda linha de \textit{5cm}. Um  melhor detalhamento da disposição das cores é mostrado na Figura \ref{disposicaoparte}.
+Cada uma das partes do campo continha as sete cores. Vermelho, Amarelo e Azul na primeira linha. Verde, Roxo, Laranja e Rosa na segunda. As cores estão distantes verticalmente \textit{6cm}. Na primeira linha a distância horizontal entre as cores é de \textit{7,25cm} e na segunda linha esta distancia é de \textit{5cm}. Um  melhor detalhamento da disposição das cores é visto nas Figuras \ref{fig:figure1} e \ref{fig:figure2}.
 
 
 \begin{figure}[H]
@@ -116,10 +117,10 @@ Em cada uma das partes do campo estavam dispostas sete cores: Vermelho, Amarelo 
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/amarelo.pdf}
 		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor amarela}
-		\label{disposicaoparte}
+		\label{fig:amarelo}
 	\end{figure}
 	
-	Dentre os objetos da cor amarela o sistema encontrou quatorze deles completamente, e apenas um, que devido a luminosidade implicada em seu centro deixando a tonalidade muito perto do branco, não totalmente preenchido.
+	Dentre os objetos da cor amarela o sistema encontrou quatorze deles completamente (Figura \ref{fig:amarelo}), e apenas um, que devido a luminosidade implicada em seu centro deixando a tonalidade muito perto do branco, não totalmente preenchido. O detalhamento das quantidades e porcentagem dos objetos encontrador está na Tabela \ref{tab:amarelo}.
 	
 	\begin{table}[H]
 \centering
@@ -140,6 +141,7 @@ Objetos Com Falhas Críticas & 0 &\\
 \hline 
 \end{tabular}
 \caption{Categorização Dos Objetos}
+\label{tab:amarelo}
 \end{table}
 
 Dentre as classificações dos objetos as que descaracterizam o objeto para detecção são: \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento}, que juntos somam 6,66\% dos objetos.
@@ -149,11 +151,11 @@ Dentre as classificações dos objetos as que descaracterizam o objeto para dete
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/azul.pdf}
 		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor azul}
-		\label{disposicaoparte}
+		\label{fig:azul}
 	\end{figure}
 
-Os objetos da cor azul foram os que obtiveram os melhores resultados, os quinze objetos foram encontrados de forma preenchida.	Apesar dos quinze estarem totalmente preenchidos um dos objetos apresentou um tamanho reduzido aos demais devido ao fato de sua borda não ter sido totalmente detectada.
-
+Os objetos da cor azul foram os que obtiveram os melhores resultados, os quinze objetos foram encontrados de forma preenchida. Apesar dos quinze estarem totalmente preenchidos um dos objetos apresentou um tamanho reduzido aos demais devido ao fato de sua borda não ter sido totalmente detectada(Figura \ref{fig:azul}).
+O detalhamento das quantidades e porcentagem dos objetos encontrador está na Tabela \ref{tab:azul}.
 \begin{table}[h]
 \centering
 \begin{tabular}{l|c|c}
@@ -174,6 +176,7 @@ Objetos Com Falhas Críticas & 0 \\
 \hline 
 \end{tabular}
 \caption{Categorização Dos Objetos}
+\label{tab:azul}
 \end{table}
 
 \subsubsection{Verde}
@@ -181,11 +184,11 @@ Objetos Com Falhas Críticas & 0 \\
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/verde.pdf}
 		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor verde}
-		\label{disposicaoparte}
+		\label{fig:verde}
 	\end{figure}
 
-Os objetos da cor verde foram satisfatoriamente encontrados, com seu preenchimento total e não havendo perda de área devido a qualquer interferência de luz em sua borda.	
-	
+Os objetos da cor verde foram satisfatoriamente encontrados, com seu preenchimento total e não havendo perda de área devido a qualquer interferência de luz em sua borda (Figura \ref{fig:verde}).	
+	O detalhamento das quantidades e porcentagem dos objetos encontrador está na Tabela \ref{tab:verde}.
 \begin{table}[h]
 \centering
 \begin{tabular}{l|c|c}
@@ -205,6 +208,7 @@ Objetos Com Falhas Críticas & 0 \\
 \hline 
 \end{tabular}
 \caption{Categorização Dos Objetos}
+\label{tab:verde}
 \end{table}	
 \subsubsection{Rosa}
 	
@@ -212,10 +216,10 @@ Objetos Com Falhas Críticas & 0 \\
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/rosa.pdf}
 		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor rosa}
-		\label{disposicaoparte}
+		\label{fig:rosa}
 	\end{figure}
 	
-Dentre os objetos Rosa detectados, quatro obtiveram falhas em sua detecção, falhas de preenchimento e diminuição de borda, sendo desconsiderados. Dentro os outros onze: três foram detectados sem falhas de preenchimentos apenas com diminuição de área, para aproximadamente metade da área real do objeto; os outros oito foram encontrados apenas com diminuição de área, devido a diminuição de borda.
+Dentre os objetos Rosa detectados, quatro obtiveram falhas em sua detecção, falhas de preenchimento e diminuição de borda, sendo desconsiderados. Dentro os outros onze: três foram detectados sem falhas de preenchimentos apenas com diminuição de área, para aproximadamente metade da área real do objeto; os outros oito foram encontrados apenas com diminuição de área, devido a diminuição de borda(Figura \ref{fig:rosa}).  O detalhamento das quantidades e porcentagem dos objetos encontrador está na Tabela \ref{tab:rosa},
 	
 	\begin{table}[h]
 \centering
@@ -237,6 +241,7 @@ Objetos Com Falhas Críticas & 4 & 26,66 \\
 \hline 
 \end{tabular}
 \caption{Categorização Dos Objetos}
+\label{tab:rosa}
 \end{table}
 
 Dentre as classificações dos objetos as que descaracterizam o objeto para detecção são:  \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam 26,66\% dos objetos. Apesar de ser um numero não tão baixo, a cor rosa não é uma cor que a equipe Cedro costuma usar em seus jogos, sendo assim, essa taxa de erro não influencia na eficiência do sistema.
@@ -245,11 +250,11 @@ Dentre as classificações dos objetos as que descaracterizam o objeto para dete
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/roxo.pdf}
 		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor roxo}
-		\label{disposicaoparte}
+		\label{fig:roxo}
 	\end{figure}
 
-Todos os objetos roxos dispostos no campo foram encontrados pelo intervalo da cor. Dentre os quinze, quatro não apresentaram problema algum e foram completamente detectados; oito possuíram diminuição em seu contorno e três diminuição em sua área relativa.
-\begin{table}[h]
+Todos os objetos roxos dispostos no campo foram encontrados pelo intervalo da cor(Figura \ref{fig:roxo}). Dentre os quinze, quatro não apresentaram problema algum e foram completamente detectados; oito possuíram diminuição em seu contorno e três apresentaram diminuição de área. O detalhamento das quantidades e porcentagem dos objetos encontrador está na Tabela \ref{tab:roxo}.
+\begin{table}[H]
 \centering
 \begin{tabular}{l|c|c}
 Tipo de Objeto & Quantidade  & \% \\ % Note a separação de col. e a quebra de linhas
@@ -268,6 +273,7 @@ Objetos Com Falhas Críticas & 0 \\
 \hline 
 \end{tabular}
 \caption{Categorização Dos Objetos}
+\label{tab:roxo}
 \end{table}
 	
 \subsection{Cores Com Problemas Conhecidos}
@@ -279,11 +285,13 @@ Cores como Vermelho e Laranja possuem o problema de por vezes, devido a interfer
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/vermelho.pdf}
 		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor vermelho}
-		\label{disposicaoparte}
+		\label{fig:vermelho}
 	\end{figure}
 
-A cor rosa, em determinadas luminosidades pode acabar sendo semelhante a cor vermelha, por este motivo, alguns traços dos objetos rosas estão aparecendo dentro do intervalo de calibração. Porem serão ignorados, uma vez que é possível ser feito a separação das cores via software.	
+A cor rosa, em determinadas luminosidades pode acabar sendo semelhante a cor vermelha, por este motivo, alguns traços dos objetos rosas estão aparecendo dentro do intervalo de calibração(Figura \ref{fig:vermelho}). Porem serão ignorados, uma vez que é possível ser feito a separação das cores via software.	
 
+Dentre as classificações dos objetos as que 
+descaracterizam o objeto para detecção são: \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam somente 13,32\% dos objetos. A quantidade e porcentagem dos demais objetos podem ser vistas na Tabela \ref{tab:vermelho}.
 	
 	\begin{table}[h]
 \centering
@@ -304,22 +312,22 @@ Objetos Com Falhas Críticas &  1 & 6,66\\
 \hline 
 \end{tabular}
 \caption{Categorização Dos Objetos}
+\label{tab:vermelho}
 \end{table}
 
-Dentre as classificações dos objetos as que 
-descaracterizam o objeto para detecção são: \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam somente 13,32\% dos objetos.
+
 
 \subsubsection{Laranja}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{/testes/laranja.pdf}
 		\caption{Imagem somente com os objetos dentro do intervalo do valor da cor laranja}
-		\label{disposicaoparte}
+		\label{fig:laranja}
 	\end{figure}
 	
-	Devido à um problema muito comum na área de calibração de cores, a cor laranja possui o problema de ser, por muitas vezes, semelhante a vermelha, e devido a luminosidade implicada tanto em uma quanto na outra, ambas as cores tendem a se tornarem próximas.
+	Devido à um problema muito comum na área de calibração de cores, a cor laranja possui o problema de ser, por muitas vezes, semelhante a vermelha(Figura \ref{fig:laranja}). Devido a luminosidade implicada tanto em uma quanto na outra, ambas as cores tendem a se tornarem próximas.
 	Sabendo deste problema, o fato de terem sido encontrados objetos da cor vermelha dentro do intervalo de valores da cor laranja é ignorado e somente serão levados em consideração os objetos visualmente laranjas.
-	Os quinze objetos da cor laranja foram encontrados com precisão. Todos possuindo seu completo preenchimento e borda.
+	Os quinze objetos da cor laranja foram encontrados com precisão. Todos possuindo seu completo preenchimento e borda. As quantidade e porcentagens do objetos estão disposto na Tabela \ref{tab:laranja}.
 	
 \begin{table}[h]
 \centering
@@ -340,18 +348,23 @@ Objetos Com Falhas Críticas & 0 \\
 \hline 
 \end{tabular}
 \caption{Categorização Dos Objetos}
+\label{tab:laranja}
 \end{table}
 \newpage
 \subsection{Analise Geral}
-De modo total estavam disposto pelo campo 105 objetos coloridos. Destes, 66,7\% dos objetos foram encontrados corretamente, 1,9\% foram encontrados com falhas de preenchimento, 20\% apresentaram perda de contorno, 6,67\% apresentaram diminuição da área e 4,76\% apresentaram falhas e faltas que prejudicaram totalmente o objeto.
+De modo total estavam disposto pelo campo 105 objetos coloridos, pode ser visto na Figura \ref{fig:total} a quantidade de objetos que se encontram em cada uma das categorias. Destes, 66,7\% dos objetos foram encontrados corretamente, 1,9\% foram encontrados com falhas de preenchimento, 20\% apresentaram perda de contorno, 6,67\% apresentaram diminuição da área e 4,76\% apresentaram falhas e faltas que prejudicaram totalmente o objeto.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\textwidth]{/testes/graficotestes.pdf}
 		\caption{Gráfico de análise do resultado dos testes}
-		\label{disposicaoparte}
+		\label{fig:total}
 	\end{figure}
 	
 	
 	Sabendo destes valores, os que podem ser considerados críticos na detecção de objetos por meio da sua cor são \textit{Objetos Com Falhas Críticas} e \textit{Objetos Com Falha de Preenchimento} que juntos somam 6,67\% dos objetos.
 	
 	\section{Considerações Finais}
+	
+	Pode-se concluir que o sistema SCIMM apresentou ótimos resultado com as cores amarelo, azul, laranja e verde, resultados bons com a cor vermelha, e resultados satisfatório com a cor roxo, no entanto obteve um resultado ruim com a cor rosa. 
+	
+	As cores calibradas pelo sistema, quando testadas em ambiente de detecção de objetos coloridos, simbolizaram 98 dos 105 objetos, conseguindo com que somente 7 objetos coloridos não tenham sido identificados.

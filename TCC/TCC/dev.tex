@@ -136,22 +136,21 @@ A função recebe os parâmetros \textbf{frameA} indicando a imagem na qual ser�
 		\end{figure}		
 
 
- Após confirmada a escolha, o tamanho da tela 
-este é salvo na variável nomeada \emph{tamanho}, usado durante todo o processo de calibração.
-Além do recorte da imagem, nessa etapa também são configurados Brilho e Contraste de forma que as cores dos objetos no campo se tornem mais vívidos, e consequentemente mais nítidos, fazendo com que os processos de separação e detecção de objetos sejam mais precisos. A configuração de Brilho e Contraste utiliza o método \textit{convertTo} da biblioteca, que é utilizada para o melhoramento da imagem antes da detecção dos objetos. A utilização do método se deu por:
+ Após confirmada a escolha, o tamanho da tela é salvo na variável nomeada \emph{tamanho}, usado durante todo o processo de calibração.
+Além do recorte da imagem, nessa etapa também são configurados Brilho e Contraste, de forma que as cores no campo se tornem mais vívidos, e os objetos consequentemente mais nítidos, fazendo com que os processos de separação e detecção de objetos sejam mais precisos. A configuração de Brilho e Contraste utiliza o método \textit{convertTo} da biblioteca, que é utilizada para o melhoramento da imagem antes da detecção dos objetos. A utilização do método se deu por:
 \begin{center}
 \centering \textit{ frameA.convertTo(frameA, -1, contrast\_value / 50.0, brightness\_value)}
 \end{center}
 Esta função recebe quatro parâmetros. O primeiro \textbf{frameA} será o resultado da conversão. O segundo \textbf{-1} indica o tipo da matriz, ou numero de canais, da imagem a ser gerada, usa-se -1 quando se deseja que se use os valores semelhantes aos da imagem original\cite{OpenCV}. O terceiro \textbf{contrast\_value / 50.0} indica o valor de contraste, ou alpha, a ser usado para multiplicar os valores do pixel da imagem\cite{OpenCV} e por último \textbf{brightness\_value} que é o valor do brilho, ou beta, a ser adicionado à imagem. É importante ressaltar que a configuração de Brilho e Contraste é somente usada para a melhor precisão na detecção dos objetos, no momento da análise do pixel, a imagem não contêm alterações.\newline
 
 	\subsection{2ª Etapa - Reconhecimento de Fundo}
-	Um principais problemas que ocorrem na detecção de objetos é a confusão do fundo junto ao próprio objeto, fazendo assim que o mesmo seja detectado, porém não o contorno correto, ou em outras vezes ignorado por ser considerado parte do fundo. Para eliminar este problema foi utilizado a técnica  Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponível na biblioteca \textit{OpenCV}. Esta técnica utiliza um algoritmo de analise pixel a pixel e que classifica o mesmo baseando-se na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande peso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco no tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem baseando-se na variância do objetos da mesma e de sua variância. O objeto criado pela biblioteca, por meio do método \textbf{apply}, analisa quadro a quadro a imagem, a compara com o fundo obtido e gera uma imagem chamada de \textbf{máscara} com os objetos que não fazem parte do fundo, no exato momento da imagem, com o passar dos quadros o objeto se torna parte do fundo. Uso do método:
+	Um dos principais problemas que ocorrem na detecção de objetos é a confusão do fundo junto ao próprio objeto, fazendo com que o mesmo seja detectado com o contorno incorreto ou em outras vezes ignorando-o por ser considerado parte do fundo. Para eliminar este problema, foi utilizada a técnica de Subtração do fundo usando Mistura de Gaussianas, por meio do objeto \textit{createBackgroundSubtractorMOG2()} disponível na biblioteca OpenCV. Esta técnica utiliza um algoritmo de análise pixel a pixel, classificando-o com base na distribuição da gaussiana que o representa. Para separar o fundo do resto da imagem é levada em consideração que a gaussiana que representa o fundo tenha grande peso e baixa variância, isso significa que a mesma ocorre frequentemente e varie pouco com o tempo. O algoritmo atualiza o modelo de fundo a cada quadro da imagem, baseando-se na movimentação do objetos já contido na imagem ou na inserção ou remoção de objetos. O objeto criado pela biblioteca, por meio do método \textbf{apply}, analisa quadro a quadro a imagem, e a compara com o fundo obtido e gera uma imagem chamada de \textbf{máscara}, contendo os objetos que não fazem parte do fundo, no exato momento de um quadro, com o passar dos quadros o objeto se torna parte do fundo. Uso do método:
 \begin{center}
- \begin{displaymath}  \centering \textit{pMOG2-$\rangle$apply(frame, mask);}  \end{displaymath}
+ \textit{pMOG2-$>$apply(frame, mask);}
 
 \end{center}
 
-Onde \textbf{frame} significa a imagem atual capturada pela câmera e \textbf{mask} a máscara gerada pela diferença da imagem atual com o modelo de fundo. 
+No qual \textbf{frame} significa o quadro atual capturada pela câmera e \textbf{mask} a máscara gerada pela diferença da imagem atual com o modelo de fundo. 
 
 \begin{figure}[H]
 			\centering
@@ -163,7 +162,7 @@ Onde \textbf{frame} significa a imagem atual capturada pela câmera e \textbf{ma
 
 Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} está vazio, basta que ele seja executado algumas vezes para que o campo se torne o modelo de fundo. Nesse caso a máscara gerada pelo método não chega a ser utilizada.
 	\subsection{3ª Etapa - Extração dos Objetos do Fundo}
-	Como visto na 2ª etapa, o objeto \textbf{pMOG2} chamando o método \textit{apply} gera uma máscara de diferença da imagem atual para o modelo de fundo. Sendo assim para obtermos os objetos que virão a ser detectados basta que o método \textit{apply} seja chamado um número de vezes suficiente para criar a máscara e o mesmo não alterar o modelo de fundo.
+	Como visto na 2ª etapa, o objeto \textbf{pMOG2} chamando o método \textit{apply} gera uma máscara de diferença da imagem atual para o modelo de fundo. Sendo assim para obtermos os objetos que virão a ser detectados, basta que o método \textit{apply} seja chamado um número de vezes suficientes para criar a máscara ao mesmo tempo que não altere o modelo de fundo.
 	
 \begin{figure}[H]
 			\centering
@@ -174,38 +173,40 @@ Sabendo inicialmente que o modelo de fundo do objeto \textbf{pMOG2} está vazio,
 
 
 \subsection{4ª Etapa - Detecção e validação de Objetos}
-A detecção dos objetos a serem calibrados é dada pelo algoritmo de detecção de bordas de Canny. Como mais um recurso para eliminação de ruídos e melhoria da imagem antes de ser executado a detecção de objetos por meio da detecção de bordas é utilizado desfoque na imagem. O algoritmo de Canny já está implementado dentro da biblioteca OpenCV e com a seguinte usagem:
+Para ser feita a detecção dos objetos é necessário que primeiro seja feita a detecção de bordas dos objetos. Como mais um recurso para eliminação de ruídos e melhoria da imagem antes de ser executado a detecção é utilizado desfoque na imagem. O algoritmo de detecção de bordas utilizado no desenvolvimento foi o algoritmo de Canny descrito na Seção 2.2.2, que já se encontra implementado dentro da biblioteca OpenCV e com a seguinte usagem:
 \begin{center}
 \centering \textit{  Canny(src\_gray, canny\_output, limiar, limiar * 3, 3);}
 \end{center}
 O algoritmo de Canny utiliza por padrão imagem em padrões de cinza, sendo assim \textbf{src\_gray} é a imagem original transformada para escala de cinza, está é a imagem na qual o algoritmo será aplicado. \textbf{canny\_output} será a imagem de saída da função.
 \textbf{limiar} e \textbf{limiar*3} são os limites mínimos e máximos para considerar uma borda. \textbf{3} é o valor de apertura ou kernel, o valor 3 é utilizado como padrão.
 
-Apos o uso do algoritmo de Canny para detecção de bordas é necessário então fazer uso da função \textit{findContours}, nativa no \textit{OpenCV} para detecção de contornos.
+Apos o uso do algoritmo de Canny para detecção de bordas é necessário então fazer uso da função \textit{findContours}, nativa no OpenCV para detecção de contornos.
 \begin{center}
 \centering \textit{ findContours(canny\_output, contours, hierarchy, CV\_RETR\_EXTERNAL, CV\_CHAIN\_APPROX\_SIMPLE, Point(0, 0))}
 \end{center}
 
-O primeiro parametro, \textbf{canny\_output}, é a imagem que o algoritmo de Canny gerou com as bordas encontradas na imagem, e é a imagem que o método \textit{findContours} irá utilizar para detectar os contornos, \textbf{contours} é o parâmetro q=no qual serão salvos os contornos encontrados, cada contorno é armazenado como sendo um vetor de pontos\cite{OpenCV}. Na variavel \textbf{hierarchy} será salva um vetor de informações sobre a topologia da imagem, e terá como total de elementos o mesmo número que o total de contornos encontrado\cite{OpenCV}. O quarto parâmetro, \textbf{CV\_RETR\_EXTERNAL} indica o modo de obtenção de contornos, nesse caso \textit{CV\_RETR\_EXTERNAL} indica que o método só obterá os contornos exteriores\cite{OpenCV}. \textbf{CV\_CHAIN\_APPROX\_SIMPLE} indica o método que será usado para aproximação de contornos, o metodo \textit{CV\_CHAIN\_APPROX\_SIMPLE} comprime segmentos horizontais, verticais, diagonais e deixa apenas os seus pontos finais\cite{OpenCV}. E o ultimo parâmetro, \textbf{Point(0, 0)}, indica o valor a ser usado para deslocar a imagem ao encontrar os objetos, neste caso esse valor é 0 para Y e 0 para X, pois não será necessário. 
+O primeiro parâmetro, \textbf{canny\_output}, é a imagem que o algoritmo de Canny gerou com as bordas encontradas, será esta a imagem utilizada pelo método \textit{findContours} para detectar os contornos. \textbf{contours} é o parâmetro que armazenará os contornos encontrados, cada contorno é armazenado como sendo um vetor de pontos. Na variável \textbf{hierarchy} será salvo um vetor de informações sobre a topologia da imagem, e terá como total de elementos o mesmo número que o total de contornos encontrado. O quarto parâmetro, \textbf{CV\_RETR\_EXTERNAL} indica o modo de obtenção de contornos, nesse caso \textit{CV\_RETR\_EXTERNAL} indica que o método só obterá os contornos exteriores. \textbf{CV\_CHAIN\_APPROX\_SIMPLE} designa o método de aproximação de contornos utilizado, o método utilizado comprime segmentos horizontais, verticais e diagonais os deixando apenas com seus pontos finais. Oúltimo parâmetro, \textbf{Point(0, 0)}, indica o valor a ser usado para deslocar a imagem ao encontrar os objetos, neste caso esse valor é 0 para Y e 0 para X, pois haverá deslocamento \cite{OpenCV}. 
 
-Uma vez obtidos os contornos é necessários que se faça a eliminação de vértices dos polígonos encontrados nos objetos deixando assim o objeto mais preciso. Isso é necessário para deixar a forma encontrada mais precisa da forma original. Para este ajuste foi usado o método \textit{approxPolyDP}, já implementado dentro da biblioteca OpenCV. Esse método teve que ser aplicado em cada um dos contornos encontrados, e foi utilizado da seguinte maneira:
+Uma vez obtidos os contornos é necessários que se faça a eliminação de vértices dos polígonos encontrados nos objetos, deixando o objeto mais preciso. Isso é necessário para deixar a forma encontrada mais semelhante com a forma original do objeto. Para este ajuste foi usado o método \textit{approxPolyDP}, já implementado dentro na biblioteca. O método que se aplicado em cada um dos contornos encontrados, foi utilizado da seguinte maneira:
 \begin{center}
 \centering \textit{    approxPolyDP(Mat(contours[i]), contours\_poly[i], 3, true)}
 \end{center}
- Onde o metodo inicia recebendo como parâmetro, \textbf{Mat(contours[i])} que é a criação de uma nova imagem, somente com aquele único objeto, que esta sendo analisado. A seguir é informado no segundo parâmetro a variável de destino \textbf{contours\_poly[i]}, na qual será salvo o objeto com a eliminação dos vértices O terceiro parâmetro indica o valor do \textit{epilson}, usado o valor \textbf{3} que especifica a precisão da aproximação, a distância máxima entre a curva original e a sua aproximação\cite{OpenCV}. O ultimo parâmetro indica se a curva aproximada será fechada ou não, foi usado o valor \textbf{true} pois neste caso fechar um uma curva é necessário para que o objeto no qual está a cor, seja identificado e analisado na probabilidade.
- Por ultimo os objetos possuem sua borda ignorada, sendo assim calculado o tamanho interior dele, para que por ventura não hajam pixeis de cor preta ou derivadas a serem calculadas.
+O método inicia recebendo como parâmetro \textbf{Mat(contours[i])}, que é a criação de uma nova imagem, somente com aquele único objeto que esta sendo analisado. A seguir é informado no segundo parâmetro a variável de destino \textbf{contours\_poly[i]}, na qual será armazenado o objeto com a eliminação dos vértices. O terceiro parâmetro indica o valor do \textit{epilson}, usado o valor \textbf{3}, a distância máxima entre a curva original para sua aproximação\cite{OpenCV}. O último parâmetro indica se a curva aproximada será fechada ou não, foi usado o valor \textbf{true}.
+
+Por ultimo os objetos possuem sua borda ignorada, calculando o tamanho interior deles para que, por ventura, não hajam pixeis de cor preta ou derivadas a serem calculadas.
  
  \subsection{5ª Etapa - Classificação do Pixel}
 
  
  
- Para que possa ser feita a classificação do pixel é necessário que se faça, primeiramente, a conversão da imagem obtida pela câmera, normalmente no espaço de cores RGB, para o espaço de cores HSV, pois, este lida melhor com diferenças de luminosidade. 
- A biblioteca \textbf{OpenCV} converte o espaço de cor usando a função \textit{cvtColor}, que utiliza da imagem original, e de uma imagem vazia com memória alocada para ser salva a imagem após a conversão, além do parâmetro do tipo de conversão. Exemplo do uso do método:
+ Para ser feita a classificação do pixel é necessário que se faça, primeiramente, a conversão da imagem obtida pela câmera. A imagem proveniente da câmera está no modelo de cores RGB, a imagem é convertida para o modelo HSV, pois este lida melhor com diferentes tonalidades.
+  
+ A biblioteca OpenCV converte o espaço de cor usando a função \textit{cvtColor}, que utiliza da imagem original, e de uma imagem vazia com memória alocada, para ser salva a imagem após a conversão, além do parâmetro do tipo de conversão. Exemplo do uso do método:
 \begin{center}
 \centering \textit{cvtColor(frame, HSV, CV\_RGB2HSV);}
 \end{center}
 
-Após a conversão, é necessário ser feita uma análise dos objetos encontrados. Para cada objeto serão todos os seus pixeis, cada pixel separadamente o mesmo categorizado de acordo com o intervalo de valores da tabela abaixo:
+Após a conversão, é necessário ser feita uma análise dos objetos encontrados. Para cada objeto serão analisados todos os seus pixeis separadamente, e categorizados de acordo com o intervalo de valores de H, Tabela \ref{tab:categorias}.
 
 \begin{table}[H]
 \centering
@@ -228,13 +229,19 @@ Vermelha & de 169 à 180 \\
 \hline 
 \end{tabular}
 \caption{Intervalo de Valores de Cores - HSV}
+\label{tab:categorias}
 \end{table}
-
-Estes valores foram obtidos por meio da conversão dos valores de cada cor no universo real para dentro da biblioteca OpenCV. Como visto na seção 2.2 Cores da fundamentação teórica, o intervalo de valores da tonalidade(h) é de 0º a 360º, dentro da biblioteca o intervalo é dado entre o intervalo de números inteiros de 0 à 180 . Uma outra ressalva deve ser feita quando à conversão de valores. Como não há pre-definição destes valores disponível pela biblioteca, foi feito então testes utilizando os valores considerados no mundo real como base para que chegássemos a esses valores.
 
 Durante o desenvolvimento foi observador que, em sua maioria, as cores necessitavam de um valor S e V pré estabelecido. Para as cores Laranja, Azul, Rosa e Vermelho foi pré estabelecido o valor de 100 para ambos, S e V. A cor Amarelo usa a pré definição de S e V com o valor. A cor Verde é a única que possui os valores pré definidos diferenciados um do outro, tendo 30 para S e 50 para V. Já a cor Roxo possui tanto para S quanto para V o valor 30.
 
   \subsection{6ª Etapa - Gerar Arquivo de Cores}
-  Assim que todas as cores já estiverem sido assimiladas e a calibração finalizada, gera-se um arquivo chamado \textbf{cores.arff}, contendo 14 linhas. Sabendo que o sistema calibra 7 cores o arquivo é gerado com o dobro de linhas da quantidade de cor, de modo que a primeira designe o valor mínimo HSV e a segunda o valor máximo para cada cor.
+  Assim que todas as cores já estiverem sido assimiladas e a calibração finalizada, gera-se um arquivo chamado \textbf{cores.arff}, contendo 14 linhas. Sabendo que o sistema calibra 7 cores, o arquivo gerado contem duas linhas para cada cor, de modo que a primeira designe o valor mínimo HSV e a segunda o valor máximo para cada cor.
 
 \section{Considerações Finais}
+
+
+ O projeto desenvolvido conta com funcionalidades bem dividas, e cada classe exerce somente um único papel. Com a utilização da biblioteca OpenCV, consegui-se atender todos os objetivos relacionados ao processamento digital de imagens, necessários para o desenvolvimento do sistema proposto.
+
+ O sistema consiste em um único modulo que conta com detecção de bordas da imagem, identificação dos objetos por meio das bordas encontradas, análise de pixeis nos objetos, categorização do HSV do pixel e criação do arquivo com os valores mínimos e máximos para cada cor. Todos os processos do sistema acontecem de forma automática.
+  
+ 

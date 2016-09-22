@@ -66,7 +66,7 @@ Quando se trata de detecção de bordas existem dois critérios que devem ser le
 	\item[Taxa de Erro] É importante que as bordam contidas na imagem não sejam confundidas ou perdidas, tampouco que não sejam detectadas bordas falsas. É necessário que o algoritmo de detecção de borda tenha uma baixa taxa de erro para que seja eficiente \cite{Wangenheim:2014, Canny:1986, Vale:2002}.
 	\item[Localização] A distância entre os pixeis de borda encontradas pelo algoritmo e a borda atual deveriam ser o menor possível \cite{Wangenheim:2014}.
 \end{description}
-Ao tentar aplicar esses dois critérios para desenvolver um modelo matemático para detecção de bordas, sem a necessidade de base em regras preestabelecidas, no artigo 
+Ao tentar aplicar esses dois critérios para desenvolver um modelo matemático para detecção de bordas, sem a necessidade de base em regras preestabelecidas. No artigo 
 \textit{A Computational Approach to Edge Detection}, \citeonline{Canny:1986} descreve que somente esses dois critérios não são suficientes para obter uma boa precisão da detecção de bordas, portanto, propôs um terceiro critério: Resposta.
 \begin{description}
 	\item[Resposta] Para contornar a possibilidade de mais de uma resposta para a mesma borda, ou seja, o detector de bordas não deveria identificar múltiplos pixeis de borda onde somente exista um único pixel.
@@ -183,8 +183,11 @@ time devem agir."}\cite{Faria2006}
 \end{quotation}
  \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\textwidth]{faria2006.png}
+	\includegraphics[width=0.4\textwidth]{futbots.pdf}
 	\caption{Estrutura de um ambiente de futebol de robôs VSSS\cite{Faria2006}}
 	\label{fig:VSSS}
 \end{figure} 
 \section{Considerações Finais}
+A detecção de bordas é uma técnica de segmentação que prepara a imagem para à detecção de objetos. O Com o surgimento do Algoritmo de Canny, consegui-se minimizar os erros da detecção de bordas, assim, conseguindo detectar objetos com maior precisão. Por esse motivo o algoritmo de Canny foi escolhido para ser usado no projeto proposto por este trabalho, e uma vez se tratando de bordas, o algoritmo de detecção de objetos escolhido foi o {\it border following}.
+
+Como estudado, o modelo de cores HSV consegue lidar melhor com diferentes tonalidades de uma cor, e como o objetivo do trabalho é a calibração de cores, conseguindo assimilar vários tons da mesma cor como sendo uma única cor, a escolha deste modelo de cor se torna justificável.
