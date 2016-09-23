@@ -1,12 +1,13 @@
 \select@language {portuguese}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Detec\IeC {\c c}\IeC {\~a}o de Borda com Algoritmo de Canny\cite {Saini:2013} \relax }}{15}{figure.caption.7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplo dos sistemas de cores RGB E CMY.\relax }}{16}{figure.caption.8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagrama de cromaticidade estabelecido pelo CIE.\relax }}{16}{figure.caption.9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo do Modelo de Cor RGB. \citeonline {ImagensHSLHSVRGB} \relax }}{17}{figure.caption.10}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo do Modelo de Cor HSV, \citeonline {ImagensHSLHSVRGB}\relax }}{18}{figure.caption.11}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Estrutura de um ambiente de futebol de rob\IeC {\^o}s VSSS\cite {Faria2006}\relax }}{19}{figure.caption.12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Imagem original \cite {Canny:1986}.\relax }}{15}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Bordas encontradas\cite {Canny:1986}.\relax }}{15}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo dos sistemas de cores RGB E CMY.\relax }}{16}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagrama de cromaticidade estabelecido pelo CIE.\relax }}{16}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo do Modelo de Cor RGB. \citeonline {ImagensHSLHSVRGB} \relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemplo do Modelo de Cor HSV, \citeonline {ImagensHSLHSVRGB}\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Estrutura de um ambiente de futebol de rob\IeC {\^o}s VSSS\cite {Faria2006}\relax }}{19}{figure.caption.12}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Organiza\IeC {\c c}\IeC {\~a}o das pastas do projeto\relax }}{21}{figure.caption.13}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Fluxo\relax }}{23}{figure.caption.18}
