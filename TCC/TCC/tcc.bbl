@@ -207,11 +207,10 @@ Dispon{\'\i}vel em:
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~20,
   p. 29--38, 1998.}
 
-\bibitem[Saini, Kasliwal e Bhatia 2013]{Saini:2013}
-\abntrefinfo{Saini, Kasliwal e Bhatia}{SAINI; KASLIWAL; BHATIA}{2013}
-{SAINI, S.; KASLIWAL, B.; BHATIA, S. \emph{Comparative study of image edge
-  detection algorithms}. 2013.
-Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/1311.4963}.}
+\bibitem[SIRLab 2016]{VSSVision}
+\abntrefinfo{SIRLab}{SIRLAB}{2016}
+{SIRLAB. Imagens hsv, hsl e rgb. In:  . [s.n.], 2016. Acessado 06/06/2016
+  14:50. Dispon{\'\i}vel em: \url{https://github.com/SIRLab/VSS-Vision/wiki}.}
 
 \bibitem[Souto 2003]{Souto:2003}
 \abntrefinfo{Souto}{SOUTO}{2003}

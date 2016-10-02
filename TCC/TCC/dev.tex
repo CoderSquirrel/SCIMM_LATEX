@@ -46,7 +46,7 @@
 Para realização deste trabalho,  utilizou-se a biblioteca de processamentos de imagens OpenCV. O trabalho foi elaborado na linguagem C++, com uso do {\it framework} Qt para a composição da interface gráfica.
  
 \begin{description}
-	\item[OpenCV] foi lançado em 1999 pela Intel\cite{Culjak:2012}, com objetivo de ser otimizada, portável e com um grande número de funções, se tornou uma ferramenta que possui mais de 2500 algoritmos e 40 mil pessoas em seu grupo de usuários\cite{Culjak:2012}. Já possui interface para as linguagens C++, C, Python e Java, além de suporte para as principais plataformas como Windows, Linux, Mac OS, iOS e Android. A biblioteca pode ser utilizada para manipular tanto imagens em tempo real, quanto vídeos e imagens estáticas.
+	\item[OpenCV] foi lançado em 1999 pela Intel\cite{Culjak:2012}, com objetivo de ser otimizada, portável e com um grande número de funções, se tornou uma ferramenta que possui mais de 2500 algoritmos e 40 mil pessoas em seu grupo de usuários\cite{Culjak:2012}. A biblioteca possui interface para as linguagens C++, C, Python e Java, além de suporte para as principais plataformas como Windows, Linux, Mac OS, iOS e Android. A biblioteca pode ser utilizada para manipular tanto imagens em tempo real, quanto vídeos e imagens estáticas.
 	
 	\item[Qt] é um {\it framework} de desenvolvimento de aplicações multiplataforma. Entre suas funcionalidades está a possibilidade de criar interfaces gráficas diretamente em C++ usando seu módulo{\it  Widgets}.
 	
@@ -83,7 +83,7 @@ Os métodos contidos na classe Calibração são:
 
 \item ConfigurarCamera: Método utilizado para delimitar, um retângulo, ou seja, o espaço de trabalho dentro da imagem proveniente da câmera. Também é utilizada para ajuste de brilho e contraste para tornar mais nítido os contornos durante a detecção de objetos dentro do retângulo já delimitado.	
 	
-  \item ReconhecerFundoExtrairObjetos: Método no qual utiliza-se o algoritmo de subtração de fundo. Identifica-se, inicialmente, o campo e uma vez identificado, qualquer objeto colocado sobre o campo ficará em destaque pois não faziam parte do fundo inicial. Esse destaque é uma \textbf{máscara} sobre a imagem que é usada melhorar a precisão do algoritmo de detecção dos objetos.
+  \item ReconhecerFundoExtrairObjetos: Método no qual utiliza-se o algoritmo de subtração de fundo. Identifica-se, inicialmente, o campo e uma vez identificado, qualquer objeto colocado sobre o campo ficará em destaque pois não faziam parte do fundo inicial. Esse destaque é uma \textbf{máscara} sobre a imagem que é usada para melhorar a precisão do algoritmo de detecção dos objetos.
   
  	\item DetectarObjetos: Método onde serão aplicados filtros de diminuição de ruido, detectadas as bordas existentes na imagem, detectados os objetos a partir das bordas contidas na imagem, o aumento da precisão do contorno dos objetos e diminuição do tamanho do objeto de acordo com a porcentagem de borda a ser eliminada. 
 
